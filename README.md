@@ -116,6 +116,23 @@ Mercado-de-Motos/
 
 ## 📈 Resultados
 
+### Motos más demandadas por categoría (Revolico — La Habana)
+
+Datos de **6 466 anuncios** publicados en Revolico (La Habana, últimos 7 días). La marca "más demandada" es la de mayor cantidad de anuncios en su categoría.
+
+| Categoría | Marca más demandada | Rango de precio (USD) | Anuncios | Enlace Revolico |
+|-----------|---------------------|----------------------:|---------:|-----------------|
+| Moto de combustión | ITALY | 1 950 – 3 040 | 62 | [ver](https://www.revolico.com/item/moto-automatica-italy-58182894) |
+| Moto eléctrica | TOPMAQ | 800 – 4 600 | 257 | [ver](https://www.revolico.com/item/motos-topmaq-f3-57951474) |
+| Bicicleta eléctrica | BUCATTI | 450 – 1 100 | 32 | [ver](https://www.revolico.com/item/se-vende-bicicleta-electrica-bucatti-detalle-la-bateria-necesita-reparacion-57692228) |
+| Patinete eléctrico | JMD | 650 – 800 | 31 | [ver](https://www.revolico.com/item/patineta-electrica-jmd-58180221) |
+
+### Evolución 2024–2026: eléctricas vs combustión
+
+![Evolución del mercado de motos 2024-2026](graficos/evolucion_motos_2024_2026.svg)
+
+Anuncios en Revolico (La Habana) según el **año de modelo** indicado en el título. Las motos eléctricas pasan de 19 anuncios (modelo 2025) a 674 (modelo 2026), mientras las de combustión se mantienen bajas (20 → 88).
+
 > Sección en desarrollo. Aquí se documentarán los hallazgos principales del análisis:
 >
 > - Crecimiento de las motos eléctricas frente a las de combustión.
