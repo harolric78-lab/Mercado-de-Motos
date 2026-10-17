@@ -1,0 +1,82 @@
+# ---------------------------------------------------------------
+# .gitignore - Investigacion del Mercado de Motos en Cuba
+# ---------------------------------------------------------------
+
+# Entornos virtuales de Python
+.venv/
+venv/
+env/
+ENV/
+*.pyenv/
+
+# Bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribucion / empaquetado
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb~
+
+# Pruebas y cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# Datos crudos y temporales (no versionar datos pesados)
+datos/**/*.tmp
+datos/**/*.bak
+*.log
+logs/
+
+# Variables de entorno y secretos
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# Editores / IDE
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.code-workspace
+*.swp
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Instaladores y binarios grandes
+*.msi
+*.exe
+*.cab
+*.msix
+*.zip
+*.tar
+*.tar.gz
+
+# Node (por si se anaden herramientas JS)
+node_modules/
+npm-debug.log*
+yarn-error.log*
