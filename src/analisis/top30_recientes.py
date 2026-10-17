@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Analisis de los 30 anuncios mas recientes de Revolico (La Habana).
+Tabla de los 30 anuncios mas recientes de Revolico (La Habana).
 
-Toma el JSON de datos crudos mas reciente de `datos/revolico/` y genera un
-informe con los 30 anuncios mas recientes de:
+Toma el JSON de datos crudos mas reciente de `datos/revolico/` y genera una
+tabla organizada con:
 
+    - Tipo de vehiculo
+    - Precio
+    - Enlace (URL) de Revolico
+
+Para:
     - Motos de Combustion
     - Motos Electricas (bicicletas/motos electricas, sin triciclos)
+
+Genera un informe Markdown y un CSV en `docs/informes/`.
 
 Uso:
     python top30_recientes.py
@@ -15,6 +22,7 @@ Uso:
 """
 
 import argparse
+import csv
 import json
 from datetime import datetime
 from pathlib import Path
@@ -28,7 +36,7 @@ TOP = 30
 
 GRUPOS = {
     "motos_combustion": "Motos de Combustion",
-    "motos_electricas": "Motos Electricas (bicicletas/motos electricas, sin triciclos)",
+    "motos_electricas": "Motos Electricas (sin triciclos)",
 }
 
 
@@ -39,23 +47,32 @@ def json_mas_reciente():
     return archivos[-1]
 
 
-def num(precio):
-    return precio if isinstance(precio, (int, float)) else None
+def tipo_vehiculo(anuncio):
+    """Clasifica el tipo de vehiculo a partir del titulo y la categoria."""
+    t = (anuncio.get("titulo") or "").lower()
+    cat = anuncio.get("categoria_clave")
 
+    if cat == "motos_combustion":
+        if "scooter" in t or "vespa" in t:
+            return "Moto de combustion (scooter)"
+        if "deportiva" in t or "ninja" in t:
+            return "Moto de combustion (deportiva)"
+        return "Moto de combustion"
 
-def estadisticas(anuncios):
-    precios = [num(a["precio"]) for a in anuncios]
-    precios = [p for p in precios if p is not None]
-    monedas = {}
-    for a in anuncios:
-        monedas[a["moneda"]] = monedas.get(a["moneda"], 0) + 1
-    return {
-        "total": len(anuncios),
-        "min": min(precios) if precios else 0,
-        "max": max(precios) if precios else 0,
-        "prom": (sum(precios) / len(precios)) if precios else 0,
-        "monedas": monedas,
-    }
+    # Categoria electricas
+    if (
+        "bicicleta" in t
+        or "bici electrica" in t
+        or "bici eléctrica" in t
+        or "ebike" in t
+        or "e-bike" in t
+    ):
+        return "Bicicleta electrica"
+    if "bicimoto" in t:
+        return "Bicimoto electrica"
+    if "motico" in t or "moto" in t or "scooter" in t:
+        return "Moto electrica"
+    return "Vehiculo electrico (sin clasificar)"
 
 
 def fecha_corta(iso):
@@ -73,52 +90,71 @@ def escapar(texto):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Analisis de los 30 anuncios mas recientes")
+    parser = argparse.ArgumentParser(description="Tabla de los 30 anuncios mas recientes")
     parser.add_argument("--archivo", default=None, help="Ruta al JSON de datos")
     args = parser.parse_args()
 
     ruta = Path(args.archivo) if args.archivo else json_mas_reciente()
     datos = json.loads(ruta.read_text(encoding="utf-8"))
     anuncios = datos["anuncios"]
-
     ahora = datetime.now(TZ_HABANA)
-    lineas = [
-        "# Analisis: 30 anuncios mas recientes de Revolico (La Habana)",
-        "",
-        f"- **Fuente de datos:** `{ruta.name}`",
-        f"- **Generado (La Habana):** {ahora.strftime('%Y-%m-%d %H:%M')}",
-        f"- **Total en el dataset:** {len(anuncios)} anuncios",
-        "",
-    ]
 
+    # Reunir los 30 mas recientes de cada grupo
+    filas = []
     for clave, nombre in GRUPOS.items():
         grupo = [a for a in anuncios if a.get("categoria_clave") == clave]
         grupo = sorted(grupo, key=lambda x: x.get("fecha_utc", ""), reverse=True)[:TOP]
-        st = estadisticas(grupo)
-
-        lineas += [
-            f"## {nombre}",
-            "",
-            f"- **Anuncios (top {TOP}):** {st['total']}",
-            f"- **Precio min / prom / max:** {st['min']:.0f} / {st['prom']:.0f} / {st['max']:.0f}",
-            f"- **Monedas:** {', '.join(f'{k}: {v}' for k, v in st['monedas'].items())}",
-            "",
-            "| # | Titulo | Precio | Moneda | Fecha (La Habana) | Enlace |",
-            "|--:|--------|-------:|--------|-------------------|--------|",
-        ]
-        for i, a in enumerate(grupo, 1):
-            lineas.append(
-                f"| {i} | {escapar(a['titulo'])} | {a['precio']} | {a['moneda']} | "
-                f"{fecha_corta(a['fecha_utc'])} | [ver]({a['url']}) |"
+        for a in grupo:
+            filas.append(
+                {
+                    "grupo": nombre,
+                    "tipo_vehiculo": tipo_vehiculo(a),
+                    "titulo": a["titulo"],
+                    "precio": a["precio"],
+                    "moneda": a["moneda"],
+                    "fecha_habana": fecha_corta(a["fecha_utc"]),
+                    "url": a["url"],
+                }
             )
-        lineas.append("")
+
+    lineas = [
+        "# Tabla: 30 anuncios mas recientes de Revolico (La Habana)",
+        "",
+        f"- **Fuente de datos:** `{ruta.name}`",
+        f"- **Generado (La Habana):** {ahora.strftime('%Y-%m-%d %H:%M')}",
+        f"- **Filas:** {len(filas)} (30 por grupo)",
+        "",
+        "| # | Grupo | Tipo de vehiculo | Titulo | Precio | Moneda | Fecha (La Habana) | Enlace |",
+        "|--:|-------|------------------|--------|-------:|--------|-------------------|--------|",
+    ]
+    for i, f in enumerate(filas, 1):
+        lineas.append(
+            f"| {i} | {escapar(f['grupo'])} | {escapar(f['tipo_vehiculo'])} | "
+            f"{escapar(f['titulo'])} | {f['precio']} | {f['moneda']} | "
+            f"{f['fecha_habana']} | [ver]({f['url']}) |"
+        )
+    lineas.append("")
 
     INFORMES_DIR.mkdir(parents=True, exist_ok=True)
-    ruta_md = INFORMES_DIR / f"analisis_top30_{ahora.strftime('%Y%m%d_%H%M')}.md"
+    sello = ahora.strftime("%Y%m%d_%H%M")
+    ruta_md = INFORMES_DIR / f"tabla_top30_{sello}.md"
     ruta_md.write_text("\n".join(lineas) + "\n", encoding="utf-8")
 
+    ruta_csv = INFORMES_DIR / f"tabla_top30_{sello}.csv"
+    with ruta_csv.open("w", newline="", encoding="utf-8-sig") as fh:
+        w = csv.DictWriter(
+            fh,
+            fieldnames=[
+                "grupo", "tipo_vehiculo", "titulo", "precio", "moneda",
+                "fecha_habana", "url",
+            ],
+            extrasaction="ignore",
+        )
+        w.writeheader()
+        w.writerows(filas)
+
     print("\n".join(lineas))
-    print(f"\nInforme guardado en: {ruta_md}")
+    print(f"\nInforme guardado en: {ruta_md}\nCSV guardado en: {ruta_csv}")
 
 
 if __name__ == "__main__":
