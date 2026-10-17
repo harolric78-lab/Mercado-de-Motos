@@ -52,11 +52,13 @@ El proyecto sigue un flujo de trabajo típico de ciencia de datos:
 
 | Fuente | Descripción | Cantidad |
 |--------|-------------|----------|
-| 📢 **Revolico** | Sitios de anuncios clasificados | 30 |
-| 📝 **Encuestas** | Encuestas aplicadas a propietarios y compradores | 30 |
-| 👥 **Grupos especializados** | Grupos de Telegram u otros foros | 0 |
-| 🔧 **Importadoras** | Importadoras y comercios del sector | 30 |
+| 📢 **Revolico** | Anuncios clasificados de La Habana (últimos 7 días) | 6 466 |
+| 📝 **Encuestas** | Encuestas aplicadas a propietarios y compradores | — |
+| 👥 **Grupos especializados** | Grupos de Telegram u otros foros | — |
+| 🔧 **Importadoras** | Importadoras y comercios del sector | — |
 | 🛠️ **Talleres** | Talleres de reparación y venta | — |
+
+> **Revolico** (única fuente con datos actualmente): 6 466 anuncios — 5 294 de motos eléctricas y 1 172 de motos de combustión.
 
 > Los datos recolectados se almacenan en la carpeta [`datos/`](datos/) organizados por fuente.
 
