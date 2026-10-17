@@ -4,19 +4,29 @@
 Scraper de anuncios de Revolico (Cuba) - Mercado de Motos en Cuba
 =================================================================
 
-Extrae los anuncios mas recientes de las categorias:
-    - Motos de Combustion  (vehiculos-motos-de-combustion)
-    - Bicicletas           (vehiculos-bicicletas)  [incluye bicicletas electricas]
+Extrae los anuncios mas recientes de Revolico para la provincia La Habana.
 
-De la provincia La Habana, filtrando por fecha de publicacion/actualizacion
-desde la semana pasada (por defecto 7 dias) hasta hoy, en hora de La Habana.
+Por defecto extrae DOS categorias (juntas):
+    - Motos de Combustion          (vehiculos-motos-de-combustion)
+    - Motos Electricas             (vehiculos-motos-electricas-y-triciclos)
+
+De la categoria de motos electricas se EXCLUYEN los triciclos.
+
+Opcionalmente se puede anadir la categoria de bicicletas:
+    - Bicicletas                   (vehiculos-bicicletas)
+
+Filtra por fecha de publicacion/actualizacion desde los ultimos dias
+(por defecto 7) hasta hoy, en hora de La Habana.
 
 Los datos crudos se guardan en `datos/revolico/` en formato CSV y JSON.
 
 Uso:
-    python scraper_revolico.py                 # ultimos 7 dias
-    python scraper_revolico.py --dias 14       # ultimos 14 dias
-    python scraper_revolico.py --max-paginas 5 # limitar paginas por categoria
+    python scraper_revolico.py                     # motos de combustion + electricas (sin triciclos)
+    python scraper_revolico.py --dias 14           # ultimos 14 dias
+    python scraper_revolico.py --categorias motos  # solo motos de combustion
+    python scraper_revolico.py --categorias motos,electricas,bicicletas
+    python scraper_revolico.py --sin-imagenes      # incluir anuncios sin foto
+    python scraper_revolico.py --max-paginas 5     # limitar paginas por categoria
 """
 
 import argparse
@@ -49,25 +59,34 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
-# Categorias a extraer (sin triciclos)
-CATEGORIAS = [
-    {
+# Categorias disponibles
+CATEGORIAS = {
+    "motos": {
         "clave": "motos_combustion",
         "nombre": "Motos de Combustion",
         "subcategory": "vehiculos-motos-de-combustion",
     },
-    {
+    "electricas": {
+        "clave": "motos_electricas",
+        "nombre": "Motos Electricas",
+        "subcategory": "vehiculos-motos-electricas-y-triciclos",
+    },
+    "bicicletas": {
         "clave": "bicicletas",
         "nombre": "Bicicletas",
         "subcategory": "vehiculos-bicicletas",
     },
-]
+}
+CATEGORIAS_POR_DEFECTO = ["motos", "electricas"]
 
-# Palabras clave para detectar bicicletas/motos electricas
+# Palabras clave para detectar motos/bicicletas electricas
 CLAVES_ELECTRICAS = (
     "electric", "electrica", "electrico", "eléctrica", "eléctrico", "eléctric",
     "litio", "lithium", "bateria", "batería", "ebike", "e-bike", "ev ",
 )
+
+# Palabras clave para EXCLUIR triciclos
+CLAVES_TRICICLO = ("triciclo", "triciclos", "trimoto", "trimotos")
 
 PAGE_LENGTH = 100
 PAUSA_ENTRE_PAGINAS = 1.0  # segundos (buena practica / no saturar el sitio)
@@ -100,7 +119,12 @@ def es_electrica(titulo):
     return any(c in t for c in CLAVES_ELECTRICAS)
 
 
-def obtener_next_data(session, subcategory, page):
+def es_triciclo(titulo):
+    t = (titulo or "").lower()
+    return any(c in t for c in CLAVES_TRICICLO)
+
+
+def obtener_next_data(session, subcategory, page, con_imagenes):
     """Descarga una pagina de resultados y devuelve el JSON de __NEXT_DATA__."""
     url = f"{BASE_URL}/search"
     params = {
@@ -109,6 +133,8 @@ def obtener_next_data(session, subcategory, page):
         "province": PROVINCIA,
         "page": page,
     }
+    if con_imagenes:
+        params["images"] = "on"
     resp = session.get(url, params=params, headers=HEADERS, timeout=30)
     resp.raise_for_status()
     m = re.search(
@@ -122,22 +148,15 @@ def obtener_next_data(session, subcategory, page):
 
 
 def extraer_anuncios(apollo, categoria):
-    """Extrae la lista de anuncios y los mapas de provincia/municipio."""
-    provincias = {}
-    municipios = {}
-    for clave, valor in apollo.items():
-        if clave.startswith("ProvinceType:"):
-            provincias[valor["id"]] = valor.get("name", "")
-        elif clave.startswith("MunicipalityType:"):
-            municipios[valor["id"]] = valor.get("name", "")
-
+    """Extrae la lista de anuncios (sin telefonos, direcciones ni triciclos)."""
     anuncios = []
     for clave, valor in apollo.items():
         if not clave.startswith("AdType:"):
             continue
-        tel = valor.get("phoneInfo") or {}
-        p1 = (tel.get("firstPhone") or {}).get("number", "")
-        p2 = (tel.get("secondPhone") or {}).get("number", "")
+        titulo = (valor.get("title") or "").strip()
+        # Excluir triciclos
+        if es_triciclo(titulo):
+            continue
         fecha_utc = parse_fecha(valor.get("updatedOnToOrder"))
         fecha_hab = fecha_utc.astimezone(TZ_HABANA) if fecha_utc else None
         permalink = valor.get("permalink", "")
@@ -146,20 +165,16 @@ def extraer_anuncios(apollo, categoria):
                 "id": valor.get("id", ""),
                 "categoria": categoria["nombre"],
                 "categoria_clave": categoria["clave"],
-                "titulo": (valor.get("title") or "").strip(),
+                "titulo": titulo,
                 "precio": valor.get("price", ""),
                 "moneda": valor.get("currency", ""),
+                "es_electrica": es_electrica(titulo),
                 "url": f"{BASE_URL}{permalink}" if permalink else "",
                 "fecha_utc": fecha_utc.isoformat() if fecha_utc else "",
                 "fecha_habana": fecha_hab.isoformat() if fecha_hab else "",
-                "provincia": provincias.get(valor.get("provinceId", ""), ""),
-                "municipio": municipios.get(valor.get("municipalityId", ""), ""),
                 "imagenes": valor.get("imagesCount", 0),
                 "vistas": valor.get("viewCount", 0),
-                "telefono1": p1,
-                "telefono2": p2,
                 "promocionado": bool(valor.get("isPromoted", False)),
-                "es_electrica": es_electrica(valor.get("title")),
             }
         )
     return anuncios
@@ -168,7 +183,7 @@ def extraer_anuncios(apollo, categoria):
 # ---------------------------------------------------------------------------
 # Scraping
 # ---------------------------------------------------------------------------
-def scrape_categoria(session, categoria, corte, max_paginas):
+def scrape_categoria(session, categoria, corte, max_paginas, con_imagenes):
     """Recorre las paginas de una categoria hasta superar la fecha de corte."""
     log(f"\n=== {categoria['nombre']} ({categoria['subcategory']}) ===")
     encontrados = []
@@ -178,7 +193,9 @@ def scrape_categoria(session, categoria, corte, max_paginas):
             log(f"  Limite de {max_paginas} paginas alcanzado.")
             break
         try:
-            data = obtener_next_data(session, categoria["subcategory"], page)
+            data = obtener_next_data(
+                session, categoria["subcategory"], page, con_imagenes
+            )
         except Exception as e:
             log(f"  Error en pagina {page}: {e}")
             break
@@ -219,7 +236,7 @@ def scrape_categoria(session, categoria, corte, max_paginas):
 # ---------------------------------------------------------------------------
 # Guardado de datos crudos
 # ---------------------------------------------------------------------------
-def guardar(anuncios, dias):
+def guardar(anuncios, dias, con_imagenes, nombres_categorias):
     SALIDA_DIR.mkdir(parents=True, exist_ok=True)
     ahora = datetime.now(TZ_HABANA)
     sello = ahora.strftime("%Y%m%d_%H%M")
@@ -229,8 +246,9 @@ def guardar(anuncios, dias):
     meta = {
         "fuente": "Revolico",
         "provincia": "La Habana",
-        "categorias": [c["nombre"] for c in CATEGORIAS],
+        "categorias": nombres_categorias,
         "dias": dias,
+        "solo_con_imagen": con_imagenes,
         "generado_habana": ahora.isoformat(),
         "total": len(anuncios),
         "anuncios": anuncios,
@@ -241,9 +259,8 @@ def guardar(anuncios, dias):
     ruta_csv = SALIDA_DIR / f"anuncios_revolico_{sello}.csv"
     columnas = [
         "id", "categoria", "categoria_clave", "titulo", "precio", "moneda",
-        "es_electrica", "url", "fecha_utc", "fecha_habana", "provincia",
-        "municipio", "imagenes", "vistas", "telefono1", "telefono2",
-        "promocionado",
+        "es_electrica", "url", "fecha_utc", "fecha_habana", "imagenes",
+        "vistas", "promocionado",
     ]
     with ruta_csv.open("w", newline="", encoding="utf-8-sig") as fh:
         writer = csv.DictWriter(fh, fieldnames=columnas, extrasaction="ignore")
@@ -254,24 +271,116 @@ def guardar(anuncios, dias):
     return ruta_csv, ruta_json
 
 
+def resumen_tabla(anuncios):
+    """Genera y muestra un resumen tabulado por categoria, y guarda un .md."""
+    from collections import defaultdict
+
+    grupos = defaultdict(list)
+    for a in anuncios:
+        grupos[a["categoria"]].append(a)
+
+    def _num(x):
+        return x if isinstance(x, (int, float)) else None
+
+    filas = []
+    for cat in sorted(grupos):
+        lista = grupos[cat]
+        precios = [_num(a["precio"]) for a in lista]
+        precios = [p for p in precios if p is not None]
+        n = len(lista)
+        minimo = min(precios) if precios else 0
+        maximo = max(precios) if precios else 0
+        promedio = (sum(precios) / len(precios)) if precios else 0
+        elec = sum(1 for a in lista if a["es_electrica"])
+        filas.append((cat, n, elec, minimo, maximo, promedio))
+
+    # Tabla en consola
+    encabezado = f"{'Categoria':<20}{'Anuncios':>9}{'Electricas':>12}{'Min':>8}{'Max':>8}{'Promedio':>10}"
+    log("\n" + encabezado)
+    log("-" * len(encabezado))
+    for cat, n, elec, minimo, maximo, promedio in filas:
+        log(f"{cat:<20}{n:>9}{elec:>12}{minimo:>8.0f}{maximo:>8.0f}{promedio:>10.0f}")
+    total = sum(f[1] for f in filas)
+    log("-" * len(encabezado))
+    log(f"{'TOTAL':<20}{total:>9}")
+
+    # Resumen en Markdown
+    ahora = datetime.now(TZ_HABANA)
+    ruta_md = SALIDA_DIR / f"resumen_revolico_{ahora.strftime('%Y%m%d_%H%M')}.md"
+    lineas = [
+        "# Resumen de anuncios de Revolico - La Habana",
+        "",
+        f"- **Generado (La Habana):** {ahora.strftime('%Y-%m-%d %H:%M')}",
+        f"- **Total de anuncios:** {total}",
+        "",
+        "| Categoria | Anuncios | Electricas | Precio min | Precio max | Precio promedio |",
+        "|-----------|---------:|-----------:|-----------:|-----------:|----------------:|",
+    ]
+    for cat, n, elec, minimo, maximo, promedio in filas:
+        lineas.append(
+            f"| {cat} | {n} | {elec} | {minimo:.0f} | {maximo:.0f} | {promedio:.0f} |"
+        )
+    ruta_md.write_text("\n".join(lineas) + "\n", encoding="utf-8")
+    log(f"\nResumen tabulado guardado en:\n  - {ruta_md}")
+
+
 # ---------------------------------------------------------------------------
 # Principal
 # ---------------------------------------------------------------------------
 def main():
-    parser = argparse.ArgumentParser(description="Scraper de anuncios de Revolico (La Habana)")
-    parser.add_argument("--dias", type=int, default=7, help="Dias hacia atras (por defecto 7)")
-    parser.add_argument("--max-paginas", type=int, default=0, help="Maximo de paginas por categoria (0 = sin limite)")
+    parser = argparse.ArgumentParser(
+        description="Scraper de anuncios de Revolico (La Habana)"
+    )
+    parser.add_argument(
+        "--dias", type=int, default=7, help="Dias hacia atras (por defecto 7)"
+    )
+    parser.add_argument(
+        "--categorias",
+        default=",".join(CATEGORIAS_POR_DEFECTO),
+        help="Categorias separadas por coma: motos, electricas, bicicletas "
+        "(por defecto: motos,electricas)",
+    )
+    parser.add_argument(
+        "--sin-imagenes",
+        action="store_true",
+        help="Incluir anuncios sin imagen (por defecto solo con imagen)",
+    )
+    parser.add_argument(
+        "--max-paginas",
+        type=int,
+        default=0,
+        help="Maximo de paginas por categoria (0 = sin limite)",
+    )
     args = parser.parse_args()
+
+    con_imagenes = not args.sin_imagenes
+
+    claves = [c.strip() for c in args.categorias.split(",") if c.strip()]
+    seleccion = {}
+    for clave in claves:
+        if clave in CATEGORIAS:
+            seleccion[clave] = CATEGORIAS[clave]
+        else:
+            log(f"Aviso: categoria desconocida '{clave}' (ignorada)")
+    if not seleccion:
+        log("No hay categorias validas. Usa: motos, electricas, bicicletas")
+        sys.exit(1)
 
     ahora = datetime.now(TZ_HABANA)
     corte = ahora - timedelta(days=args.dias)
     log(f"Zona horaria: America/Havana ({ahora.strftime('%Y-%m-%d %H:%M')})")
     log(f"Rango: desde {corte.strftime('%Y-%m-%d %H:%M')} hasta {ahora.strftime('%Y-%m-%d %H:%M')}")
+    log(f"Categorias: {', '.join(v['nombre'] for v in seleccion.values())}")
+    log(f"Solo con imagen: {con_imagenes}")
 
     session = requests.Session()
     todos = []
-    for categoria in CATEGORIAS:
-        todos.extend(scrape_categoria(session, categoria, corte, args.max_paginas))
+    for clave, categoria in seleccion.items():
+        todos.extend(
+            scrape_categoria(
+                session, categoria, corte, args.max_paginas, con_imagenes
+            )
+        )
 
     # Eliminar duplicados por id
     unicos = {}
@@ -281,7 +390,13 @@ def main():
 
     log(f"\nTotal de anuncios unicos en rango: {len(todos)}")
     if todos:
-        guardar(todos, args.dias)
+        guardar(
+            todos,
+            args.dias,
+            con_imagenes,
+            [v["nombre"] for v in seleccion.values()],
+        )
+        resumen_tabla(todos)
     else:
         log("No se encontraron anuncios en el rango indicado.")
 
