@@ -1,5 +1,9 @@
 # Entrevista — Precios y motos más vendidas
 
+- **Fecha:** 2026-10-22
+- **Entrevistado:** —
+- **Lugar:** La Habana, Cuba
+
 ## La moto que más se vende
 
 - **Souca**
@@ -15,6 +19,6 @@
 - Modelo scooter automático
 - Sasa
 - Multiservis
-- Yati Yadea
+- Yati / Yadea
 
 **Motos eléctricas con mayor demanda.**
