@@ -52,13 +52,13 @@ El proyecto sigue un flujo de trabajo típico de ciencia de datos:
 
 | Fuente | Descripción | Cantidad |
 |--------|-------------|----------|
-| 📢 **Revolico** | Anuncios clasificados de La Habana (últimos 7 días) | 6 466 |
+| 📢 **Revolico** | Anuncios clasificados de La Habana (30 más recientes) | 30 |
 | 📝 **Encuestas** | Encuestas aplicadas a propietarios y compradores | — |
 | 👥 **Grupos especializados** | Grupos de Telegram u otros foros | — |
 | 🔧 **Importadoras** | Importadoras y comercios del sector | — |
 | 🛠️ **Talleres** | Talleres de reparación y venta | — |
 
-> **Revolico** (única fuente con datos actualmente): 6 466 anuncios — 5 294 de motos eléctricas y 1 172 de motos de combustión.
+> **Revolico** (única fuente con datos actualmente): 30 anuncios — 7 de combustión, 19 eléctricos (incluye bicicletas) y 4 patinetes.
 
 > Los datos recolectados se almacenan en la carpeta [`datos/`](datos/) organizados por fuente.
 
@@ -79,7 +79,8 @@ Mercado-de-Motos/
 │   └── informes/               # Informes parciales y finales
 │
 ├── datos/                      # Datos del proyecto por fuente
-│   ├── revolico/               # Datos extraídos de Revolico
+│   ├── revolico/               # Datos crudos extraídos de Revolico
+│   ├── limpios/                # Datos limpios y normalizados
 │   ├── encuestas/              # Datos de encuestas
 │   ├── telegram/               # Datos de grupos especializados
 │   ├── importadoras/           # Datos de importadoras
@@ -90,6 +91,8 @@ Mercado-de-Motos/
 │   └── Tiendas de motos electricas y de combustion/
 │
 ├── graficos/                   # Gráficos generados por el análisis
+│
+├── notebooks/                  # Notebooks de análisis (EDA)
 │
 ├── src/                        # Código fuente del proyecto
 │   ├── scraping/               # Extracción automatizada de datos
@@ -120,20 +123,20 @@ Mercado-de-Motos/
 
 ### Motos más demandadas por categoría (Revolico — La Habana)
 
-Datos de **6 466 anuncios** publicados en Revolico (La Habana, últimos 7 días). La marca "más demandada" es la de mayor cantidad de anuncios en su categoría.
+Datos de los **30 anuncios más recientes** publicados en Revolico (La Habana). La marca "más demandada" es la de mayor cantidad de anuncios en su categoría.
 
 | Categoría | Marca más demandada | Rango de precio (USD) | Anuncios | Enlace Revolico |
 |-----------|---------------------|----------------------:|---------:|-----------------|
-| Moto de combustión | ITALY | 1 950 – 3 040 | 62 | [ver](https://www.revolico.com/item/moto-automatica-italy-58182894) |
-| Moto eléctrica | TOPMAQ | 800 – 4 600 | 257 | [ver](https://www.revolico.com/item/motos-topmaq-f3-57951474) |
-| Bicicleta eléctrica | BUCATTI | 450 – 1 100 | 32 | [ver](https://www.revolico.com/item/se-vende-bicicleta-electrica-bucatti-detalle-la-bateria-necesita-reparacion-57692228) |
-| Patinete eléctrico | JMD | 650 – 800 | 31 | [ver](https://www.revolico.com/item/patineta-electrica-jmd-58180221) |
+| Moto de combustión | ITALY | 1 890 – 3 260 | 7 | [ver](https://www.revolico.com/item/moto-58260656) |
+| Moto eléctrica | TOPMAQ | 680 – 2 980 | 5 | [ver](https://www.revolico.com/item/motos-xindi-con-una-oferta-especial-precio-1250-usd-motos-de-baterias-de-gel-mejoradas-dks-58297167) |
+| Bicicleta eléctrica | TOPMAQ | 490 – 1 830 | 14 | [ver](https://www.revolico.com/item/bicicleta-electrica-modelo-t5-0km-57937628) |
+| Patinete eléctrico | CHALLENGER | 770 | 4 | [ver](https://www.revolico.com/item/patineta-electrica-challenger-58196398) |
 
 ### Evolución 2024–2026: eléctricas vs combustión
 
 ![Evolución del mercado de motos 2024-2026](graficos/evolucion_motos_2024_2026.svg)
 
-Anuncios en Revolico (La Habana) según el **año de modelo** indicado en el título. Las motos eléctricas pasan de 19 anuncios (modelo 2025) a 674 (modelo 2026), mientras las de combustión se mantienen bajas (20 → 88).
+Anuncios en Revolico (La Habana) según el **año de modelo** indicado en el título. El gráfico compara la cantidad de anuncios de motos eléctricas frente a las de combustión.
 
 > Sección en desarrollo. Aquí se documentarán los hallazgos principales del análisis:
 >

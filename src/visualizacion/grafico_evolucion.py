@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Grafico de evolucion 2024-2026 (por anio de modelo en el titulo).
+Gráfico de evolución 2024-2026 (por año de modelo en el título).
 
 Genera un SVG (sin dependencias externas) comparando la cantidad de anuncios
-de motos ELECTRICAS frente a las de COMBUSTION segun el anio de modelo que
-aparece en el titulo del anuncio de Revolico.
+de motos eléctricas frente a las de combustión según el año de modelo que
+aparece en el título del anuncio de Revolico.
 
-Fuente: el JSON de datos crudos mas reciente en `datos/revolico/`.
+Fuente: el JSON de datos crudos más reciente en `datos/revolico/`.
 
 Uso:
     python grafico_evolucion.py
@@ -91,11 +91,11 @@ def svg(conteo):
     partes.append(
         f'<text x="{ancho/2}" y="34" text-anchor="middle" font-size="20" '
         f'font-weight="bold" fill="{COLOR_TEXTO}">'
-        f"Evolucion del mercado de motos 2024-2026 (La Habana)</text>"
+        f"Evolución del mercado de motos 2024-2026 (La Habana)</text>"
     )
     partes.append(
         f'<text x="{ancho/2}" y="58" text-anchor="middle" font-size="13" '
-        f'fill="#666">Anuncios en Revolico segun anio de modelo</text>'
+        f'fill="#666">Anuncios en Revolico según año de modelo</text>'
     )
 
     # Ejes / lineas guia
@@ -148,16 +148,16 @@ def svg(conteo):
     # Etiqueta eje X
     partes.append(
         f'<text x="{(izq+der)/2}" y="{inf+52}" text-anchor="middle" '
-        f'font-size="13" fill="#666">Anio de modelo</text>'
+        f'font-size="13" fill="#666">Año de modelo</text>'
     )
 
     # Leyenda
     lx, ly = izq, 20
     partes.append(f'<rect x="{lx}" y="{ly-11}" width="14" height="14" fill="{COLOR_ELECTRICAS}" rx="2"/>')
-    partes.append(f'<text x="{lx+20}" y="{ly+1}" font-size="13" fill="{COLOR_TEXTO}">Motos electricas</text>')
+    partes.append(f'<text x="{lx+20}" y="{ly+1}" font-size="13" fill="{COLOR_TEXTO}">Motos eléctricas</text>')
     lx2 = lx + 170
     partes.append(f'<rect x="{lx2}" y="{ly-11}" width="14" height="14" fill="{COLOR_COMBUSTION}" rx="2"/>')
-    partes.append(f'<text x="{lx2+20}" y="{ly+1}" font-size="13" fill="{COLOR_TEXTO}">Motos de combustion</text>')
+    partes.append(f'<text x="{lx2+20}" y="{ly+1}" font-size="13" fill="{COLOR_TEXTO}">Motos de combustión</text>')
 
     partes.append("</svg>")
     return "\n".join(partes)
@@ -169,10 +169,10 @@ def main():
     ruta = GRAFICOS_DIR / "evolucion_motos_2024_2026.svg"
     ruta.write_text(svg(conteo), encoding="utf-8")
 
-    print("Anio | Electricas | Combustion")
+    print("Año | Eléctricas | Combustión")
     for anio in ANIOS:
         print(f"{anio} | {conteo[ELECTRICAS][anio]:>10} | {conteo[COMBUSTION][anio]:>10}")
-    print(f"\nGrafico guardado en: {ruta}")
+    print(f"\nGráfico guardado en: {ruta}")
 
 
 if __name__ == "__main__":
