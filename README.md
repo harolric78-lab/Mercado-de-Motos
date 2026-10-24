@@ -132,11 +132,6 @@ Datos de los **30 anuncios más recientes** publicados en Revolico (La Habana). 
 | Bicicleta eléctrica | TOPMAQ | 490 – 1 830 | 14 | [ver](https://www.revolico.com/item/bicicleta-electrica-modelo-t5-0km-57937628) |
 | Patinete eléctrico | CHALLENGER | 770 | 4 | [ver](https://www.revolico.com/item/patineta-electrica-challenger-58196398) |
 
-### Evolución 2024–2026: eléctricas vs combustión
-
-![Evolución del mercado de motos 2024-2026](graficos/evolucion_motos_2024_2026.svg)
-
-Anuncios en Revolico (La Habana) según el **año de modelo** indicado en el título. El gráfico compara la cantidad de anuncios de motos eléctricas frente a las de combustión.
 
 > Sección en desarrollo. Aquí se documentarán los hallazgos principales del análisis:
 >
