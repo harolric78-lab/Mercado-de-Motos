@@ -53,14 +53,15 @@ El proyecto sigue un flujo de trabajo típico de ciencia de datos:
 | Fuente | Descripción | Cantidad |
 |--------|-------------|----------|
 | 📢 **Revolico** | Anuncios clasificados de La Habana (30 más recientes) | 30 |
-| 📝 **Encuestas** | Encuestas aplicadas a propietarios y compradores | — |
+| 🏭 **VEDCA** | Catálogo oficial de fábrica (vedca.cu), sin precios publicados | 7 vehículos |
+| 🛒 **Islagrande** | Tienda online de VEDCA con precios en USD | 14 precios válidos |
+| 📝 **Entrevistas** | Entrevistas a vendedores y propietarios | 1 |
 | 👥 **Grupos especializados** | Grupos de Telegram u otros foros | — |
-| 🔧 **Importadoras** | Importadoras y comercios del sector | — |
 | 🛠️ **Talleres** | Talleres de reparación y venta | — |
 
-> **Revolico** (única fuente con datos actualmente): 30 anuncios — 7 de combustión, 19 eléctricos (incluye bicicletas) y 4 patinetes.
+> **Corte del 26/10/2026:** Revolico 30 anuncios — 8 de combustión, 21 eléctricos (incluye bicicletas) y 1 patinete. VEDCA publica 7 vehículos en catálogo **sin precios** (la venta es por tienda o fábrica). Islagrande lista 14 precios válidos entre **601 y 2 096 USD**.
 
-> Los datos recolectados se almacenan en la carpeta [`datos/`](datos/) organizados por fuente.
+> Los datos crudos y limpios se almacenan en [`datos/`](datos/) (por fuente) y en [`data/`](data/) (pipeline automatizado `raw/ → processed/ → clean/`).
 
 ---
 
@@ -74,30 +75,37 @@ Mercado-de-Motos/
 │
 ├── docs/                       # Documentación del proyecto
 │   ├── metodologia/            # Descripción del método de trabajo
-│   ├── entrevistas/            # Guías y actas de entrevistas
-│   ├── encuestas/              # Formularios y resultados de encuestas
-│   └── informes/               # Informes parciales y finales
+│   └── informes/               # Informes parciales y finales (fechados)
 │
-├── datos/                      # Datos del proyecto por fuente
-│   ├── revolico/               # Datos crudos extraídos de Revolico
+├── datos/                      # Datasets por fuente (versionados)
+│   ├── revolico/               # Anuncios extraídos de Revolico
 │   ├── limpios/                # Datos limpios y normalizados
-│   ├── encuestas/              # Datos de encuestas
-│   ├── telegram/               # Datos de grupos especializados
-│   ├── importadoras/           # Datos de importadoras
-│   └── talleres/               # Datos de talleres
+│   ├── entrevistas/            # Entrevistas cualitativas
+│   ├── tiendas_online/         # Precios de tiendas (Islagrande)
+│   ├── importadoras/           # Importadoras (carpeta general, pendiente)
+│   ├── importadora_vedca/      # Catálogo VEDCA (y solimport/pendiente)
+│   ├── telegram/               # Grupos especializados (pendiente)
+│   ├── talleres/               # Datos de talleres (pendiente)
+│   └── _reemplazados/          # Versiones anteriores reemplazadas
+│
+├── data/                       # Pipeline automatizado de la skill revolico-scraper
+│   ├── raw/                    # Datos crudos (evidencia)
+│   ├── processed/              # Datos procesados
+│   └── clean/                  # Datos consolidados
 │
 ├── imagenes/                   # Fotografías de referencia
-│   ├── Importadora de motos/
-│   └── Tiendas de motos electricas y de combustion/
 │
 ├── graficos/                   # Gráficos generados por el análisis
+├── reports/                    # Informe ejecutivo de mercado + gráficos
+├── journal/                    # Bitácora de desarrollo
+├── hands-off/                  # Entregables listos para presentar
 │
 ├── notebooks/                  # Notebooks de análisis (EDA)
 │
 ├── src/                        # Código fuente del proyecto
-│   ├── scraping/               # Extracción automatizada de datos
+│   ├── scraping/               # revolico/, vedca.py, islagrande.py
 │   ├── limpieza_datos/         # Limpieza y normalización
-│   ├── analisis/               # Análisis estadístico
+│   ├── analisis/               # Análisis estadístico (ETL, outliers, top30)
 │   └── visualizacion/          # Generación de gráficos
 │
 ├── presentacion/               # Presentación del proyecto
@@ -127,23 +135,32 @@ Datos de los **30 anuncios más recientes** publicados en Revolico (La Habana). 
 
 | Categoría | Marca más demandada | Rango de precio (USD) | Anuncios | Enlace Revolico |
 |-----------|---------------------|----------------------:|---------:|-----------------|
-| Moto de combustión | ITALY | 1 890 – 3 260 | 7 | [ver](https://www.revolico.com/item/moto-58260656) |
-| Moto eléctrica | TOPMAQ | 680 – 2 980 | 5 | [ver](https://www.revolico.com/item/motos-xindi-con-una-oferta-especial-precio-1250-usd-motos-de-baterias-de-gel-mejoradas-dks-58297167) |
-| Bicicleta eléctrica | TOPMAQ | 490 – 1 830 | 14 | [ver](https://www.revolico.com/item/bicicleta-electrica-modelo-t5-0km-57937628) |
-| Patinete eléctrico | CHALLENGER | 770 | 4 | [ver](https://www.revolico.com/item/patineta-electrica-challenger-58196398) |
+| Moto de combustión | ITALY | 1 670 – 2 800 | 8 | [ver](https://www.revolico.com/item/motos-por-cantidad-58383759) |
+| Moto eléctrica | TORVAN | 1 680 – 2 580 | 4 | [ver](https://www.revolico.com/item/moto-electrica-volta-x-57960251) |
+| Bicicleta eléctrica | VEDCA | 450 – 2 000 | 17 | [ver](https://www.revolico.com/item/bicimoto-58121135) |
+| Patinete eléctrico | — | 340 | 1 | [ver](https://www.revolico.com/item/patineta-electrica-pegable-57907517) |
 
 
-> Sección en desarrollo. Aquí se documentarán los hallazgos principales del análisis:
->
-> - Crecimiento de las motos eléctricas frente a las de combustión.
-> - Listado de motos con precios anormalmente altos.
-> - Tablas y gráficos comparativos por marca, modelo y tipo.
+### Hallazgos principales (corte del 26 de octubre de 2026)
+
+1. **Las motos eléctricas dominan la oferta publicada.** En el corte histórico de 6 249 anuncios (10–22 de octubre), el **82,0 %** de la oferta es eléctrica (motos eléctricas 37,1 %, bicimotos 27,9 %, bicicletas eléctricas 13,4 % y patinetes 3,6 %) frente al **18,0 %** de combustión. En los 30 anuncios más recientes la proporción se mantiene: 21 eléctricos vs. 8 de combustión.
+2. **Diferencial de precio.** En los 30 anuncios más recientes, la mediana de combustión es **2 600 USD** frente a **1 450 USD** de las eléctricas (rango total: 340–2 800 USD). En el corte histórico: 2 220 USD (combustión) vs. 2 000 USD (eléctricas).
+3. **Precios atípicos.** El detector IQR/Z-score del 26/10 **no encontró precios extremadamente altos**: el único anuncio marcado es un lote de combustión a **1 670 USD**, por debajo del rango habitual del grupo. El máximo del corte histórico es 6 600 USD (motos eléctricas).
+4. **Marcas dominantes.** Combustión: **ITALY** (RX Combat, 50 anuncios). Eléctricas: **TOPMAQ** (181), seguida de VEDCA (110) y MOUNTAIN (103). Bicimotos y patinetes: **JMD**. En los anuncios más recientes también aparecen TORVAN y VEDCA.
+5. **Precio de fábrica vs. mercado.** VEDCA **no publica precios** en su catálogo (7 vehículos): la referencia de tienda la da Islagrande, con eléctricas entre **601 y 2 096 USD**, y una Hongli HL-125 de 125 cc a 1 474 USD.
+6. **Rentabilidad.** Con costo operativo del 10 %, el arbitraje local es estrecho: el ROI supera el 20 % solo comprando por debajo del P10 (TOPMAQ 28,1 %; Suzuki GN125 23,4 %). Detalle en [`reports/README.md`](reports/README.md).
+
+> Informes completos: [`docs/informes/`](docs/informes/) · Entregable ejecutivo: [`hands-off/`](hands-off/)
 
 ---
 
 ## ✅ Conclusiones
 
-> Sección en desarrollo. Se redactarán las conclusiones a partir de los resultados obtenidos, respondiendo a las preguntas de análisis planteadas.
+1. **¿Cómo está creciendo el mercado de motos eléctricas frente al de combustión?** Sobre la oferta publicada, las eléctricas ya son **cuatro de cada cinco anuncios** (82 % vs. 18 %) y mantienen esa proporción en los anuncios más recientes. La evidencia es de **oferta activa**, no de ventas cerradas: no hay todavía una serie temporal de transacciones que permita medir el crecimiento de las ventas.
+2. **¿Qué motos tienen precios anormalmente altos?** En el corte reciente **no hay precios extremadamente altos**: el rango llega a 2 800 USD y el único atípico detectado está por debajo (1 670 USD). En el corte histórico el máximo es 6 600 USD en una moto eléctrica, sin cola de precios fuera de control.
+3. **Síntesis de mercado.** El mercado de La Habana lo mueven **TOPMAQ** (eléctricas) y **JMD** (bicimotos/patinetes) en volumen, e **ITALY** en combustión. Los precios son altos y estables; la oportunidad de negocio está en **comprar por debajo del P10**, **importar** o **diferenciarse con servicio**, no en el arbitraje directo.
+
+> Desarrollo completo en [`reports/README.md`](reports/README.md) (informe ejecutivo con rankings, precios, rentabilidad y riesgos).
 
 ---
 
