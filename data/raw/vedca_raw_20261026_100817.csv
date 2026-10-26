@@ -1,0 +1,23 @@
+filtro,imagen,ficha_relativa,url,tienda,titulo_ficha,categoria,tipo_vehiculo,incluido,motivo_exclusion
+filter-tri,assets/img/portfolio/tri-C800.jpg,c800.html,http://www.vedca.cu/c800.html,,Triciclo Eléctrico,,,False,triciclo_fuera_de_lista_blanca
+filter-jug,assets/img/portfolio/jug-618.jpg,fb618.html,http://www.vedca.cu/fb618.html,,Moto Eléctrica,,,False,juguete_fuera_de_lista_blanca
+filter-moto,assets/img/portfolio/moto-4202.jpg,lt4202.html,http://www.vedca.cu/lt4202.html,,Moto Eléctrica,electrica,moto_electrica,True,
+filter-ppa,assets/img/portfolio/neu-r13.jpg,,,Islagrande,,,,False,repuesto_fuera_de_lista_blanca
+filter-bici,assets/img/portfolio/bici-4209.jpg,lt4209.html,http://www.vedca.cu/lt4209.html,,Bicicleta Eléctrica,electrica,bicicleta_electrica,True,
+filter-moto,assets/img/portfolio/moto-4207.jpg,,,,,electrica,moto_electrica,True,
+filter-tri,assets/img/portfolio/tri-sh001.jpg,,,,,,,False,triciclo_fuera_de_lista_blanca
+filter-ppa,assets/img/portfolio/neu-r10.jpg,,,,,,,False,repuesto_fuera_de_lista_blanca
+filter-jug,assets/img/portfolio/jug-6299.jpg,,,Islagrande,,,,False,juguete_fuera_de_lista_blanca
+filter-moto,assets/img/portfolio/moto-4206.jpg,lt4206.html,http://www.vedca.cu/lt4206.html,,Moto Eléctrica,electrica,moto_electrica,True,
+filter-tri,assets/img/portfolio/tri-4211.jpg,,,,,,,False,triciclo_fuera_de_lista_blanca
+filter-ppa,assets/img/portfolio/neu-r12.jpg,,,,,,,False,repuesto_fuera_de_lista_blanca
+filter-ppa,assets/img/portfolio/bat-12v22a.jpg,,,,,,,False,repuesto_fuera_de_lista_blanca
+filter-tri,assets/img/portfolio/tri-C400.jpg,c400.html,http://www.vedca.cu/c400.html,,Triciclo Eléctrico,,,False,triciclo_fuera_de_lista_blanca
+filter-bici,assets/img/portfolio/pat-S5.jpg,,,,,patinete,patinete_electrico,True,
+filter-moto,assets/img/portfolio/moto-4203.jpg,,,,,electrica,moto_electrica,True,
+filter-jug,assets/img/portfolio/jug-6677.jpg,,,Islagrande,,,,False,juguete_fuera_de_lista_blanca
+filter-cuat,assets/img/portfolio/cua-T9.jpg,,,,,,,False,cuatriciclo_fuera_de_lista_blanca
+filter-tri,assets/img/portfolio/tri-L01.jpg,,,,,,,False,triciclo_fuera_de_lista_blanca
+filter-bici,assets/img/portfolio/pat-S6.jpg,,,,,patinete,patinete_electrico,True,
+filter-jug,assets/img/portfolio/jug-617.jpg,,,Islagrande,,,,False,juguete_fuera_de_lista_blanca
+filter-ppa,assets/img/portfolio/ppa-espejos.jpg,,,,,,,False,repuesto_fuera_de_lista_blanca
