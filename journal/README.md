@@ -36,3 +36,13 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 
 ## 📅 23 - 24 de octubre de 2026
 - **Consolidación y documentación:** Actualización de la documentación principal, integración de la bitácora en el `journal` y verificación general del estado del proyecto para su presentación final.
+
+---
+
+## 📅 26 de octubre de 2026
+- **Actualización del corte de Revolico (09:56):** nuevo scrapeo de los 30 anuncios más recientes de La Habana con la skill `revolico-scraper` (raw → processed → limpio → métricas → informes `tabla_top30`, `precios_atipicos`, `precios_categorias` → gráficos → README). Se reemplazaron los datos del 22/10 (archivos anteriores movidos a `datos/_reemplazados/20261026_095603/`). Resultado: 8 anuncios de combustión, 21 eléctricos y 1 patinete.
+- **Catálogo VEDCA (10:08):** nuevo scraper `src/scraping/vedca.py` para vedca.cu. 22 productos consultados, 7 vehículos en lista blanca (5 eléctricos, 2 patinetes). La fábrica **no publica precios**; salida en `docs/informes/vedca_catalogo_20261026_100817.md`.
+- **Precios Islagrande (11:45 → 18:55):** nuevo scraper `src/scraping/islagrande.py` (tienda online de VEDCA, moneda USD). 33 productos consultados, 15 en lista blanca, **14 precios válidos** (601–2 096 USD). Correcciones posteriores: precios implausibles (< 100 USD, p. ej. 5,06 USD) marcados `precio_valido: false`, precios "antes" incoherentes descartados y productos repetidos por sede deduplicados en el informe.
+- **Corrección de documentación:** revertido un error tipográfico en la tabla de rentabilidad de `reports/README.md` (compra P25 de ITALY RX Combat: 480 → 2 480 USD).
+- **README:** se completaron las secciones de **Resultados/Hallazgos** y **Conclusiones** (respondiendo las dos preguntas de análisis), se actualizó la tabla de fuentes (Revolico, VEDCA, Islagrande, entrevistas) y el árbol de estructura del proyecto (`data/`, `journal/`, `hands-off/`, `reports/`).
+- **Entregable ejecutivo:** creado `hands-off/resumen_ejecutivo_20261026.md` con cifras clave, hallazgos y recomendaciones.
