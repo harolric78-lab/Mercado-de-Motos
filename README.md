@@ -86,6 +86,7 @@ Mercado-de-Motos/
 │   ├── importadora_vedca/      # Catálogo VEDCA (y solimport/pendiente)
 │   ├── telegram/               # Grupos especializados (pendiente)
 │   ├── talleres/               # Datos de talleres (pendiente)
+│   ├── codigos/                # Scripts Python utilizados (copias de entrega)
 │   └── _reemplazados/          # Versiones anteriores reemplazadas
 │
 ├── data/                       # Pipeline automatizado de la skill revolico-scraper
