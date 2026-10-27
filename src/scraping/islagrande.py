@@ -2,7 +2,7 @@
 """Scraper de precios de Islagrande (islagrande.com), tienda online de VEDCA.
 
 Extrae los precios en USD de motos y bicicletas electricas y de combustion,
-y deja los triciclos y repuestos unicamente en data/raw como evidencia cruda.
+y deja los triciclos y repuestos unicamente en datos/raw como evidencia cruda.
 
 Fuentes consultadas:
   - categoria electricos (2 paginas)
@@ -11,8 +11,8 @@ Fuentes consultadas:
   - enlaces del sitemap y portada que apunten a vehiculos no listados
 
 Salidas (sello AAAAMMDD_HHMMSS):
-  data/raw/islagrande_raw_<sello>.json|csv
-  data/processed/islagrande_processed_<sello>.json|csv
+  datos/raw/islagrande_raw_<sello>.json|csv
+  datos/processed/islagrande_processed_<sello>.json|csv
   datos/tiendas_online/islagrande/islagrande_<sello>.json|csv
   docs/informes/islagrande_precios_<sello>.md
   logs/islagrande_<sello>.log
@@ -509,8 +509,8 @@ def main() -> int:
         incluidos.append(reg)
 
     # Salidas ---------------------------------------------------------------
-    raw_dir = raiz / "data" / "raw"
-    proc_dir = raiz / "data" / "processed"
+    raw_dir = raiz / "datos" / "raw"
+    proc_dir = raiz / "datos" / "processed"
     dataset_dir = raiz / "datos" / "tiendas_online" / "islagrande"
     informes_dir = raiz / "docs" / "informes"
     logs_dir = raiz / "logs"
@@ -632,13 +632,13 @@ def main() -> int:
         "",
         "- Precios en **USD**, moneda activada en la tienda antes de la captura.",
         "- Solo se listan precios **validos (>= 100 USD)**; los importes",
-        "  implausibles se conservan en `data/raw/` como evidencia y quedan",
-        "  marcados `precio_valido: false` en `data/processed/`.",
+        "  implausibles se conservan en `datos/raw/` como evidencia y quedan",
+        "  marcados `precio_valido: false` en `datos/processed/`.",
         f"- Filas repetidas (mismo producto publicado en varias sedes): {duplicados}"
         + " omitidas en esta tabla."
         if duplicados
         else "- Sin productos repetidos en el catalogo.",
-        "- Los **triciclos** y los repuestos/accesorios quedan solo en `data/raw/`",
+        "- Los **triciclos** y los repuestos/accesorios quedan solo en `datos/raw/`",
         "  como evidencia, fuera del analisis.",
         "- Los productos sin precio publicado se marcan `sin_precio` y no entran",
         "  a las metricas.",

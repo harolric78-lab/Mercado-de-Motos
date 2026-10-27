@@ -11,12 +11,12 @@ electricos:
   - distribucion por rango de precios
 
 Genera:
-  - data/processed/metricas_revolico_<sello>.json / .csv
+  - datos/processed/metricas_revolico_<sello>.json / .csv
   - docs/informes/precios_categorias_<sello>.md
 
 Uso:
     python analyze.py
-    python analyze.py --archivo data/processed/revolico_processed_XXXX.json
+    python analyze.py --archivo datos/processed/revolico_processed_XXXX.json
 """
 
 from __future__ import annotations
@@ -186,7 +186,7 @@ def main():
     ap = argparse.ArgumentParser(description="Metricas de precios de Revolico")
     ap.add_argument("--archivo", default=None, help="JSON procesado de entrada")
     ap.add_argument("--proyecto", default=None, help="Ruta raiz del proyecto")
-    ap.add_argument("--entrada", default=None, help="Carpeta data/processed")
+    ap.add_argument("--entrada", default=None, help="Carpeta datos/processed")
     ap.add_argument("--salida", default=None, help="Carpeta de salida de metricas")
     args = ap.parse_args()
 

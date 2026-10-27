@@ -54,3 +54,10 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Limpieza de la base histórica:** saneados in place 26 ficheros `.json`/`.csv` bajo `data/` y `datos/` (raw, processed, clean, tiendas_online, _reemplazados). Verificación final: **0 contactos restantes**, JSON válidos.
 - **ETL + informe regenerados con el corte del 26/10:** el ETL ahora lee también los cortes de la skill en la raíz de `data/raw/` (`revolico_raw_*.json`). Nuevas cifras: **6 643 brutos → 6 278 anuncios únicos** (5 714 con precio USD, 91,0 %), ventana 10–26 de octubre (17 días, 3 cortes: 17, 22 y 26). El informe (`reports/README.md`) y sus gráficos se regeneraron; el encabezado y la ventana ahora se calculan desde los datos.
 - **Cifras actualizadas:** README principal y `hands-off/resumen_ejecutivo_20261026.md` alineados con el nuevo corte (RX Combat 51 anuncios, TOPMAQ 182, JMD bicimoto 175, ROI TOPMAQ 27,9 %).
+
+---
+
+## 📅 27 de octubre de 2026 — Unificación de `data/` y `datos/`
+- **Estructura unificada:** eliminada la carpeta `data/`; todo vive ahora en `datos/` (pipeline `raw/ → processed/ → clean/` junto a las fuentes por nombre: `revolico/`, `limpios/`, `tiendas_online/`, `importadora_vedca/`, `entrevistas/`, `codigos/`, etc.). Movimientos con `git mv` para conservar el historial.
+- **Código actualizado:** rutas en `common.py` (paths del pipeline), `scrape.py`, `clean.py`, `analyze.py`, `pipeline.py`, `islagrande.py`, `vedca.py`, `etl_mercado.py`, `informe_mercado.py` y `contactos.py`; skill `revolico-scraper` (SKILL.md, README, esquema y scripts) y árbol del README principal.
+- **Verificación:** ETL e informe regenerados sin errores con las nuevas rutas (mismas cifras: 6 278 anuncios); `py_compile` de todo `src/` OK; cero referencias residuales a `data/` en el código vivo.

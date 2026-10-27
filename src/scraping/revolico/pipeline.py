@@ -5,13 +5,13 @@ Pipeline completo de actualizacion de la base de datos de Revolico.
 
 Ejecuta, en orden:
 
-  1. Scrape   -> data/raw/revolico_raw_<sello>.json|csv   (auditoria, sin limpiar)
-  2. Limpieza-> data/processed/revolico_processed_<sello>.json|csv
+  1. Scrape   -> datos/raw/revolico_raw_<sello>.json|csv   (auditoria, sin limpiar)
+  2. Limpieza-> datos/processed/revolico_processed_<sello>.json|csv
   3. Reemplazo del dataset del proyecto:
        datos/revolico/anuncios_revolico_<sello>.json|csv
        datos/limpios/revolico_limpio_<sello>.json|csv
      (los archivos anteriores se archivan en datos/_reemplazados/<sello>/)
-  4. Analisis -> data/processed/metricas_revolico_<sello>.json|csv
+  4. Analisis -> datos/processed/metricas_revolico_<sello>.json|csv
                  docs/informes/precios_categorias_<sello>.md
   5. Reportes y graficos del proyecto:
        src/analisis/precios_atipicos.py, src/analisis/top30_recientes.py,

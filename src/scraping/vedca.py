@@ -5,11 +5,11 @@ Extrae el catalogo de productos de Vehiculos Electricos del Caribe (VEDCA),
 descarga las fichas tecnicas de cada producto y aplica la lista blanca del
 proyecto: solo motos electricas, bicicletas electricas y patinetes
 electricos. Triciclos, cuatriciclos, juguetes y repuestos quedan unicamente
-en data/raw como evidencia cruda.
+en datos/raw como evidencia cruda.
 
 Salidas (sello AAAAMMDD_HHMMSS):
-  data/raw/vedca_raw_<sello>.json|csv
-  data/processed/vedca_processed_<sello>.json|csv
+  datos/raw/vedca_raw_<sello>.json|csv
+  datos/processed/vedca_processed_<sello>.json|csv
   datos/importadora_vedca/vedca_catalogo_<sello>.json|csv
   docs/informes/vedca_catalogo_<sello>.md
   logs/vedca_<sello>.log
@@ -342,8 +342,8 @@ def main() -> int:
         incluidos.append(reg)
 
     # Guardar salidas -------------------------------------------------------
-    raw_dir = raiz / "data" / "raw"
-    proc_dir = raiz / "data" / "processed"
+    raw_dir = raiz / "datos" / "raw"
+    proc_dir = raiz / "datos" / "processed"
     dataset_dir = raiz / "datos" / "importadora_vedca"
     informes_dir = raiz / "docs" / "informes"
     logs_dir = raiz / "logs"
@@ -463,7 +463,7 @@ def main() -> int:
         "- Los precios de estos modelos se obtienen de dichas tiendas y se",
         "  contrastan con los anuncios de Revolico en el analisis.",
         "- Los productos fuera de la lista blanca (triciclos, cuatriciclos,",
-        "  juguetes y repuestos) solo se conservan en `data/raw/` como evidencia.",
+        "  juguetes y repuestos) solo se conservan en `datos/raw/` como evidencia.",
         "",
     ]
     informe = informes_dir / f"vedca_catalogo_{sello}.md"

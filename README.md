@@ -61,7 +61,7 @@ El proyecto sigue un flujo de trabajo típico de ciencia de datos:
 
 > **Corte del 26/10/2026:** Revolico 30 anuncios — 8 de combustión, 21 eléctricos (incluye bicicletas) y 1 patinete. VEDCA publica 7 vehículos en catálogo **sin precios** (la venta es por tienda o fábrica). Islagrande lista 14 precios válidos entre **601 y 2 096 USD**.
 
-> Los datos crudos y limpios se almacenan en [`datos/`](datos/) (por fuente) y en [`data/`](data/) (pipeline automatizado `raw/ → processed/ → clean/`).
+> Todos los datos (crudos, procesados y limpios) se almacenan en una sola carpeta: [`datos/`](datos/), con el pipeline `raw/ → processed/ → clean/` y los datasets por fuente.
 
 ---
 
@@ -77,22 +77,21 @@ Mercado-de-Motos/
 │   ├── metodologia/            # Descripción del método de trabajo
 │   └── informes/               # Informes parciales y finales (fechados)
 │
-├── datos/                      # Datasets por fuente (versionados)
+├── datos/                      # Todos los datasets (versionados)
+│   ├── raw/                    # Datos crudos por fuente (evidencia)
+│   │   ├── revolico/           # Cortes históricos de Revolico
+│   │   └── telegram/           # Grupos especializados (pendiente)
+│   ├── processed/              # Datos procesados (pipeline)
+│   ├── clean/                  # Datos consolidados (ETL)
 │   ├── revolico/               # Anuncios extraídos de Revolico
 │   ├── limpios/                # Datos limpios y normalizados
 │   ├── entrevistas/            # Entrevistas cualitativas
 │   ├── tiendas_online/         # Precios de tiendas (Islagrande)
 │   ├── importadoras/           # Importadoras (carpeta general, pendiente)
 │   ├── importadora_vedca/      # Catálogo VEDCA (y solimport/pendiente)
-│   ├── telegram/               # Grupos especializados (pendiente)
 │   ├── talleres/               # Datos de talleres (pendiente)
 │   ├── codigos/                # Scripts Python utilizados (copias de entrega)
 │   └── _reemplazados/          # Versiones anteriores reemplazadas
-│
-├── data/                       # Pipeline automatizado de la skill revolico-scraper
-│   ├── raw/                    # Datos crudos (evidencia)
-│   ├── processed/              # Datos procesados
-│   └── clean/                  # Datos consolidados
 │
 ├── imagenes/                   # Fotografías de referencia
 │

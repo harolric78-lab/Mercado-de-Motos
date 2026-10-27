@@ -226,5 +226,5 @@ El mercado de La Habana está dominado en volumen por las **motos eléctricas** 
 
 ---
 
-*Informe generado automáticamente a partir de `data/clean/anuncios_limpios.json`.*
-*Generado: 2026-10-26 20:10.*
+*Informe generado automáticamente a partir de `datos/clean/anuncios_limpios.json`.*
+*Generado: 2026-10-26 20:39.*

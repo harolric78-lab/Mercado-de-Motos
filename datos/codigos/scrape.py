@@ -10,8 +10,8 @@ bicicletas electricas) y patinete electrico. Todo lo demas queda fuera del
 analisis; no se etiqueta ni se cuenta por tipo.
 
 Salidas:
-  - data/raw/revolico_raw_<sello>.json   -> todo lo consultado (auditoria)
-  - data/raw/revolico_raw_<sello>.csv    -> lo mismo, para Excel
+  - datos/raw/revolico_raw_<sello>.json   -> todo lo consultado (auditoria)
+  - datos/raw/revolico_raw_<sello>.csv    -> lo mismo, para Excel
 
 El dato crudo conserva los campos originales de Revolico (se eliminan los
 datos de contacto: telefono y correo) y agrega un bloque "_scraping" con
@@ -20,7 +20,7 @@ datos de contacto: telefono y correo) y agrega un bloque "_scraping" con
 Uso:
     python scrape.py
     python scrape.py --n 30 --max-paginas 3 --delay 1.0
-    python scrape.py --proyecto "C:/ruta/Mercado-de-Motos" --salida data/raw
+    python scrape.py --proyecto "C:/ruta/Mercado-de-Motos" --salida datos/raw
 """
 
 from __future__ import annotations
@@ -396,7 +396,7 @@ def main():
     ap.add_argument("--max-candidatos", type=int, default=150, help="Maximo de anuncios revisados")
     ap.add_argument("--delay", type=float, default=1.0, help="Pausa entre peticiones (s)")
     ap.add_argument("--proyecto", default=None, help="Ruta raiz del proyecto")
-    ap.add_argument("--salida", default=None, help="Carpeta de salida (por defecto data/raw)")
+    ap.add_argument("--salida", default=None, help="Carpeta de salida (por defecto datos/raw)")
     ap.add_argument("--sin-imagenes", action="store_true", help="Incluir anuncios sin foto")
     args = ap.parse_args()
 

@@ -3,7 +3,7 @@
 """
 Paso 2 del pipeline: limpieza y transformacion de los datos de Revolico.
 
-Toma el dato crudo mas reciente de `data/raw/` (o `--archivo`) y trabaja
+Toma el dato crudo mas reciente de `datos/raw/` (o `--archivo`) y trabaja
 unicamente con los anuncios incluidos en las tres categorias permitidas.
 
   1. Elimina duplicados (por ID y por URL).
@@ -15,11 +15,11 @@ unicamente con los anuncios incluidos en las tres categorias permitidas.
   7. Se queda con los N anuncios mas recientes.
 
 Salida:
-  - data/processed/revolico_processed_<sello>.json / .csv
+  - datos/processed/revolico_processed_<sello>.json / .csv
 
 Uso:
     python clean.py
-    python clean.py --archivo data/raw/revolico_raw_20261022_101500.json
+    python clean.py --archivo datos/raw/revolico_raw_20261022_101500.json
     python clean.py --precio-minimo 100 --max-registros 30
 """
 
@@ -238,8 +238,8 @@ def main():
     ap = argparse.ArgumentParser(description="Limpieza de datos de Revolico")
     ap.add_argument("--archivo", default=None, help="JSON crudo de entrada")
     ap.add_argument("--proyecto", default=None, help="Ruta raiz del proyecto")
-    ap.add_argument("--entrada", default=None, help="Carpeta de datos crudos (data/raw)")
-    ap.add_argument("--salida", default=None, help="Carpeta de salida (data/processed)")
+    ap.add_argument("--entrada", default=None, help="Carpeta de datos crudos (datos/raw)")
+    ap.add_argument("--salida", default=None, help="Carpeta de salida (datos/processed)")
     ap.add_argument("--precio-minimo", type=float, default=PRECIO_MINIMO_DEFECTO)
     ap.add_argument("--max-registros", type=int, default=30)
     args = ap.parse_args()

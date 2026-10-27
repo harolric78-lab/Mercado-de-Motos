@@ -4,7 +4,7 @@
 ETL del mercado de motos en La Habana.
 
 Lee los datos crudos de Revolico (y Telegram cuando exista), los normaliza,
-elimina duplicados y escribe el dataset limpio en data/clean/.
+elimina duplicados y escribe el dataset limpio en datos/clean/.
 
 Uso:
     python src/analisis/etl_mercado.py
@@ -28,9 +28,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from contactos import sanear_contactos  # noqa: E402
 
 BASE = Path(__file__).resolve().parents[2]
-RAW_REVOLICO = BASE / "data" / "raw" / "revolico"
-RAW_TELEGRAM = BASE / "data" / "raw" / "telegram"
-CLEAN = BASE / "data" / "clean"
+RAW_REVOLICO = BASE / "datos" / "raw" / "revolico"
+RAW_TELEGRAM = BASE / "datos" / "raw" / "telegram"
+CLEAN = BASE / "datos" / "clean"
 CLEAN.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
@@ -406,7 +406,7 @@ def deduplicar(registros):
 def main():
     registros = []
     rutas_revolico = sorted(RAW_REVOLICO.glob("*.json")) + sorted(
-        (BASE / "data" / "raw").glob("revolico_raw_*.json")
+        (BASE / "datos" / "raw").glob("revolico_raw_*.json")
     )
     for ruta in rutas_revolico:
         registros.extend(_leer_revolico(ruta))

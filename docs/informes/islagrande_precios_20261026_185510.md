@@ -34,10 +34,10 @@
 
 - Precios en **USD**, moneda activada en la tienda antes de la captura.
 - Solo se listan precios **validos (>= 100 USD)**; los importes
-  implausibles se conservan en `data/raw/` como evidencia y quedan
-  marcados `precio_valido: false` en `data/processed/`.
+  implausibles se conservan en `datos/raw/` como evidencia y quedan
+  marcados `precio_valido: false` en `datos/processed/`.
 - Filas repetidas (mismo producto publicado en varias sedes): 3 omitidas en esta tabla.
-- Los **triciclos** y los repuestos/accesorios quedan solo en `data/raw/`
+- Los **triciclos** y los repuestos/accesorios quedan solo en `datos/raw/`
   como evidencia, fuera del analisis.
 - Los productos sin precio publicado se marcan `sin_precio` y no entran
   a las metricas.

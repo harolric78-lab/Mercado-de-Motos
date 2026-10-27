@@ -4,7 +4,7 @@
 Utilidades compartidas del pipeline de scraping de Revolico.
 
 Contiene:
-  - Resolucion de rutas del proyecto (data/raw, data/processed, logs, datos/...)
+  - Resolucion de rutas del proyecto (datos/raw, datos/processed, logs, datos/...)
   - Normalizacion de texto, precios, monedas y URLs
   - Reglas de negocio: inclusion/exclusion de vehiculos y deteccion de triciclos
   - Logger con contadores para el archivo de log
@@ -158,8 +158,8 @@ def paths(root=None):
     root = Path(root) if root else project_root()
     return {
         "root": root,
-        "raw": root / "data" / "raw",
-        "processed": root / "data" / "processed",
+        "raw": root / "datos" / "raw",
+        "processed": root / "datos" / "processed",
         "logs": root / "logs",
         "datos_revolico": root / "datos" / "revolico",
         "datos_limpios": root / "datos" / "limpios",

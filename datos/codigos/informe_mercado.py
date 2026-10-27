@@ -3,7 +3,7 @@
 """
 Analisis de mercado de motos en La Habana y generacion del informe.
 
-Entrada:  data/clean/anuncios_limpios.json (generado por etl_mercado.py)
+Entrada:  datos/clean/anuncios_limpios.json (generado por etl_mercado.py)
 Salida:   reports/README.md, reports/graficos/*.png
 
 Uso:
@@ -28,7 +28,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 BASE = Path(__file__).resolve().parents[2]
-CLEAN = BASE / "data" / "clean" / "anuncios_limpios.json"
+CLEAN = BASE / "datos" / "clean" / "anuncios_limpios.json"
 REPORTS = BASE / "reports"
 GRAFICOS = REPORTS / "graficos"
 REPORTS.mkdir(exist_ok=True)
@@ -828,7 +828,7 @@ def main():
     a("")
     a("---")
     a("")
-    a("*Informe generado automáticamente a partir de `data/clean/anuncios_limpios.json`.*")
+    a("*Informe generado automáticamente a partir de `datos/clean/anuncios_limpios.json`.*")
     a(f"*Generado: {datetime.now().strftime('%Y-%m-%d %H:%M')}.*")
 
     (REPORTS / "README.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
