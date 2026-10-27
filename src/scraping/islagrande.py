@@ -43,6 +43,9 @@ from pathlib import Path
 
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from contactos import sanear_contactos  # noqa: E402
+
 BASE = "https://islagrande.com"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
@@ -216,13 +219,13 @@ def parsear_ficha(session: requests.Session, url: str, lineas: list[str],
 
     time.sleep(delay)
     return {
-        "nombre": nombre,
+        "nombre": sanear_contactos(nombre),
         "url": url,
         "precio": precio,
         "precio_anterior": precio_anterior,
         "moneda": moneda,
         "etiqueta": etiqueta,
-        "descripcion": descripcion[:1500],
+        "descripcion": sanear_contactos(descripcion[:1500]),
     }
 
 

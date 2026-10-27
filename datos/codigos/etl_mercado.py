@@ -24,6 +24,9 @@ from pathlib import Path
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from contactos import sanear_contactos  # noqa: E402
+
 BASE = Path(__file__).resolve().parents[2]
 RAW_REVOLICO = BASE / "data" / "raw" / "revolico"
 RAW_TELEGRAM = BASE / "data" / "raw" / "telegram"
@@ -303,8 +306,8 @@ def _leer_revolico(ruta: Path):
                 "id": str(scraper.get("id") or a.get("id") or ""),
                 "fuente": "Revolico",
                 "archivo_origen": ruta.name,
-                "titulo": titulo.strip(),
-                "descripcion": descripcion.strip(),
+                "titulo": sanear_contactos(titulo.strip()),
+                "descripcion": sanear_contactos(descripcion.strip()),
                 "categoria": categoria,
                 "categoria_sitio": categoria_sitio,
                 "precio": precio,
@@ -337,8 +340,8 @@ def _leer_telegram(ruta: Path):
                 "id": str(m.get("id") or ""),
                 "fuente": "Telegram",
                 "archivo_origen": ruta.name,
-                "titulo": titulo.strip(),
-                "descripcion": texto.strip(),
+                "titulo": sanear_contactos(titulo.strip()),
+                "descripcion": sanear_contactos(texto.strip()),
                 "categoria": categoria,
                 "categoria_sitio": "",
                 "precio": parsear_precio(m.get("precio")),
@@ -402,7 +405,10 @@ def deduplicar(registros):
 
 def main():
     registros = []
-    for ruta in sorted(RAW_REVOLICO.glob("*.json")):
+    rutas_revolico = sorted(RAW_REVOLICO.glob("*.json")) + sorted(
+        (BASE / "data" / "raw").glob("revolico_raw_*.json")
+    )
+    for ruta in rutas_revolico:
         registros.extend(_leer_revolico(ruta))
     for ruta in sorted(RAW_TELEGRAM.glob("*.json")):
         registros.extend(_leer_telegram(ruta))

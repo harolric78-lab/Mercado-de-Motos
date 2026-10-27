@@ -35,6 +35,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from common import (  # noqa: E402
     BASE_URL,
@@ -50,6 +51,7 @@ from common import (  # noqa: E402
     sello,
     url_valida,
 )
+from contactos import sanear_contactos  # noqa: E402
 
 HEADERS = {
     "User-Agent": (
@@ -191,12 +193,12 @@ def nombre_lugar(apollo, ref):
 
 
 def limpiar_pii(ad):
-    """Copia del anuncio sin datos de contacto."""
+    """Copia del anuncio sin datos de contacto (campos PII y textos)."""
     limpio = {}
     for k, v in ad.items():
         if k in CAMPOS_PII or k.startswith("email"):
             continue
-        limpio[k] = v
+        limpio[k] = sanear_contactos(v) if isinstance(v, str) else v
     return limpio
 
 

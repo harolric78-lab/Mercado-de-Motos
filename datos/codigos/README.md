@@ -22,6 +22,7 @@ Copia de los scripts de Python usados en el proyecto **Investigación del Mercad
 
 | Archivo | Origen | Para qué sirve | Comando |
 |---|---|---|---|
+| `contactos.py` | `src/` | Elimina teléfonos y correos de textos (`sanear_contactos`); usado por scrapers y ETL. También sanea ficheros: `python src/contactos.py fichero.json` | — |
 | `limpiar_revolico.py` | `src/limpieza_datos/` | Limpieza de datos crudos de Revolico (monedas, duplicados, categorías) | `python src/limpieza_datos/limpiar_revolico.py` |
 
 ## 3. Análisis
@@ -43,8 +44,7 @@ Copia de los scripts de Python usados en el proyecto **Investigación del Mercad
 
 ## Requisitos
 
-- Python 3.x con `requests` (scraping), que ya está en [`../../requirements.txt`](../../requirements.txt).
-- `matplotlib` para `informe_mercado.py` y para el notebook EDA (los demás scripts no lo necesitan).
+- Python 3.x con `requests` (scraping) y `matplotlib` (informes y notebook EDA), en [`../../requirements.txt`](../../requirements.txt).
 - Ejecutar los comandos desde la **raíz del proyecto** (`Mercado-de-Motos/`).
 
 ## Orden típico de ejecución

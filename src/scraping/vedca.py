@@ -36,6 +36,9 @@ from pathlib import Path
 
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from contactos import sanear_contactos  # noqa: E402
+
 BASE = "http://www.vedca.cu/"
 UA = {"User-Agent": "Mercado-de-Motos-ICD/1.0 (scraping educativo)"}
 
@@ -140,10 +143,10 @@ def parsear_ficha(html: str) -> dict:
                         especificaciones[celdas[0]].append(valor)
 
     return {
-        "titulo": titulo,
+        "titulo": sanear_contactos(titulo),
         "datos": datos,
         "pdf": pdf,
-        "descripcion": descripcion,
+        "descripcion": sanear_contactos(descripcion),
         "especificaciones": especificaciones,
     }
 
