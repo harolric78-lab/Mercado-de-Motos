@@ -46,3 +46,11 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Corrección de documentación:** revertido un error tipográfico en la tabla de rentabilidad de `reports/README.md` (compra P25 de ITALY RX Combat: 480 → 2 480 USD).
 - **README:** se completaron las secciones de **Resultados/Hallazgos** y **Conclusiones** (respondiendo las dos preguntas de análisis), se actualizó la tabla de fuentes (Revolico, VEDCA, Islagrande, entrevistas) y el árbol de estructura del proyecto (`data/`, `journal/`, `hands-off/`, `reports/`).
 - **Entregable ejecutivo:** creado `hands-off/resumen_ejecutivo_20261026.md` con cifras clave, hallazgos y recomendaciones.
+
+---
+
+## 📅 26 de octubre de 2026 (corrección de privacidad y corte consolidado)
+- **Sanitización de datos de contacto:** nuevo módulo `src/contactos.py` (`sanear_contactos`) que elimina teléfonos cubanos (`+53...`, `5 994-8751`, `7 656-2154`), etiquetas ("WhatsApp al ...") y correos de cualquier texto, preservando timestamps, IDs de anuncio y URLs. Se aplicó a todos los scrapers (`islagrande.py`, `vedca.py`, `revolico/scrape.py`) y al ETL (`etl_mercado.py`).
+- **Limpieza de la base histórica:** saneados in place 26 ficheros `.json`/`.csv` bajo `data/` y `datos/` (raw, processed, clean, tiendas_online, _reemplazados). Verificación final: **0 contactos restantes**, JSON válidos.
+- **ETL + informe regenerados con el corte del 26/10:** el ETL ahora lee también los cortes de la skill en la raíz de `data/raw/` (`revolico_raw_*.json`). Nuevas cifras: **6 643 brutos → 6 278 anuncios únicos** (5 714 con precio USD, 91,0 %), ventana 10–26 de octubre (17 días, 3 cortes: 17, 22 y 26). El informe (`reports/README.md`) y sus gráficos se regeneraron; el encabezado y la ventana ahora se calculan desde los datos.
+- **Cifras actualizadas:** README principal y `hands-off/resumen_ejecutivo_20261026.md` alineados con el nuevo corte (RX Combat 51 anuncios, TOPMAQ 182, JMD bicimoto 175, ROI TOPMAQ 27,9 %).

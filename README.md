@@ -144,12 +144,12 @@ Datos de los **30 anuncios más recientes** publicados en Revolico (La Habana). 
 
 ### Hallazgos principales (corte del 26 de octubre de 2026)
 
-1. **Las motos eléctricas dominan la oferta publicada.** En el corte histórico de 6 249 anuncios (10–22 de octubre), el **82,0 %** de la oferta es eléctrica (motos eléctricas 37,1 %, bicimotos 27,9 %, bicicletas eléctricas 13,4 % y patinetes 3,6 %) frente al **18,0 %** de combustión. En los 30 anuncios más recientes la proporción se mantiene: 21 eléctricos vs. 8 de combustión.
+1. **Las motos eléctricas dominan la oferta publicada.** En el corte histórico de 6 278 anuncios (10–26 de octubre), el **82,0 %** de la oferta es eléctrica (motos eléctricas 37,1 %, bicimotos 27,9 %, bicicletas eléctricas 13,4 % y patinetes 3,6 %) frente al **18,0 %** de combustión. En los 30 anuncios más recientes la proporción se mantiene: 21 eléctricos vs. 8 de combustión.
 2. **Diferencial de precio.** En los 30 anuncios más recientes, la mediana de combustión es **2 600 USD** frente a **1 450 USD** de las eléctricas (rango total: 340–2 800 USD). En el corte histórico: 2 220 USD (combustión) vs. 2 000 USD (eléctricas).
 3. **Precios atípicos.** El detector IQR/Z-score del 26/10 **no encontró precios extremadamente altos**: el único anuncio marcado es un lote de combustión a **1 670 USD**, por debajo del rango habitual del grupo. El máximo del corte histórico es 6 600 USD (motos eléctricas).
-4. **Marcas dominantes.** Combustión: **ITALY** (RX Combat, 50 anuncios). Eléctricas: **TOPMAQ** (181), seguida de VEDCA (110) y MOUNTAIN (103). Bicimotos y patinetes: **JMD**. En los anuncios más recientes también aparecen TORVAN y VEDCA.
+4. **Marcas dominantes.** Combustión: **ITALY** (RX Combat, 51 anuncios). Eléctricas: **TOPMAQ** (182), seguida de VEDCA (110) y MOUNTAIN (103). Bicimotos y patinetes: **JMD**. En los anuncios más recientes también aparecen TORVAN y VEDCA.
 5. **Precio de fábrica vs. mercado.** VEDCA **no publica precios** en su catálogo (7 vehículos): la referencia de tienda la da Islagrande, con eléctricas entre **601 y 2 096 USD**, y una Hongli HL-125 de 125 cc a 1 474 USD.
-6. **Rentabilidad.** Con costo operativo del 10 %, el arbitraje local es estrecho: el ROI supera el 20 % solo comprando por debajo del P10 (TOPMAQ 28,1 %; Suzuki GN125 23,4 %). Detalle en [`reports/README.md`](reports/README.md).
+6. **Rentabilidad.** Con costo operativo del 10 %, el arbitraje local es estrecho: el ROI supera el 20 % solo comprando por debajo del P10 (TOPMAQ 27,9 %; Suzuki GN125 23,4 %). Detalle en [`reports/README.md`](reports/README.md).
 
 > Informes completos: [`docs/informes/`](docs/informes/) · Entregable ejecutivo: [`hands-off/`](hands-off/)
 

@@ -12,6 +12,7 @@ Uso:
 from __future__ import annotations
 
 import json
+import re
 import statistics as st
 import sys
 from collections import defaultdict
@@ -445,12 +446,43 @@ def main():
     # -------------------------------------------------------------------
     # Texto
     # -------------------------------------------------------------------
+    fechas = sorted({r["fecha_dia"] for r in registros if r.get("fecha_dia")})
+    ventana_desde = fechas[0][:10] if fechas else ""
+    ventana_hasta = fechas[-1][:10] if fechas else ""
+    n_dias = (
+        (datetime.fromisoformat(ventana_hasta) - datetime.fromisoformat(ventana_desde)).days + 1
+        if ventana_desde and ventana_hasta
+        else 0
+    )
+    por_corte: dict[str, int] = {}
+    for r in registros:
+        por_corte[r["archivo_origen"]] = por_corte.get(r["archivo_origen"], 0) + 1
+
+    def _dia_archivo(nombre: str) -> str:
+        m = re.search(r"(20\d{2})(\d{2})(\d{2})", nombre)
+        return str(int(m.group(3))) if m else nombre
+
+    dias_corte = sorted({_dia_archivo(k) for k in por_corte}, key=int)
+    if len(dias_corte) > 1:
+        dias_txt = ", ".join(dias_corte[:-1]) + " y " + dias_corte[-1]
+    else:
+        dias_txt = dias_corte[0] if dias_corte else ""
+
+    partes = [
+        f"{miles(n)} anuncios del {_dia_archivo(k)} de octubre"
+        for k, n in sorted(por_corte.items())
+    ]
+    if len(partes) > 1:
+        cortes_resumen_txt = ", ".join(partes[:-1]) + " y " + partes[-1]
+    else:
+        cortes_resumen_txt = partes[0] if partes else ""
+
     lineas = []
     a = lineas.append
     a("# Informe de Mercado — Motos y Movilidad Eléctrica en La Habana")
     a("")
     a(
-        f"> **Corte:** 22 de octubre de 2026 · **Fuente principal:** Revolico "
+        f"> **Corte:** {ventana_hasta} · **Fuente principal:** Revolico "
         f"(La Habana) · **Anuncios analizados:** {miles(len(registros))} · "
         f"**Precios válidos en USD:** {miles(con_precio)}"
     )
@@ -464,9 +496,9 @@ def main():
     a("## 1. Resumen Ejecutivo")
     a("")
     a(
-        f"Se partió de **{miles(datos['total_bruto'])} registros brutos** de dos cortes de "
-        f"Revolico (17 y 22 de octubre de 2026). Tras excluir no-vehículos y duplicados "
-        f"quedaron **{miles(len(registros))} anuncios únicos**; el "
+        f"Se partió de **{miles(datos['total_bruto'])} registros brutos** de {len(dias_corte)} "
+        f"cortes de Revolico ({dias_txt} de octubre de 2026). Tras excluir no-vehículos y "
+        f"duplicados quedaron **{miles(len(registros))} anuncios únicos**; el "
         f"**{pct(100 * con_precio / len(registros))}** tiene precio válido en USD. "
         f"La cobertura de marca identificada es del **{pct(100 * cobertura_marca)}**."
     )
@@ -512,10 +544,12 @@ def main():
     # 2. Metodologia
     a("## 2. Metodología")
     a("")
-    a("**Fuentes y ventana.** Se usaron dos cortes reales de Revolico La Habana: "
-      "6 466 anuncios del 10–17 de octubre y 53 candidatos del 22 de octubre "
-      "(45 válidos tras la lista blanca). La ventana efectiva es de 13 días. "
-      "Telegram queda fuera por falta de credenciales; no se imputaron datos.")
+    a(
+        f"**Fuentes y ventana.** Se usaron {len(dias_corte)} cortes reales de Revolico La "
+        f"Habana ({dias_txt} de octubre de 2026; "
+        f"{cortes_resumen_txt}). La ventana efectiva es de {n_dias} días. "
+        "Telegram queda fuera por falta de credenciales; no se imputaron datos."
+    )
     a("")
     a("**ETL.** 1) Lectura de los JSON crudos sin modificarlos. 2) Clasificación en "
       "combustión, moto eléctrica, bicimoto, bicicleta eléctrica y patinete. "
@@ -538,10 +572,12 @@ def main():
       f"Los modelos con un único precio observado (CV = 0) reciben la máxima estabilidad; "
       f"por eso el índice debe leerse junto con el número de anuncios.")
     a("")
-    a("**Limitaciones.** Los precios son **precios de anuncio**, no de transacción. "
-      "No hay datos de ventas cerradas ni de tiempo hasta la venta. La muestra es un "
-      "corte transversal de 13 días y la marca no se especifica en una parte de los anuncios. "
-      "Los resultados describen la **oferta activa**, no el volumen histórico de ventas.")
+    a(
+        "**Limitaciones.** Los precios son **precios de anuncio**, no de transacción. "
+        "No hay datos de ventas cerradas ni de tiempo hasta la venta. La muestra es un "
+        f"corte transversal de {n_dias} días y la marca no se especifica en una parte de los anuncios. "
+        "Los resultados describen la **oferta activa**, no el volumen histórico de ventas."
+    )
     a("")
 
     # 3. Datos
