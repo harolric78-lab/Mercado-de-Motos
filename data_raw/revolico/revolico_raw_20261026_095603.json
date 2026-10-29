@@ -1,0 +1,2794 @@
+{
+  "fuente": "Revolico",
+  "provincia": "La Habana",
+  "generado_habana": "2026-10-26T09:58:06.800320-04:00",
+  "params": {
+    "n": 30,
+    "extra": 15,
+    "max_paginas": 3,
+    "max_candidatos": 160,
+    "delay": 1.0,
+    "precio_minimo": 100,
+    "proyecto": null,
+    "sin_imagenes": false,
+    "sin_reemplazo": false,
+    "sin_reportes": false,
+    "sin_notebook": false,
+    "sin_readme": false
+  },
+  "total_consultados": 52,
+  "total_incluidos": 52,
+  "errores": [],
+  "anuncios": [
+    {
+      "__typename": "AdType",
+      "id": "58121135",
+      "title": "Bicimoto",
+      "shortDescription": "BICIMOTO JMD\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n• Controlador / Caja: EM-50 \n•",
+      "description": "BICIMOTO JMD\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n• Controlador / Caja: EM-50 \n• Autonomía: 120 km\n\nPapeles: Aduana \nTransporte: Incluido \nColores disponibles: Negra\n\nPrecio: 1450 USD",
+      "price": 1450,
+      "currency": "USD",
+      "name": "Michael Alderete",
+      "status": "PUBLISHED",
+      "imagesCount": 2,
+      "readyImages": [
+        {
+          "__ref": "ImageType:133813025"
+        },
+        {
+          "__ref": "ImageType:133813026"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:55:59.620Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 27,
+      "permalink": "/item/bicimoto-58121135",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/63d6b1a2d3f396db0235e9af3adf084a2424d9e754c327ef60b2c58d523fc00a"
+      },
+      "userId": "53895",
+      "userPublicId": "gFyjy50DxxRNjEeXr1CoDsv2",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58121135",
+        "url": "https://www.revolico.com/item/bicimoto-58121135",
+        "titulo_original": "Bicimoto",
+        "precio_original": 1450,
+        "moneda_original": "USD",
+        "descripcion": "BICIMOTO JMD\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n• Controlador / Caja: EM-50 \n• Autonomía: 120 km\n\nPapeles: Aduana \nTransporte: Incluido \nColores disponibles: Negra\n\nPrecio: 1450 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:55:59.620Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57057844",
+      "title": "Bicicleta eléctrica nueva.",
+      "shortDescription": "Bicicleta Eléctrica Z6 plegable.\nEs Nueva en su caja.\nTiene una autonomía de 35 ~ 64 km, este",
+      "description": "Bicicleta Eléctrica Z6 plegable.\nEs Nueva en su caja.\nTiene una autonomía de 35 ~ 64 km, este rendimiento varia según el modo de uso.  \nFreno de Discos Trasero.\nPrecio: 550 USD.\nAceptamos pagos por ZELLE.\nInteresados llamar o escribir por .",
+      "price": 550,
+      "currency": "USD",
+      "name": "Yoni84",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:133001985"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:54:41.721Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:43"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 77,
+      "permalink": "/item/bicicleta-electrica-57057844",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/fe18c25920fda49616c78118198611d812816d88b3083ea7460614559d31946c"
+      },
+      "userId": "195934",
+      "userPublicId": "oVmcUPkSVK5j8H2hNmF3jXFD",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57057844",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-57057844",
+        "titulo_original": "Bicicleta eléctrica nueva.",
+        "precio_original": 550,
+        "moneda_original": "USD",
+        "descripcion": "Bicicleta Eléctrica Z6 plegable.\nEs Nueva en su caja.\nTiene una autonomía de 35 ~ 64 km, este rendimiento varia según el modo de uso.  \nFreno de Discos Trasero.\nPrecio: 550 USD.\nAceptamos pagos por ZELLE.\nInteresados llamar o escribir por .",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:54:41.721Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57057721",
+      "title": "Bicimotos nuevas.",
+      "shortDescription": "Bicimoto MZ Cocuyo nuevas en su caja.\nMotor 2000W\nTipo de batería lithium: 48V / 40 AH\nTiempo de",
+      "description": "Bicimoto MZ Cocuyo nuevas en su caja.\nMotor 2000W\nTipo de batería lithium: 48V / 40 AH\nTiempo de carga: aprox. 6 a 8 horas.\nAutonomía de 50-100 KM.\nAccesorios: Alarma, Usb, Full Luces Led, Bluetooth, Mp3, Radio\nColores disponibles: negro y azul.\nEfectivo: USD, MN.\nAceptamos pagos por ZELLE.\nInteresados llamar o escribir por .",
+      "price": null,
+      "currency": null,
+      "name": "Yoni84",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:131785507"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:54:41.519Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:43"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 46,
+      "permalink": "/item/bicimotos-nuevas-57057721",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/c6824973515679ba162ae5f7309dbc8440dbb0e899f77a69dd8e7b336e392f43"
+      },
+      "userId": "195934",
+      "userPublicId": "oVmcUPkSVK5j8H2hNmF3jXFD",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57057721",
+        "url": "https://www.revolico.com/item/bicimotos-nuevas-57057721",
+        "titulo_original": "Bicimotos nuevas.",
+        "precio_original": null,
+        "moneda_original": "",
+        "descripcion": "Bicimoto MZ Cocuyo nuevas en su caja.\nMotor 2000W\nTipo de batería lithium: 48V / 40 AH\nTiempo de carga: aprox. 6 a 8 horas.\nAutonomía de 50-100 KM.\nAccesorios: Alarma, Usb, Full Luces Led, Bluetooth, Mp3, Radio\nColores disponibles: negro y azul.\nEfectivo: USD, MN.\nAceptamos pagos por ZELLE.\nInteresados llamar o escribir por .",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:54:41.519Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58328926",
+      "title": "Bicicleta y Bicimoto nuevas.",
+      "shortDescription": "OFERTA ESPECIAL DOS POR UN PRECIO.\nBicimoto MZ COCUYO 2000w. \nBicicleta eléctrica  Z6 plegable 1200w",
+      "description": "OFERTA ESPECIAL DOS POR UN PRECIO.\nBicimoto MZ COCUYO 2000w. \nBicicleta eléctrica  Z6 plegable 1200w \nNuevas en su caja. \nPrecio 2000 USD.\nAceptamos pagos por ZELLE. \nInteresados llamar o escribir por .",
+      "price": 2000,
+      "currency": "USD",
+      "name": "Yoni84",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134759979"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:54:41.375Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:43"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 3,
+      "permalink": "/item/bicicleta-y-bicimoto-nuevas-58328926",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/7e294f8b528fa84bffc06bac5e2313e9f548f2983092601f2e18b7b4202a9f97"
+      },
+      "userId": "195934",
+      "userPublicId": "oVmcUPkSVK5j8H2hNmF3jXFD",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58328926",
+        "url": "https://www.revolico.com/item/bicicleta-y-bicimoto-nuevas-58328926",
+        "titulo_original": "Bicicleta y Bicimoto nuevas.",
+        "precio_original": 2000,
+        "moneda_original": "USD",
+        "descripcion": "OFERTA ESPECIAL DOS POR UN PRECIO.\nBicimoto MZ COCUYO 2000w. \nBicicleta eléctrica  Z6 plegable 1200w \nNuevas en su caja. \nPrecio 2000 USD.\nAceptamos pagos por ZELLE. \nInteresados llamar o escribir por .",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:54:41.375Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "56358638",
+      "title": "Bicicleta eléctrica",
+      "shortDescription": "SE VENDEN BICICLETA ELECTRECA.\nPRECIO💰550USD x UNIDAD\n        👁  💰520USD x CANTIDAD 👁\n\nVERDADEROS",
+      "description": "SE VENDEN BICICLETA ELECTRECA.\nPRECIO💰550USD x UNIDAD\n        👁  💰520USD x CANTIDAD 👁\n\nVERDADEROS INTERESADOS CONTACTAR POR WHATSAP 56593360. SOY DE LA HABANA DIEZ DE OCTUBRE. \n👁TENGO MENSAJERIA EN TODA LA HABANA-MATANZAS-PINAR DEL RIO-ARTEMISA-MAYABEQUE👁",
+      "price": 550,
+      "currency": "USD",
+      "name": "Lazaro Morales",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:125865104"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:54:39.678Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:39"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 49,
+      "permalink": "/item/bicicleta-electrica-56358638",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/f1b43de056a60b695da03e34c0e344429f225c84747d2d8b5a1b3e2a69ae2194"
+      },
+      "userId": "129160",
+      "userPublicId": "nQLZ0kjZHz9cZhEgkNMIAx2S",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "56358638",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-56358638",
+        "titulo_original": "Bicicleta eléctrica",
+        "precio_original": 550,
+        "moneda_original": "USD",
+        "descripcion": "SE VENDEN BICICLETA ELECTRECA.\nPRECIO💰550USD x UNIDAD\n        👁  💰520USD x CANTIDAD 👁\n\nVERDADEROS INTERESADOS CONTACTAR POR WHATSAP 56593360. SOY DE LA HABANA DIEZ DE OCTUBRE. \n👁TENGO MENSAJERIA EN TODA LA HABANA-MATANZAS-PINAR DEL RIO-ARTEMISA-MAYABEQUE👁",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:54:39.678Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383759",
+      "title": "Motos por cantidad",
+      "shortDescription": "‎`⛽️ 𝐌𝐎𝐓𝐎 AUTOMÁTICA Xmotors MODELO ÁGUILA 2026`\n‎\n‎⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• Motor: 150 cc \n• Tipo: 4T\n•",
+      "description": "‎`⛽️ 𝐌𝐎𝐓𝐎 AUTOMÁTICA Xmotors MODELO ÁGUILA 2026`\n‎\n‎⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• Motor: 150 cc \n• Tipo: 4T\n• Refrigeración por aire\n• Sistema de combustión: carburador\n• Capacidad de combustible: 6.6 litros\n• Llanta delantera: 3.50-10\n• Llanta trasera: 3.50-10\n• Suspensión delantera: telescópica\n• Suspensión trasera: simple\n• Frenos: disco delantero lobulado ventilado\n• Transmisión: automática\n• Encendido por control\nINCLUYE DE REGALO : 2 juegos de llaves  \n‎\n‎🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼 \n( DIRECTO A CHAPA ) \n🚚TRANSPORTE INCLUIDO\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 3 MESES \n🎨𝘾𝙊𝙇𝙊𝙍:  ⚫️🔴\n\n(Ojo) 💵ᴘʀᴇᴄɪᴏ: $ 1670 x cantidad\nCompra mínima 10 unidades",
+      "price": 1670,
+      "currency": "USD",
+      "name": "D.",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135014258"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:53:47.691Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 1,
+      "permalink": "/item/motos-por-cantidad-58383759",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/e2f86836a1a669006c4003a262ceb1dcf270f31a031b2397590680d8efb73c4f"
+      },
+      "userId": "37619",
+      "userPublicId": "IZyuNjhGiV2xqMD78n6uGDhx",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58383759",
+        "url": "https://www.revolico.com/item/motos-por-cantidad-58383759",
+        "titulo_original": "Motos por cantidad",
+        "precio_original": 1670,
+        "moneda_original": "USD",
+        "descripcion": "‎`⛽️ 𝐌𝐎𝐓𝐎 AUTOMÁTICA Xmotors MODELO ÁGUILA 2026`\n‎\n‎⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• Motor: 150 cc \n• Tipo: 4T\n• Refrigeración por aire\n• Sistema de combustión: carburador\n• Capacidad de combustible: 6.6 litros\n• Llanta delantera: 3.50-10\n• Llanta trasera: 3.50-10\n• Suspensión delantera: telescópica\n• Suspensión trasera: simple\n• Frenos: disco delantero lobulado ventilado\n• Transmisión: automática\n• Encendido por control\nINCLUYE DE REGALO : 2 juegos de llaves  \n‎\n‎🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼 \n( DIRECTO A CHAPA ) \n🚚TRANSPORTE INCLUIDO\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 3 MESES \n🎨𝘾𝙊𝙇𝙊𝙍:  ⚫️🔴\n\n(Ojo) 💵ᴘʀᴇᴄɪᴏ: $ 1670 x cantidad\nCompra mínima 10 unidades",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:53:47.691Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58286436",
+      "title": "moto automatica",
+      "shortDescription": "MOTO AUTOMÁTICA XMOTOR TANK 2026\n\n⚙️CARACTERÍSTICAS:\n\n• MOTOR 4 TIEMPOS\n• 175 CC \n• Arranqué",
+      "description": "MOTO AUTOMÁTICA XMOTOR TANK 2026\n\n⚙️CARACTERÍSTICAS:\n\n• MOTOR 4 TIEMPOS\n• 175 CC \n• Arranqué eléctrico y pedal \n• Tablero Digital \n• Frenos de disco delantero y trasero \n• ⁠Capacidad del tanque: 7 L\n• ⁠Full Luces Led \n\n🎁INCLUYE: DOS JUEGOS DE LLAVES \n\n🧾 FACTURA A NOMBRE DEL CLIENTE DIRECTO CHAPA\n\n🔧GARANTÍA: 15 DÍAS \n🚛TRANSPORTE INCLUIDO\n🎨COLORES: 🔴🟢\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\n🧧PRECIO: 2600 USD",
+      "price": 2600,
+      "currency": "USD",
+      "name": "Yayi Lamora",
+      "status": "PUBLISHED",
+      "imagesCount": 6,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134567474"
+        },
+        {
+          "__ref": "ImageType:134567472"
+        },
+        {
+          "__ref": "ImageType:134567475"
+        },
+        {
+          "__ref": "ImageType:134567464"
+        },
+        {
+          "__ref": "ImageType:134567463"
+        },
+        {
+          "__ref": "ImageType:134567462"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:53:11.795Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:37"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 9,
+      "permalink": "/item/moto-automatica-58286436",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/9efccf8d810a82a66b760b2bbe2e7a6e60889ce1d21df48e61614f1ca0d2745d"
+      },
+      "userId": "208472",
+      "userPublicId": "ygQDqQtt8ZH3RwtXqN0mAQ5k",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58286436",
+        "url": "https://www.revolico.com/item/moto-automatica-58286436",
+        "titulo_original": "moto automatica",
+        "precio_original": 2600,
+        "moneda_original": "USD",
+        "descripcion": "MOTO AUTOMÁTICA XMOTOR TANK 2026\n\n⚙️CARACTERÍSTICAS:\n\n• MOTOR 4 TIEMPOS\n• 175 CC \n• Arranqué eléctrico y pedal \n• Tablero Digital \n• Frenos de disco delantero y trasero \n• ⁠Capacidad del tanque: 7 L\n• ⁠Full Luces Led \n\n🎁INCLUYE: DOS JUEGOS DE LLAVES \n\n🧾 FACTURA A NOMBRE DEL CLIENTE DIRECTO CHAPA\n\n🔧GARANTÍA: 15 DÍAS \n🚛TRANSPORTE INCLUIDO\n🎨COLORES: 🔴🟢\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\n🧧PRECIO: 2600 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:53:11.795Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383735",
+      "title": "Moto deportiva HALCON 250cc",
+      "shortDescription": "‎`⛽️ 𝐌𝐎𝐓𝐎 𝐃𝐄𝐏𝐎𝐑𝐓𝐈𝐕𝐀 HALCON 250cc`\n‎\n‎⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n‎• 250 cc\n• Capacidad de combustible: 16.5",
+      "description": "‎`⛽️ 𝐌𝐎𝐓𝐎 𝐃𝐄𝐏𝐎𝐑𝐓𝐈𝐕𝐀 HALCON 250cc`\n‎\n‎⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n‎• 250 cc\n• Capacidad de combustible: 16.5 L\n• autonomía: 35 KM/L \n• Frenos delantero: doble disco. \n• Frenos trasero: disco\n• Enfriamiento por aceite.\n• CAJA 6ta \n‎🎁INCLUYE DE REGALO : 2 juegos de llaves  \n‎\n‎⚒️ 𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 días  \n‎🎨 𝘾𝙊𝙇𝙊𝙍: ⚪️⚫️\n‎🧾DIRECTO A CHAPA",
+      "price": 2100,
+      "currency": "USD",
+      "name": "Cristian Ramallo",
+      "status": "PUBLISHED",
+      "imagesCount": 2,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135014143"
+        },
+        {
+          "__ref": "ImageType:135014146"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:53:01.535Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:41"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 1,
+      "permalink": "/item/moto-deportiva-halcon-250cc-58383735",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/d2b24378d2440f62fbe63f20fad2924e7658d72d7c8e0a8382c15f606556a38d"
+      },
+      "userId": "120386",
+      "userPublicId": "BEjxLwHbZTnaQOXpRtM8rotC",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58383735",
+        "url": "https://www.revolico.com/item/moto-deportiva-halcon-250cc-58383735",
+        "titulo_original": "Moto deportiva HALCON 250cc",
+        "precio_original": 2100,
+        "moneda_original": "USD",
+        "descripcion": "‎`⛽️ 𝐌𝐎𝐓𝐎 𝐃𝐄𝐏𝐎𝐑𝐓𝐈𝐕𝐀 HALCON 250cc`\n‎\n‎⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n‎• 250 cc\n• Capacidad de combustible: 16.5 L\n• autonomía: 35 KM/L \n• Frenos delantero: doble disco. \n• Frenos trasero: disco\n• Enfriamiento por aceite.\n• CAJA 6ta \n‎🎁INCLUYE DE REGALO : 2 juegos de llaves  \n‎\n‎⚒️ 𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 días  \n‎🎨 𝘾𝙊𝙇𝙊𝙍: ⚪️⚫️\n‎🧾DIRECTO A CHAPA",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:53:01.535Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383724",
+      "title": "Moto automática Italy Combat Rx",
+      "shortDescription": "NUEVA MERCANCIA ✅️\nMOTO ITALY COMBAT RX 200CC\n⁩",
+      "description": "NUEVA MERCANCIA ✅️\nMOTO ITALY COMBAT RX 200CC\n⁩",
+      "price": 2600,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135014069"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:52:42.958Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 1,
+      "permalink": "/item/moto-automatica-italy-combat-rx-58383724",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/06e1d92cdd220871e10e3c8fd3ab7d4aa1327edf81f8060975392c7f86b6ad6e"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58383724",
+        "url": "https://www.revolico.com/item/moto-automatica-italy-combat-rx-58383724",
+        "titulo_original": "Moto automática Italy Combat Rx",
+        "precio_original": 2600,
+        "moneda_original": "USD",
+        "descripcion": "NUEVA MERCANCIA ✅️\nMOTO ITALY COMBAT RX 200CC\n⁩",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:52:42.958Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58094474",
+      "title": "BICICLETA ELÉCTRICA SPORT PLEGABLE ⚡",
+      "shortDescription": "✅ 🔋 Batería de 48V × 10Ah\n✅ 🛣️ Autonomía de 45–50 km\n✅ 🔌 Batería extraíble\n✅ 💡 Luces y pantalla",
+      "description": "✅ 🔋 Batería de 48V × 10Ah\n✅ 🛣️ Autonomía de 45–50 km\n✅ 🔌 Batería extraíble\n✅ 💡 Luces y pantalla LED\n✅ 🪑 Asiento amortiguado\n✅ 🛑 Freno de disco trasero\n✅ 🔔 Timbre incluido\n✅ Acelerador manual en el manillar\n✅ 📦 Diseño plegable, ideal para ahorrar espacio",
+      "price": 470,
+      "currency": "USD",
+      "name": "Leydiana",
+      "status": "PUBLISHED",
+      "imagesCount": 3,
+      "readyImages": [
+        {
+          "__ref": "ImageType:133691356"
+        },
+        {
+          "__ref": "ImageType:133691305"
+        },
+        {
+          "__ref": "ImageType:133691400"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:51:38.379Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:34"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 17,
+      "permalink": "/item/bicicleta-electrica-sport-plegable-58094474",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/f0bbe021ebe81e63933093a258ef2409ac65154aab06540f82b65d51059225b9"
+      },
+      "userId": "182264",
+      "userPublicId": "FlhA9RLtv7vwfbSB5H6IKg6H",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58094474",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-sport-plegable-58094474",
+        "titulo_original": "BICICLETA ELÉCTRICA SPORT PLEGABLE ⚡",
+        "precio_original": 470,
+        "moneda_original": "USD",
+        "descripcion": "✅ 🔋 Batería de 48V × 10Ah\n✅ 🛣️ Autonomía de 45–50 km\n✅ 🔌 Batería extraíble\n✅ 💡 Luces y pantalla LED\n✅ 🪑 Asiento amortiguado\n✅ 🛑 Freno de disco trasero\n✅ 🔔 Timbre incluido\n✅ Acelerador manual en el manillar\n✅ 📦 Diseño plegable, ideal para ahorrar espacio",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:51:38.379Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "56763069",
+      "title": "⚡🚲 ¡MUÉVETE CON ESTILO, POTENCIA Y LIBERTAD! 🚲⚡cell 55389456",
+      "price": 650,
+      "currency": "USD",
+      "permalink": "/item/muevete-con-estilo-potencia-y-libertad-cell-55389456-56763069",
+      "imagesCount": 1,
+      "updatedOnToOrder": "2026-10-26T13:51:36.995Z",
+      "isPromoted": false,
+      "provinceId": "1",
+      "municipalityId": "44",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/511e76c98d67a708ecfbb128b89aec8f83f19b1254beed3504344ef2ea07abae"
+      },
+      "viewCount": 37,
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "56763069",
+        "url": "https://www.revolico.com/item/muevete-con-estilo-potencia-y-libertad-cell-55389456-56763069",
+        "titulo_original": "⚡🚲 ¡MUÉVETE CON ESTILO, POTENCIA Y LIBERTAD! 🚲⚡cell 55389456",
+        "precio_original": 650,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:51:36.995Z",
+        "categoria": "",
+        "incluido": false
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57960251",
+      "title": "Moto eléctrica Volta X",
+      "shortDescription": "OFERTA ESPECIAL ✅️ ✨️ \nREBAJAAAA",
+      "description": "OFERTA ESPECIAL ✅️ ✨️ \nREBAJAAAA",
+      "price": 1680,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135013913"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:51:15.916Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 4,
+      "permalink": "/item/moto-electrica-volta-x-57960251",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/be1c3a8633fb7d7814b41b3f27385ae9508df8baa05a40a0b453d9206a1b5998"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57960251",
+        "url": "https://www.revolico.com/item/moto-electrica-volta-x-57960251",
+        "titulo_original": "Moto eléctrica Volta X",
+        "precio_original": 1680,
+        "moneda_original": "USD",
+        "descripcion": "OFERTA ESPECIAL ✅️ ✨️ \nREBAJAAAA",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:51:15.916Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383670",
+      "title": "Lavadora Automática MILEXUS",
+      "price": 230,
+      "currency": "USD",
+      "permalink": "/item/lavadora-automatica-milexus-58383670",
+      "imagesCount": 1,
+      "updatedOnToOrder": "2026-10-26T13:51:01.747Z",
+      "isPromoted": false,
+      "provinceId": "1",
+      "municipalityId": "36",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/6324534923455989b064a201b94622c662b0357b85aa851ed7a4667060eceb4b"
+      },
+      "viewCount": 1,
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58383670",
+        "url": "https://www.revolico.com/item/lavadora-automatica-milexus-58383670",
+        "titulo_original": "Lavadora Automática MILEXUS",
+        "precio_original": 230,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:51:01.747Z",
+        "categoria": "",
+        "incluido": false
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383641",
+      "title": "🛵 BICIMOTO YAMAKI B2 – 48V/20Ah – $1300 USD ⚡",
+      "shortDescription": "🛵 BICIMOTO YAMAKI B2 – 48V/20Ah – $1300 USD ⚡\n\n📍 La Habana\n🚘 Domicilio incluido\n\n✅ Motor: 48V /",
+      "description": "🛵 BICIMOTO YAMAKI B2 – 48V/20Ah – $1300 USD ⚡\n\n📍 La Habana\n🚘 Domicilio incluido\n\n✅ Motor: 48V / 20Ah\n✅ Batería: Litio antiexplosiva 🔋\n✅ Autonomía: Hasta 70 km\n✅ Velocidad máxima: 45 km/h\n✅ Luces LED\n✅ Alarma y encendido a distancia\n🎁 Incluye: Cargador inteligente y 2 juegos de llaves 🔑\n🧾 Papeles en regla y garantía\n🎨 Colores: 🔵⚫️\n\n🔹 Beneficios:\n• Batería de litio antiexplosiva: más segura y duradera\n• Autonomía de 70 km (ideal para el día a día)\n• Alarma y encendido a distancia\n• Papeles en regla y garantía\n• Entrega a domicilio incluida\n\n💰 Precio: $1300 USD\n\n#YamakiB2 #BicimotoEléctrica #LaHabana #VentasCuba #Revolico #MovilidadEléctrica #OfertasCuba",
+      "price": 1300,
+      "currency": "USD",
+      "name": "Electro Store",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135013764"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:50:13.222Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 1,
+      "permalink": "/item/bicimoto-yamaki-b2-48v20ah-1300-usd-58383641",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/c7217eb78f371febae6b4ad0a0058d32bcdb17daa241d4c0b94313ce2fdb96bb"
+      },
+      "userId": "59647",
+      "userPublicId": "rpZyos3MEe3kfcfvAiNLexbr",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58383641",
+        "url": "https://www.revolico.com/item/bicimoto-yamaki-b2-48v20ah-1300-usd-58383641",
+        "titulo_original": "🛵 BICIMOTO YAMAKI B2 – 48V/20Ah – $1300 USD ⚡",
+        "precio_original": 1300,
+        "moneda_original": "USD",
+        "descripcion": "🛵 BICIMOTO YAMAKI B2 – 48V/20Ah – $1300 USD ⚡\n\n📍 La Habana\n🚘 Domicilio incluido\n\n✅ Motor: 48V / 20Ah\n✅ Batería: Litio antiexplosiva 🔋\n✅ Autonomía: Hasta 70 km\n✅ Velocidad máxima: 45 km/h\n✅ Luces LED\n✅ Alarma y encendido a distancia\n🎁 Incluye: Cargador inteligente y 2 juegos de llaves 🔑\n🧾 Papeles en regla y garantía\n🎨 Colores: 🔵⚫️\n\n🔹 Beneficios:\n• Batería de litio antiexplosiva: más segura y duradera\n• Autonomía de 70 km (ideal para el día a día)\n• Alarma y encendido a distancia\n• Papeles en regla y garantía\n• Entrega a domicilio incluida\n\n💰 Precio: $1300 USD\n\n#YamakiB2 #BicimotoEléctrica #LaHabana #VentasCuba #Revolico #MovilidadEléctrica #OfertasCuba",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:50:13.222Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383635",
+      "title": "Moto deportiva Wys 150cc",
+      "shortDescription": "NUEVA MERCANCIA ✅️ 🙌 \nMITO DEPORTIVA WYS 150CC\n⁩",
+      "description": "NUEVA MERCANCIA ✅️ 🙌 \nMITO DEPORTIVA WYS 150CC\n⁩",
+      "price": 1950,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135013737"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:50:02.432Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 1,
+      "permalink": "/item/moto-deportiva-wys-150cc-58383635",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/3b152f29d68028edc8d620fde6d9aa009bf3d4dc395b20487f7c8d56ecfe4007"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58383635",
+        "url": "https://www.revolico.com/item/moto-deportiva-wys-150cc-58383635",
+        "titulo_original": "Moto deportiva Wys 150cc",
+        "precio_original": 1950,
+        "moneda_original": "USD",
+        "descripcion": "NUEVA MERCANCIA ✅️ 🙌 \nMITO DEPORTIVA WYS 150CC\n⁩",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:50:02.432Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383608",
+      "title": "Moto eléctrica Torvan",
+      "shortDescription": "Nueva MERCANCIA ✅️ 🙌 \nMoto TORVAN",
+      "description": "Nueva MERCANCIA ✅️ 🙌 \nMoto TORVAN",
+      "price": 2580,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135013645"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:49:06.375Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 1,
+      "permalink": "/item/moto-electrica-torvan-58383608",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/8dafd61cb9c9295613256c1460a05aab0127c97a41d7909cdc3df7498420fabe"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58383608",
+        "url": "https://www.revolico.com/item/moto-electrica-torvan-58383608",
+        "titulo_original": "Moto eléctrica Torvan",
+        "precio_original": 2580,
+        "moneda_original": "USD",
+        "descripcion": "Nueva MERCANCIA ✅️ 🙌 \nMoto TORVAN",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:49:06.375Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58269538",
+      "title": "🚨🚨🚨 *VOLVIERON DE NUEVO* 🚨🚨🚨  🚲 A12 202",
+      "price": 630,
+      "currency": "USD",
+      "permalink": "/item/volvieron-de-nuevo-a12-202-58269538",
+      "imagesCount": 4,
+      "updatedOnToOrder": "2026-10-26T13:48:08.929Z",
+      "isPromoted": false,
+      "provinceId": "1",
+      "municipalityId": "36",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/7582c0f722ae3730548664ff3e14e26c20d068bf79170d3cb7875049ee413744"
+      },
+      "viewCount": 9,
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58269538",
+        "url": "https://www.revolico.com/item/volvieron-de-nuevo-a12-202-58269538",
+        "titulo_original": "🚨🚨🚨 *VOLVIERON DE NUEVO* 🚨🚨🚨  🚲 A12 202",
+        "precio_original": 630,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:48:08.929Z",
+        "categoria": "",
+        "incluido": false
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58269492",
+      "title": "BICICLETA ELÉCTRICA PLEGABLE VOLTVOGUE",
+      "shortDescription": "• 500 Wats \n• 48 Volt \n• 9 AH \n• ⁠VELOCIDAD MÁXIMA 35k/\n• ⁠Auotnomia de 22 Millas \n• ⁠Freno de disco",
+      "description": "• 500 Wats \n• 48 Volt \n• 9 AH \n• ⁠VELOCIDAD MÁXIMA 35k/\n• ⁠Auotnomia de 22 Millas \n• ⁠Freno de disco trasero \nBD\n🔋BATERÍA DE LITIO EXTRAÍBLE\n🎁INCLUYE:Cargador inteligente,Juego De Llave\n\nDomicilio incluido Habana siempre preguntar",
+      "price": 530,
+      "currency": "USD",
+      "name": "Isa Marquez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134487698"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:47:55.318Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/bicicleta-electrica-plegable-voltvogue-58269492",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/25a86c308bc78b6a291fb7762080694edeee139cc5f2a62e45285d59020c2be5"
+      },
+      "userId": "198454",
+      "userPublicId": "weBm1p9otwGpOFPZOED6MarO",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58269492",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-plegable-voltvogue-58269492",
+        "titulo_original": "BICICLETA ELÉCTRICA PLEGABLE VOLTVOGUE",
+        "precio_original": 530,
+        "moneda_original": "USD",
+        "descripcion": "• 500 Wats \n• 48 Volt \n• 9 AH \n• ⁠VELOCIDAD MÁXIMA 35k/\n• ⁠Auotnomia de 22 Millas \n• ⁠Freno de disco trasero \nBD\n🔋BATERÍA DE LITIO EXTRAÍBLE\n🎁INCLUYE:Cargador inteligente,Juego De Llave\n\nDomicilio incluido Habana siempre preguntar",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:47:55.318Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58269455",
+      "title": "‎💥BICICLETA ELÉCTRICA ‎",
+      "shortDescription": "‎✅️MOTOR DE 1000 W, \n‎✅️BATERIA 48 V/15,6 Ah,\n‎✅️VELOCIDAD MÁXIMA: 40-55 KM/H \n‎✅️AUTONOMÍA: 90 km",
+      "description": "‎✅️MOTOR DE 1000 W, \n‎✅️BATERIA 48 V/15,6 Ah,\n‎✅️VELOCIDAD MÁXIMA: 40-55 KM/H \n‎✅️AUTONOMÍA: 90 km (DEPENDIENDO DEL  NIVEL DE ASISTENCIA)\n‎✅️TIEMPO DE CARGA: 4-6 HORAS \n‎💥ACCESORIOS \n‎✅️CANDADO \n‎✅️BOMBA DE AIRE \n‎✅️PORTA CELULAR \n‎✅️CÁMARA DE REPUESTO \n\n‎DOMICILIO INCLUIDO HABANA SIEMPRE PREGUNTAR",
+      "price": 1250,
+      "currency": "USD",
+      "name": "Isa Marquez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134487527"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:47:48.350Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 7,
+      "permalink": "/item/bicicleta-electrica-58269455",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/66820d5591eb0f9cc52cd80298b79ec1c569c306131ddb4d2d5dd4206aedaa28"
+      },
+      "userId": "198454",
+      "userPublicId": "weBm1p9otwGpOFPZOED6MarO",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58269455",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-58269455",
+        "titulo_original": "‎💥BICICLETA ELÉCTRICA ‎",
+        "precio_original": 1250,
+        "moneda_original": "USD",
+        "descripcion": "‎✅️MOTOR DE 1000 W, \n‎✅️BATERIA 48 V/15,6 Ah,\n‎✅️VELOCIDAD MÁXIMA: 40-55 KM/H \n‎✅️AUTONOMÍA: 90 km (DEPENDIENDO DEL  NIVEL DE ASISTENCIA)\n‎✅️TIEMPO DE CARGA: 4-6 HORAS \n‎💥ACCESORIOS \n‎✅️CANDADO \n‎✅️BOMBA DE AIRE \n‎✅️PORTA CELULAR \n‎✅️CÁMARA DE REPUESTO \n\n‎DOMICILIO INCLUIDO HABANA SIEMPRE PREGUNTAR",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:47:48.350Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383524",
+      "title": "Motos electricas",
+      "shortDescription": "MOTO ELECTRICA IZUKI VIOLA X5 \n\nCARACTERÍSTICAS:\n\n• 1800 Wats \n• ⁠60 Volt\n• ⁠40 Amp\n• ⁠Autonomía de",
+      "description": "MOTO ELECTRICA IZUKI VIOLA X5 \n\nCARACTERÍSTICAS:\n\n• 1800 Wats \n• ⁠60 Volt\n• ⁠40 Amp\n• ⁠Autonomía de 100 KM\n• ⁠Pizarra Digital \n• ⁠Frenos de discos \n• ⁠Full Luces Led \n• ⁠Música mediante Bluetooth, Micro SD y USB \n• ⁠3 Velocidades y reversa \n\n🎁INCLUYE: Cargador inteligente y dos juegos de llaves \n\n🧾PAPELES EN REGLA\n🚛TRANSPORTE INCLUIDO \n🔧GARANTIA: 15 DÍAS\n🎨COLORES: 🟢🟠\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE\n\n🧧PRECIO: 1800 USD",
+      "price": 1800,
+      "currency": "USD",
+      "name": "Kevin Rivero",
+      "status": "PUBLISHED",
+      "imagesCount": 3,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135013184"
+        },
+        {
+          "__ref": "ImageType:135013183"
+        },
+        {
+          "__ref": "ImageType:135013185"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:46:39.541Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 2,
+      "permalink": "/item/motos-electricas-58383524",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/75abeb56f09bbfa5f3952673125a09d042b1790ef7bc7d4042c992129e2d0389"
+      },
+      "userId": "223797",
+      "userPublicId": "8LO8Ea5LJdOFNgYwQ6uXKgPa",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58383524",
+        "url": "https://www.revolico.com/item/motos-electricas-58383524",
+        "titulo_original": "Motos electricas",
+        "precio_original": 1800,
+        "moneda_original": "USD",
+        "descripcion": "MOTO ELECTRICA IZUKI VIOLA X5 \n\nCARACTERÍSTICAS:\n\n• 1800 Wats \n• ⁠60 Volt\n• ⁠40 Amp\n• ⁠Autonomía de 100 KM\n• ⁠Pizarra Digital \n• ⁠Frenos de discos \n• ⁠Full Luces Led \n• ⁠Música mediante Bluetooth, Micro SD y USB \n• ⁠3 Velocidades y reversa \n\n🎁INCLUYE: Cargador inteligente y dos juegos de llaves \n\n🧾PAPELES EN REGLA\n🚛TRANSPORTE INCLUIDO \n🔧GARANTIA: 15 DÍAS\n🎨COLORES: 🟢🟠\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE\n\n🧧PRECIO: 1800 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:46:39.541Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383493",
+      "title": "Moto electricas",
+      "shortDescription": "MOTO AUTOMÁTICA MAF PRO 2026\n\n⚙️CARACTERÍSTICAS:\n\n• MOTOR 4 TIEMPOS\n• 150 CC \n• Arranqué eléctrico y",
+      "description": "MOTO AUTOMÁTICA MAF PRO 2026\n\n⚙️CARACTERÍSTICAS:\n\n• MOTOR 4 TIEMPOS\n• 150 CC \n• Arranqué eléctrico y pedal \n• Tablero Digital \n• Frenos de disco delantero y trasero \n• ⁠Capacidad del tanque: 7 L\n• ⁠Full Luces Led \n\n🎁INCLUYE: DOS JUEGOS DE LLAVES \n\n🧾DIRECTO A CHAPA \n\n🔧GARANTÍA: 15 DÍAS \n🚛TRANSPORTE INCLUIDO\n🎨COLORES : 🔴\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\n🧧PRECIO: 2500 USD",
+      "price": 2500,
+      "currency": "USD",
+      "name": "Kevin Rivero",
+      "status": "PUBLISHED",
+      "imagesCount": 3,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135013004"
+        },
+        {
+          "__ref": "ImageType:135013011"
+        },
+        {
+          "__ref": "ImageType:135013005"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:45:48.355Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 2,
+      "permalink": "/item/moto-electricas-58383493",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/7530ede49dbdb2746a835ac67e68dbe5f60fcfdf4f945bfbf2fbd377484b8192"
+      },
+      "userId": "223797",
+      "userPublicId": "8LO8Ea5LJdOFNgYwQ6uXKgPa",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58383493",
+        "url": "https://www.revolico.com/item/moto-electricas-58383493",
+        "titulo_original": "Moto electricas",
+        "precio_original": 2500,
+        "moneda_original": "USD",
+        "descripcion": "MOTO AUTOMÁTICA MAF PRO 2026\n\n⚙️CARACTERÍSTICAS:\n\n• MOTOR 4 TIEMPOS\n• 150 CC \n• Arranqué eléctrico y pedal \n• Tablero Digital \n• Frenos de disco delantero y trasero \n• ⁠Capacidad del tanque: 7 L\n• ⁠Full Luces Led \n\n🎁INCLUYE: DOS JUEGOS DE LLAVES \n\n🧾DIRECTO A CHAPA \n\n🔧GARANTÍA: 15 DÍAS \n🚛TRANSPORTE INCLUIDO\n🎨COLORES : 🔴\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\n🧧PRECIO: 2500 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:45:48.355Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58243075",
+      "title": "Bicimoto eléctrica Vedca S1",
+      "shortDescription": "*BICIMOTO VEDCA S1*\n\n⚙️ Especificaciones:\n• Motor: 1000 W\n• Voltaje: 60 V\n• Batería: 30 Ah\n• 🔋",
+      "description": "*BICIMOTO VEDCA S1*\n\n⚙️ Especificaciones:\n• Motor: 1000 W\n• Voltaje: 60 V\n• Batería: 30 Ah\n• 🔋 Autonomía: 70 - 80 km\n\n🧾 Papeles: Aduana \n🚛 Transporte: Incluido",
+      "price": 1350,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134365322"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:45:06.014Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/bicimoto-electrica-vedca-s1-58243075",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/f99104e2a9de07db3599694c8482cdf58e5e0ea646576e645de7c58ad58314b4"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58243075",
+        "url": "https://www.revolico.com/item/bicimoto-electrica-vedca-s1-58243075",
+        "titulo_original": "Bicimoto eléctrica Vedca S1",
+        "precio_original": 1350,
+        "moneda_original": "USD",
+        "descripcion": "*BICIMOTO VEDCA S1*\n\n⚙️ Especificaciones:\n• Motor: 1000 W\n• Voltaje: 60 V\n• Batería: 30 Ah\n• 🔋 Autonomía: 70 - 80 km\n\n🧾 Papeles: Aduana \n🚛 Transporte: Incluido",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:45:06.014Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58352317",
+      "title": "Lavadora automática",
+      "price": 210,
+      "currency": "USD",
+      "permalink": "/item/lavadora-automatica-58352317",
+      "imagesCount": 1,
+      "updatedOnToOrder": "2026-10-26T13:44:16.552Z",
+      "isPromoted": false,
+      "provinceId": "1",
+      "municipalityId": "36",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/1f8682c796f0752544d691b34450e086412296a56756d400e79053ffde7d8d65"
+      },
+      "viewCount": 5,
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58352317",
+        "url": "https://www.revolico.com/item/lavadora-automatica-58352317",
+        "titulo_original": "Lavadora automática",
+        "precio_original": 210,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:44:16.552Z",
+        "categoria": "",
+        "incluido": false
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383415",
+      "title": "Bicimoto eléctrica Mishozuki Grillo Ultra Pro",
+      "shortDescription": "BICIMOTO GRILLO ULTRA PRO",
+      "description": "BICIMOTO GRILLO ULTRA PRO",
+      "price": 1820,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135012649"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:44:16.050Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 1,
+      "permalink": "/item/bicimoto-electrica-mishozuki-grillo-ultra-pro-58383415",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/b5e0dd38731563926a9930f6c2bf89909bd07f26b848471d85427884ebcba50d"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58383415",
+        "url": "https://www.revolico.com/item/bicimoto-electrica-mishozuki-grillo-ultra-pro-58383415",
+        "titulo_original": "Bicimoto eléctrica Mishozuki Grillo Ultra Pro",
+        "precio_original": 1820,
+        "moneda_original": "USD",
+        "descripcion": "BICIMOTO GRILLO ULTRA PRO",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:44:16.050Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383388",
+      "title": "Bicimotos",
+      "shortDescription": "BICIMOTO JMD GALÁCTICA 2026 \n\n⚙️CARACTERÍSTICAS:\n\n• 3500w - 48v - 50ah\n• ⁠batería de litio",
+      "description": "BICIMOTO JMD GALÁCTICA 2026 \n\n⚙️CARACTERÍSTICAS:\n\n• 3500w - 48v - 50ah\n• ⁠batería de litio antiexplosiva \n• Hasta 120 km de autonomía\n• ⁠caja VOTOL EM-50\n• Velocidad máxima 50 km/h\n• tranque en el timón \n• Luces LED, Alarma, encendido a distancia. \n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🎁INCLUYE: cargador inteligente, 2 juegos de llaves , casco y malla de regalo \n\n🧾PAPELES EN REGLA \n🔧GARANTÍA: 15 DÍAS\n🎨COLORES: ⚫️🔵🔴🟣\n🚛TRANSPORTE INCLUIDO \n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\n🧧PRECIO: 1800 USD",
+      "price": 1800,
+      "currency": "USD",
+      "name": "Kevin Rivero",
+      "status": "PUBLISHED",
+      "imagesCount": 3,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135012590"
+        },
+        {
+          "__ref": "ImageType:135012604"
+        },
+        {
+          "__ref": "ImageType:135012575"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:43:48.263Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 1,
+      "permalink": "/item/bicimotos-58383388",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/12b002f971a1559b774f062f9301105f01598a22a9598aa445d09c312fd94bd4"
+      },
+      "userId": "223797",
+      "userPublicId": "8LO8Ea5LJdOFNgYwQ6uXKgPa",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58383388",
+        "url": "https://www.revolico.com/item/bicimotos-58383388",
+        "titulo_original": "Bicimotos",
+        "precio_original": 1800,
+        "moneda_original": "USD",
+        "descripcion": "BICIMOTO JMD GALÁCTICA 2026 \n\n⚙️CARACTERÍSTICAS:\n\n• 3500w - 48v - 50ah\n• ⁠batería de litio antiexplosiva \n• Hasta 120 km de autonomía\n• ⁠caja VOTOL EM-50\n• Velocidad máxima 50 km/h\n• tranque en el timón \n• Luces LED, Alarma, encendido a distancia. \n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🎁INCLUYE: cargador inteligente, 2 juegos de llaves , casco y malla de regalo \n\n🧾PAPELES EN REGLA \n🔧GARANTÍA: 15 DÍAS\n🎨COLORES: ⚫️🔵🔴🟣\n🚛TRANSPORTE INCLUIDO \n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\n🧧PRECIO: 1800 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:43:48.263Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58352298",
+      "title": "Lavadora",
+      "price": 180,
+      "currency": "USD",
+      "permalink": "/item/lavadora-58352298",
+      "imagesCount": 1,
+      "updatedOnToOrder": "2026-10-26T13:43:12.977Z",
+      "isPromoted": false,
+      "provinceId": "1",
+      "municipalityId": "36",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/77e2982e68f09e0b08b9e5725914cda99c8571cba0b447c11ae33471a77ba494"
+      },
+      "viewCount": 2,
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58352298",
+        "url": "https://www.revolico.com/item/lavadora-58352298",
+        "titulo_original": "Lavadora",
+        "precio_original": 180,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:43:12.977Z",
+        "categoria": "",
+        "incluido": false
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57907517",
+      "title": "patineta electrica pegable",
+      "shortDescription": "patineta electrica pegable \nrápida \ncómoda \nsomos de la Habana",
+      "description": "patineta electrica pegable \nrápida \ncómoda \nsomos de la Habana",
+      "price": 340,
+      "currency": "USD",
+      "name": "Adria Kamila Gutierrez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132849914"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:42:59.607Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 8,
+      "permalink": "/item/patineta-electrica-pegable-57907517",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/1a74702d014d35dea7c7b9e6f26cdd7b6744a14594a6de0d381d75825d12db82"
+      },
+      "userId": "204283",
+      "userPublicId": "glct1xXm2J9IUAj1E57sgGzM",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57907517",
+        "url": "https://www.revolico.com/item/patineta-electrica-pegable-57907517",
+        "titulo_original": "patineta electrica pegable",
+        "precio_original": 340,
+        "moneda_original": "USD",
+        "descripcion": "patineta electrica pegable \nrápida \ncómoda \nsomos de la Habana",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:42:59.607Z",
+        "categoria": "patinete",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58369979",
+      "title": "Lavadora Automática Milexus 7.5kg 🌀",
+      "price": 230,
+      "currency": "USD",
+      "permalink": "/item/lavadora-automatica-milexus-75kg-58369979",
+      "imagesCount": 1,
+      "updatedOnToOrder": "2026-10-26T13:42:23.351Z",
+      "isPromoted": false,
+      "provinceId": "1",
+      "municipalityId": "39",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/6423bcea1f037e0558cd23e642f82b3a3298d57983cc1369e96a0178cee7ca73"
+      },
+      "viewCount": 1,
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58369979",
+        "url": "https://www.revolico.com/item/lavadora-automatica-milexus-75kg-58369979",
+        "titulo_original": "Lavadora Automática Milexus 7.5kg 🌀",
+        "precio_original": 230,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:42:23.351Z",
+        "categoria": "",
+        "incluido": false
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383331",
+      "title": "Bicimoto Mountain 2026 0km nueva garantía y papeles en regla mensajería incluida",
+      "shortDescription": "🛵 BICIMOTO HALCON MOUNTAIN 🛵\n\n⚙️ Características\n\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n•",
+      "description": "🛵 BICIMOTO HALCON MOUNTAIN 🛵\n\n⚙️ Características\n\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n• Controlador/Caja: VOTOL EM-50\n• Autonomía: 120 Km\n\n‼️📋PAPELES DE ADUANA📋‼️\n\n🎨Colores disponibles: ⚫🔵🔴",
+      "price": 1630,
+      "currency": "USD",
+      "name": "Chande Surf",
+      "status": "PUBLISHED",
+      "imagesCount": 3,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135012217"
+        },
+        {
+          "__ref": "ImageType:135012446"
+        },
+        {
+          "__ref": "ImageType:135012444"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:42:38.470Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 1,
+      "permalink": "/item/bicimoto-mountain-2026-0km-nueva-garantia-y-papeles-en-regla-mensajeria-incluida-58383331",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/a50ef7932668da592559139640818cac4e23060a4700abbbf5f1e34b107ff0e2"
+      },
+      "userId": "217550",
+      "userPublicId": "JPKjDhLrYIB9r4G6O8hqSLYs",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58383331",
+        "url": "https://www.revolico.com/item/bicimoto-mountain-2026-0km-nueva-garantia-y-papeles-en-regla-mensajeria-incluida-58383331",
+        "titulo_original": "Bicimoto Mountain 2026 0km nueva garantía y papeles en regla mensajería incluida",
+        "precio_original": 1630,
+        "moneda_original": "USD",
+        "descripcion": "🛵 BICIMOTO HALCON MOUNTAIN 🛵\n\n⚙️ Características\n\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n• Controlador/Caja: VOTOL EM-50\n• Autonomía: 120 Km\n\n‼️📋PAPELES DE ADUANA📋‼️\n\n🎨Colores disponibles: ⚫🔵🔴",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:42:09.745Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58319158",
+      "title": "Moto automática",
+      "shortDescription": "Moto automática 2025 marca topmaq \n200cc\nTanque de 4.5 L \n100km por cada 2.5L",
+      "description": "Moto automática 2025 marca topmaq \n200cc\nTanque de 4.5 L \n100km por cada 2.5L",
+      "price": 2800,
+      "currency": "USD",
+      "name": "Sales",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134716655"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:41:51.074Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 13,
+      "permalink": "/item/moto-automatica-58319158",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/4514572c447273ce40269516889c9b0cdabfb210a195a6af74ad46f6b73403d6"
+      },
+      "userId": "6947",
+      "userPublicId": "94IiGPmMnxIUwp10xos0ulOc",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58319158",
+        "url": "https://www.revolico.com/item/moto-automatica-58319158",
+        "titulo_original": "Moto automática",
+        "precio_original": 2800,
+        "moneda_original": "USD",
+        "descripcion": "Moto automática 2025 marca topmaq \n200cc\nTanque de 4.5 L \n100km por cada 2.5L",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:41:51.074Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "55414118",
+      "title": "Bicicleta Electrica Edison EP-002 FATBOY",
+      "shortDescription": "🚚 Mensajería disponible previa coordinación el día anterior\n\n📦 Nuevas en caja\n\n📝 Garantía: 15",
+      "description": "🚚 Mensajería disponible previa coordinación el día anterior\n\n📦 Nuevas en caja\n\n📝 Garantía: 15 días\n\n🗺️ Monaco, 10 de octubre\n\n🕤🕠 Horario: 9:30 am - 5:30 pm\n\n💰 Formas de pago: USD EUROS CUP (solo en efectivo al toque) ZELLE y BIZUM\n\n📋 Catálogo: https://www.revolico.com/profile/9705\n\n💬 Canal: https://whatsapp.com/channel/0029Vb8iy7kHltY5zEnqpx30\n\n💬 Whastapp: https://wa.me/message/PBQCY7H7N35BN1\n\n💬 ",
+      "price": 690,
+      "currency": "USD",
+      "name": "Alvaro",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:121572194"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:40:59.124Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:39"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 155,
+      "permalink": "/item/bicicleta-electrica-edison-ep-002-fatboy-55414118",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/4a3b348776b4803c7be3368b155470af23fb8439374e93fc85d3227ffb9b1134"
+      },
+      "userId": "9705",
+      "userPublicId": "EH5CJ6P16Zl8OI5I5ypb6ERd",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "55414118",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-edison-ep-002-fatboy-55414118",
+        "titulo_original": "Bicicleta Electrica Edison EP-002 FATBOY",
+        "precio_original": 690,
+        "moneda_original": "USD",
+        "descripcion": "🚚 Mensajería disponible previa coordinación el día anterior\n\n📦 Nuevas en caja\n\n📝 Garantía: 15 días\n\n🗺️ Monaco, 10 de octubre\n\n🕤🕠 Horario: 9:30 am - 5:30 pm\n\n💰 Formas de pago: USD EUROS CUP (solo en efectivo al toque) ZELLE y BIZUM\n\n📋 Catálogo: https://www.revolico.com/profile/9705\n\n💬 Canal: https://whatsapp.com/channel/0029Vb8iy7kHltY5zEnqpx30\n\n💬 Whastapp: https://wa.me/message/PBQCY7H7N35BN1\n\n💬 ",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:40:59.124Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58243041",
+      "title": "Bicimoto eléctrica JMD",
+      "shortDescription": "*BICIMOTO JMD*\n\n⚙️ Especificaciones:\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n• Controlador",
+      "description": "*BICIMOTO JMD*\n\n⚙️ Especificaciones:\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n• Controlador / Caja: EM-50 \n• 🔋 Autonomía: 120 km\n\n🧾 Papeles: Aduana \n🚛 Transporte: Incluido \n🎨 Colores disponibles: 🔴🔵⚫️🟣",
+      "price": 1450,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134365209"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:40:41.363Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 10,
+      "permalink": "/item/bicimoto-electrica-jmd-58243041",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/5ff797414dbabbbe0a9355bc01606b44ea27ffea5154dfeb64a0f7725336bd1e"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58243041",
+        "url": "https://www.revolico.com/item/bicimoto-electrica-jmd-58243041",
+        "titulo_original": "Bicimoto eléctrica JMD",
+        "precio_original": 1450,
+        "moneda_original": "USD",
+        "descripcion": "*BICIMOTO JMD*\n\n⚙️ Especificaciones:\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 50 Ah\n• Controlador / Caja: EM-50 \n• 🔋 Autonomía: 120 km\n\n🧾 Papeles: Aduana \n🚛 Transporte: Incluido \n🎨 Colores disponibles: 🔴🔵⚫️🟣",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:40:41.363Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "55665130",
+      "title": "Moto Automática",
+      "shortDescription": "Moto Automática 200 cc new en su huacar con su propiedas lista para chapa \ncolor verder",
+      "description": "Moto Automática 200 cc new en su huacar con su propiedas lista para chapa \ncolor verder",
+      "price": 2800,
+      "currency": "USD",
+      "name": "Sales",
+      "status": "PUBLISHED",
+      "imagesCount": 3,
+      "readyImages": [
+        {
+          "__ref": "ImageType:133433326"
+        },
+        {
+          "__ref": "ImageType:133433330"
+        },
+        {
+          "__ref": "ImageType:133433324"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:40:41.175Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 139,
+      "permalink": "/item/moto-automatica-55665130",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/35405d288288e01b0f08a8876b2eeec5ccac25159512deb5d40d7ebc35c7646c"
+      },
+      "userId": "6947",
+      "userPublicId": "94IiGPmMnxIUwp10xos0ulOc",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "55665130",
+        "url": "https://www.revolico.com/item/moto-automatica-55665130",
+        "titulo_original": "Moto Automática",
+        "precio_original": 2800,
+        "moneda_original": "USD",
+        "descripcion": "Moto Automática 200 cc new en su huacar con su propiedas lista para chapa \ncolor verder",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:40:41.175Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57886984",
+      "title": "Moto",
+      "shortDescription": "`🏍️MOTO AUTOMÁTICA ITALY RX COMBAT 2025🏍️`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 200cc - 4 tiempos\n• Capacidad: 7L\n•",
+      "description": "`🏍️MOTO AUTOMÁTICA ITALY RX COMBAT 2025🏍️`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 200cc - 4 tiempos\n• Capacidad: 7L\n• Inyección\n• Autonomía: 40km por litro\n• Velocidad máxima: 85 km/h\n\n💲𝚄𝚂𝙳, 𝙴𝚄𝚁, 𝙼𝙽, 𝚉𝙴𝙻𝙻𝙴\n🧾𝘿𝙄𝙍𝙀𝘾𝙏𝙊 𝘼 𝘾𝙃𝘼𝙋𝘼\n🎨𝙲𝙾𝙻𝙾𝚁: ⚫️🔵🟢\n\n💵PRECIO: $2,600",
+      "price": 2600,
+      "currency": "USD",
+      "name": "Sinay Diaz",
+      "status": "PUBLISHED",
+      "imagesCount": 5,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132763773"
+        },
+        {
+          "__ref": "ImageType:132763772"
+        },
+        {
+          "__ref": "ImageType:132763769"
+        },
+        {
+          "__ref": "ImageType:132763753"
+        },
+        {
+          "__ref": "ImageType:132763760"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:40:18.363Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 22,
+      "permalink": "/item/moto-57886984",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/2f7268afa73e7702814d55a10600f91a90ebe6bc0b6edaf51dfb9ce95c580a27"
+      },
+      "userId": "122278",
+      "userPublicId": "ajEixduWTltSJ2IIMsDu3CL8",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "57886984",
+        "url": "https://www.revolico.com/item/moto-57886984",
+        "titulo_original": "Moto",
+        "precio_original": 2600,
+        "moneda_original": "USD",
+        "descripcion": "`🏍️MOTO AUTOMÁTICA ITALY RX COMBAT 2025🏍️`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 200cc - 4 tiempos\n• Capacidad: 7L\n• Inyección\n• Autonomía: 40km por litro\n• Velocidad máxima: 85 km/h\n\n💲𝚄𝚂𝙳, 𝙴𝚄𝚁, 𝙼𝙽, 𝚉𝙴𝙻𝙻𝙴\n🧾𝘿𝙄𝙍𝙀𝘾𝙏𝙊 𝘼 𝘾𝙃𝘼𝙋𝘼\n🎨𝙲𝙾𝙻𝙾𝚁: ⚫️🔵🟢\n\n💵PRECIO: $2,600",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:40:18.363Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57886904",
+      "title": "Moto",
+      "shortDescription": "`🏍️MOTO AUTOMÁTICA TOPMAQ RAPTOR🏍️`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 200cc - 4 tiempos\n• Full Inyección\n•",
+      "description": "`🏍️MOTO AUTOMÁTICA TOPMAQ RAPTOR🏍️`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 200cc - 4 tiempos\n• Full Inyección\n• Capacidad: 6L\n• Autonomía: 35km por litro\n• Tranque en el timón\n• Alarma y encendido a distancia\n• Full Luces LED\n• 🎁INCLUYE: 2 juegos de llaves\n\n🚚𝚃𝚁𝙰𝙽𝚂𝙿𝙾𝚁𝚃𝙴 𝙸𝙽𝙲𝙻𝚄𝙸𝙳𝙾\n💲𝚄𝚂𝙳, 𝙴𝚄𝚁, 𝙼𝙽, 𝚉𝙴𝙻𝙻𝙴\n🧾𝘾𝙊𝙉 𝘾𝙃𝘼𝙋𝘼 𝙔 𝘾𝙀𝙍𝙏𝙄𝙁𝙄𝘾𝙊\n⚒️𝙶𝙰𝚁𝙰𝙽𝚃Í𝙰: 15 𝙳Í𝙰𝚂\n🎨𝙲𝙾𝙻𝙾𝚁𝙴𝚂: ⚫️🔴\n\n💵PRECIO: $2,500",
+      "price": null,
+      "currency": null,
+      "name": "Sinay Diaz",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132763399"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:40:18.091Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 20,
+      "permalink": "/item/moto-57886904",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/782c76e83eb28ab38a6fcf1ce5b66d5530238a389dab2120d395af153722b42a"
+      },
+      "userId": "122278",
+      "userPublicId": "ajEixduWTltSJ2IIMsDu3CL8",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "57886904",
+        "url": "https://www.revolico.com/item/moto-57886904",
+        "titulo_original": "Moto",
+        "precio_original": null,
+        "moneda_original": "",
+        "descripcion": "`🏍️MOTO AUTOMÁTICA TOPMAQ RAPTOR🏍️`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 200cc - 4 tiempos\n• Full Inyección\n• Capacidad: 6L\n• Autonomía: 35km por litro\n• Tranque en el timón\n• Alarma y encendido a distancia\n• Full Luces LED\n• 🎁INCLUYE: 2 juegos de llaves\n\n🚚𝚃𝚁𝙰𝙽𝚂𝙿𝙾𝚁𝚃𝙴 𝙸𝙽𝙲𝙻𝚄𝙸𝙳𝙾\n💲𝚄𝚂𝙳, 𝙴𝚄𝚁, 𝙼𝙽, 𝚉𝙴𝙻𝙻𝙴\n🧾𝘾𝙊𝙉 𝘾𝙃𝘼𝙋𝘼 𝙔 𝘾𝙀𝙍𝙏𝙄𝙁𝙄𝘾𝙊\n⚒️𝙶𝙰𝚁𝙰𝙽𝚃Í𝙰: 15 𝙳Í𝙰𝚂\n🎨𝙲𝙾𝙻𝙾𝚁𝙴𝚂: ⚫️🔴\n\n💵PRECIO: $2,500",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:40:18.091Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57767354",
+      "title": "Bicicleta Eléctrica",
+      "shortDescription": "🚲 A12 2026 — Especificaciones\n\n⚡ Motor: 1200W\n🔋 Batería: 48V / 15Ah\n🛣️ Autonomía: aprox. 50–60 km",
+      "description": "🚲 A12 2026 — Especificaciones\n\n⚡ Motor: 1200W\n🔋 Batería: 48V / 15Ah\n🛣️ Autonomía: aprox. 50–60 km por carga\n🎛️ Mando a distancia\n🔔 Alarma integrada\n📱 Porta celular\n✨ Diseño y logo actualizados 2026",
+      "price": 600,
+      "currency": "USD",
+      "name": "Sinay Diaz",
+      "status": "PUBLISHED",
+      "imagesCount": 5,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132234495"
+        },
+        {
+          "__ref": "ImageType:132234505"
+        },
+        {
+          "__ref": "ImageType:132234502"
+        },
+        {
+          "__ref": "ImageType:132234504"
+        },
+        {
+          "__ref": "ImageType:132234503"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:40:17.314Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 40,
+      "permalink": "/item/bicicleta-electrica-57767354",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/742f4a3c981e3f1958ae2ae375f37c157ae814306847fe459abdd98802a49623"
+      },
+      "userId": "122278",
+      "userPublicId": "ajEixduWTltSJ2IIMsDu3CL8",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57767354",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-57767354",
+        "titulo_original": "Bicicleta Eléctrica",
+        "precio_original": 600,
+        "moneda_original": "USD",
+        "descripcion": "🚲 A12 2026 — Especificaciones\n\n⚡ Motor: 1200W\n🔋 Batería: 48V / 15Ah\n🛣️ Autonomía: aprox. 50–60 km por carga\n🎛️ Mando a distancia\n🔔 Alarma integrada\n📱 Porta celular\n✨ Diseño y logo actualizados 2026",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:40:17.314Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "56170060",
+      "title": "Bicicletas Eléctricas",
+      "shortDescription": "Bicicleta eléctrica nueva en su 📦",
+      "description": "Bicicleta eléctrica nueva en su 📦",
+      "price": null,
+      "currency": null,
+      "name": "Abrahms Fraga",
+      "status": "PUBLISHED",
+      "imagesCount": 4,
+      "readyImages": [
+        {
+          "__ref": "ImageType:125020459"
+        },
+        {
+          "__ref": "ImageType:125020462"
+        },
+        {
+          "__ref": "ImageType:125020461"
+        },
+        {
+          "__ref": "ImageType:125020460"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:39:41.256Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 63,
+      "permalink": "/item/bicicletas-electricas-56170060",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/3ca4e14df69cc411776b3c6c2a0598bcd4076c02cb07faed464f94f13665d825"
+      },
+      "userId": "78592",
+      "userPublicId": "3RpONfvyE2p9vw6RL9MWzO0h",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "56170060",
+        "url": "https://www.revolico.com/item/bicicletas-electricas-56170060",
+        "titulo_original": "Bicicletas Eléctricas",
+        "precio_original": null,
+        "moneda_original": "",
+        "descripcion": "Bicicleta eléctrica nueva en su 📦",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:39:41.256Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57959776",
+      "title": "Bicimoto Yoazaky 707",
+      "shortDescription": "*BICIMOTO YOAZAKY 707*\n\n⚙️ Especificaciones:\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 35 Ah\n•",
+      "description": "*BICIMOTO YOAZAKY 707*\n\n⚙️ Especificaciones:\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 35 Ah\n• Controlador / Caja: EM-50\n• 🔋 Autonomía: 100 km\n\n🧾 Papeles: Aduana \n🚛 Transporte: Incluido\n🎨 Colores disponibles: 🟢⚫️🟣🔵🔴",
+      "price": 1450,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134364875"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:39:29.272Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 2,
+      "permalink": "/item/bicimoto-yoazaky-707-57959776",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/e71d8c98dc373e55402b82b249a963c6243d1fbe34f6e20e53f58b363936cc42"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57959776",
+        "url": "https://www.revolico.com/item/bicimoto-yoazaky-707-57959776",
+        "titulo_original": "Bicimoto Yoazaky 707",
+        "precio_original": 1450,
+        "moneda_original": "USD",
+        "descripcion": "*BICIMOTO YOAZAKY 707*\n\n⚙️ Especificaciones:\n• Motor: 3000 W\n• Voltaje: 48 V\n• Batería: 35 Ah\n• Controlador / Caja: EM-50\n• 🔋 Autonomía: 100 km\n\n🧾 Papeles: Aduana \n🚛 Transporte: Incluido\n🎨 Colores disponibles: 🟢⚫️🟣🔵🔴",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:39:29.272Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58058214",
+      "title": "Colchón camero 135 x 190 cm KONFORT ANTILLAS. Producto con factura y garantía que usted estrena",
+      "price": 265,
+      "currency": "USD",
+      "permalink": "/item/colchon-camero-konfort-antillas-producto-con-factura-y-garantia-que-usted-estrena-58058214",
+      "imagesCount": 1,
+      "updatedOnToOrder": "2026-10-26T13:39:14.723Z",
+      "isPromoted": false,
+      "provinceId": "1",
+      "municipalityId": "36",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/26da1117d88035ea307806e572e1509f3a280488446ac108e92745bfa8772fe9"
+      },
+      "viewCount": 2,
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58058214",
+        "url": "https://www.revolico.com/item/colchon-camero-konfort-antillas-producto-con-factura-y-garantia-que-usted-estrena-58058214",
+        "titulo_original": "Colchón camero 135 x 190 cm KONFORT ANTILLAS. Producto con factura y garantía que usted estrena",
+        "precio_original": 265,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:39:14.723Z",
+        "categoria": "",
+        "incluido": false
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "55603820",
+      "title": "Patinetas",
+      "shortDescription": "Garantía y seguridad en su compra, cero engaños. Hacemos domicilio si es de la zona, consúltenos.",
+      "description": "Garantía y seguridad en su compra, cero engaños. Hacemos domicilio si es de la zona, consúltenos.",
+      "price": 50,
+      "currency": "USD",
+      "name": "Ronald Bolaño",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:122434109"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:38:48.179Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:34"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 58,
+      "permalink": "/item/patinetas-55603820",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/4ff7eee29453a68aa04968d919dc18a708e05140e0cd52bd7467bedf7a5fd7de"
+      },
+      "userId": "161080",
+      "userPublicId": "3XRc6KrhdZ38jBQu00DXIZ8t",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "55603820",
+        "url": "https://www.revolico.com/item/patinetas-55603820",
+        "titulo_original": "Patinetas",
+        "precio_original": 50,
+        "moneda_original": "USD",
+        "descripcion": "Garantía y seguridad en su compra, cero engaños. Hacemos domicilio si es de la zona, consúltenos.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:38:48.179Z",
+        "categoria": "patinete",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57913861",
+      "title": "Bicicleta electrica plegable 800w",
+      "shortDescription": "Bicicleta electrica plegable:\n- Potencia: 800w\n- Peso: 54 lb\n- Límite de Peso: 265 lb\n- Velocidad",
+      "description": "Bicicleta electrica plegable:\n- Potencia: 800w\n- Peso: 54 lb\n- Límite de Peso: 265 lb\n- Velocidad máxima: 35 Km/H\n- Carga rápida en 4 horas\n- Batería de larga duración: 48 Km\n- Sistema de Freno de disco eléctrico\n- Sistema de iluminación delantera y trasera\n- Control inteligente con pantalla digital\n- Neumáticos sólidos de 14 pulgadas",
+      "price": 450,
+      "currency": "USD",
+      "name": null,
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132878047"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:38:07.404Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 27,
+      "permalink": "/item/bicicleta-electrica-plegable-800w-57913861",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/f3f409c889d2a9e2bba1e5efee6c1caadda46eabfcf652f7584c48be2f48d5e9"
+      },
+      "userId": null,
+      "userPublicId": null,
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57913861",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-plegable-800w-57913861",
+        "titulo_original": "Bicicleta electrica plegable 800w",
+        "precio_original": 450,
+        "moneda_original": "USD",
+        "descripcion": "Bicicleta electrica plegable:\n- Potencia: 800w\n- Peso: 54 lb\n- Límite de Peso: 265 lb\n- Velocidad máxima: 35 Km/H\n- Carga rápida en 4 horas\n- Batería de larga duración: 48 Km\n- Sistema de Freno de disco eléctrico\n- Sistema de iluminación delantera y trasera\n- Control inteligente con pantalla digital\n- Neumáticos sólidos de 14 pulgadas",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:38:07.404Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57959722",
+      "title": "Bicimoto Topmaq Evolution 72v 35ah",
+      "shortDescription": "Nueva MERCANCIA ✅️ \nTopman evolution NUEVO MODELO DE 72X35 AH \nMAYOR AUTONOMÍA",
+      "description": "Nueva MERCANCIA ✅️ \nTopman evolution NUEVO MODELO DE 72X35 AH \nMAYOR AUTONOMÍA",
+      "price": 1970,
+      "currency": "USD",
+      "name": "Sergio Ventas Habana",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135011544"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:37:59.041Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 10,
+      "permalink": "/item/bicimoto-topmaq-evolution-72v-35ah-57959722",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/7c2de23396ca67bee9ad4927f480cd21db41e9a1f0953292acf09533244034ae"
+      },
+      "userId": "30537",
+      "userPublicId": "OnSlDnB25dQpwD84PPRlkqV4",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57959722",
+        "url": "https://www.revolico.com/item/bicimoto-topmaq-evolution-72v-35ah-57959722",
+        "titulo_original": "Bicimoto Topmaq Evolution 72v 35ah",
+        "precio_original": 1970,
+        "moneda_original": "USD",
+        "descripcion": "Nueva MERCANCIA ✅️ \nTopman evolution NUEVO MODELO DE 72X35 AH \nMAYOR AUTONOMÍA",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:37:59.041Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58285816",
+      "title": "MOTOS ELÉCTRICA TOPMAQ S90 2026",
+      "shortDescription": "🛵MOTOS ELÉCTRICA TOPMAQ S90 2026🛵\n\n⚙️CARACTERÍSTICAS⬇️\n• 3000 Watt\n• ⁠72 Volt \n• ⁠45 Amp \n•",
+      "description": "🛵MOTOS ELÉCTRICA TOPMAQ S90 2026🛵\n\n⚙️CARACTERÍSTICAS⬇️\n• 3000 Watt\n• ⁠72 Volt \n• ⁠45 Amp \n• ⁠Autonomía de 100-110 km\n• ⁠Alarma Y música por Bluetooth \n• ⁠Full luces LED\n• ⁠3 Velocidades y reversa \n🧾PAPELES EN ORDEN✅\n🔧GARANTIA: 15 DÍAS✅\nMENSAJERIA INCLUIDA🚚✅\n COLOR: 🟣⚫️🔴\n💲FORMAS DE PAGO💲\nUSD💵, EUR💶, MN🇨🇺, ZELLE🇺🇸 \n\n💵PRECIO: 2180 USD",
+      "price": 2189,
+      "currency": "USD",
+      "name": "michel montes82",
+      "status": "PUBLISHED",
+      "imagesCount": 7,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134564560"
+        },
+        {
+          "__ref": "ImageType:134564558"
+        },
+        {
+          "__ref": "ImageType:134564549"
+        },
+        {
+          "__ref": "ImageType:134564556"
+        },
+        {
+          "__ref": "ImageType:134564559"
+        },
+        {
+          "__ref": "ImageType:134564552"
+        },
+        {
+          "__ref": "ImageType:134564557"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:37:55.793Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 8,
+      "permalink": "/item/motos-electrica-topmaq-s90-2026-58285816",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/efe0288731c6ed5e4bd00e4b6e3129c784fe6392efa59733c4f31b5d9a4cf2a3"
+      },
+      "userId": "185640",
+      "userPublicId": "PzPSz45Er1bhNyRXDcV9lUiW",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58285816",
+        "url": "https://www.revolico.com/item/motos-electrica-topmaq-s90-2026-58285816",
+        "titulo_original": "MOTOS ELÉCTRICA TOPMAQ S90 2026",
+        "precio_original": 2189,
+        "moneda_original": "USD",
+        "descripcion": "🛵MOTOS ELÉCTRICA TOPMAQ S90 2026🛵\n\n⚙️CARACTERÍSTICAS⬇️\n• 3000 Watt\n• ⁠72 Volt \n• ⁠45 Amp \n• ⁠Autonomía de 100-110 km\n• ⁠Alarma Y música por Bluetooth \n• ⁠Full luces LED\n• ⁠3 Velocidades y reversa \n🧾PAPELES EN ORDEN✅\n🔧GARANTIA: 15 DÍAS✅\nMENSAJERIA INCLUIDA🚚✅\n COLOR: 🟣⚫️🔴\n💲FORMAS DE PAGO💲\nUSD💵, EUR💶, MN🇨🇺, ZELLE🇺🇸 \n\n💵PRECIO: 2180 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:37:55.793Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58323001",
+      "title": "BICIMOTO TOPMAQ EVOLUTION *(DE USO)*",
+      "shortDescription": "BICIMOTO TOPMAQ EVOLUTION🏍✅️\n\n▫️Batería Litio 48V-45AH AH (70 km por carga aproximadamente)\n▫️3000W",
+      "description": "BICIMOTO TOPMAQ EVOLUTION🏍✅️\n\n▫️Batería Litio 48V-45AH AH (70 km por carga aproximadamente)\n▫️3000W Potencia Motor\n▫️Alarma para su seguridad\n▫️Tranque de Rueda-Motor + TRANQUE DE TIMÓN \n▫️Puerto USB\n▫️3 VELOCIDADES\n▫️PAPEL DE ADUANA\n\n🧏🏻‍♂️SOLO TIENE RECORRIDOS 5000 KM\n\n💵1445 USD",
+      "price": 1445,
+      "currency": "USD",
+      "name": "michel montes82",
+      "status": "PUBLISHED",
+      "imagesCount": 5,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134734234"
+        },
+        {
+          "__ref": "ImageType:134734232"
+        },
+        {
+          "__ref": "ImageType:134734233"
+        },
+        {
+          "__ref": "ImageType:134734231"
+        },
+        {
+          "__ref": "ImageType:134734230"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:37:20.247Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 6,
+      "permalink": "/item/bicimoto-topmaq-evolution-de-uso-58323001",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/8edd60826c8e2a5a0e7789d70ac32cc616406af0970dd0efe8df78bf32db537f"
+      },
+      "userId": "185640",
+      "userPublicId": "PzPSz45Er1bhNyRXDcV9lUiW",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58323001",
+        "url": "https://www.revolico.com/item/bicimoto-topmaq-evolution-de-uso-58323001",
+        "titulo_original": "BICIMOTO TOPMAQ EVOLUTION *(DE USO)*",
+        "precio_original": 1445,
+        "moneda_original": "USD",
+        "descripcion": "BICIMOTO TOPMAQ EVOLUTION🏍✅️\n\n▫️Batería Litio 48V-45AH AH (70 km por carga aproximadamente)\n▫️3000W Potencia Motor\n▫️Alarma para su seguridad\n▫️Tranque de Rueda-Motor + TRANQUE DE TIMÓN \n▫️Puerto USB\n▫️3 VELOCIDADES\n▫️PAPEL DE ADUANA\n\n🧏🏻‍♂️SOLO TIENE RECORRIDOS 5000 KM\n\n💵1445 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:37:20.247Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58337576",
+      "title": "Moto eléctrica Topmaq F3",
+      "shortDescription": "MOTO ELÉCTRICA TOPMAQ F3 \n\n⚙️CARACTERÍSTICAS :\n\n• 3000 Wats \n• ⁠72 Volt \n• ⁠45 Amp \n• ⁠Autonomía de",
+      "description": "MOTO ELÉCTRICA TOPMAQ F3 \n\n⚙️CARACTERÍSTICAS :\n\n• 3000 Wats \n• ⁠72 Volt \n• ⁠45 Amp \n• ⁠Autonomía de 100-120 km\n• ⁠Caja VOTOL EM- 50\n• ⁠Alarma Y música por Bluetooth \n• ⁠Full luces LED\n• ⁠Sistema de Frenos de discos \n• ⁠3 Velocidades y reversa \n\n🧾PAPELES EN REGLA Y GARANTIA\n🚛TRANSPORTE INCLUIDO \n COLORES: 🔴🟢🟣\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\nPRECIO: 2450 USD",
+      "price": 2450,
+      "currency": "USD",
+      "name": "Emil Alejandro Fuentes",
+      "status": "PUBLISHED",
+      "imagesCount": 7,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134799617"
+        },
+        {
+          "__ref": "ImageType:134799607"
+        },
+        {
+          "__ref": "ImageType:134799608"
+        },
+        {
+          "__ref": "ImageType:134799610"
+        },
+        {
+          "__ref": "ImageType:134799616"
+        },
+        {
+          "__ref": "ImageType:134799612"
+        },
+        {
+          "__ref": "ImageType:134799611"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:36:50.430Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 6,
+      "permalink": "/item/moto-electrica-topmaq-f3-58337576",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/aa4808dd63237b803e9cac073b087f7c9feb40bec710014b035534a14e753986"
+      },
+      "userId": "214949",
+      "userPublicId": "kIA39TjVV3mHUFY5VT91gmpl",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58337576",
+        "url": "https://www.revolico.com/item/moto-electrica-topmaq-f3-58337576",
+        "titulo_original": "Moto eléctrica Topmaq F3",
+        "precio_original": 2450,
+        "moneda_original": "USD",
+        "descripcion": "MOTO ELÉCTRICA TOPMAQ F3 \n\n⚙️CARACTERÍSTICAS :\n\n• 3000 Wats \n• ⁠72 Volt \n• ⁠45 Amp \n• ⁠Autonomía de 100-120 km\n• ⁠Caja VOTOL EM- 50\n• ⁠Alarma Y música por Bluetooth \n• ⁠Full luces LED\n• ⁠Sistema de Frenos de discos \n• ⁠3 Velocidades y reversa \n\n🧾PAPELES EN REGLA Y GARANTIA\n🚛TRANSPORTE INCLUIDO \n COLORES: 🔴🟢🟣\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\nPRECIO: 2450 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:36:50.430Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58383126",
+      "title": "🛵 MOTO ELÉCTRICA TOPMAQ TANK – $2500 USD ⚡  📍 La Habana 🚛 Transporte incluido  ✅ Motor: 3000W / 72V / 45Ah ✅ Autonomí",
+      "shortDescription": "🛵 MOTO ELÉCTRICA TOPMAQ TANK – $2500 USD ⚡\n\n📍 La Habana\n🚛 Transporte incluido\n\n✅ Motor: 3000W / 72V",
+      "description": "🛵 MOTO ELÉCTRICA TOPMAQ TANK – $2500 USD ⚡\n\n📍 La Habana\n🚛 Transporte incluido\n\n✅ Motor: 3000W / 72V / 45Ah\n✅ Autonomía: 100-120 km\n✅ Caja VOTOL EM-50\n✅ Alarma y música por Bluetooth\n✅ Full luces LED\n✅ 3 velocidades y reversa\n🎁 Incluye: 2 llaves y cargador inteligente\n🧾 Papeles en regla y garantía\n🎨 Colores: ⚫️🔴🟣\n\n🔹 Beneficios:\n• Buena potencia y autonomía\n• Entretenimiento y seguridad (Bluetooth y alarma)\n• Todo en regla y transporte incluido\n\n💰 Precio: $2500 USD\n\n#TopMaqTank #MotoEléctrica #LaHabana #VentasCuba #Revolico #OfertasCuba",
+      "price": 2500,
+      "currency": "USD",
+      "name": "Electro Store",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:135011281"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:36:48.652Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 1,
+      "permalink": "/item/moto-electrica-topmaq-tank-2500-usd-la-habana-transporte-incluido-motor-3000w-72v-45ah-autonomi-58383126",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/4a415f990cea852adf875009431e33d5de97a0ac2a9d2d7c83c13928225db557"
+      },
+      "userId": "59647",
+      "userPublicId": "rpZyos3MEe3kfcfvAiNLexbr",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58383126",
+        "url": "https://www.revolico.com/item/moto-electrica-topmaq-tank-2500-usd-la-habana-transporte-incluido-motor-3000w-72v-45ah-autonomi-58383126",
+        "titulo_original": "🛵 MOTO ELÉCTRICA TOPMAQ TANK – $2500 USD ⚡  📍 La Habana 🚛 Transporte incluido  ✅ Motor: 3000W / 72V / 45Ah ✅ Autonomí",
+        "precio_original": 2500,
+        "moneda_original": "USD",
+        "descripcion": "🛵 MOTO ELÉCTRICA TOPMAQ TANK – $2500 USD ⚡\n\n📍 La Habana\n🚛 Transporte incluido\n\n✅ Motor: 3000W / 72V / 45Ah\n✅ Autonomía: 100-120 km\n✅ Caja VOTOL EM-50\n✅ Alarma y música por Bluetooth\n✅ Full luces LED\n✅ 3 velocidades y reversa\n🎁 Incluye: 2 llaves y cargador inteligente\n🧾 Papeles en regla y garantía\n🎨 Colores: ⚫️🔴🟣\n\n🔹 Beneficios:\n• Buena potencia y autonomía\n• Entretenimiento y seguridad (Bluetooth y alarma)\n• Todo en regla y transporte incluido\n\n💰 Precio: $2500 USD\n\n#TopMaqTank #MotoEléctrica #LaHabana #VentasCuba #Revolico #OfertasCuba",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:36:48.652Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58337594",
+      "title": "Moto eléctrica Bucatti M 2026",
+      "shortDescription": "*MOTOS ELECTRICAS BUCATTIS (M) ÚLTIMO MODELO 2026*\nNuevas 0km \n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 3000w - 72v -",
+      "description": "*MOTOS ELECTRICAS BUCATTIS (M) ÚLTIMO MODELO 2026*\nNuevas 0km \n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 3000w - 72v - 55ah\n• ⁠batería de litio antiexplosiva \n• Hasta 150 km de autonomía\n• ⁠caja VOTOL 50\n• Velocidad máxima 50 km/h\n• Luces LED, Alarma, encendido a distancia. \n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🧾PAPELES EN REGLA Y GARANTÍA  \nDOMICILIO INCLUIDO 🚘\nCOLORES DISPONIBLES: 🟣🟢🔴\n\n  Precio : 2480 USD",
+      "price": 2480,
+      "currency": "USD",
+      "name": "Emil Alejandro Fuentes",
+      "status": "PUBLISHED",
+      "imagesCount": 4,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134799676"
+        },
+        {
+          "__ref": "ImageType:134799674"
+        },
+        {
+          "__ref": "ImageType:134799675"
+        },
+        {
+          "__ref": "ImageType:134799673"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:36:42.493Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 2,
+      "permalink": "/item/moto-electrica-bucatti-m-2026-58337594",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/be41ac753c842025a9d072b9df2b1c3744b42fdf4f7519b8ebbb1e4508b296a2"
+      },
+      "userId": "214949",
+      "userPublicId": "kIA39TjVV3mHUFY5VT91gmpl",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58337594",
+        "url": "https://www.revolico.com/item/moto-electrica-bucatti-m-2026-58337594",
+        "titulo_original": "Moto eléctrica Bucatti M 2026",
+        "precio_original": 2480,
+        "moneda_original": "USD",
+        "descripcion": "*MOTOS ELECTRICAS BUCATTIS (M) ÚLTIMO MODELO 2026*\nNuevas 0km \n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 3000w - 72v - 55ah\n• ⁠batería de litio antiexplosiva \n• Hasta 150 km de autonomía\n• ⁠caja VOTOL 50\n• Velocidad máxima 50 km/h\n• Luces LED, Alarma, encendido a distancia. \n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🧾PAPELES EN REGLA Y GARANTÍA  \nDOMICILIO INCLUIDO 🚘\nCOLORES DISPONIBLES: 🟣🟢🔴\n\n  Precio : 2480 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:36:42.493Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57788362",
+      "title": "Bicimotos",
+      "shortDescription": "BICIMOTO MOUNTAIN BRISA 2026\n\n  ⚙️CARACTERÍSTICAS: \n\n• 3000 Wats \n• ⁠48 Volt\n• ⁠50 Ah\n• Autonomía de",
+      "description": "BICIMOTO MOUNTAIN BRISA 2026\n\n  ⚙️CARACTERÍSTICAS: \n\n• 3000 Wats \n• ⁠48 Volt\n• ⁠50 Ah\n• Autonomía de 130km\n• ⁠Frenos de Disco delanteros y traseros \n• ⁠3 velocidades y reversa \n• ⁠Batería de LITHIUM\n• ⁠Full Luces LED, alarma, bocina\n\n🎁INCLUYE: 2 juegos de llaves y cargador inteligente 🔌\n\n🧾PAPELES EN REGLA \n🔧GARANTIA: 15 DÍAS \n🚛TRANSPORTE INCLUIDO \n 🎨COLORES: 🔵⚫️🔴\n\n  💲FORMAS DE PAGO💲\n ⁠ USD, EUR, MN, ZELLE",
+      "price": 1850,
+      "currency": "USD",
+      "name": "Soyjohao Diaz",
+      "status": "PUBLISHED",
+      "imagesCount": 6,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132332933"
+        },
+        {
+          "__ref": "ImageType:132332932"
+        },
+        {
+          "__ref": "ImageType:132332934"
+        },
+        {
+          "__ref": "ImageType:132332935"
+        },
+        {
+          "__ref": "ImageType:132332939"
+        },
+        {
+          "__ref": "ImageType:132332937"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:36:39.614Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 20,
+      "permalink": "/item/bicimotos-57788362",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/92ed193518650e734db3f794e412f73845e7236474a8248cc17cf6274fdd26c1"
+      },
+      "userId": "208643",
+      "userPublicId": "zIdejaQHJlWZa7afsVKivzXT",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57788362",
+        "url": "https://www.revolico.com/item/bicimotos-57788362",
+        "titulo_original": "Bicimotos",
+        "precio_original": 1850,
+        "moneda_original": "USD",
+        "descripcion": "BICIMOTO MOUNTAIN BRISA 2026\n\n  ⚙️CARACTERÍSTICAS: \n\n• 3000 Wats \n• ⁠48 Volt\n• ⁠50 Ah\n• Autonomía de 130km\n• ⁠Frenos de Disco delanteros y traseros \n• ⁠3 velocidades y reversa \n• ⁠Batería de LITHIUM\n• ⁠Full Luces LED, alarma, bocina\n\n🎁INCLUYE: 2 juegos de llaves y cargador inteligente 🔌\n\n🧾PAPELES EN REGLA \n🔧GARANTIA: 15 DÍAS \n🚛TRANSPORTE INCLUIDO \n 🎨COLORES: 🔵⚫️🔴\n\n  💲FORMAS DE PAGO💲\n ⁠ USD, EUR, MN, ZELLE",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:36:39.614Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58337653",
+      "title": "Bicimotos eléctrica Topmaq Evolution",
+      "shortDescription": "*BICIMOTO TOPMAQ EVOLUTION 2026*\n\n⚙️ CARACTERÍSTICAS\n\n• 3000 W\n• 48 V \n• 45 AH\n• Luces LED \n• Alarma",
+      "description": "*BICIMOTO TOPMAQ EVOLUTION 2026*\n\n⚙️ CARACTERÍSTICAS\n\n• 3000 W\n• 48 V \n• 45 AH\n• Luces LED \n• Alarma \n• Bocina ( bluetooth ) \n• ⁠Pizarra digital \n• ⁠Batería de litio extraible\n• ⁠Caja reguladora Votol EM50\n• ⁠3 Velocidades y marcha atrás \n• ⁠Sistema de frenos de Disco \n\n🎁INCLUYE: Cargador inteligente y dos jugos de llaves \n\n🧾PAPELES EN REGLA Y GARANTÍA\nDOMICILIO INCLUIDO🚛\nCOLORES : 🔴🟣⚫️\n\nPRECIO: 1800 USD",
+      "price": 1800,
+      "currency": "USD",
+      "name": "Emil Alejandro Fuentes",
+      "status": "PUBLISHED",
+      "imagesCount": 4,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134799989"
+        },
+        {
+          "__ref": "ImageType:134799986"
+        },
+        {
+          "__ref": "ImageType:134799990"
+        },
+        {
+          "__ref": "ImageType:134799988"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:36:33.357Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/bicimotos-electrica-topmaq-evolution-58337653",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/43599f1cb5c50084d4f1240d70290942c5ba2f303c48cafdab855c0848e538fd"
+      },
+      "userId": "214949",
+      "userPublicId": "kIA39TjVV3mHUFY5VT91gmpl",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58337653",
+        "url": "https://www.revolico.com/item/bicimotos-electrica-topmaq-evolution-58337653",
+        "titulo_original": "Bicimotos eléctrica Topmaq Evolution",
+        "precio_original": 1800,
+        "moneda_original": "USD",
+        "descripcion": "*BICIMOTO TOPMAQ EVOLUTION 2026*\n\n⚙️ CARACTERÍSTICAS\n\n• 3000 W\n• 48 V \n• 45 AH\n• Luces LED \n• Alarma \n• Bocina ( bluetooth ) \n• ⁠Pizarra digital \n• ⁠Batería de litio extraible\n• ⁠Caja reguladora Votol EM50\n• ⁠3 Velocidades y marcha atrás \n• ⁠Sistema de frenos de Disco \n\n🎁INCLUYE: Cargador inteligente y dos jugos de llaves \n\n🧾PAPELES EN REGLA Y GARANTÍA\nDOMICILIO INCLUIDO🚛\nCOLORES : 🔴🟣⚫️\n\nPRECIO: 1800 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:36:33.357Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58337607",
+      "title": "Bicimotos eléctrica JMD modelo Galáctica",
+      "shortDescription": "*BICIMOTO JMD GALÁCTICA 2026*\n\n⚙️CARACTERÍSTICAS:\n\n• 3500w - 48v - 50ah\n• ⁠batería de litio",
+      "description": "*BICIMOTO JMD GALÁCTICA 2026*\n\n⚙️CARACTERÍSTICAS:\n\n• 3500w - 48v - 50ah\n• ⁠batería de litio antiexplosiva \n• Hasta 120-130 km de autonomía\n• ⁠caja VOTOL EM-50\n• Velocidad máxima 50 km/h\n• tranque en el timón \n• Luces LED, Alarma, encendido a distancia. \n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🎁INCLUYE: cargador inteligente, 2 juegos de llaves , casco y malla de regalo \n\n🧾PAPELES EN REGLA Y GARANTÍA\nCOLORES: ⚫️🔵🔴🟣\n🚛TRANSPORTE INCLUIDO HASTA SU HOGAR \n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\nPRECIO: 1780 USD",
+      "price": 1780,
+      "currency": "USD",
+      "name": "Emil Alejandro Fuentes",
+      "status": "PUBLISHED",
+      "imagesCount": 4,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134799753"
+        },
+        {
+          "__ref": "ImageType:134799756"
+        },
+        {
+          "__ref": "ImageType:134799755"
+        },
+        {
+          "__ref": "ImageType:134799754"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:36:27.930Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 3,
+      "permalink": "/item/bicimotos-electrica-jmd-modelo-galactica-58337607",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/3ea37d10d27263758186b09b161affd14533afcc70233e86ea64eba3dde8e270"
+      },
+      "userId": "214949",
+      "userPublicId": "kIA39TjVV3mHUFY5VT91gmpl",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58337607",
+        "url": "https://www.revolico.com/item/bicimotos-electrica-jmd-modelo-galactica-58337607",
+        "titulo_original": "Bicimotos eléctrica JMD modelo Galáctica",
+        "precio_original": 1780,
+        "moneda_original": "USD",
+        "descripcion": "*BICIMOTO JMD GALÁCTICA 2026*\n\n⚙️CARACTERÍSTICAS:\n\n• 3500w - 48v - 50ah\n• ⁠batería de litio antiexplosiva \n• Hasta 120-130 km de autonomía\n• ⁠caja VOTOL EM-50\n• Velocidad máxima 50 km/h\n• tranque en el timón \n• Luces LED, Alarma, encendido a distancia. \n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🎁INCLUYE: cargador inteligente, 2 juegos de llaves , casco y malla de regalo \n\n🧾PAPELES EN REGLA Y GARANTÍA\nCOLORES: ⚫️🔵🔴🟣\n🚛TRANSPORTE INCLUIDO HASTA SU HOGAR \n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\nPRECIO: 1780 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:36:27.930Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58337639",
+      "title": "Motico eléctrica Proefix 2026",
+      "shortDescription": "*MOTICO PROEFIX 2026*\nSon muy buena calidad  ✅\n\n⚙️CARACTERÍSTICAS:\n\n• ⁠48 Volt\n• ⁠20 Ah\n• ⁠Autonomía",
+      "description": "*MOTICO PROEFIX 2026*\nSon muy buena calidad  ✅\n\n⚙️CARACTERÍSTICAS:\n\n• ⁠48 Volt\n• ⁠20 Ah\n• ⁠Autonomía de 60 KM\n• ⁠Velocidad Máxima de 60 KM/H\n• ⁠Amortiguación Hidráulica\n\n🔋BATERÍA DE GEL ANTIEXPLOSIVA\n\n🎁INCLUYE: 2 juegos de llave y su cargador inteligente\n\n🧾PAPELES EN REGLA Y GARANTÍA \n🚛 DOMICILIO  INCLUIDO\nCOLOR: 🔴🟣🔵\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE\n\nPRECIO: 750 USD",
+      "price": 750,
+      "currency": "USD",
+      "name": "Emil Alejandro Fuentes",
+      "status": "PUBLISHED",
+      "imagesCount": 4,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134799944"
+        },
+        {
+          "__ref": "ImageType:134799936"
+        },
+        {
+          "__ref": "ImageType:134799942"
+        },
+        {
+          "__ref": "ImageType:134799945"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:36:21.715Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 4,
+      "permalink": "/item/motico-electrica-proefix-2026-58337639",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/be74987cc50e9c2e1aa6fd18087478331a4b6ff2ca8d8781e6487a6f20d910b0"
+      },
+      "userId": "214949",
+      "userPublicId": "kIA39TjVV3mHUFY5VT91gmpl",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58337639",
+        "url": "https://www.revolico.com/item/motico-electrica-proefix-2026-58337639",
+        "titulo_original": "Motico eléctrica Proefix 2026",
+        "precio_original": 750,
+        "moneda_original": "USD",
+        "descripcion": "*MOTICO PROEFIX 2026*\nSon muy buena calidad  ✅\n\n⚙️CARACTERÍSTICAS:\n\n• ⁠48 Volt\n• ⁠20 Ah\n• ⁠Autonomía de 60 KM\n• ⁠Velocidad Máxima de 60 KM/H\n• ⁠Amortiguación Hidráulica\n\n🔋BATERÍA DE GEL ANTIEXPLOSIVA\n\n🎁INCLUYE: 2 juegos de llave y su cargador inteligente\n\n🧾PAPELES EN REGLA Y GARANTÍA \n🚛 DOMICILIO  INCLUIDO\nCOLOR: 🔴🟣🔵\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE\n\nPRECIO: 750 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:36:21.715Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58337630",
+      "title": "Motico eléctrica marca Vedca",
+      "shortDescription": "*BICIMOTO ELÉCTRICA MARCA VEDCA*\nNuevas 0km \n\n⚙️CARACTERÍSTICAS : \n\nBATERÍA DE LITHIUM \n48v - 13",
+      "description": "*BICIMOTO ELÉCTRICA MARCA VEDCA*\nNuevas 0km \n\n⚙️CARACTERÍSTICAS : \n\nBATERÍA DE LITHIUM \n48v - 13 amperes \nautonomía de 50km\nmúsica por Bluetooth\n\n🎁INCLUYE: 2 juegos de llaves y cargador inteligente , porta celular \n\n🧾*PAPELES EN ÓRDEN Y GARANTÍA*\nDOMICILIO INCLUIDO  🚛\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN \n\nPRECIO : 750 USD",
+      "price": 750,
+      "currency": "USD",
+      "name": "Emil Alejandro Fuentes",
+      "status": "PUBLISHED",
+      "imagesCount": 4,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134799869"
+        },
+        {
+          "__ref": "ImageType:134799868"
+        },
+        {
+          "__ref": "ImageType:134799872"
+        },
+        {
+          "__ref": "ImageType:134799871"
+        }
+      ],
+      "updatedOnByUser": "2026-10-26T13:36:15.358Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 2,
+      "permalink": "/item/motico-electrica-marca-vedca-58337630",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/bf831eb2ef5b65cc6225d10d6ffb8ddcd8f6e3fdf4e9c0264ca2db5a416fa0af"
+      },
+      "userId": "214949",
+      "userPublicId": "kIA39TjVV3mHUFY5VT91gmpl",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58337630",
+        "url": "https://www.revolico.com/item/motico-electrica-marca-vedca-58337630",
+        "titulo_original": "Motico eléctrica marca Vedca",
+        "precio_original": 750,
+        "moneda_original": "USD",
+        "descripcion": "*BICIMOTO ELÉCTRICA MARCA VEDCA*\nNuevas 0km \n\n⚙️CARACTERÍSTICAS : \n\nBATERÍA DE LITHIUM \n48v - 13 amperes \nautonomía de 50km\nmúsica por Bluetooth\n\n🎁INCLUYE: 2 juegos de llaves y cargador inteligente , porta celular \n\n🧾*PAPELES EN ÓRDEN Y GARANTÍA*\nDOMICILIO INCLUIDO  🚛\n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN \n\nPRECIO : 750 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-26T13:36:15.358Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    }
+  ],
+  "total": 52
+}

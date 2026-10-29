@@ -1,0 +1,144 @@
+{
+  "generado": "2026-10-29T08:51:16-04:00",
+  "total": 6101,
+  "categorias": {
+    "motos_combustion": {
+      "total": 1099,
+      "precios": {
+        "n": 990,
+        "min": 111.0,
+        "p25": 1900.0,
+        "mediana": 2250.0,
+        "p75": 2592.5,
+        "max": 4500.0,
+        "promedio": 2209.87,
+        "desviacion": 595.03
+      },
+      "demanda": {
+        "anuncios": 1099,
+        "vistas_totales": 68569,
+        "vistas_medianas": 8,
+        "vistas_promedio": 62.4
+      }
+    },
+    "motos_electricas": {
+      "total": 2201,
+      "precios": {
+        "n": 1996,
+        "min": 100.0,
+        "p25": 1300.0,
+        "mediana": 2050.0,
+        "p75": 2630.0,
+        "max": 6600.0,
+        "promedio": 1979.01,
+        "desviacion": 949.76
+      },
+      "demanda": {
+        "anuncios": 2201,
+        "vistas_totales": 33454,
+        "vistas_medianas": 6,
+        "vistas_promedio": 15.2
+      }
+    },
+    "bicicletas_electricas": {
+      "total": 2576,
+      "precios": {
+        "n": 2422,
+        "min": 100.0,
+        "p25": 670.0,
+        "mediana": 1150.0,
+        "p75": 1650.0,
+        "max": 2600.0,
+        "promedio": 1183.53,
+        "desviacion": 528.16
+      },
+      "demanda": {
+        "anuncios": 2576,
+        "vistas_totales": 67828,
+        "vistas_medianas": 7.0,
+        "vistas_promedio": 26.3
+      }
+    },
+    "patinetes": {
+      "total": 225,
+      "precios": {
+        "n": 198,
+        "min": 420.0,
+        "p25": 730.0,
+        "mediana": 750.0,
+        "p75": 800.0,
+        "max": 1100.0,
+        "promedio": 764.89,
+        "desviacion": 81.06
+      },
+      "demanda": {
+        "anuncios": 225,
+        "vistas_totales": 1904,
+        "vistas_medianas": 5,
+        "vistas_promedio": 8.5
+      }
+    }
+  },
+  "marcas": [
+    [
+      "Topmaq",
+      506
+    ],
+    [
+      "JMD",
+      227
+    ],
+    [
+      "Mountain",
+      187
+    ],
+    [
+      "Vedca",
+      173
+    ],
+    [
+      "Challenger",
+      170
+    ],
+    [
+      "Yoazaky",
+      165
+    ],
+    [
+      "Bucatti",
+      131
+    ],
+    [
+      "Motico",
+      129
+    ],
+    [
+      "Mishozuki",
+      95
+    ],
+    [
+      "Halcón",
+      87
+    ]
+  ],
+  "cortes": {
+    "2026-10-22": {
+      "total": 30,
+      "categorias": {
+        "bicicletas_electricas": 14,
+        "motos_electricas": 5,
+        "motos_combustion": 7,
+        "patinetes": 4
+      }
+    },
+    "2026-10-26": {
+      "total": 30,
+      "categorias": {
+        "bicicletas_electricas": 17,
+        "motos_combustion": 9,
+        "motos_electricas": 3,
+        "patinetes": 1
+      }
+    }
+  }
+}

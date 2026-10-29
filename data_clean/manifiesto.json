@@ -1,0 +1,47 @@
+{
+  "generado": "2026-10-29T08:48:05-04:00",
+  "total": 6101,
+  "categorias": {
+    "bicicletas_electricas": 2576,
+    "motos_combustion": 1099,
+    "motos_electricas": 2201,
+    "patinetes": 225
+  },
+  "cortes": {
+    "2026-10-22": {
+      "total": 30,
+      "categorias": {
+        "bicicletas_electricas": 14,
+        "motos_electricas": 5,
+        "motos_combustion": 7,
+        "patinetes": 4
+      }
+    },
+    "2026-10-26": {
+      "total": 30,
+      "categorias": {
+        "bicicletas_electricas": 17,
+        "motos_combustion": 9,
+        "motos_electricas": 3,
+        "patinetes": 1
+      }
+    }
+  },
+  "fuentes": [
+    {
+      "archivo": "revolico_20261017_raw.json",
+      "total": 6246,
+      "sha256": "bbcf6f99a222cc68a05c2ce5a1bb15ae40d45782eb8560a54b19ed451ccdc71a"
+    },
+    {
+      "archivo": "revolico_raw_20261022_123941.json",
+      "total": 46,
+      "sha256": "e3ef5058ef2e2fc108c831430e704476ffb727ab2539af90f37b933b78142e5e"
+    },
+    {
+      "archivo": "revolico_raw_20261026_095603.json",
+      "total": 52,
+      "sha256": "80d2f8aa8de136908eefa8210df933a6dc175346d1d29197ec3c506d6d2912e1"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+categoria,anuncios,precio_mediano_usd,precio_p25_usd,precio_p75_usd,vistas_medianas
+Motos de Combustión,1099,2250.0,1900.0,2592.5,8
+Motos Eléctricas,2201,2050.0,1300.0,2630.0,6
+Bicicletas Eléctricas,2576,1150.0,670.0,1650.0,7.0
+Patinetes,225,750.0,730.0,800.0,5

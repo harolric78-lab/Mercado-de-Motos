@@ -36,9 +36,10 @@ htmlcov/
 .mypy_cache/
 .ruff_cache/
 
-# Datos crudos y temporales (no versionar datos pesados)
-datos/**/*.tmp
-datos/**/*.bak
+# Datos temporales
+data_raw/**/*.tmp
+data_raw/**/*.bak
+data_clean/_etl/
 *.log
 logs/
 

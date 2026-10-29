@@ -4,9 +4,9 @@
 Utilidades compartidas del pipeline de scraping de Revolico.
 
 Contiene:
-  - Resolucion de rutas del proyecto (datos/raw, datos/processed, logs, datos/...)
+  - Resolucion de rutas del proyecto (data_raw, data_clean, logs, reports)
   - Normalizacion de texto, precios, monedas y URLs
-  - Reglas de negocio: inclusion/exclusion de vehiculos y deteccion de triciclos
+  - Clasificacion positiva en las cuatro categorias oficiales
   - Logger con contadores para el archivo de log
 """
 
@@ -34,11 +34,16 @@ CATEGORIA = "vehiculos"
 # Subcategorias de Revolico que se scrapean (La Habana)
 SUBCATEGORIAS = {
     "combustion": "vehiculos-motos-de-combustion",
-    "electricas": "vehiculos-motos-electricas-y-triciclos",
+    "electricas": "vehiculos-motos-electricas",
 }
 
-# Categorias permitidas por la regla de negocio
-CATEGORIAS_PERMITIDAS = ("combustion", "electrica", "patinete")
+# Categorias oficiales del proyecto
+CATEGORIAS_PERMITIDAS = (
+    "motos_combustion",
+    "motos_electricas",
+    "bicicletas_electricas",
+    "patinetes",
+)
 
 # ---------------------------------------------------------------------------
 # Palabras clave (se comparan sin acentos y en minusculas)
@@ -68,15 +73,8 @@ VEHICULO_FUERTE = ("motocicleta", "moto electrica", "motico", "vespa",
                    "scooter electrico", "scooter electrica", "scooter plegable",
                    "combustion", "combustible", "gasolina",
                    "bicicleta electrica", "bicimoto")
-# Compuestos que no son moto ni patinete (evitan falsos positivos con "moto")
-NO_PERMITIDO = ("triciclo", "trimoto", "tricimoto", "cuatrimoto", "mototaxi",
-                "motocarro", "motocasa", "mototren", "autocarro", "quad",
-                "buggy", "sidecar", "rickshaw", "tres ruedas", "3 ruedas")
-
-# Motivos de descarte. Triciclos y similares no se etiquetan: solo quedan
-# fuera de las tres categorias permitidas.
+# Motivos de descarte del clasificador positivo.
 MOTIVOS = {
-    "no_permitido": "No es moto de combustion, moto electrica ni patinete",
     "no_vehiculo": "No es un vehiculo (repuesto o accesorio)",
     "sin_titulo": "Anuncio sin titulo",
     "fuera_de_categorias": "No se identifica como una categoria permitida",
@@ -87,8 +85,7 @@ MOTIVOS = {
     "error_descarga": "Error al descargar el detalle del anuncio",
 }
 
-# Marcas normalizadas (variantes -> canonica). Mismo criterio que el
-# proyecto original (src/limpieza_datos/limpiar_revolico.py).
+# Marcas normalizadas (variantes -> canonica). Mismo criterio del proyecto.
 MARCAS_CANONICAS = {
     "XMOTORS": ["XMOTORS", "X MOTORS", "X-MOTORS", "XMOTOS"],
     "KRATHOS": ["KRATHOS", "KRATOS"],
@@ -137,18 +134,18 @@ MARCAS_CANONICAS = {
 # Rutas del proyecto
 # ---------------------------------------------------------------------------
 def project_root(start=None):
-    """Resuelve la raiz del proyecto (donde viven datos/, docs/, src/)."""
+    """Resuelve la raiz del proyecto (donde viven data_raw/, data_clean/, src/)."""
     env = os.environ.get("REVOLICO_PROJECT_ROOT")
     if env:
         return Path(env).expanduser().resolve()
     p = Path(start or Path.cwd()).resolve()
     candidatos = [p] + list(p.parents)
     for c in candidatos:
-        if (c / "datos").is_dir() and (c / "src").is_dir():
+        if (c / "data_raw").is_dir() and (c / "src").is_dir():
             return c
     for c in candidatos:
         sub = c / "Mercado-de-Motos"
-        if (sub / "datos").is_dir():
+        if (sub / "data_raw").is_dir():
             return sub
     return p
 
@@ -158,17 +155,16 @@ def paths(root=None):
     root = Path(root) if root else project_root()
     return {
         "root": root,
-        "raw": root / "datos" / "raw",
-        "processed": root / "datos" / "processed",
+        "raw": root / "data_raw" / "revolico",
+        "clean": root / "data_clean",
         "logs": root / "logs",
-        "datos_revolico": root / "datos" / "revolico",
-        "datos_limpios": root / "datos" / "limpios",
-        "informes": root / "docs" / "informes",
-        "graficos": root / "graficos",
+        "reports": root / "reports",
+        "metrics": root / "reports" / "metricas",
+        "graficos": root / "reports" / "graficos",
         "notebooks": root / "notebooks",
         "src_analisis": root / "src" / "analisis",
         "src_visualizacion": root / "src" / "visualizacion",
-        "archivo": root / "datos" / "_reemplazados",
+        "archivo": root / "data_raw" / "_reemplazados",
     }
 
 
@@ -331,10 +327,7 @@ def contiene(texto_norm, claves):
 
 
 def _categoria_texto(t, subcategoria):
-    """
-    Devuelve la categoria permitida si hay evidencia positiva en el texto,
-    o None si el texto no permite afirmar que sea una de las tres.
-    """
+    """Devuelve una de las cuatro categorias oficiales o None."""
     sub_elec = subcategoria == "electricas"
     ev_moto = contiene(t, MOTO)
     ev_pat = contiene(t, PATINETE)
@@ -344,46 +337,33 @@ def _categoria_texto(t, subcategoria):
     )
     ev_elec = contiene(t, ELECTRICA_EVID)
 
-    # Patinete electrico
     if ev_pat and (ev_elec or sub_elec):
-        return "patinete"
+        return "patinetes"
     if "scooter" in t and "plegable" in t and (ev_elec or sub_elec):
-        return "patinete"
-
-    # Moto de combustion
+        return "patinetes"
+    if ev_bici and (ev_elec or sub_elec):
+        return "bicicletas_electricas"
     if ev_comb and (ev_moto or subcategoria == "combustion"):
-        return "combustion"
-
-    # Moto electrica o bicicleta electrica (ambas entran como "electrica")
-    if (ev_moto or ev_bici) and ev_elec:
-        return "electrica"
-    if ev_moto and sub_elec:
-        return "electrica"
-    if ev_bici and sub_elec:
-        return "electrica"
+        return "motos_combustion"
+    if ev_moto and (ev_elec or sub_elec):
+        return "motos_electricas"
     if ev_moto and subcategoria == "combustion":
-        return "combustion"
+        return "motos_combustion"
     return None
 
 
 def clasificar_vehiculo(titulo, descripcion="", subcategoria="combustion"):
     """
-    Lista blanca: solo acepta motos de combustion, motos electricas
-    (incluye bicicletas electricas) y patinetes electricos.
+    Clasificacion positiva en las cuatro categorias oficiales.
 
     Devuelve (categoria, motivo):
-      categoria in {"combustion", "electrica", "patinete"} o None
+      categoria in CATEGORIAS_PERMITIDAS o None
       motivo = None si el anuncio entra; si no, un motivo interno.
     """
     t = norm(titulo)
     if not t:
         return None, "sin_titulo"
 
-    # Compuestos que no son moto ni patinete (sin etiquetarlos)
-    if contiene(t, NO_PERMITIDO):
-        return None, "no_permitido"
-
-    # Repuestos y accesorios (sin evidencia de vehiculo completo)
     if contiene(t, ACCESORIO) and not contiene(t, VEHICULO_FUERTE):
         return None, "no_vehiculo"
 
@@ -391,11 +371,8 @@ def clasificar_vehiculo(titulo, descripcion="", subcategoria="combustion"):
     if categoria:
         return categoria, None
 
-    # Segundo intento con la descripcion (solo evidencia explicita)
     d = norm(descripcion)
     if d:
-        if contiene(d, NO_PERMITIDO):
-            return None, "no_permitido"
         categoria = _categoria_texto(d, subcategoria)
         if categoria:
             return categoria, None
@@ -404,28 +381,20 @@ def clasificar_vehiculo(titulo, descripcion="", subcategoria="combustion"):
 
 
 def categoria_legacy(categoria):
-    """Mapea la categoria nueva a las claves que usa el resto del proyecto."""
+    """Devuelve la clave oficial de la categoria."""
     return {
-        "combustion": "motos_combustion",
-        "electrica": "motos_electricas",
-        "patinete": "motos_electricas",
+        "motos_combustion": "motos_combustion",
+        "motos_electricas": "motos_electricas",
+        "bicicletas_electricas": "bicicletas_electricas",
+        "patinetes": "patinetes",
     }.get(categoria, "")
 
 
 def subtipo_vehiculo(categoria, titulo=""):
-    """Subtipo descriptivo dentro de las tres categorias permitidas."""
-    t = norm(titulo)
-    if categoria == "combustion":
-        if "scooter" in t or "vespa" in t:
-            return "combustion_scooter"
-        if "deportiva" in t or "ninja" in t:
-            return "combustion_deportiva"
-        return "combustion"
-    if categoria == "patinete":
-        return "patinete_electrico"
-    if contiene(t, BICICLETA):
-        return "bicicleta_electrica"
-    return "moto_electrica"
+    """Devuelve el tipo de vehiculo dentro de las cuatro categorias."""
+    if categoria in CATEGORIAS_PERMITIDAS:
+        return categoria
+    return ""
 
 
 def tipo_vehiculo_legacy(categoria, titulo=""):

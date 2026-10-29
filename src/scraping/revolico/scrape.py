@@ -5,13 +5,12 @@ Paso 1 del pipeline: scraping de anuncios recientes de Revolico (La Habana).
 
 Se descargan las subcategorias de motos de combustion y de motos electricas,
 se recorren las paginas y se guardan las fichas de los anuncios mas recientes.
-Solo se aceptan tres categorias: moto de combustion, moto electrica (incluye
-bicicletas electricas) y patinete electrico. Todo lo demas queda fuera del
-analisis; no se etiqueta ni se cuenta por tipo.
+Solo se aceptan las cuatro categorias oficiales: motos de combustion, motos
+electricas, bicicletas electricas y patinetes.
 
 Salidas:
-  - datos/raw/revolico_raw_<sello>.json   -> todo lo consultado (auditoria)
-  - datos/raw/revolico_raw_<sello>.csv    -> lo mismo, para Excel
+  - data_raw/revolico/revolico_raw_<sello>.json
+  - data_raw/revolico/revolico_raw_<sello>.csv
 
 El dato crudo conserva los campos originales de Revolico (se eliminan los
 datos de contacto: telefono y correo) y agrega un bloque "_scraping" con
@@ -20,7 +19,7 @@ datos de contacto: telefono y correo) y agrega un bloque "_scraping" con
 Uso:
     python scrape.py
     python scrape.py --n 30 --max-paginas 3 --delay 1.0
-    python scrape.py --proyecto "C:/ruta/Mercado-de-Motos" --salida datos/raw
+    python scrape.py --proyecto "C:/ruta/Mercado-de-Motos" --salida data_raw/revolico
 """
 
 from __future__ import annotations
@@ -270,7 +269,7 @@ def construir_registro(ad, subcategoria, ficha=None, apollo=None, categoria=""):
 def scrape(session, n_objetivo, max_paginas, delay, log,
            con_imagenes=True, max_candidatos=150):
     """
-    Descarga candidatos y acepta solo las tres categorias permitidas hasta
+    Descarga candidatos y acepta solo las cuatro categorias oficiales hasta
     reunir `n_objetivo` anuncios. Devuelve (incluidos, descartados, errores).
     """
     log("1) Recolectando candidatos de las subcategorias...")
@@ -342,7 +341,7 @@ def scrape(session, n_objetivo, max_paginas, delay, log,
 def guardar_raw(ruta_dir, incluidos, descartados, errores, meta):
     ruta_dir.mkdir(parents=True, exist_ok=True)
     est = meta["sello"]
-    todos = incluidos + descartados
+    todos = list(incluidos)
     todos.sort(key=lambda a: a.get("_scraping", {}).get("fecha_publicacion") or "", reverse=True)
 
     payload = {
@@ -350,9 +349,7 @@ def guardar_raw(ruta_dir, incluidos, descartados, errores, meta):
         "provincia": "La Habana",
         "generado_habana": ahora_habana().isoformat(),
         "params": meta.get("params", {}),
-        "total_consultados": len(todos),
-        "total_incluidos": len(incluidos),
-        "total_descartados": len(descartados),
+        "total": len(todos),
         "errores": errores,
         "anuncios": todos,
     }
@@ -396,7 +393,7 @@ def main():
     ap.add_argument("--max-candidatos", type=int, default=150, help="Maximo de anuncios revisados")
     ap.add_argument("--delay", type=float, default=1.0, help="Pausa entre peticiones (s)")
     ap.add_argument("--proyecto", default=None, help="Ruta raiz del proyecto")
-    ap.add_argument("--salida", default=None, help="Carpeta de salida (por defecto datos/raw)")
+    ap.add_argument("--salida", default=None, help="Carpeta de salida (por defecto data_raw/revolico)")
     ap.add_argument("--sin-imagenes", action="store_true", help="Incluir anuncios sin foto")
     args = ap.parse_args()
 
@@ -418,7 +415,12 @@ def main():
     log.contar("anuncios_validos", len(incluidos))
     log.contar("anuncios_descartados", len(descartados))
     log.contar("errores", len(errores))
-    for cat in ("combustion", "electrica", "patinete"):
+    for cat in (
+        "motos_combustion",
+        "motos_electricas",
+        "bicicletas_electricas",
+        "patinetes",
+    ):
         log.contar(f"validos_{cat}", sum(
             1 for a in incluidos if a.get("_scraping", {}).get("categoria") == cat
         ))

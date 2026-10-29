@@ -1,2 +1,9 @@
 requests==2.34.2
 matplotlib==3.11.2
+pandas>=2.2
+numpy>=1.26
+beautifulsoup4>=4.12
+seaborn>=0.13
+pytest>=8
+tzdata>=2024.1
+jupyter>=1.0

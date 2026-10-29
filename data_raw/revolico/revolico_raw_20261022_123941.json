@@ -1,0 +1,2488 @@
+{
+  "fuente": "Revolico",
+  "provincia": "La Habana",
+  "generado_habana": "2026-10-22T12:41:14.174062-04:00",
+  "params": {
+    "n": 30,
+    "extra": 15,
+    "max_paginas": 3,
+    "max_candidatos": 160,
+    "delay": 0.7,
+    "precio_minimo": 100,
+    "proyecto": null,
+    "sin_imagenes": false,
+    "sin_reemplazo": false,
+    "sin_reportes": false,
+    "sin_notebook": false,
+    "sin_readme": false
+  },
+  "total_consultados": 46,
+  "total_incluidos": 46,
+  "errores": [],
+  "anuncios": [
+    {
+      "__typename": "AdType",
+      "id": "57937628",
+      "title": "Bicicleta eléctrica Modelo T5 0km",
+      "shortDescription": "Bicicleta eléctrica Modelo T5 0km plegable nueva e su casa\nBatería de litio 48 volt, 750 W de",
+      "description": "Bicicleta eléctrica Modelo T5 0km plegable nueva e su casa\nBatería de litio 48 volt, 750 W de potencia máxima\n20 MPH, 499 Wh de largo alcance, ligera con doble freno de disco\n22 millas de autonomía\nIncluye cesta, porta celular y candado\nCarga máxima 330lb\nLuz trasera y delantera LED\nMas detalles 54394076",
+      "price": 520,
+      "currency": "USD",
+      "name": null,
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132979307"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:31:32.114Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:39"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 4,
+      "permalink": "/item/bicicleta-electrica-modelo-t5-0km-57937628",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/0d1025573507822efdba7012ccd34d826095e69ab91fd73d41be9872d57f2002"
+      },
+      "userId": null,
+      "userPublicId": null,
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57937628",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-modelo-t5-0km-57937628",
+        "titulo_original": "Bicicleta eléctrica Modelo T5 0km",
+        "precio_original": 520,
+        "moneda_original": "USD",
+        "descripcion": "Bicicleta eléctrica Modelo T5 0km plegable nueva e su casa\nBatería de litio 48 volt, 750 W de potencia máxima\n20 MPH, 499 Wh de largo alcance, ligera con doble freno de disco\n22 millas de autonomía\nIncluye cesta, porta celular y candado\nCarga máxima 330lb\nLuz trasera y delantera LED\nMas detalles 54394076",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:31:32.114Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58254325",
+      "title": "BiciMoto Topmaq Evolution 2026",
+      "shortDescription": "⚙️ Características\n\n• Motor 3000W\n• Voltaje 48V\n• Capacidad 45AH\n• Luces LED\n• Alarma\n• Bocina",
+      "description": "⚙️ Características\n\n• Motor 3000W\n• Voltaje 48V\n• Capacidad 45AH\n• Luces LED\n• Alarma\n• Bocina (Bluetooth)\n• Pizarra digital\n• Batería de litio extraíble\n• Caja reguladora Votol EM50\n• 3 Velocidades y marcha atrás\n• Sistema de frenos de disco\n\n🎁 Incluye: Cargador inteligente y dos juegos de llaves\n\n‼️📋 Papeles en regla\n\n🛡️ Garantía de 15 días\n🚚 Mensajería incluida en toda Habana y Artemisa 🛣️\n\nColor 🎨: ⚪🔴⚫(1830usd)\n                    💜( 1850usd)\n\n📲 Si quieres la tuya, escríbenos al WhatsApp.",
+      "price": 1830,
+      "currency": "USD",
+      "name": "TuTiendaMix",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134417168"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:31:03.790Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:39"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 7,
+      "permalink": "/item/bicimoto-topmaq-evolution-2026-58254325",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/fa74e2a8bb27a0090d65ea466918e6e94ff6b38c36416706cb67ba23685a89be"
+      },
+      "userId": "44210",
+      "userPublicId": "HXuzRKKxDe9cwQRF3BGvZjkE",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58254325",
+        "url": "https://www.revolico.com/item/bicimoto-topmaq-evolution-2026-58254325",
+        "titulo_original": "BiciMoto Topmaq Evolution 2026",
+        "precio_original": 1830,
+        "moneda_original": "USD",
+        "descripcion": "⚙️ Características\n\n• Motor 3000W\n• Voltaje 48V\n• Capacidad 45AH\n• Luces LED\n• Alarma\n• Bocina (Bluetooth)\n• Pizarra digital\n• Batería de litio extraíble\n• Caja reguladora Votol EM50\n• 3 Velocidades y marcha atrás\n• Sistema de frenos de disco\n\n🎁 Incluye: Cargador inteligente y dos juegos de llaves\n\n‼️📋 Papeles en regla\n\n🛡️ Garantía de 15 días\n🚚 Mensajería incluida en toda Habana y Artemisa 🛣️\n\nColor 🎨: ⚪🔴⚫(1830usd)\n                    💜( 1850usd)\n\n📲 Si quieres la tuya, escríbenos al WhatsApp.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:31:03.790Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58254275",
+      "title": "BiciMoto Electrica Vedca Nueva pmm",
+      "shortDescription": "⚙️CARACTERÍSTICAS : \n\nBATERÍA DE LITHIUM \n48v - 13 amperes \nautonomía de 50km\nmúsica por",
+      "description": "⚙️CARACTERÍSTICAS : \n\nBATERÍA DE LITHIUM \n48v - 13 amperes \nautonomía de 50km\nmúsica por Bluetooth\n\n🎁INCLUYE: 2 juegos de llaves y cargador inteligente , porta celular \n\n🧾Papeles en orden y garantía \nMensajería incluída 🚛\n\n💲Se aceptan pagos en USD, EUR, CUP\n\n📲 Si quieres la tuya, escríbenos al WhatsApp.",
+      "price": 750,
+      "currency": "USD",
+      "name": "TuTiendaMix",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134416947"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:31:01.456Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:39"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/bicimoto-electrica-vedca-nueva-pmm-58254275",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/edfe7ac32df2b9ea096b52e2fcc5a2e416f834c0fb222f16f52317166e3ea3e7"
+      },
+      "userId": "44210",
+      "userPublicId": "HXuzRKKxDe9cwQRF3BGvZjkE",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58254275",
+        "url": "https://www.revolico.com/item/bicimoto-electrica-vedca-nueva-pmm-58254275",
+        "titulo_original": "BiciMoto Electrica Vedca Nueva pmm",
+        "precio_original": 750,
+        "moneda_original": "USD",
+        "descripcion": "⚙️CARACTERÍSTICAS : \n\nBATERÍA DE LITHIUM \n48v - 13 amperes \nautonomía de 50km\nmúsica por Bluetooth\n\n🎁INCLUYE: 2 juegos de llaves y cargador inteligente , porta celular \n\n🧾Papeles en orden y garantía \nMensajería incluída 🚛\n\n💲Se aceptan pagos en USD, EUR, CUP\n\n📲 Si quieres la tuya, escríbenos al WhatsApp.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:31:01.456Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58297167",
+      "title": "Motos XINDI con una oferta especial*🥳🥳🥳🥳    *Precio 1250 usd   *Motos de baterías de gel mejoradas DKs",
+      "shortDescription": "*Motos XINDI con una oferta especial*🥳🥳🥳🥳    *Precio 1250 usd*                \n\n *Motos de baterías",
+      "description": "*Motos XINDI con una oferta especial*🥳🥳🥳🥳    *Precio 1250 usd*                \n\n *Motos de baterías de gel mejoradas con grafeno*\n*De las que no explotan*\n🔹*32 V*\n🔹*60 A*\n🔹*Autonomía 100 km*",
+      "price": 1250,
+      "currency": "USD",
+      "name": "NIX Promoventas 2",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134616990"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:30:37.748Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 2,
+      "permalink": "/item/motos-xindi-con-una-oferta-especial-precio-1250-usd-motos-de-baterias-de-gel-mejoradas-dks-58297167",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/fd2db7fd17c04a932e71ec621542563fa87c94ea8fd926b9db74999d7114ca65"
+      },
+      "userId": "184851",
+      "userPublicId": "CaxI5s4JHwTCpPvzZOpk3Xid",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58297167",
+        "url": "https://www.revolico.com/item/motos-xindi-con-una-oferta-especial-precio-1250-usd-motos-de-baterias-de-gel-mejoradas-dks-58297167",
+        "titulo_original": "Motos XINDI con una oferta especial*🥳🥳🥳🥳    *Precio 1250 usd   *Motos de baterías de gel mejoradas DKs",
+        "precio_original": 1250,
+        "moneda_original": "USD",
+        "descripcion": "*Motos XINDI con una oferta especial*🥳🥳🥳🥳    *Precio 1250 usd*                \n\n *Motos de baterías de gel mejoradas con grafeno*\n*De las que no explotan*\n🔹*32 V*\n🔹*60 A*\n🔹*Autonomía 100 km*",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:30:37.748Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58121069",
+      "title": "X-RYDER Bicimoto Eléctrica 48V 35Ah",
+      "shortDescription": "🔋 Batería LiFePO4 48V 35Ah de larga duración.\n ⚡ Motor de 3000W con excelente rendimiento y",
+      "description": "🔋 Batería LiFePO4 48V 35Ah de larga duración.\n ⚡ Motor de 3000W con excelente rendimiento y aceleración.\n 🧺 Canasta delantera integrada para transportar objetos con facilidad.\n 🛞 Diseño robusto y estable para desplazamientos urbanos.\n 💡 Sistema de iluminación LED para mayor visibilidad.\n 📟 Panel digital con información de velocidad y batería.\n 🪑 Asiento amplio y cómodo para una conducción más confortable.\n\n✅ Ideal para la ciudad, trayectos diarios, trabajo y movilidad personal.\n\n🔥 Potencia, autonomía y estilo en una sola bicimoto eléctrica. 🚲⚡🔋",
+      "price": 1450,
+      "currency": "USD",
+      "name": "ElectroMarketCuba",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:133812843"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:29:56.214Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 10,
+      "permalink": "/item/x-ryder-bicimoto-electrica-48v-35ah-58121069",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/52bd8f4a9517ecb4ecea8d6c9a3f13419a724034a6e3d4aa24b5feb4f157e3f6"
+      },
+      "userId": "142021",
+      "userPublicId": "GF5UxqZ3k943Gk2KxmRpv2T8",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58121069",
+        "url": "https://www.revolico.com/item/x-ryder-bicimoto-electrica-48v-35ah-58121069",
+        "titulo_original": "X-RYDER Bicimoto Eléctrica 48V 35Ah",
+        "precio_original": 1450,
+        "moneda_original": "USD",
+        "descripcion": "🔋 Batería LiFePO4 48V 35Ah de larga duración.\n ⚡ Motor de 3000W con excelente rendimiento y aceleración.\n 🧺 Canasta delantera integrada para transportar objetos con facilidad.\n 🛞 Diseño robusto y estable para desplazamientos urbanos.\n 💡 Sistema de iluminación LED para mayor visibilidad.\n 📟 Panel digital con información de velocidad y batería.\n 🪑 Asiento amplio y cómodo para una conducción más confortable.\n\n✅ Ideal para la ciudad, trayectos diarios, trabajo y movilidad personal.\n\n🔥 Potencia, autonomía y estilo en una sola bicimoto eléctrica. 🚲⚡🔋",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:29:56.214Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58121016",
+      "title": "Scooter Eléctrico Laituning 48V 20Ah",
+      "shortDescription": "⚡ Batería de litio 48V 20Ah\n 🛣️ Autonomía de 50-60 km\n 🚀 Velocidad máxima de 25-30 km/h\n 🧺 Canasta",
+      "description": "⚡ Batería de litio 48V 20Ah\n 🛣️ Autonomía de 50-60 km\n 🚀 Velocidad máxima de 25-30 km/h\n 🧺 Canasta delantera integrada\n 👥 Asiento cómodo para conductor y pasajero\n 🔧 Suspensión delantera y trasera\n 📟 Panel digital con indicador de velocidad y batería\n 🔌 Carga sencilla en toma de corriente convencional\n\n✅ Ideal para la ciudad, mandados diarios, trabajo y trayectos cortos. 🌱💰",
+      "price": 680,
+      "currency": "USD",
+      "name": "ElectroMarketCuba",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:133812708"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:29:34.415Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 18,
+      "permalink": "/item/scooter-electrico-laituning-48v-20ah-58121016",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/6e123df3033becb522378fecd9e3826971d13e02d213eaf1289bcbdb2f31e7c2"
+      },
+      "userId": "142021",
+      "userPublicId": "GF5UxqZ3k943Gk2KxmRpv2T8",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58121016",
+        "url": "https://www.revolico.com/item/scooter-electrico-laituning-48v-20ah-58121016",
+        "titulo_original": "Scooter Eléctrico Laituning 48V 20Ah",
+        "precio_original": 680,
+        "moneda_original": "USD",
+        "descripcion": "⚡ Batería de litio 48V 20Ah\n 🛣️ Autonomía de 50-60 km\n 🚀 Velocidad máxima de 25-30 km/h\n 🧺 Canasta delantera integrada\n 👥 Asiento cómodo para conductor y pasajero\n 🔧 Suspensión delantera y trasera\n 📟 Panel digital con indicador de velocidad y batería\n 🔌 Carga sencilla en toma de corriente convencional\n\n✅ Ideal para la ciudad, mandados diarios, trabajo y trayectos cortos. 🌱💰",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:29:34.415Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58121004",
+      "title": "Moto Eléctrica Kivitova PLA 51 72V30Ah",
+      "shortDescription": "⚡ Rendimiento que te impulsa\n\n🔴 Motor de 1000W para una aceleración suave y eficiente.\n 🏙️ Velocidad",
+      "description": "⚡ Rendimiento que te impulsa\n\n🔴 Motor de 1000W para una aceleración suave y eficiente.\n 🏙️ Velocidad máxima de 40 a 45 km/h, ideal para la ciudad.\n 🔋 Batería de litio 72V 30Ah con excelente autonomía y rendimiento.\n\n🛣️ Conducción cómoda y segura\n\n🛞 Neumáticos 350-10 para una mejor estabilidad en diferentes superficies.\n 🛑 Frenos de disco delanteros y traseros para una respuesta de frenado más precisa.\n 🔧 Horquilla hidráulica delantera que absorbe mejor las irregularidades del terreno.\n 🔩 Suspensión trasera reforzada con resorte para mayor confort en cada recorrido.\n\n💡 Tecnología que marca la diferencia\n\n📱 Pantalla LED digital de fácil lectura.\n ⚙️ Controlador de 12 tubos para una entrega de potencia más estable y eficiente.\n 🔌 Carga en tomas de 110V y 220V con enchufe americano de dos pines.\n\n🎨 Diseño moderno y atractivo",
+      "price": 1650,
+      "currency": "USD",
+      "name": "ElectroMarketCuba",
+      "status": "PUBLISHED",
+      "imagesCount": 3,
+      "readyImages": [
+        {
+          "__ref": "ImageType:133812653"
+        },
+        {
+          "__ref": "ImageType:133812654"
+        },
+        {
+          "__ref": "ImageType:133812652"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:29:23.106Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 14,
+      "permalink": "/item/moto-electrica-kivitova-pla-51-72v30ah-58121004",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/a5fb7b2161a58a8a28f810fe38cdf01baa0e2dd1952df8b11f34f6767efb2f30"
+      },
+      "userId": "142021",
+      "userPublicId": "GF5UxqZ3k943Gk2KxmRpv2T8",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58121004",
+        "url": "https://www.revolico.com/item/moto-electrica-kivitova-pla-51-72v30ah-58121004",
+        "titulo_original": "Moto Eléctrica Kivitova PLA 51 72V30Ah",
+        "precio_original": 1650,
+        "moneda_original": "USD",
+        "descripcion": "⚡ Rendimiento que te impulsa\n\n🔴 Motor de 1000W para una aceleración suave y eficiente.\n 🏙️ Velocidad máxima de 40 a 45 km/h, ideal para la ciudad.\n 🔋 Batería de litio 72V 30Ah con excelente autonomía y rendimiento.\n\n🛣️ Conducción cómoda y segura\n\n🛞 Neumáticos 350-10 para una mejor estabilidad en diferentes superficies.\n 🛑 Frenos de disco delanteros y traseros para una respuesta de frenado más precisa.\n 🔧 Horquilla hidráulica delantera que absorbe mejor las irregularidades del terreno.\n 🔩 Suspensión trasera reforzada con resorte para mayor confort en cada recorrido.\n\n💡 Tecnología que marca la diferencia\n\n📱 Pantalla LED digital de fácil lectura.\n ⚙️ Controlador de 12 tubos para una entrega de potencia más estable y eficiente.\n 🔌 Carga en tomas de 110V y 220V con enchufe americano de dos pines.\n\n🎨 Diseño moderno y atractivo",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:29:23.106Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58254630",
+      "title": "Bicimoto grillo JMD",
+      "shortDescription": "🛵⚡ ¡BICIMOTO JMD 2026 – POTENCIA Y AUTONOMÍA! ⚡🛵\n\n🔥 PRECIO: 1,500 USD 🔥\n\nDescubre la bicimoto JMD,",
+      "description": "🛵⚡ ¡BICIMOTO JMD 2026 – POTENCIA Y AUTONOMÍA! ⚡🛵\n\n🔥 PRECIO: 1,500 USD 🔥\n\nDescubre la bicimoto JMD, ideal para tus desplazamientos diarios, con gran potencia y batería de litio.\n\n🔹 CARACTERÍSTICAS TÉCNICAS:\n\n- ⚡ Potencia: 3000 W\n- 🔋 Batería: 48 V – 50 Ah\n- 🛣️ Autonomía: hasta 100 km, según las condiciones de uso\n- 💡 Iluminación LED\n- 🔐 Alarma de seguridad\n- 🔊 Bocina con conexión Bluetooth\n- ⚖️ Peso: 135 kg\n- 📏 Dimensiones: 195 × 60 × 110 cm\n- 🏍️ Modelo: JMD\n\n🎁 ACCESORIOS INCLUIDOS:\n\n- 🪖 Cascos\n- 🧤 Guantillas\n- 🔌 Cargador\n- 🔑 Doble llave\n\n🚚 ¡MENSAJERÍA DISPONIBLE!\n\n📩 ¡Contáctanos para más información y coordina tu compra!\n\n🛵 BICIMOTO JMD: POTENCIA, COMODIDAD Y ESTILO EN UN SOLO VEHÍCULO.",
+      "price": 1500,
+      "currency": "USD",
+      "name": "Juria Bonne Valdes",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134418609"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:28:26.853Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:43"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 7,
+      "permalink": "/item/bicimoto-grillo-jmd-58254630",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/736db3a163beb952a7335292186174ed68b4a417a758c8eb3c226b54d7d36532"
+      },
+      "userId": "23883",
+      "userPublicId": "DHwuZAlMoSe8BSue6c1zFs3T",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58254630",
+        "url": "https://www.revolico.com/item/bicimoto-grillo-jmd-58254630",
+        "titulo_original": "Bicimoto grillo JMD",
+        "precio_original": 1500,
+        "moneda_original": "USD",
+        "descripcion": "🛵⚡ ¡BICIMOTO JMD 2026 – POTENCIA Y AUTONOMÍA! ⚡🛵\n\n🔥 PRECIO: 1,500 USD 🔥\n\nDescubre la bicimoto JMD, ideal para tus desplazamientos diarios, con gran potencia y batería de litio.\n\n🔹 CARACTERÍSTICAS TÉCNICAS:\n\n- ⚡ Potencia: 3000 W\n- 🔋 Batería: 48 V – 50 Ah\n- 🛣️ Autonomía: hasta 100 km, según las condiciones de uso\n- 💡 Iluminación LED\n- 🔐 Alarma de seguridad\n- 🔊 Bocina con conexión Bluetooth\n- ⚖️ Peso: 135 kg\n- 📏 Dimensiones: 195 × 60 × 110 cm\n- 🏍️ Modelo: JMD\n\n🎁 ACCESORIOS INCLUIDOS:\n\n- 🪖 Cascos\n- 🧤 Guantillas\n- 🔌 Cargador\n- 🔑 Doble llave\n\n🚚 ¡MENSAJERÍA DISPONIBLE!\n\n📩 ¡Contáctanos para más información y coordina tu compra!\n\n🛵 BICIMOTO JMD: POTENCIA, COMODIDAD Y ESTILO EN UN SOLO VEHÍCULO.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:28:26.853Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58260656",
+      "title": "Moto",
+      "shortDescription": "🏍️ MOTOR KRATHOS 250 CC\n\n💲 Precio: 3,260 USD\n🛡️ Garantía: 3 meses\n\n¡Potencia, estilo y rendimiento",
+      "description": "🏍️ MOTOR KRATHOS 250 CC\n\n💲 Precio: 3,260 USD\n🛡️ Garantía: 3 meses\n\n¡Potencia, estilo y rendimiento para quienes buscan una motocicleta lista para cualquier desafío!\n\nEspecificaciones técnicas\n✅ Motor: Monocilíndrico, 4 tiempos, 250 cc\n⛽ Capacidad del tanque: 9.5 L\n🚀 Velocidad máxima: 110 km/h\n💪 Carga máxima: 160 kg\n⚙️ Transmisión: Estándar de 6 velocidades\n🔥 Potencia máxima: 17 Hp\n🔩 Torque máximo: 16 ± 0.2 Nm / 8000 rpm\n🛑 Frenos: Disco CBS delantero y trasero\n🔑 Sistema de encendido: CDI\n🌬️ Enfriamiento: Por aire con radiador de aceite\n🛞 Suspensión delantera: Telescópica\n🛞 Suspensión trasera: Doble amortiguador con resorte\n📏 Dimensiones: 195 × 110 × 76 cm\n\n🎨 Colores disponibles:\n🔹 Azul\n⚫ Negra\n\n🏍️ La KRATHOS 250 CC combina potencia, seguridad y comodidad, ideal para recorridos urbanos y viajes de mayor distancia gracias a su motor de 250 cc, transmisión de 6 velocidades y frenos de disco CBS en ambas ruedas.",
+      "price": 3260,
+      "currency": "USD",
+      "name": "Leandro Fernandez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134446405"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:26:40.343Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 8,
+      "permalink": "/item/moto-58260656",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/cb459ed5711ad5cd20ed6bca65ce0b80d582cc0f243df501d66078cae0591083"
+      },
+      "userId": "17294",
+      "userPublicId": "ej4BvzHvCOC5jSzYNKS84KZV",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58260656",
+        "url": "https://www.revolico.com/item/moto-58260656",
+        "titulo_original": "Moto",
+        "precio_original": 3260,
+        "moneda_original": "USD",
+        "descripcion": "🏍️ MOTOR KRATHOS 250 CC\n\n💲 Precio: 3,260 USD\n🛡️ Garantía: 3 meses\n\n¡Potencia, estilo y rendimiento para quienes buscan una motocicleta lista para cualquier desafío!\n\nEspecificaciones técnicas\n✅ Motor: Monocilíndrico, 4 tiempos, 250 cc\n⛽ Capacidad del tanque: 9.5 L\n🚀 Velocidad máxima: 110 km/h\n💪 Carga máxima: 160 kg\n⚙️ Transmisión: Estándar de 6 velocidades\n🔥 Potencia máxima: 17 Hp\n🔩 Torque máximo: 16 ± 0.2 Nm / 8000 rpm\n🛑 Frenos: Disco CBS delantero y trasero\n🔑 Sistema de encendido: CDI\n🌬️ Enfriamiento: Por aire con radiador de aceite\n🛞 Suspensión delantera: Telescópica\n🛞 Suspensión trasera: Doble amortiguador con resorte\n📏 Dimensiones: 195 × 110 × 76 cm\n\n🎨 Colores disponibles:\n🔹 Azul\n⚫ Negra\n\n🏍️ La KRATHOS 250 CC combina potencia, seguridad y comodidad, ideal para recorridos urbanos y viajes de mayor distancia gracias a su motor de 250 cc, transmisión de 6 velocidades y frenos de disco CBS en ambas ruedas.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:26:40.343Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58260664",
+      "title": "Moto",
+      "shortDescription": "🏍️ MOTOR JIN 150 CC\n\n💲 Precio: $1,890 USD\n🛡️ Garantía: 3 meses\n\n⚙️ Especificaciones técnicas\nMotor:",
+      "description": "🏍️ MOTOR JIN 150 CC\n\n💲 Precio: $1,890 USD\n🛡️ Garantía: 3 meses\n\n⚙️ Especificaciones técnicas\nMotor: Monocilíndrico, 4 tiempos, 150 cc\nTanque de combustible: 16.5 L\nRendimiento: 50.82 km\nVelocidad máxima: 96 km/h\nCarga máxima: 150 kg\nTransmisión: 5 marchas por cadena\nPotencia máxima: 8.4 ± 0.2 kW / 8500 rpm\nTorque máximo: 11 ± 0.2 Nm / 6000 rpm\nFrenos: Disco delantero / Tambor trasero\nSistema de encendido: Carburador\nEnfriamiento: Por aire\nSuspensión: Amortiguador normal (delantera) / Doble amortiguador (trasera)\nDimensiones: 1950 × 760 × 1060 mm\n🎨 Colores disponibles\n💚 Verde\n❤️ Rojo\n✅ Ideal para\nTraslados diarios.\nTrabajo y mensajería.\nRecorridos urbanos.\nQuienes buscan una moto confiable, económica y de fácil mantenimiento.",
+      "price": 1890,
+      "currency": "USD",
+      "name": "Leandro Fernandez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134446460"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:26:35.037Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 7,
+      "permalink": "/item/moto-58260664",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/5a6f339d438cdc448e71c3bdb56aa6ba4bdf14d4d571119ed4aeb38a0042089a"
+      },
+      "userId": "17294",
+      "userPublicId": "ej4BvzHvCOC5jSzYNKS84KZV",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58260664",
+        "url": "https://www.revolico.com/item/moto-58260664",
+        "titulo_original": "Moto",
+        "precio_original": 1890,
+        "moneda_original": "USD",
+        "descripcion": "🏍️ MOTOR JIN 150 CC\n\n💲 Precio: $1,890 USD\n🛡️ Garantía: 3 meses\n\n⚙️ Especificaciones técnicas\nMotor: Monocilíndrico, 4 tiempos, 150 cc\nTanque de combustible: 16.5 L\nRendimiento: 50.82 km\nVelocidad máxima: 96 km/h\nCarga máxima: 150 kg\nTransmisión: 5 marchas por cadena\nPotencia máxima: 8.4 ± 0.2 kW / 8500 rpm\nTorque máximo: 11 ± 0.2 Nm / 6000 rpm\nFrenos: Disco delantero / Tambor trasero\nSistema de encendido: Carburador\nEnfriamiento: Por aire\nSuspensión: Amortiguador normal (delantera) / Doble amortiguador (trasera)\nDimensiones: 1950 × 760 × 1060 mm\n🎨 Colores disponibles\n💚 Verde\n❤️ Rojo\n✅ Ideal para\nTraslados diarios.\nTrabajo y mensajería.\nRecorridos urbanos.\nQuienes buscan una moto confiable, económica y de fácil mantenimiento.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:26:35.037Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58155319",
+      "title": "Moto 🛵 nueva",
+      "shortDescription": "☆$2000 USD *NUEVA*\n\n_*Especificaciones Técnicas y Características*_\n\n●Marca: Hongli  \n●Modelo: HL",
+      "description": "☆$2000 USD *NUEVA*\n\n_*Especificaciones Técnicas y Características*_\n\n●Marca: Hongli  \n●Modelo: HL 125C / RS-PRO  \n●Motor: 4 tiempos de 125 cc (cilindrada aproximada de 124 ml), monocilíndrico.  \n●Transmisión: Manual de 4 velocidades con embrague.  \n●Sistema de arranque: Mixto, tanto eléctrico como por pedal de patada (kick start).  \n●Capacidad de combustible: Tanque de aproximadamente 8.5 litros.  \n●Rendimiento estimado: Consumo eficiente de combustible (alrededor de 50 a 55 km por litro).\n●Frenos: De tambor.\n●\n`Equipamiento y Diseño Visibles`\nProtección: Incluye defensas/barras protectoras de motor laterales.  \nRuedas: Llantas de aleación/aspa con perfil deportivo y detalles decorativos en rojo.  \nEstructura y Acabado: Diseño en color negro con calcomanías/gráficos en rojo, blanco y gris (RS-PRO).  \n`*Accesorios*`: Cuenta con posapiés para pasajero y soporte/parrilla lateral posterior.",
+      "price": 2000,
+      "currency": "USD",
+      "name": "Klaus",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:133961031"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:26:34.835Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:45"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 17,
+      "permalink": "/item/moto-nueva-58155319",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/380a4f11f77a4f9b27caf9f1f1e022b77916428a7453c8f2cc973f3672b7083d"
+      },
+      "userId": "11326",
+      "userPublicId": "quOf5Xo9a6SgsFkhldu4cla8",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58155319",
+        "url": "https://www.revolico.com/item/moto-nueva-58155319",
+        "titulo_original": "Moto 🛵 nueva",
+        "precio_original": 2000,
+        "moneda_original": "USD",
+        "descripcion": "☆$2000 USD *NUEVA*\n\n_*Especificaciones Técnicas y Características*_\n\n●Marca: Hongli  \n●Modelo: HL 125C / RS-PRO  \n●Motor: 4 tiempos de 125 cc (cilindrada aproximada de 124 ml), monocilíndrico.  \n●Transmisión: Manual de 4 velocidades con embrague.  \n●Sistema de arranque: Mixto, tanto eléctrico como por pedal de patada (kick start).  \n●Capacidad de combustible: Tanque de aproximadamente 8.5 litros.  \n●Rendimiento estimado: Consumo eficiente de combustible (alrededor de 50 a 55 km por litro).\n●Frenos: De tambor.\n●\n`Equipamiento y Diseño Visibles`\nProtección: Incluye defensas/barras protectoras de motor laterales.  \nRuedas: Llantas de aleación/aspa con perfil deportivo y detalles decorativos en rojo.  \nEstructura y Acabado: Diseño en color negro con calcomanías/gráficos en rojo, blanco y gris (RS-PRO).  \n`*Accesorios*`: Cuenta con posapiés para pasajero y soporte/parrilla lateral posterior.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:26:34.835Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58260672",
+      "title": "Moto",
+      "shortDescription": "🏍️ MOTOR KRATHOS 200 CC\n\n💲 Precio: 2,550 USD\n🛡️ Garantía: 3 meses\n\n⚙️ Especificaciones\nMotor:",
+      "description": "🏍️ MOTOR KRATHOS 200 CC\n\n💲 Precio: 2,550 USD\n🛡️ Garantía: 3 meses\n\n⚙️ Especificaciones\nMotor: Monocilíndrico, 4 tiempos\nPotencia máxima: 10.4 ± 0.2 kW / 8000 rpm\nTorque máximo: 13.5 ± 0.2 Nm / 5500 rpm\nTransmisión: 5 velocidades por cadena\nVelocidad máxima: 96 km/h\nRendimiento: 56.17 km por litro\nCapacidad del tanque: 15 L\nCarga máxima: 150 kg\nFrenos: Disco delantero / Tambor trasero\nEncendido: Carburador\nArranque: Eléctrico\nSistema de enfriamiento: Por aire\nSuspensión: Amortiguador normal delantero / Doble amortiguador trasero\nDimensiones: 1970 × 740 × 1060 mm\n\n🎨 Colores disponibles:\n🟢 Verde_Amarillo | 🔴 Rojo\n\n✅ Una motocicleta resistente, cómoda y eficiente, ideal para el trabajo diario y recorridos urbanos, con excelente rendimiento de combustible y gran capacidad de carga.",
+      "price": 2550,
+      "currency": "USD",
+      "name": "Leandro Fernandez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134446497"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:26:29.565Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 9,
+      "permalink": "/item/moto-58260672",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/c4686f73a7c1a0f8a780e8c73916781af3b3afdbae1311244c960a7ffb67ac36"
+      },
+      "userId": "17294",
+      "userPublicId": "ej4BvzHvCOC5jSzYNKS84KZV",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58260672",
+        "url": "https://www.revolico.com/item/moto-58260672",
+        "titulo_original": "Moto",
+        "precio_original": 2550,
+        "moneda_original": "USD",
+        "descripcion": "🏍️ MOTOR KRATHOS 200 CC\n\n💲 Precio: 2,550 USD\n🛡️ Garantía: 3 meses\n\n⚙️ Especificaciones\nMotor: Monocilíndrico, 4 tiempos\nPotencia máxima: 10.4 ± 0.2 kW / 8000 rpm\nTorque máximo: 13.5 ± 0.2 Nm / 5500 rpm\nTransmisión: 5 velocidades por cadena\nVelocidad máxima: 96 km/h\nRendimiento: 56.17 km por litro\nCapacidad del tanque: 15 L\nCarga máxima: 150 kg\nFrenos: Disco delantero / Tambor trasero\nEncendido: Carburador\nArranque: Eléctrico\nSistema de enfriamiento: Por aire\nSuspensión: Amortiguador normal delantero / Doble amortiguador trasero\nDimensiones: 1970 × 740 × 1060 mm\n\n🎨 Colores disponibles:\n🟢 Verde_Amarillo | 🔴 Rojo\n\n✅ Una motocicleta resistente, cómoda y eficiente, ideal para el trabajo diario y recorridos urbanos, con excelente rendimiento de combustible y gran capacidad de carga.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:26:29.565Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "56387441",
+      "title": "Bicicleta eléctrica G29",
+      "shortDescription": "🚲 Bicicleta eléctrica G29 \n\n✅ Motor brushless de 1000W con potencia máxima de 2500W peak.\n\n✅Batería",
+      "description": "🚲 Bicicleta eléctrica G29 \n\n✅ Motor brushless de 1000W con potencia máxima de 2500W peak.\n\n✅Batería 48V 25Ah con rango máximo de hasta 60 millas.\n\n✅ Velocidad máxima de 32 mph, según condiciones de uso y terreno.\n\n✅Ruedas fat tire de 26\" \n\n✅ Transmisión de 7 velocidades y suspensión delantera para una conducción más adaptable.\n\n✅ Incluye asiento ajustable, campana, pantalla, guardafangos, luz delantera y pata de apoyo.\n\n💸PRECIO: 1150 Usd \n\n✅Recogida en el local \n✅Garantía \n✅Factura",
+      "price": 1150,
+      "currency": "USD",
+      "name": "ElectroMarketCuba",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:125991629"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:25:00.286Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 68,
+      "permalink": "/item/bicicleta-electrica-g29-56387441",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/8237ebbfe87568be412b7adffe202737b54ca41d0966ad506ff19ed39cef8c12"
+      },
+      "userId": "142021",
+      "userPublicId": "GF5UxqZ3k943Gk2KxmRpv2T8",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "56387441",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-g29-56387441",
+        "titulo_original": "Bicicleta eléctrica G29",
+        "precio_original": 1150,
+        "moneda_original": "USD",
+        "descripcion": "🚲 Bicicleta eléctrica G29 \n\n✅ Motor brushless de 1000W con potencia máxima de 2500W peak.\n\n✅Batería 48V 25Ah con rango máximo de hasta 60 millas.\n\n✅ Velocidad máxima de 32 mph, según condiciones de uso y terreno.\n\n✅Ruedas fat tire de 26\" \n\n✅ Transmisión de 7 velocidades y suspensión delantera para una conducción más adaptable.\n\n✅ Incluye asiento ajustable, campana, pantalla, guardafangos, luz delantera y pata de apoyo.\n\n💸PRECIO: 1150 Usd \n\n✅Recogida en el local \n✅Garantía \n✅Factura",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:25:00.286Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "56387494",
+      "title": "Bicicleta eléctrica TST X6",
+      "shortDescription": "🚲⚡️Bicicleta eléctrica TST X6 \n\n✅Motor brushless de 750W -1500 pico con potencia confiable para",
+      "description": "🚲⚡️Bicicleta eléctrica TST X6 \n\n✅Motor brushless de 750W -1500 pico con potencia confiable para traslados diarios.\n\n✅Batería removible de 48V 15Ah con autonomía de hasta 60 millas con asistencia de pedaleo.\n\n✅ Llantas fat tire de 20\" x 4.0\" para mayor tracción y estabilidad en diferentes terrenos.\n\n✅ Suspensión delantera y trasera \n\n✅Frenos mecánicos de disco, luces delantera y trasera, pantalla LED y conectividad con app.\n\n💸PRECIO: 1130 Usd \n\n✅Recogida en el local. \n✅Garantía \n✅Factura",
+      "price": 1130,
+      "currency": "USD",
+      "name": "ElectroMarketCuba",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:125991921"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:24:49.501Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 86,
+      "permalink": "/item/bicicleta-electrica-tst-x6-56387494",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/4b962f48d4bb0f23f938f14f3928557695b92cb81e72b820ade787e1b03c0574"
+      },
+      "userId": "142021",
+      "userPublicId": "GF5UxqZ3k943Gk2KxmRpv2T8",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "56387494",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-tst-x6-56387494",
+        "titulo_original": "Bicicleta eléctrica TST X6",
+        "precio_original": 1130,
+        "moneda_original": "USD",
+        "descripcion": "🚲⚡️Bicicleta eléctrica TST X6 \n\n✅Motor brushless de 750W -1500 pico con potencia confiable para traslados diarios.\n\n✅Batería removible de 48V 15Ah con autonomía de hasta 60 millas con asistencia de pedaleo.\n\n✅ Llantas fat tire de 20\" x 4.0\" para mayor tracción y estabilidad en diferentes terrenos.\n\n✅ Suspensión delantera y trasera \n\n✅Frenos mecánicos de disco, luces delantera y trasera, pantalla LED y conectividad con app.\n\n💸PRECIO: 1130 Usd \n\n✅Recogida en el local. \n✅Garantía \n✅Factura",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:24:49.501Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "56386679",
+      "title": "Bicicleta eléctrica Deepower QS7",
+      "shortDescription": "🚲Bicicleta eléctrica Deepower QS7 \n\n✅Diseñada para recorridos urbanos, caminos variados y uso de",
+      "description": "🚲Bicicleta eléctrica Deepower QS7 \n\n✅Diseñada para recorridos urbanos, caminos variados y uso de alto rendimiento.\n\n✅Motor de 750W con potencia máxima de 1500W peak y velocidad máxima de 30 mph.\n\n✅ Batería 48V 20Ah de 960Wh con autonomía de 25 a 30 millas en modo eléctrico puro.\n\n✅Autonomía de 35 a 50 millas en modo de asistencia al pedaleo.\n\n✅ Llantas 20\" x 4\" delanteras y traseras para mayor estabilidad en distintos caminos.\n\n✅Resistencia al agua IPX4 y luces delantera y trasera incluidas.\n\n✅ Capacidad máxima de carga de 330 lb / 150 kg.\n\n💸PRECIO: 1130 Usd \n\n✅Recogida en el local \n✅Garantía \n✅Factura",
+      "price": 1130,
+      "currency": "USD",
+      "name": "ElectroMarketCuba",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:125988225"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:23:55.459Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 68,
+      "permalink": "/item/bicicleta-electrica-deepower-56386679",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/6239863ed294bb0349ad8d4a3dc8ca1432b7672d9fef643b14c842f1e3e5fb7e"
+      },
+      "userId": "142021",
+      "userPublicId": "GF5UxqZ3k943Gk2KxmRpv2T8",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "56386679",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-deepower-56386679",
+        "titulo_original": "Bicicleta eléctrica Deepower QS7",
+        "precio_original": 1130,
+        "moneda_original": "USD",
+        "descripcion": "🚲Bicicleta eléctrica Deepower QS7 \n\n✅Diseñada para recorridos urbanos, caminos variados y uso de alto rendimiento.\n\n✅Motor de 750W con potencia máxima de 1500W peak y velocidad máxima de 30 mph.\n\n✅ Batería 48V 20Ah de 960Wh con autonomía de 25 a 30 millas en modo eléctrico puro.\n\n✅Autonomía de 35 a 50 millas en modo de asistencia al pedaleo.\n\n✅ Llantas 20\" x 4\" delanteras y traseras para mayor estabilidad en distintos caminos.\n\n✅Resistencia al agua IPX4 y luces delantera y trasera incluidas.\n\n✅ Capacidad máxima de carga de 330 lb / 150 kg.\n\n💸PRECIO: 1130 Usd \n\n✅Recogida en el local \n✅Garantía \n✅Factura",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:23:55.459Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57598491",
+      "title": "Bicimoto Onebot de poco uso, en perfecto estado ....700 usd",
+      "shortDescription": "Bicimoto Onebot de poco uso(solo 4 meses), en perfecto estado ....700 usd",
+      "description": "Bicimoto Onebot de poco uso(solo 4 meses), en perfecto estado ....700 usd",
+      "price": 1,
+      "currency": "USD",
+      "name": "Mak DRL",
+      "status": "PUBLISHED",
+      "imagesCount": 2,
+      "readyImages": [
+        {
+          "__ref": "ImageType:131439310"
+        },
+        {
+          "__ref": "ImageType:131439299"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:22:50.344Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 29,
+      "permalink": "/item/bicimoto-onebot-de-poco-uso-en-perfecto-estado-750-usd-57598491",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/254d12e2f8220776fd3a6541a81b150be1f13a786fc8fe869cc9b80f375f4294"
+      },
+      "userId": "11267",
+      "userPublicId": "Nf2GprLffOVGPDVyCI4hsX2D",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57598491",
+        "url": "https://www.revolico.com/item/bicimoto-onebot-de-poco-uso-en-perfecto-estado-750-usd-57598491",
+        "titulo_original": "Bicimoto Onebot de poco uso, en perfecto estado ....700 usd",
+        "precio_original": 1,
+        "moneda_original": "USD",
+        "descripcion": "Bicimoto Onebot de poco uso(solo 4 meses), en perfecto estado ....700 usd",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:22:50.344Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57344814",
+      "title": "*BICICLETA ELÉCTRICA PLEGABLE PORTO BELLO",
+      "shortDescription": "*BICICLETA ELÉCTRICA PLEGABLE PORTO BELLO*\n\n⚙️CARACTERÍSTICAS:\n\n• 400 W - 48 V - 12 AH \n• ⁠VELOCIDAD",
+      "description": "*BICICLETA ELÉCTRICA PLEGABLE PORTO BELLO*\n\n⚙️CARACTERÍSTICAS:\n\n• 400 W - 48 V - 12 AH \n• ⁠VELOCIDAD MÁXIMA 32 km/h\n• ⁠Autonomía de 40 Km \n• ⁠Frenos de disco trasero y delantero.\n• ⁠FULL LUCES LED \n• Llantas de Balón de 14’ Pulgadas\n• Carga 330lb\n\n🔋BATERÍA DE LITIO   \n\n🎁INCLUYE: 2 juegos de llaves, cargador inteligente y cesta delantera \n\n🚛TRANSPORTE INCLUIDO Y GARANTIA\nCOLOR: ⚫️🔴 \n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\nPRECIO : 530 USD",
+      "price": 530,
+      "currency": "USD",
+      "name": "Maneki_Neko95",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:130202498"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:22:17.870Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:44"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 11,
+      "permalink": "/item/bicicleta-electrica-plegable-porto-bello-57344814",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/edf8bdcbb352abcb26228b41bf70d522b7ac2342769472fed2cde2c9c850be40"
+      },
+      "userId": "133851",
+      "userPublicId": "FeEn6kdtLa4f0SNV7RrFIcEV",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57344814",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-plegable-porto-bello-57344814",
+        "titulo_original": "*BICICLETA ELÉCTRICA PLEGABLE PORTO BELLO",
+        "precio_original": 530,
+        "moneda_original": "USD",
+        "descripcion": "*BICICLETA ELÉCTRICA PLEGABLE PORTO BELLO*\n\n⚙️CARACTERÍSTICAS:\n\n• 400 W - 48 V - 12 AH \n• ⁠VELOCIDAD MÁXIMA 32 km/h\n• ⁠Autonomía de 40 Km \n• ⁠Frenos de disco trasero y delantero.\n• ⁠FULL LUCES LED \n• Llantas de Balón de 14’ Pulgadas\n• Carga 330lb\n\n🔋BATERÍA DE LITIO   \n\n🎁INCLUYE: 2 juegos de llaves, cargador inteligente y cesta delantera \n\n🚛TRANSPORTE INCLUIDO Y GARANTIA\nCOLOR: ⚫️🔴 \n\n💲FORMAS DE PAGO💲\nUSD, EUR, MN, ZELLE \n\nPRECIO : 530 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:22:17.870Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57991903",
+      "title": "!!MOTO 250CC ISUKI SKYLINE+CASCOS",
+      "price": 2500,
+      "currency": "USD",
+      "permalink": "/item/moto-250cc-isuki-skylinecascos-57991903",
+      "imagesCount": 1,
+      "updatedOnToOrder": "2026-10-22T16:20:54.958Z",
+      "isPromoted": false,
+      "provinceId": "1",
+      "municipalityId": "43",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/b65a40a2bbec5a8054008f1e4a8b934bc1d153100397fee59dd7afe083eb3f25"
+      },
+      "viewCount": 44,
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "57991903",
+        "url": "https://www.revolico.com/item/moto-250cc-isuki-skylinecascos-57991903",
+        "titulo_original": "!!MOTO 250CC ISUKI SKYLINE+CASCOS",
+        "precio_original": 2500,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:20:54.958Z",
+        "categoria": "",
+        "incluido": false
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57910131",
+      "title": "Bicimoto Mountain en venta",
+      "shortDescription": "Bicimito Mountain modelo único en cuba disponible 💸recibo efectivo o zelle \n🛵BICIMOTO EN SU",
+      "description": "Bicimito Mountain modelo único en cuba disponible 💸recibo efectivo o zelle \n🛵BICIMOTO EN SU CAJA🛵\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n\n• 3000w - 48v - 50 ah\n\n• ⁠batería de litio antiexplosiva\n\n• Hasta 120 km de autonomía\n\n• ⁠caja VOTOL 50\n\n• Luces LED, Alarma, encendido a distancia.\n\n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 de aduana",
+      "price": 1500,
+      "currency": "USD",
+      "name": "Yosbel ",
+      "status": "PUBLISHED",
+      "imagesCount": 4,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132861337"
+        },
+        {
+          "__ref": "ImageType:132861340"
+        },
+        {
+          "__ref": "ImageType:132861335"
+        },
+        {
+          "__ref": "ImageType:132861346"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:20:21.775Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:35"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 12,
+      "permalink": "/item/bicimoto-mountain-en-venta-57910131",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/fa9ff5ed790f1aa67ed83529a0cd0d5a5cee65513fcfb695d2ea3c6dfa9a5df9"
+      },
+      "userId": "187566",
+      "userPublicId": "lbf4B2S9PJm91HZEsWVmH24m",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57910131",
+        "url": "https://www.revolico.com/item/bicimoto-mountain-en-venta-57910131",
+        "titulo_original": "Bicimoto Mountain en venta",
+        "precio_original": 1500,
+        "moneda_original": "USD",
+        "descripcion": "Bicimito Mountain modelo único en cuba disponible 💸recibo efectivo o zelle \n🛵BICIMOTO EN SU CAJA🛵\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n\n• 3000w - 48v - 50 ah\n\n• ⁠batería de litio antiexplosiva\n\n• Hasta 120 km de autonomía\n\n• ⁠caja VOTOL 50\n\n• Luces LED, Alarma, encendido a distancia.\n\n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 de aduana",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:20:21.775Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58196398",
+      "title": "Patineta eléctrica Challenger",
+      "shortDescription": "",
+      "description": "",
+      "price": 770,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134141936"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:19:41.297Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 4,
+      "permalink": "/item/patineta-electrica-challenger-58196398",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/f76c2d0f05962cb1b5293b498741c4502d16ca446e6e8f1a4872355a69d86e8c"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58196398",
+        "url": "https://www.revolico.com/item/patineta-electrica-challenger-58196398",
+        "titulo_original": "Patineta eléctrica Challenger",
+        "precio_original": 770,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:19:41.297Z",
+        "categoria": "patinete",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58196422",
+      "title": "Patineta eléctrica Oris",
+      "shortDescription": "",
+      "description": "",
+      "price": 770,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134142039"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:19:32.612Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/patineta-electrica-oris-58196422",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/e3b41f0776420de4a7ffc46caad1aaa68dfe89cefecab41a082613ae4953f8f4"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58196422",
+        "url": "https://www.revolico.com/item/patineta-electrica-oris-58196422",
+        "titulo_original": "Patineta eléctrica Oris",
+        "precio_original": 770,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:19:32.612Z",
+        "categoria": "patinete",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58196441",
+      "title": "Patineta eléctrica Proefil",
+      "shortDescription": "",
+      "description": "",
+      "price": 770,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134142133"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:19:23.138Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 2,
+      "permalink": "/item/patineta-electrica-proefil-58196441",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/67a9168e04667d301cbc56d7ff7cba92221326ca94220b6213de25904cf20eb3"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58196441",
+        "url": "https://www.revolico.com/item/patineta-electrica-proefil-58196441",
+        "titulo_original": "Patineta eléctrica Proefil",
+        "precio_original": 770,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:19:23.138Z",
+        "categoria": "patinete",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58196300",
+      "title": "Moto eléctrica Yoazaki",
+      "shortDescription": "",
+      "description": "",
+      "price": 2980,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134141408"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:19:14.405Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 6,
+      "permalink": "/item/moto-electrica-yoazaki-58196300",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/6e791cadd09ea73bd99d82cc34a2e6e84369b70f8047c0adab492e4395c7c71a"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58196300",
+        "url": "https://www.revolico.com/item/moto-electrica-yoazaki-58196300",
+        "titulo_original": "Moto eléctrica Yoazaki",
+        "precio_original": 2980,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:19:14.405Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57536811",
+      "title": "Bicicleta eléctrica marca T5   Autonomía de 45/50 km   Bateria / 48v   Velocidad 30 km/ h   Peso Máximo de 330 lbs",
+      "shortDescription": "Bicicleta eléctrica marca T5 \n\nAutonomía de 45/50 km \n\nBateria / 48v\n\n Velocidad 30 km/ h \n\nPeso",
+      "description": "Bicicleta eléctrica marca T5 \n\nAutonomía de 45/50 km \n\nBateria / 48v\n\n Velocidad 30 km/ h \n\nPeso Máximo de 330 lbs \n\nPotencia del motor de 560 w \nLlantas de 14”\n\nPrecio: 490 usd \n\n\n\nUnico detalle, no vienen con la cesta !!! \n\nMensajeria disponible por costo adicional.",
+      "price": 490,
+      "currency": "USD",
+      "name": "Christian Tabera",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:131117136"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:19:09.506Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 31,
+      "permalink": "/item/bicicleta-electrica-marca-t5-autonomia-de-4550-km-bateria-48v-velocidad-30-km-h-peso-maximo-de-330-lbs-57536811",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/fe96f26e91c91a8f8598adbfb48b2a8369353f3f6bdc254ff8a7db593d133665"
+      },
+      "userId": "174573",
+      "userPublicId": "s53yktlBCXX5ut8sI9HSvWQF",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57536811",
+        "url": "https://www.revolico.com/item/bicicleta-electrica-marca-t5-autonomia-de-4550-km-bateria-48v-velocidad-30-km-h-peso-maximo-de-330-lbs-57536811",
+        "titulo_original": "Bicicleta eléctrica marca T5   Autonomía de 45/50 km   Bateria / 48v   Velocidad 30 km/ h   Peso Máximo de 330 lbs",
+        "precio_original": 490,
+        "moneda_original": "USD",
+        "descripcion": "Bicicleta eléctrica marca T5 \n\nAutonomía de 45/50 km \n\nBateria / 48v\n\n Velocidad 30 km/ h \n\nPeso Máximo de 330 lbs \n\nPotencia del motor de 560 w \nLlantas de 14”\n\nPrecio: 490 usd \n\n\n\nUnico detalle, no vienen con la cesta !!! \n\nMensajeria disponible por costo adicional.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:19:09.506Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58188975",
+      "title": "Bicimoto eléctrica Matech",
+      "shortDescription": "",
+      "description": "",
+      "price": 1550,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134107717"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:18:29.632Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/bicimoto-electrica-matech-58188975",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/283734f83f6909df7f874a6cb41a3e08ca570532af2b4e407f1ae396af4ff11b"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58188975",
+        "url": "https://www.revolico.com/item/bicimoto-electrica-matech-58188975",
+        "titulo_original": "Bicimoto eléctrica Matech",
+        "precio_original": 1550,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:18:29.632Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58196412",
+      "title": "Patineta eléctrica Veloce",
+      "shortDescription": "",
+      "description": "",
+      "price": 770,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134141986"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:18:24.215Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/patineta-electrica-veloce-58196412",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/9b026c48d4459962237b9c1aab1fdd58cc3e291d47897bf0a40d4fec36bfac35"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58196412",
+        "url": "https://www.revolico.com/item/patineta-electrica-veloce-58196412",
+        "titulo_original": "Patineta eléctrica Veloce",
+        "precio_original": 770,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:18:24.215Z",
+        "categoria": "patinete",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58224900",
+      "title": "🚲 BICICLETAS ELÉCTRICAS ISUKI 🚲  ⚙️ Características  • 3 velocidades • Batería: 36V/18Ah • Autonomía: 30-35 Km •",
+      "shortDescription": "🚲 BICICLETAS ELÉCTRICAS ISUKI 🚲\n\n⚙️ Características\n\n• 3 velocidades\n• Batería: 36V/18Ah\n•",
+      "description": "🚲 BICICLETAS ELÉCTRICAS ISUKI 🚲\n\n⚙️ Características\n\n• 3 velocidades\n• Batería: 36V/18Ah\n• Autonomía: 30-35 Km\n• Caja VOTOL EM-50\n• Reproductor MP3 (Bluetooth)\n\n‼️📋PAPELES EN REGLA Y GARANTÍA DE 15 DÍAS📋‼️\n\n🎨Colores disponibles: 🟠\n\n🚚 Transporte incluido en La Habana y Artemisa 🛣️\n\n🪙Precio: 900 USD",
+      "price": 900,
+      "currency": "USD",
+      "name": "Christian Tabera",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134276335"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:18:23.096Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/bicicletas-electricas-isuki-caracteristicas-3-velocidades-bateria-36v18ah-autonomia-30-35-km-58224900",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/ffe5263e1984b7c123c9ce18969213ad0141d95157f120cafdc46f72d93e6b57"
+      },
+      "userId": "174573",
+      "userPublicId": "s53yktlBCXX5ut8sI9HSvWQF",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58224900",
+        "url": "https://www.revolico.com/item/bicicletas-electricas-isuki-caracteristicas-3-velocidades-bateria-36v18ah-autonomia-30-35-km-58224900",
+        "titulo_original": "🚲 BICICLETAS ELÉCTRICAS ISUKI 🚲  ⚙️ Características  • 3 velocidades • Batería: 36V/18Ah • Autonomía: 30-35 Km •",
+        "precio_original": 900,
+        "moneda_original": "USD",
+        "descripcion": "🚲 BICICLETAS ELÉCTRICAS ISUKI 🚲\n\n⚙️ Características\n\n• 3 velocidades\n• Batería: 36V/18Ah\n• Autonomía: 30-35 Km\n• Caja VOTOL EM-50\n• Reproductor MP3 (Bluetooth)\n\n‼️📋PAPELES EN REGLA Y GARANTÍA DE 15 DÍAS📋‼️\n\n🎨Colores disponibles: 🟠\n\n🚚 Transporte incluido en La Habana y Artemisa 🛣️\n\n🪙Precio: 900 USD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:18:23.096Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58296850",
+      "title": "Bicimoto mikazuki",
+      "shortDescription": "Bicimoto Eléctrica mikazuki nuevas.",
+      "description": "Bicimoto Eléctrica mikazuki nuevas.",
+      "price": 960,
+      "currency": "USD",
+      "name": "Tony ",
+      "status": "PUBLISHED",
+      "imagesCount": 4,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134615053"
+        },
+        {
+          "__ref": "ImageType:134615079"
+        },
+        {
+          "__ref": "ImageType:134615076"
+        },
+        {
+          "__ref": "ImageType:134615073"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:19:56.770Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:38"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 1,
+      "permalink": "/item/bicimoto-mikazuki-58296850",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/4115ce40f9304b166f2f1bf97d95a9609cf074f82f92163c9d1a5565890bac41"
+      },
+      "userId": "108686",
+      "userPublicId": "GGpugztylUA3w628mzNwZLlH",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58296850",
+        "url": "https://www.revolico.com/item/bicimoto-mikazuki-58296850",
+        "titulo_original": "Bicimoto mikazuki",
+        "precio_original": 960,
+        "moneda_original": "USD",
+        "descripcion": "Bicimoto Eléctrica mikazuki nuevas.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:18:21.138Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58196331",
+      "title": "Moto automática Italy Combat RX 200cc",
+      "shortDescription": "",
+      "description": "",
+      "price": 2600,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134141575"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:18:14.547Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 8,
+      "permalink": "/item/moto-automatica-italy-combat-rx-200cc-58196331",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/305fb85d338a8a1abd7770ad55e2ba0516897d3656567f96860518577401c894"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58196331",
+        "url": "https://www.revolico.com/item/moto-automatica-italy-combat-rx-200cc-58196331",
+        "titulo_original": "Moto automática Italy Combat RX 200cc",
+        "precio_original": 2600,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:18:14.547Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58196283",
+      "title": "Moto automática Yamaki 150cc",
+      "shortDescription": "",
+      "description": "",
+      "price": 2250,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134141363"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:18:04.933Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 4,
+      "permalink": "/item/moto-automatica-yamaki-150cc-58196283",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/642a817619bf5de74eea59fcaaa1b8f420a4c9600ef7bae2ba5c2be1b2bf2b04"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58196283",
+        "url": "https://www.revolico.com/item/moto-automatica-yamaki-150cc-58196283",
+        "titulo_original": "Moto automática Yamaki 150cc",
+        "precio_original": 2250,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:18:04.933Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58189603",
+      "title": "Moto de combustión",
+      "shortDescription": "",
+      "description": "",
+      "price": 2550,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134110313"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:18:01.523Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 2,
+      "permalink": "/item/moto-de-combustion-58189603",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/a380b336b418d032fd6044332a0050d3056a8c87aa051eebaf88847c46abfaaf"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58189603",
+        "url": "https://www.revolico.com/item/moto-de-combustion-58189603",
+        "titulo_original": "Moto de combustión",
+        "precio_original": 2550,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:18:01.523Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58189044",
+      "title": "Moto eléctrica TOPMAQ",
+      "shortDescription": "",
+      "description": "",
+      "price": 2450,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134107990"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:17:49.922Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 9,
+      "permalink": "/item/moto-electrica-topmaq-58189044",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/bab9e042e6a3d6ff36ad0bc4f6705bfcd664cde443621c87d13eebfeeaa556dd"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58189044",
+        "url": "https://www.revolico.com/item/moto-electrica-topmaq-58189044",
+        "titulo_original": "Moto eléctrica TOPMAQ",
+        "precio_original": 2450,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:17:49.922Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58189568",
+      "title": "GN 125CC",
+      "shortDescription": "",
+      "description": "",
+      "price": 2450,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134110169"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:17:14.235Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 6,
+      "permalink": "/item/gn-125cc-58189568",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/f2364e4cf7f99b479c96374cc3cc400fbf92e4316aff8f5e436f40c33192ad21"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58189568",
+        "url": "https://www.revolico.com/item/gn-125cc-58189568",
+        "titulo_original": "GN 125CC",
+        "precio_original": 2450,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:17:14.235Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58189533",
+      "title": "Moto eléctrica Vedca",
+      "shortDescription": "",
+      "description": "",
+      "price": 1560,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134109995"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:17:03.117Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 9,
+      "permalink": "/item/moto-electrica-vedca-58189533",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/09b726bb80bf517d89b9581c2fbf1867754aff041d80b3106531067b1b304f42"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58189533",
+        "url": "https://www.revolico.com/item/moto-electrica-vedca-58189533",
+        "titulo_original": "Moto eléctrica Vedca",
+        "precio_original": 1560,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:17:03.117Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57902421",
+      "title": "𝐏𝐀𝐓𝐈𝐍𝐄𝐓𝐀 MRK PLUS 🛵`",
+      "shortDescription": "`🛵 𝐏𝐀𝐓𝐈𝐍𝐄𝐓𝐀 MRK PLUS 🛵`\n\n⚙️ESPECIFICACIONES\n• 500 w - 48v - 20 ah\n• ⁠batería de GEL 🔋\n• ⁠autonomía",
+      "description": "`🛵 𝐏𝐀𝐓𝐈𝐍𝐄𝐓𝐀 MRK PLUS 🛵`\n\n⚙️ESPECIFICACIONES\n• 500 w - 48v - 20 ah\n• ⁠batería de GEL 🔋\n• ⁠autonomía de 50 - 80 km\n• ⁠🎁INCLUYE: cesta delantera, cargador inteligente 2 juegos d llaves\n\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 𝘿Í𝘼𝙎\n💲𝙐𝙎𝘿, 𝙀𝙐𝙍, 𝙈𝙉, 𝙕𝙀𝙇𝙇𝙀\n🚚𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙍Í𝘼 𝙄𝙉𝘾𝙇𝙐𝙄𝘿𝘼\n🎨𝘾𝙊𝙇𝙊𝙍: ⚫️🔵🟣🩷\n\n💵 ᴘʀᴇᴄɪᴏ: $ 800\nEscribe para coordinar tu 🛒🛍️",
+      "price": 800,
+      "currency": "USD",
+      "name": "Leimis Ricardo",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132827225"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:16:35.016Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:44"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 29,
+      "permalink": "/item/patineta-mrk-plus-57902421",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/2f5391b809ae1cd4573b0e92cf2fe6ed304163fea3757e6dd94a1b9a53ad7668"
+      },
+      "userId": "156965",
+      "userPublicId": "XVCR3T8ereGaoGrVsQrNZrmB",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57902421",
+        "url": "https://www.revolico.com/item/patineta-mrk-plus-57902421",
+        "titulo_original": "𝐏𝐀𝐓𝐈𝐍𝐄𝐓𝐀 MRK PLUS 🛵`",
+        "precio_original": 800,
+        "moneda_original": "USD",
+        "descripcion": "`🛵 𝐏𝐀𝐓𝐈𝐍𝐄𝐓𝐀 MRK PLUS 🛵`\n\n⚙️ESPECIFICACIONES\n• 500 w - 48v - 20 ah\n• ⁠batería de GEL 🔋\n• ⁠autonomía de 50 - 80 km\n• ⁠🎁INCLUYE: cesta delantera, cargador inteligente 2 juegos d llaves\n\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 𝘿Í𝘼𝙎\n💲𝙐𝙎𝘿, 𝙀𝙐𝙍, 𝙈𝙉, 𝙕𝙀𝙇𝙇𝙀\n🚚𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙍Í𝘼 𝙄𝙉𝘾𝙇𝙐𝙄𝘿𝘼\n🎨𝘾𝙊𝙇𝙊𝙍: ⚫️🔵🟣🩷\n\n💵 ᴘʀᴇᴄɪᴏ: $ 800\nEscribe para coordinar tu 🛒🛍️",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:16:35.016Z",
+        "categoria": "patinete",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57644385",
+      "title": "MOTO ELECTRICA VEDCA N3*",
+      "shortDescription": "*MOTO ELECTRICA VEDCA N3*\nNuevas 0km \n\n⚙️CARACTERÍSTICAS:\n\n• ⁠60 Volt \n• ⁠30 Amp \n• Hasta 90 km de",
+      "description": "*MOTO ELECTRICA VEDCA N3*\nNuevas 0km \n\n⚙️CARACTERÍSTICAS:\n\n• ⁠60 Volt \n• ⁠30 Amp \n• Hasta 90 km de autonomía\n• Luces LED, Alarma, encendido a distancia. \n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🎁INCLUYE: cargador inteligente, 2 juegos de llaves\n\n🧾PAPELES EN REGLA Y GARANTÍA DE 6 MESES \n🚛DOMICILIO INCLUIDO \nCOLORES: ⚪️\n\n💲FORMAS DE PAGO💲\n    USD, EUR, MN  \n\nPRECIO: 1880 USD\n\n😉 Escribe y coordinamos la compra\n https://wa.me/55373977\nhttps://wa.me/",
+      "price": 1700,
+      "currency": "USD",
+      "name": "Leimis Ricardo",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:131878158"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:16:34.609Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:44"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 27,
+      "permalink": "/item/moto-electrica-vedca-n3-57644385",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/c6d7e801ab045afafef0c35133cb074c9e8f7e4105b6023ea70eb83f0568cfd9"
+      },
+      "userId": "156965",
+      "userPublicId": "XVCR3T8ereGaoGrVsQrNZrmB",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57644385",
+        "url": "https://www.revolico.com/item/moto-electrica-vedca-n3-57644385",
+        "titulo_original": "MOTO ELECTRICA VEDCA N3*",
+        "precio_original": 1700,
+        "moneda_original": "USD",
+        "descripcion": "*MOTO ELECTRICA VEDCA N3*\nNuevas 0km \n\n⚙️CARACTERÍSTICAS:\n\n• ⁠60 Volt \n• ⁠30 Amp \n• Hasta 90 km de autonomía\n• Luces LED, Alarma, encendido a distancia. \n• Bocina compatible con bluetooh, memoria USB y micro SD\n\n🎁INCLUYE: cargador inteligente, 2 juegos de llaves\n\n🧾PAPELES EN REGLA Y GARANTÍA DE 6 MESES \n🚛DOMICILIO INCLUIDO \nCOLORES: ⚪️\n\n💲FORMAS DE PAGO💲\n    USD, EUR, MN  \n\nPRECIO: 1880 USD\n\n😉 Escribe y coordinamos la compra\n https://wa.me/55373977\nhttps://wa.me/",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:16:34.609Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57644419",
+      "title": "𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 CORLEONE 🛵`",
+      "shortDescription": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 CORLEONE 🛵`\n\n⚙️ESPECIFICACIONES\n• 500w - 60 v - 20ah\n• ⁠cargador inteligente \n• ⁠batería",
+      "description": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 CORLEONE 🛵`\n\n⚙️ESPECIFICACIONES\n• 500w - 60 v - 20ah\n• ⁠cargador inteligente \n• ⁠batería de GEL\n• ⁠autonomía de 60 km\n• ⁠papeles en regla \n• ⁠🎁INCLUYE: cesta delantera, cargador inteligente 2 juegos d llaves\n\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 𝘿Í𝘼𝙎\n💲𝙐𝙎𝘿, 𝙀𝙐𝙍, 𝙈𝙉, 𝙕𝙀𝙇𝙇𝙀\n🚚𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙍Í𝘼 𝙄𝙉𝘾𝙇𝙐𝙄𝘿𝘼\n🎨𝘾𝙊𝙇𝙊𝙍: ⚪️🟣🔵🔴⚫️\n\n💵 ᴘʀᴇᴄɪᴏ: $ 800\n\n😉 Escribe y coordinamos la compra https://wa.me/55373977\nhttps://wa.me/",
+      "price": 800,
+      "currency": "USD",
+      "name": "Leimis Ricardo",
+      "status": "PUBLISHED",
+      "imagesCount": 2,
+      "readyImages": [
+        {
+          "__ref": "ImageType:131654878"
+        },
+        {
+          "__ref": "ImageType:131654901"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:16:34.404Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:44"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 27,
+      "permalink": "/item/bicimoto-corleone-57644419",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/f38e4c2f963e938f931350678a31e6370026c37f10aaad4dac98b84bdfb39749"
+      },
+      "userId": "156965",
+      "userPublicId": "XVCR3T8ereGaoGrVsQrNZrmB",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57644419",
+        "url": "https://www.revolico.com/item/bicimoto-corleone-57644419",
+        "titulo_original": "𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 CORLEONE 🛵`",
+        "precio_original": 800,
+        "moneda_original": "USD",
+        "descripcion": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 CORLEONE 🛵`\n\n⚙️ESPECIFICACIONES\n• 500w - 60 v - 20ah\n• ⁠cargador inteligente \n• ⁠batería de GEL\n• ⁠autonomía de 60 km\n• ⁠papeles en regla \n• ⁠🎁INCLUYE: cesta delantera, cargador inteligente 2 juegos d llaves\n\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 𝘿Í𝘼𝙎\n💲𝙐𝙎𝘿, 𝙀𝙐𝙍, 𝙈𝙉, 𝙕𝙀𝙇𝙇𝙀\n🚚𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙍Í𝘼 𝙄𝙉𝘾𝙇𝙐𝙄𝘿𝘼\n🎨𝘾𝙊𝙇𝙊𝙍: ⚪️🟣🔵🔴⚫️\n\n💵 ᴘʀᴇᴄɪᴏ: $ 800\n\n😉 Escribe y coordinamos la compra https://wa.me/55373977\nhttps://wa.me/",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:16:34.404Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57822644",
+      "title": "𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 RX COMBAT NEW EDICIÓN 🛵`",
+      "shortDescription": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 RX COMBAT NEW EDICIÓN 🛵`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 3000w - 72v - 45 ah\n• ⁠batería de litio",
+      "description": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 RX COMBAT NEW EDICIÓN 🛵`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 3000w - 72v - 45 ah\n• ⁠batería de litio antiexplosiva \n• autonomía 120 - 150 km probados \n• Velocidad máxima 80 km/h\n• ⁠tranque en la cesta \n• tranque en el timón \n• ⁠tarjeta de encendido \n• Luces LED, Alarma, encendido a distancia. \n• 🎁INCLUYE: cargador inteligente, 2 juegos de llaves , vienen con su propia app 📲\n⁠\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 𝘿Í𝘼𝙎\n🎨𝘾𝙊𝙇𝙊𝙍: ⚪️⚫️🔴🔵\n🚚𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙍Í𝘼 𝙄𝙉𝘾𝙇𝙐𝙄𝘿𝘼\n\n💵ᴘʀᴇᴄɪᴏ: $ 1800 USD\n\n😉Escríbe para cordinar tu compra\nhttps://wa.me/55373977\nhttps://wa.me/",
+      "price": 1800,
+      "currency": "USD",
+      "name": "Leimis Ricardo",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132485984"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:16:34.036Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:44"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 8,
+      "permalink": "/item/bicimoto-rx-combat-new-edicion-57822644",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/b0576ed4de7a111d8bc90c5c653cb187dcb8c5cc373ac7fd16f4601b9a12bf83"
+      },
+      "userId": "156965",
+      "userPublicId": "XVCR3T8ereGaoGrVsQrNZrmB",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57822644",
+        "url": "https://www.revolico.com/item/bicimoto-rx-combat-new-edicion-57822644",
+        "titulo_original": "𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 RX COMBAT NEW EDICIÓN 🛵`",
+        "precio_original": 1800,
+        "moneda_original": "USD",
+        "descripcion": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 RX COMBAT NEW EDICIÓN 🛵`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 3000w - 72v - 45 ah\n• ⁠batería de litio antiexplosiva \n• autonomía 120 - 150 km probados \n• Velocidad máxima 80 km/h\n• ⁠tranque en la cesta \n• tranque en el timón \n• ⁠tarjeta de encendido \n• Luces LED, Alarma, encendido a distancia. \n• 🎁INCLUYE: cargador inteligente, 2 juegos de llaves , vienen con su propia app 📲\n⁠\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 𝘿Í𝘼𝙎\n🎨𝘾𝙊𝙇𝙊𝙍: ⚪️⚫️🔴🔵\n🚚𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙍Í𝘼 𝙄𝙉𝘾𝙇𝙐𝙄𝘿𝘼\n\n💵ᴘʀᴇᴄɪᴏ: $ 1800 USD\n\n😉Escríbe para cordinar tu compra\nhttps://wa.me/55373977\nhttps://wa.me/",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:16:34.036Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57902386",
+      "title": "𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 YAMAKI B2 🛵`",
+      "shortDescription": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 YAMAKI B2 🛵`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 500w - 48v - 20 ah\n• ⁠batería de litio antiexplosiva",
+      "description": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 YAMAKI B2 🛵`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 500w - 48v - 20 ah\n• ⁠batería de litio antiexplosiva \n• Hasta  70 km de autonomía\n• Velocidad máxima 45km/h\n• Luces LED\n• ⁠, Alarma, encendido a distancia. \n• 🎁INCLUYE: cargador inteligente, 2 juegos de llaves 🔑 \n\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 𝘿Í𝘼𝙎\n🚚𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙍Í𝘼 𝙄𝙉𝘾𝙇𝙐𝙄𝘿𝘼\n🎨𝘾𝙊𝙇𝙊𝙍: 🔵⚫️\n\n💵ᴘʀᴇᴄɪᴏ: $ 1250 \n😉Escríbe para cordinar tu compra",
+      "price": 1250,
+      "currency": "USD",
+      "name": "Leimis Ricardo",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:132827017"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:16:33.419Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:44"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 12,
+      "permalink": "/item/bicimoto-yamaki-b2-57902386",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/0fdc2f85f4bc652f15225f0179e0ae23d2a60274429ed7871674036441ada3b9"
+      },
+      "userId": "156965",
+      "userPublicId": "XVCR3T8ereGaoGrVsQrNZrmB",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "57902386",
+        "url": "https://www.revolico.com/item/bicimoto-yamaki-b2-57902386",
+        "titulo_original": "𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 YAMAKI B2 🛵`",
+        "precio_original": 1250,
+        "moneda_original": "USD",
+        "descripcion": "`🛵 𝐁𝐈𝐂𝐈𝐌𝐎𝐓𝐎 YAMAKI B2 🛵`\n\n⚙️𝐄𝐒𝐏𝐄𝐂𝐈𝐅𝐈𝐂𝐀𝐂𝐈𝐎𝐍𝐄𝐒\n• 500w - 48v - 20 ah\n• ⁠batería de litio antiexplosiva \n• Hasta  70 km de autonomía\n• Velocidad máxima 45km/h\n• Luces LED\n• ⁠, Alarma, encendido a distancia. \n• 🎁INCLUYE: cargador inteligente, 2 juegos de llaves 🔑 \n\n🧾𝙋𝘼𝙋𝙀𝙇𝙀𝙎 𝙀𝙉 𝙍𝙀𝙂𝙇𝘼\n⚒️𝙂𝘼𝙍𝘼𝙉𝙏Í𝘼 15 𝘿Í𝘼𝙎\n🚚𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙍Í𝘼 𝙄𝙉𝘾𝙇𝙐𝙄𝘿𝘼\n🎨𝘾𝙊𝙇𝙊𝙍: 🔵⚫️\n\n💵ᴘʀᴇᴄɪᴏ: $ 1250 \n😉Escríbe para cordinar tu compra",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:16:33.419Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58189009",
+      "title": "Moto deportiva WYS 150CC",
+      "shortDescription": "",
+      "description": "",
+      "price": 1950,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134107840"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:16:19.299Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 4,
+      "permalink": "/item/moto-deportiva-wys-150cc-58189009",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/13c8fe6cf4ee14c4e48777e1579b0a36962c4c3b8aafe894c478d0b59ec242c7"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "58189009",
+        "url": "https://www.revolico.com/item/moto-deportiva-wys-150cc-58189009",
+        "titulo_original": "Moto deportiva WYS 150CC",
+        "precio_original": 1950,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:16:19.299Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58188905",
+      "title": "Bicimoto Vedca S1",
+      "shortDescription": "",
+      "description": "",
+      "price": 1450,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134107371"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:16:15.897Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 2,
+      "permalink": "/item/bicimoto-vedca-s1-58188905",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/ac309573ca347ede1af3982f89fc23da4f272b332d727402545ac71f589bfefc"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58188905",
+        "url": "https://www.revolico.com/item/bicimoto-vedca-s1-58188905",
+        "titulo_original": "Bicimoto Vedca S1",
+        "precio_original": 1450,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:16:15.897Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58296800",
+      "title": "Moto",
+      "shortDescription": "VAMOS QUE LLEGARON LAS MOTO QUE TANTO BUSCABAN.MEJOR PRECIO DEL MERCADO.\nESCRIBIR AL 56697458\n\n*Moto",
+      "description": "VAMOS QUE LLEGARON LAS MOTO QUE TANTO BUSCABAN.MEJOR PRECIO DEL MERCADO.\nESCRIBIR AL 56697458\n\n*Moto Raly batería 72x35 nueva hace todos sus kilómetros, Bluetooth.\n*Pa nopeles en regla tiene chapa y su circulación.\n* Papeles de la compra\n\nPrecio 2300 usd💸\n\nTODO NUEVO, EXCELENTE CALIDAD",
+      "price": 2300,
+      "currency": "USD",
+      "name": "Rosamelia Oro",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134615402"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:15:58.247Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:39"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 1,
+      "permalink": "/item/moto-58296800",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/979ec18e4401feb375613433a5420c7a8a54821eb1a05e8f42824ee9d20bef7c"
+      },
+      "userId": "10548",
+      "userPublicId": "gfduTmwUVYwDEXo9CuxSNkDj",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58296800",
+        "url": "https://www.revolico.com/item/moto-58296800",
+        "titulo_original": "Moto",
+        "precio_original": 2300,
+        "moneda_original": "USD",
+        "descripcion": "VAMOS QUE LLEGARON LAS MOTO QUE TANTO BUSCABAN.MEJOR PRECIO DEL MERCADO.\nESCRIBIR AL 56697458\n\n*Moto Raly batería 72x35 nueva hace todos sus kilómetros, Bluetooth.\n*Pa nopeles en regla tiene chapa y su circulación.\n* Papeles de la compra\n\nPrecio 2300 usd💸\n\nTODO NUEVO, EXCELENTE CALIDAD",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:15:58.247Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58202855",
+      "title": "Patineta Veloce Plus",
+      "shortDescription": "",
+      "description": "",
+      "price": 970,
+      "currency": "USD",
+      "name": "Ari Rodriguez",
+      "status": "PUBLISHED",
+      "imagesCount": 1,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134171790"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:15:07.990Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 5,
+      "permalink": "/item/patineta-veloce-plus-58202855",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/78b8682168cdca4241ce95f3a4d841f3835fc44300ce6e3c0e30443fe3ef31a8"
+      },
+      "userId": "206145",
+      "userPublicId": "lyCAPjTYqLfU02HIelJFrMzJ",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58202855",
+        "url": "https://www.revolico.com/item/patineta-veloce-plus-58202855",
+        "titulo_original": "Patineta Veloce Plus",
+        "precio_original": 970,
+        "moneda_original": "USD",
+        "descripcion": "",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:15:07.990Z",
+        "categoria": "patinete",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "58264697",
+      "title": "MOTO ELÉCTRICA TOPMAQ TANK",
+      "shortDescription": "MOTO ELÉCTRICA TOPMAQ TANK \n\n⚙️CARACTERÍSTICAS :\n\n• 3000 Wats \n• ⁠72 Volt \n• ⁠45 Amp \n• ⁠Autonomía",
+      "description": "MOTO ELÉCTRICA TOPMAQ TANK \n\n⚙️CARACTERÍSTICAS :\n\n• 3000 Wats \n• ⁠72 Volt \n• ⁠45 Amp \n• ⁠Autonomía de 100-120 km\n• ⁠Caja VOTOL EM- 50\n• ⁠Alarma Y música por Bluetooth \n• ⁠Full luces LED\n• ⁠3 Velocidades y reversa\n\n🎁INCLUYE: 2 juegos de llaves y cargador inteligente \n\n🧾PAPELES EN REGLA  \n🔧GARANTIA: 15 DÍAS\n🚛TRANSPORTE INCLUIDO  \n\nPRECIO: 2550USD \n\nNUEVO\nINTERESADOS ESCRIBIR 50514055",
+      "price": 2550,
+      "currency": "USD",
+      "name": "amelu",
+      "status": "PUBLISHED",
+      "imagesCount": 8,
+      "readyImages": [
+        {
+          "__ref": "ImageType:134465720"
+        },
+        {
+          "__ref": "ImageType:134465713"
+        },
+        {
+          "__ref": "ImageType:134465723"
+        },
+        {
+          "__ref": "ImageType:134465716"
+        },
+        {
+          "__ref": "ImageType:134465712"
+        },
+        {
+          "__ref": "ImageType:134465719"
+        },
+        {
+          "__ref": "ImageType:134465715"
+        },
+        {
+          "__ref": "ImageType:134465722"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:14:21.200Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:36"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 2,
+      "permalink": "/item/moto-electrica-topmaq-tank-58264697",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/ce0c09359dc5c50e3484cae766b3de999118c807b231edcf76951e611c0f73fa"
+      },
+      "userId": "7719",
+      "userPublicId": "sMapceKHA0dlWjf7GYvF5EBX",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "58264697",
+        "url": "https://www.revolico.com/item/moto-electrica-topmaq-tank-58264697",
+        "titulo_original": "MOTO ELÉCTRICA TOPMAQ TANK",
+        "precio_original": 2550,
+        "moneda_original": "USD",
+        "descripcion": "MOTO ELÉCTRICA TOPMAQ TANK \n\n⚙️CARACTERÍSTICAS :\n\n• 3000 Wats \n• ⁠72 Volt \n• ⁠45 Amp \n• ⁠Autonomía de 100-120 km\n• ⁠Caja VOTOL EM- 50\n• ⁠Alarma Y música por Bluetooth \n• ⁠Full luces LED\n• ⁠3 Velocidades y reversa\n\n🎁INCLUYE: 2 juegos de llaves y cargador inteligente \n\n🧾PAPELES EN REGLA  \n🔧GARANTIA: 15 DÍAS\n🚛TRANSPORTE INCLUIDO  \n\nPRECIO: 2550USD \n\nNUEVO\nINTERESADOS ESCRIBIR 50514055",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:14:21.200Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "55691671",
+      "title": "MOTICO CHALLENGER PRONTENZA",
+      "shortDescription": "• 500 Wats \n• ⁠48 Volt\n• ⁠12 Ah \n• ⁠Autonomía de 40-50 KM\n• ⁠Velocidad Máxima de 40 KM/H\n•",
+      "description": "• 500 Wats \n• ⁠48 Volt\n• ⁠12 Ah \n• ⁠Autonomía de 40-50 KM\n• ⁠Velocidad Máxima de 40 KM/H\n• ⁠Amortiguación Hidráulica \n🔋BATERÍA DE GEL ANTIEXPLOSIVA \n🎁INCLUYE: 2 juegos de llave, cargador inteligente y cesta delantera \n🧾PAPELES EN REGLA \n🚛TRANSPOTE INCLUIDO HABANA Y ARTEMISA",
+      "price": 900,
+      "currency": "USD",
+      "name": "YayiSánchez",
+      "status": "PUBLISHED",
+      "imagesCount": 5,
+      "readyImages": [
+        {
+          "__ref": "ImageType:122846446"
+        },
+        {
+          "__ref": "ImageType:122846447"
+        },
+        {
+          "__ref": "ImageType:122846445"
+        },
+        {
+          "__ref": "ImageType:122846444"
+        },
+        {
+          "__ref": "ImageType:122846443"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:14:04.375Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1001"
+      },
+      "viewCount": 37,
+      "permalink": "/item/motico-challenger-prontenza-55691671",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/cc886ec01051758fcffddf96dcb149689506bfa74e75327c06627b9b237c21d2"
+      },
+      "userId": "148287",
+      "userPublicId": "YweNSYOAny4NuLOMbTGQw8g7",
+      "_subcategoria": "electricas",
+      "_scraping": {
+        "id": "55691671",
+        "url": "https://www.revolico.com/item/motico-challenger-prontenza-55691671",
+        "titulo_original": "MOTICO CHALLENGER PRONTENZA",
+        "precio_original": 900,
+        "moneda_original": "USD",
+        "descripcion": "• 500 Wats \n• ⁠48 Volt\n• ⁠12 Ah \n• ⁠Autonomía de 40-50 KM\n• ⁠Velocidad Máxima de 40 KM/H\n• ⁠Amortiguación Hidráulica \n🔋BATERÍA DE GEL ANTIEXPLOSIVA \n🎁INCLUYE: 2 juegos de llave, cargador inteligente y cesta delantera \n🧾PAPELES EN REGLA \n🚛TRANSPOTE INCLUIDO HABANA Y ARTEMISA",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:14:04.375Z",
+        "categoria": "electrica",
+        "incluido": true
+      }
+    },
+    {
+      "__typename": "AdType",
+      "id": "57381837",
+      "title": "VENDIDO Honda PCX 150 cc 2019 impecable, con chapa y circulación",
+      "shortDescription": "VENDIDO.                                                       Honda PCX 150 cc, año 2019, impecable",
+      "description": "VENDIDO.                                                       Honda PCX 150 cc, año 2019, impecable y lista para rodar. Una moto moderna, cómoda, confiable y muy económica, ideal para el uso diario. Cuenta con chapa y circulación.\n\n✅ Motor Honda de 150 cc y 4 tiempos\n\n✅ 18,700 millas\n\n✅ Inyección electrónica PGM-FI\n\n✅ Refrigeración líquida\n\n✅ Transmisión automática V-Matic\n\n✅ Consumo aproximado de 46 km por litro\n\n✅ Tanque de combustible de 8 litros\n\n✅ Luces LED\n\n✅ Pantalla digital LCD\n\n✅ Arranque eléctrico silencioso\n\n✅ Ruedas de 14 pulgadas\n\n✅ Dos gomas Michelin\n\n✅ Amplio espacio debajo del asiento\n\n✅ Manillas y puños nuevos\n\n✅ Portateléfono instalado\n\n💰 Precio: 4,500 USD\n\nUna excelente oportunidad para quien busca una PCX bonita, bien cuidada, de bajo consumo y con la calidad y confiabilidad de Honda. Disponible para verla.",
+      "price": 4500,
+      "currency": "USD",
+      "name": "GARAJE X REX",
+      "status": "PUBLISHED",
+      "imagesCount": 10,
+      "readyImages": [
+        {
+          "__ref": "ImageType:131764424"
+        },
+        {
+          "__ref": "ImageType:130368822"
+        },
+        {
+          "__ref": "ImageType:130368823"
+        },
+        {
+          "__ref": "ImageType:130368821"
+        },
+        {
+          "__ref": "ImageType:130368824"
+        },
+        {
+          "__ref": "ImageType:130368825"
+        },
+        {
+          "__ref": "ImageType:130368827"
+        },
+        {
+          "__ref": "ImageType:130368820"
+        },
+        {
+          "__ref": "ImageType:130368832"
+        },
+        {
+          "__ref": "ImageType:130369692"
+        }
+      ],
+      "updatedOnByUser": "2026-10-22T16:13:52.255Z",
+      "isPromoted": false,
+      "isSold": false,
+      "province": {
+        "__ref": "ProvinceType:1"
+      },
+      "municipality": {
+        "__ref": "MunicipalityType:46"
+      },
+      "subcategory": {
+        "__ref": "CategoryType:1002"
+      },
+      "viewCount": 65,
+      "permalink": "/item/honda-pcx-150-cc-2019-impecable-con-chapa-y-circulacion-57381837",
+      "mainImage": {
+        "__typename": "ImageType",
+        "gcsKey": "pics/f227b941a998773318469a5d92340713353d12418bffd9090d409499764176ad"
+      },
+      "userId": "105371",
+      "userPublicId": "UreypDWN2F5qpmN9rnu0zSGG",
+      "_subcategoria": "combustion",
+      "_scraping": {
+        "id": "57381837",
+        "url": "https://www.revolico.com/item/honda-pcx-150-cc-2019-impecable-con-chapa-y-circulacion-57381837",
+        "titulo_original": "VENDIDO Honda PCX 150 cc 2019 impecable, con chapa y circulación",
+        "precio_original": 4500,
+        "moneda_original": "USD",
+        "descripcion": "VENDIDO.                                                       Honda PCX 150 cc, año 2019, impecable y lista para rodar. Una moto moderna, cómoda, confiable y muy económica, ideal para el uso diario. Cuenta con chapa y circulación.\n\n✅ Motor Honda de 150 cc y 4 tiempos\n\n✅ 18,700 millas\n\n✅ Inyección electrónica PGM-FI\n\n✅ Refrigeración líquida\n\n✅ Transmisión automática V-Matic\n\n✅ Consumo aproximado de 46 km por litro\n\n✅ Tanque de combustible de 8 litros\n\n✅ Luces LED\n\n✅ Pantalla digital LCD\n\n✅ Arranque eléctrico silencioso\n\n✅ Ruedas de 14 pulgadas\n\n✅ Dos gomas Michelin\n\n✅ Amplio espacio debajo del asiento\n\n✅ Manillas y puños nuevos\n\n✅ Portateléfono instalado\n\n💰 Precio: 4,500 USD\n\nUna excelente oportunidad para quien busca una PCX bonita, bien cuidada, de bajo consumo y con la calidad y confiabilidad de Honda. Disponible para verla.",
+        "provincia": "",
+        "municipio": "",
+        "ubicacion": "",
+        "fecha_publicacion": "2026-10-22T16:13:52.255Z",
+        "categoria": "combustion",
+        "incluido": true
+      }
+    }
+  ],
+  "total": 46
+}

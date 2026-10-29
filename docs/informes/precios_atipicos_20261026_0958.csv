@@ -1,2 +1,0 @@
-﻿categoria,tipo_vehiculo,grupo,marca,titulo,precio,mediana_grupo,limite_iqr,z_score,por_iqr,por_z,url
-combustion,combustion,Motos de combustion,SIN_MARCA,Motos por cantidad,1670.0,2600,3449,-1.99,True,False,https://www.revolico.com/item/motos-por-cantidad-58383759
