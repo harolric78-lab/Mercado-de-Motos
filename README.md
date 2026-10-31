@@ -1,6 +1,6 @@
-# 🏍️ Investigación del Mercado de Motos en Cuba
+# 🏍️ Análisis del Mercado de Motos en La Habana
 
-Proyecto de análisis de datos sobre la oferta publicada de motos en La Habana, desarrollado para la asignatura **Introducción a la Ciencia de los Datos**. Integra recolección automatizada, limpieza, análisis exploratorio y generación reproducible de reportes.
+Proyecto de análisis de datos sobre la oferta publicada de vehículos ligeros en La Habana, desarrollado para la asignatura **Introducción a la Ciencia de los Datos**. Integra recolección automatizada, limpieza, análisis exploratorio y generación reproducible de reportes.
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
@@ -9,96 +9,172 @@ Proyecto de análisis de datos sobre la oferta publicada de motos en La Habana, 
 
 ---
 
-## 📖 Presentación
+## 📖 Introducción
 
-La movilidad en Cuba enfrenta restricciones de transporte público, costos de combustible y limitaciones para importar vehículos. En ese contexto, las motos se consolidan como una alternativa cotidiana de desplazamiento y de actividad económica.
+La movilidad urbana constituye uno de los principales desafíos para la población cubana. Las motocicletas y otros vehículos ligeros representan una alternativa cada vez más utilizada debido a su menor consumo energético, facilidad de desplazamiento y disponibilidad en el mercado informal.
 
-El mercado combina **motos de combustión**, asociadas a mayor potencia y a la disponibilidad de repuestos, con **motos eléctricas**, favorecidas por el menor costo de operación y la recarga domiciliaria. A ellas se suman los **patinetes**, opciones de menor precio orientadas a trayectos cortos. La convivencia de estas tecnologías, junto con la importación y el mercado informal, produce un panorama de precios y oferta que cambia con rapidez.
+Este proyecto utiliza anuncios publicados en Revolico para estudiar las características del mercado de:
 
-Este proyecto estudia ese panorama a partir de anuncios públicos y de evidencia cualitativa de campo. Su propósito es describir la composición del mercado, comparar el comportamiento de los precios y aportar una base documentada y replicable para futuras investigaciones.
+- Motos de combustión
+- Motos eléctricas
+- Bicicletas eléctricas (incluye bicimotos)
+- Patinetes
+
+La categoría `bicicletas_electricas` se conserva porque agrupa los anuncios de bicimotos, que en la práctica compiten directamente con las motos eléctricas. Su tratamiento se detalla en [`docs/metodologia/DECISIONES_ARQUITECTURA.md`](docs/metodologia/DECISIONES_ARQUITECTURA.md).
+
+Además, el estudio se complementa con observaciones de campo, entrevistas y visitas a talleres e importadoras para contextualizar los resultados obtenidos.
+
+Los hallazgos permiten identificar patrones de oferta, comportamiento de precios y tendencias observables dentro de este segmento del mercado.
+
+---
+
+## 🎯 Objetivo General
+
+Analizar la oferta de motos de combustión, motos eléctricas, bicicletas eléctricas y patinetes anunciados en La Habana mediante técnicas de recopilación, procesamiento y análisis de datos, con el propósito de identificar patrones de precios, composición del mercado y tendencias relevantes.
 
 ---
 
 ## 🎯 Objetivo Principal
 
-Analizar el mercado de **motos de combustión**, **motos eléctricas** y **patinetes** en Cuba para comprender:
+Analizar el mercado de **motos de combustión**, **motos eléctricas**, **bicicletas eléctricas** y **patinetes** en La Habana para comprender:
 
 - la composición del mercado;
 - el comportamiento de los precios;
 - la oferta disponible;
 - las tendencias observadas.
 
-> El dataset publicado conserva además la categoría `bicicletas_electricas` (que agrupa bicimotos), utilizada para clasificar los anuncios de origen. Su tratamiento se detalla en la metodología y en [`docs/metodologia/DECISIONES_ARQUITECTURA.md`](docs/metodologia/DECISIONES_ARQUITECTURA.md).
+---
+
+## 🔍 Preguntas de Investigación
+
+1. ¿Cómo está compuesto el mercado de vehículos ligeros anunciados en La Habana?
+2. ¿Qué diferencias existen entre los precios de las motos de combustión y las motos eléctricas?
+3. ¿Qué marcas aparecen con mayor frecuencia?
+4. ¿Qué categorías presentan mayor presencia dentro de la oferta observada?
+5. ¿Qué tendencias pueden identificarse a partir de los anuncios publicados?
+6. ¿Cómo influyen factores como disponibilidad, mantenimiento y repuestos en las preferencias de los usuarios?
 
 ---
 
-## ❓ Preguntas de Investigación
+## 📊 Dataset
 
-| # | Pregunta |
-|---|---|
-| 1 | ¿Cómo está compuesto el mercado cubano de motos? |
-| 2 | ¿Cómo se comporta el precio de las motos de combustión frente al de las motos eléctricas? |
-| 3 | ¿Qué marcas tienen mayor presencia? |
-| 4 | ¿Qué factores influyen en las decisiones de compra? |
-| 5 | ¿Qué problemas reportan usuarios y talleres? |
-| 6 | ¿Cómo afecta la disponibilidad de repuestos? |
+La fuente cuantitativa principal del estudio es Revolico (La Habana).
+
+El dataset consolidado contiene **6.101 anuncios** capturados entre el **10 y el 26 de octubre de 2026**. Cada registro puede incluir información como:
+
+- Título y descripción del anuncio
+- Categoría
+- Marca
+- Modelo
+- Precio
+- Moneda (`USD` / `CUP`)
+- Precio normalizado en USD
+- Fecha de captura
+- Número de visualizaciones
+- URL del anuncio
+
+Archivos principales en [`data_clean/`](data_clean/):
+
+- `anuncios_limpios.csv` / `anuncios_limpios.json` — dataset histórico consolidado.
+- `historico_20261010_20261026_clean.csv` / `.json` — histórico del período de captura.
+- `manifiesto.json` — conteos y huellas SHA256 de las fuentes.
+- `cortes/` — cortes del 22 y 26 de octubre de 2026.
+- `motos_combustion/`, `motos_electricas/`, `bicicletas_electricas/`, `patinetes/` — archivos por categoría.
+
+Antes del análisis, los datos fueron sometidos a procesos de limpieza, normalización y validación para garantizar su consistencia. Los precios en USD se usan para las estadísticas; los anuncios en CUP se conservan para el conteo.
 
 ---
 
-## 📚 Fuentes de Datos
+## 📚 Fuentes de Información
 
-| Fuente | Datos recopilados | Utilidad |
-|---|---|---|
-| Revolico (La Habana) | anuncios, precios, monedas, marcas, modelos y vistas | análisis de oferta y precios |
-| Entrevistas y visitas de campo | experiencias, preferencias y hábitos de compra | análisis del comportamiento |
-| Talleres e importadoras | repuestos, mantenimiento y disponibilidad | análisis técnico y operativo |
+### Fuente cuantitativa
 
-Solo la fuente **Revolico** se publica como dataset analizable en [`data_clean/`](data_clean/). Las entrevistas y visitas de campo se documentan como evidencia cualitativa en [`journal/`](journal/) y en el registro fotográfico de [`imagenes/`](imagenes/).
+- Revolico (anuncios públicos publicados en La Habana).
+
+### Evidencia cualitativa complementaria
+
+- Entrevistas a usuarios.
+- Visitas a talleres.
+- Observación en importadoras y puntos de venta.
+- Registro fotográfico.
+
+La evidencia cualitativa se utiliza únicamente para complementar e interpretar los resultados obtenidos a partir de los datos recopilados. Solo la fuente **Revolico** se publica como dataset analizable en [`data_clean/`](data_clean/); las entrevistas y visitas se documentan en [`journal/`](journal/) y en [`imagenes/`](imagenes/).
 
 ---
 
 ## 🔬 Metodología
 
-```
-Recolección
-    ↓
+El proyecto sigue un flujo típico de Ciencia de Datos:
+
+```text
+Obtención de datos
+        ↓
 Limpieza
-    ↓
+        ↓
 Transformación
-    ↓
+        ↓
 Análisis Exploratorio
-    ↓
+        ↓
 Visualización
-    ↓
+        ↓
 Interpretación
 ```
 
 | Etapa | Descripción | Implementación |
 |---|---|---|
-| Recolección | Descarga de anuncios públicos de Revolico en La Habana | [`src/scraping/revolico/scrape.py`](src/scraping/revolico/scrape.py) |
-| Limpieza | Saneamiento de datos de contacto, normalización de títulos, precios y monedas | [`src/contactos.py`](src/contactos.py) · [`src/analisis/etl_mercado.py`](src/analisis/etl_mercado.py) |
-| Transformación | Clasificación en categorías, deduplicación y consolidación del histórico | [`src/analisis/etl_mercado.py`](src/analisis/etl_mercado.py) |
+| Recolección | Descarga automatizada de anuncios públicos de Revolico en La Habana | [`src/scraping/revolico/scrape.py`](src/scraping/revolico/scrape.py) |
+| Limpieza | Saneamiento de contactos, normalización de títulos, precios y monedas | [`src/contactos.py`](src/contactos.py) · [`src/analisis/etl_mercado.py`](src/analisis/etl_mercado.py) |
+| Transformación | Clasificación por categorías, deduplicación y consolidación del histórico | [`src/analisis/etl_mercado.py`](src/analisis/etl_mercado.py) |
 | Análisis Exploratorio | Estadísticas descriptivas de precios y vistas por categoría | [`notebooks/eda_motos.ipynb`](notebooks/eda_motos.ipynb) |
 | Visualización | Gráficos de composición, precios, demanda, evolución y marcas | [`src/analisis/generar_reporte.py`](src/analisis/generar_reporte.py) |
 | Interpretación | Informe, métricas y resumen ejecutivo | [`reports/`](reports/) · [`hands-off/`](hands-off/) |
+
+### Ética y uso responsable
+
+- Se respetan las reglas de `robots.txt` y se aplica una pausa entre peticiones (`--delay`).
+- Los textos se sanean para retirar teléfonos y correos antes de almacenar los datasets y los informes.
+- Solo se publican datos de anuncios públicos, sin información personal identificable.
+
+---
+
+## 📈 Resultados
+
+Resumen del mercado observado (precios en USD):
+
+| Categoría | Anuncios | Mediana | P25 | P75 | Vistas medianas |
+|---|---:|---:|---:|---:|---:|
+| Motos de combustión | 1.099 | 2.250 | 1.900 | 2.592,5 | 8 |
+| Motos eléctricas | 2.201 | 2.050 | 1.300 | 2.630 | 6 |
+| Bicicletas eléctricas | 2.576 | 1.150 | 670 | 1.650 | 7 |
+| Patinetes | 225 | 750 | 730 | 800 | 5 |
+
+Los resultados completos se generan automáticamente en:
+
+- [`reports/README.md`](reports/README.md) — informe con composición, precios, demanda, cortes y marcas.
+- [`reports/metricas/`](reports/metricas/) — métricas del mercado en JSON y CSV.
+- [`reports/graficos/`](reports/graficos/) — gráficos de composición, precios, demanda, evolución y marcas.
+- [`hands-off/`](hands-off/) — resumen ejecutivo y entregables.
 
 ---
 
 ## 📂 Estructura del Proyecto
 
-```
+```text
 Mercado-de-Motos/
+│
 ├── README.md
 ├── LICENSE
-├── .gitignore
 ├── requirements.txt
+├── .gitignore
 │
 ├── data_raw/
 │   └── revolico/                     # Cortes crudos depurados (JSON y CSV)
 │
 ├── data_clean/
-│   ├── anuncios_limpios.json         # Dataset histórico consolidado
-│   ├── anuncios_limpios.csv
+│   ├── anuncios_limpios.csv          # Dataset histórico consolidado
+│   ├── anuncios_limpios.json
+│   ├── historico_20261010_20261026_clean.csv
+│   ├── historico_20261010_20261026_clean.json
 │   ├── manifiesto.json               # Conteos y huellas SHA256 de las fuentes
 │   ├── cortes/                       # Cortes del 22 y 26 de octubre de 2026
 │   ├── motos_combustion/
@@ -111,8 +187,8 @@ Mercado-de-Motos/
 │       └── DECISIONES_ARQUITECTURA.md
 │
 ├── imagenes/                         # Registro fotográfico de campo
-│   ├── Importadora de motos/
-│   └── Tiendas de motos electricas y de combustion/
+│
+├── journal/                          # Bitácora de desarrollo
 │
 ├── notebooks/
 │   └── eda_motos.ipynb               # Análisis exploratorio
@@ -123,8 +199,9 @@ Mercado-de-Motos/
 │   └── metricas/                     # metricas_mercado.json y metricas_mercado.csv
 │
 ├── hands-off/                        # Resumen ejecutivo y entregables
-├── journal/                          # Bitácora de desarrollo
+│
 ├── presentacion/                     # Material de presentación
+│
 ├── referencias/                      # Bibliografía
 │
 ├── src/
@@ -133,10 +210,11 @@ Mercado-de-Motos/
 │   ├── analisis/
 │   │   ├── etl_mercado.py            # Limpieza, clasificación y deduplicación
 │   │   └── generar_reporte.py        # Métricas, gráficos e informe
-│   └── scraping/
-│       └── revolico/
-│           ├── common.py             # Utilidades y reglas de clasificación
-│           └── scrape.py             # Scraper de anuncios
+│   ├── scraping/
+│   │   └── revolico/
+│   │       ├── common.py             # Utilidades y reglas de clasificación
+│   │       └── scrape.py             # Scraper de anuncios
+│   └── visualizacion/                # Reservado para visualizaciones adicionales
 │
 └── tests/
     └── test_datos.py                 # Pruebas de validación
@@ -144,28 +222,41 @@ Mercado-de-Motos/
 
 ---
 
-## ⚙️ Cómo Ejecutar el Proyecto
+## ⚙️ Reproducción del Proyecto
 
 **Requisitos:** Python 3.10 o superior y Git.
 
+### Instalación
+
 ```bash
-# 1. Situarse en la raíz del proyecto
+git clone https://github.com/harolric78-lab/Mercado-de-Motos.git
+
 cd Mercado-de-Motos
 
-# 2. Crear y activar un entorno virtual
 python -m venv .venv
+```
 
-# Windows (PowerShell)
+### Windows
+
+```bash
 .venv\Scripts\Activate.ps1
+```
 
-# Linux / macOS
+### Linux / macOS
+
+```bash
 source .venv/bin/activate
+```
 
-# 3. Instalar dependencias
+Instalar dependencias:
+
+```bash
 pip install -r requirements.txt
 ```
 
-### Ejecutar validaciones
+---
+
+### Validar el Dataset
 
 ```bash
 python src/verificar_datos.py
@@ -173,15 +264,19 @@ python src/verificar_datos.py
 
 Comprueba el total del histórico, los conteos por categoría, los identificadores y los cortes históricos.
 
-### Ejecutar el ETL (opcional)
+---
+
+### Ejecutar ETL
 
 ```bash
 python src/analisis/etl_mercado.py
 ```
 
-Lee `data_raw/revolico/` y escribe una salida auxiliar en `data_clean/_etl/`. No sobrescribe el dataset consolidado de `data_clean/`.
+Lee `data_raw/revolico/` y escribe una salida auxiliar en `data_clean/_etl/`. No sobrescribe el dataset consolidado.
 
-### Generar reportes
+---
+
+### Generar Reportes
 
 ```bash
 python src/analisis/generar_reporte.py
@@ -189,7 +284,9 @@ python src/analisis/generar_reporte.py
 
 Regenera `reports/README.md`, las métricas en `reports/metricas/` y los gráficos en `reports/graficos/`.
 
-### Actualizar los datos (opcional)
+---
+
+### Actualizar Datos
 
 ```bash
 python src/scraping/revolico/scrape.py --n 30 --max-paginas 3 --delay 1.0
@@ -197,13 +294,17 @@ python src/scraping/revolico/scrape.py --n 30 --max-paginas 3 --delay 1.0
 
 Descarga un nuevo corte de anuncios y lo guarda en `data_raw/revolico/` con sello temporal.
 
-### Ejecutar pruebas
+---
+
+### Ejecutar Pruebas
 
 ```bash
 pytest -q
 ```
 
-### Abrir notebooks
+---
+
+### Abrir Notebook
 
 ```bash
 jupyter notebook
@@ -211,53 +312,57 @@ jupyter notebook
 
 ---
 
-## 📊 Resultados y Reportes
+## 🔄 Trazabilidad y Reproducibilidad
 
-Los resultados se generan automáticamente y no se duplican en este README. Se encuentran en:
+El proyecto incorpora mecanismos para garantizar:
 
-- [`reports/README.md`](reports/README.md) — informe completo con composición, precios, demanda, cortes y marcas.
-- [`reports/metricas/`](reports/metricas/) — métricas del mercado en JSON y CSV.
-- [`reports/graficos/`](reports/graficos/) — gráficos de composición, precios, demanda, evolución y marcas.
-- [`hands-off/`](hands-off/) — resumen ejecutivo y entregables.
+- Procedencia de los datos.
+- Validación automática.
+- Versionado mediante Git y GitHub.
+- Reproducibilidad de métricas y gráficos.
+- Control de integridad mediante manifiestos (`data_clean/manifiesto.json`).
+- Separación entre datos crudos y datos procesados.
 
-Estos archivos incluyen métricas, gráficos, estadísticas descriptivas, análisis por categoría y conclusiones.
+La metodología completa y las decisiones de diseño se encuentran documentadas en:
 
----
-
-## 🔍 Trazabilidad y Reproducibilidad
-
-- **Procedencia de los datos:** anuncios públicos de Revolico (La Habana), recolectados en cortes fechados y conservados sin datos de contacto.
-- **Fuentes utilizadas:** Revolico como fuente cuantitativa; entrevistas, visitas de campo y registros de talleres e importadoras como evidencia cualitativa documentada.
-- **Proceso de limpieza:** normalización de títulos, precios y monedas; eliminación de duplicados por identificador y por repetición exacta; clasificación mediante evidencia positiva en título y descripción.
-- **Integridad:** [`data_clean/manifiesto.json`](data_clean/manifiesto.json) registra los conteos y las huellas SHA256 de los archivos de origen.
-- **Versionado:** el proyecto se mantiene con Git y GitHub; la bitácora de cambios y decisiones está en [`journal/`](journal/).
-- **Replicación:** los scripts son deterministas sobre el dataset publicado y las dependencias están fijadas en [`requirements.txt`](requirements.txt). Cualquier persona puede validar, regenerar métricas y reproducir los gráficos con los comandos de la sección anterior.
-- **Privacidad:** los textos se sanean para retirar teléfonos y correos antes de almacenar los datasets y los informes.
+```text
+docs/metodologia/
+```
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🎓 Aplicación de Ciencia de Datos
 
-| Tecnología | Uso |
-|---|---|
-| Python | desarrollo principal |
-| Pandas | procesamiento de datos |
-| NumPy | análisis numérico |
-| Matplotlib | visualizaciones |
-| Seaborn | gráficos |
-| BeautifulSoup | scraping |
-| Requests | descarga de páginas |
-| Jupyter | exploración |
-| Git/GitHub | control de versiones |
+Durante el desarrollo del proyecto se aplican conceptos fundamentales de Ciencia de Datos:
+
+- Web Scraping
+- Ingeniería de Datos
+- Procesos ETL
+- Limpieza de Datos
+- Análisis Exploratorio de Datos (EDA)
+- Visualización de Datos
+- Validación y pruebas
+- Trazabilidad de datos
+- Reproducibilidad analítica
 
 ---
 
 ## ⚠️ Limitaciones
 
-- **Los anuncios no equivalen a ventas.** El dataset mide oferta publicada y vistas, no transacciones cerradas.
-- **Sesgos en entrevistas.** Las muestras son pequeñas y dependen de la disposición y el recuerdo de las personas entrevistadas.
-- **Sesgos de participación.** Las entrevistas y los canales informales, como Telegram, sobrerrepresentan a usuarios activos y con mayor acceso digital.
-- **Disponibilidad limitada de datos.** La fuente principal es un solo portal de anuncios, con una serie temporal corta y sin registros oficiales de ventas.
+- Los anuncios representan oferta publicada y no ventas efectivas.
+- La calidad de los resultados depende de la calidad de los anuncios originales.
+- El estudio se limita a los datos disponibles durante el período de captura.
+- No existen registros oficiales de ventas que permitan contrastar completamente los resultados obtenidos.
+- Algunos factores de decisión de compra solo pueden inferirse parcialmente mediante información cualitativa complementaria.
+- La fuente principal es un solo portal de anuncios, con una serie temporal corta.
+
+---
+
+## ✅ Conclusiones
+
+Este proyecto demuestra cómo las técnicas de Ciencia de Datos pueden emplearse para estudiar mercados reales a partir de fuentes de información abiertas.
+
+La combinación de recolección automatizada, limpieza de datos, análisis exploratorio y visualización permite obtener una caracterización cuantitativa del mercado de motos en La Habana. Los resultados constituyen una base para futuras investigaciones relacionadas con movilidad, comportamiento de consumo y análisis de mercados digitales en Cuba.
 
 ---
 
@@ -265,10 +370,12 @@ Estos archivos incluyen métricas, gráficos, estadísticas descriptivas, análi
 
 **Harold Ricardo Ponce**
 
-Asignatura: *Introducción a la Ciencia de los Datos*
+**Asignatura:** Introducción a la Ciencia de los Datos
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto se distribuye bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto se distribuye bajo la licencia **MIT**.
+
+Consulta el archivo [`LICENSE`](LICENSE) para más información.
