@@ -1,4 +1,4 @@
-# 🏍️ Análisis del Mercado de Motos en La Habana
+# 🏍️ Análisis del Mercado de Motos en Cuba
 
 Proyecto de análisis de datos sobre la oferta publicada de vehículos ligeros en La Habana, desarrollado para la asignatura **Introducción a la Ciencia de los Datos**. Integra recolección automatizada, limpieza, análisis exploratorio y generación reproducible de reportes.
 
