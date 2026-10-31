@@ -17,7 +17,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 BASE = Path(__file__).resolve().parents[1]
-CLEAN = BASE / "data_clean"
+CLEAN = BASE / "data" / "processed"
 
 CATEGORIAS = {
     "motos_combustion": "Motos de Combustión",

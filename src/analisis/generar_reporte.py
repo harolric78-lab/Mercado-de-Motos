@@ -3,10 +3,10 @@
 """
 Genera el informe publico, las metricas y los graficos del mercado.
 
-Lee `data_clean/anuncios_limpios.json` y `data_clean/cortes/`, y escribe:
-  - reports/README.md
-  - reports/metricas/metricas_mercado.json
-  - reports/metricas/metricas_mercado.csv
+Lee `data/processed/anuncios_limpios.json` y `data/processed/cortes/`, y escribe:
+  - reports/informe_mercado.md
+  - reports/metricas/resumen_mercado.json
+  - reports/metricas/resumen_mercado.csv
   - reports/graficos/*.png
 
 Uso:
@@ -30,7 +30,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 BASE = Path(__file__).resolve().parents[2]
-CLEAN = BASE / "data_clean"
+CLEAN = BASE / "data" / "processed"
 REPORTS = BASE / "reports"
 GRAFICOS = REPORTS / "graficos"
 METRICAS = REPORTS / "metricas"
@@ -140,7 +140,7 @@ def guardar_graficos(por_categoria, metricas, top_marcas):
     ax.set_title("Composición del mercado depurado")
     ax.invert_yaxis()
     fig.tight_layout()
-    fig.savefig(GRAFICOS / "composicion.png", dpi=150)
+    fig.savefig(GRAFICOS / "01_composicion.png", dpi=150)
     plt.close(fig)
 
     fig, ax = plt.subplots(figsize=(9, 5))
@@ -153,7 +153,7 @@ def guardar_graficos(por_categoria, metricas, top_marcas):
     ax.set_title("Precio mediano por categoría (rango intercuartílico)")
     ax.tick_params(axis="x", rotation=15)
     fig.tight_layout()
-    fig.savefig(GRAFICOS / "precios.png", dpi=150)
+    fig.savefig(GRAFICOS / "02_precios.png", dpi=150)
     plt.close(fig)
 
     fig, ax = plt.subplots(figsize=(9, 5))
@@ -163,7 +163,7 @@ def guardar_graficos(por_categoria, metricas, top_marcas):
     ax.set_title("Demanda relativa por categoría")
     ax.tick_params(axis="x", rotation=15)
     fig.tight_layout()
-    fig.savefig(GRAFICOS / "demanda.png", dpi=150)
+    fig.savefig(GRAFICOS / "03_demanda.png", dpi=150)
     plt.close(fig)
 
     if top_marcas:
@@ -175,7 +175,7 @@ def guardar_graficos(por_categoria, metricas, top_marcas):
         ax.set_title("Marcas más anunciadas")
         ax.tick_params(axis="x", rotation=45)
         fig.tight_layout()
-        fig.savefig(GRAFICOS / "marcas.png", dpi=150)
+        fig.savefig(GRAFICOS / "05_marcas.png", dpi=150)
         plt.close(fig)
 
 
@@ -197,7 +197,7 @@ def guardar_cortes(cortes):
     ax.set_title("Últimos cortes")
     ax.legend(fontsize=8)
     fig.tight_layout()
-    fig.savefig(GRAFICOS / "evolucion.png", dpi=150)
+    fig.savefig(GRAFICOS / "04_evolucion.png", dpi=150)
     plt.close(fig)
 
 
@@ -228,10 +228,10 @@ def main() -> int:
         "marcas": top_marcas,
         "cortes": cortes,
     }
-    (METRICAS / "metricas_mercado.json").write_text(
+    (METRICAS / "resumen_mercado.json").write_text(
         json.dumps(metricas, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    with (METRICAS / "metricas_mercado.csv").open("w", encoding="utf-8", newline="") as handle:
+    with (METRICAS / "resumen_mercado.csv").open("w", encoding="utf-8", newline="") as handle:
         escritor = csv.writer(handle)
         escritor.writerow(["categoria", "anuncios", "precio_mediano_usd", "precio_p25_usd", "precio_p75_usd", "vistas_medianas"])
         for clave, nombre in CATEGORIAS.items():
@@ -270,15 +270,15 @@ def main() -> int:
 
     lineas += [
         "",
-        "![Composición](graficos/composicion.png)",
+        "![Composición](graficos/01_composicion.png)",
         "",
         "## Precios",
         "",
-        "![Precios](graficos/precios.png)",
+        "![Precios](graficos/02_precios.png)",
         "",
         "## Demanda",
         "",
-        "![Demanda](graficos/demanda.png)",
+        "![Demanda](graficos/03_demanda.png)",
         "",
         "## Últimos cortes",
         "",
@@ -295,7 +295,7 @@ def main() -> int:
 
     lineas += [
         "",
-        "![Evolución](graficos/evolucion.png)",
+        "![Evolución](graficos/04_evolucion.png)",
         "",
         "## Marcas",
         "",
@@ -306,18 +306,18 @@ def main() -> int:
         lineas.append(f"| {marca} | {valor} |")
     lineas += [
         "",
-        "![Marcas](graficos/marcas.png)",
+        "![Marcas](graficos/05_marcas.png)",
         "",
         "## Fuentes y método",
         "",
         "- Fuente: anuncios públicos de Revolico (La Habana).",
         "- Moneda de los precios: USD; los anuncios en CUP se conservan para conteo, pero no entran en las estadísticas de precio.",
         "- La clasificación usa las cuatro categorías oficiales y un proceso de deduplicación por identificador y por repetición exacta.",
-        "- Los datos se publican en `data_clean/`; los crudos depurados están en `data_raw/revolico/`.",
+        "- Los datos se publican en `data/processed/`; los crudos depurados están en `data/raw/revolico/`.",
     ]
-    (REPORTS / "README.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
+    (REPORTS / "informe_mercado.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
 
-    print(f"Informe: {REPORTS / 'README.md'}")
+    print(f"Informe: {REPORTS / 'informe_mercado.md'}")
     print(f"Métricas: {METRICAS}")
     print(f"Gráficos: {GRAFICOS}")
     print(f"Total: {len(registros)}")

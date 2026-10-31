@@ -4,7 +4,7 @@
 Utilidades compartidas del pipeline de scraping de Revolico.
 
 Contiene:
-  - Resolucion de rutas del proyecto (data_raw, data_clean, logs, reports)
+  - Resolucion de rutas del proyecto (data, logs, reports)
   - Normalizacion de texto, precios, monedas y URLs
   - Clasificacion positiva en las cuatro categorias oficiales
   - Logger con contadores para el archivo de log
@@ -134,18 +134,18 @@ MARCAS_CANONICAS = {
 # Rutas del proyecto
 # ---------------------------------------------------------------------------
 def project_root(start=None):
-    """Resuelve la raiz del proyecto (donde viven data_raw/, data_clean/, src/)."""
+    """Resuelve la raiz del proyecto (donde viven data/, src/)."""
     env = os.environ.get("REVOLICO_PROJECT_ROOT")
     if env:
         return Path(env).expanduser().resolve()
     p = Path(start or Path.cwd()).resolve()
     candidatos = [p] + list(p.parents)
     for c in candidatos:
-        if (c / "data_raw").is_dir() and (c / "src").is_dir():
+        if (c / "data").is_dir() and (c / "src").is_dir():
             return c
     for c in candidatos:
         sub = c / "Mercado-de-Motos"
-        if (sub / "data_raw").is_dir():
+        if (sub / "data").is_dir():
             return sub
     return p
 
@@ -155,8 +155,9 @@ def paths(root=None):
     root = Path(root) if root else project_root()
     return {
         "root": root,
-        "raw": root / "data_raw" / "revolico",
-        "clean": root / "data_clean",
+        "raw": root / "data" / "raw" / "revolico",
+        "clean": root / "data" / "processed",
+        "interim": root / "data" / "interim",
         "logs": root / "logs",
         "reports": root / "reports",
         "metrics": root / "reports" / "metricas",
@@ -164,7 +165,7 @@ def paths(root=None):
         "notebooks": root / "notebooks",
         "src_analisis": root / "src" / "analisis",
         "src_visualizacion": root / "src" / "visualizacion",
-        "archivo": root / "data_raw" / "_reemplazados",
+        "archivo": root / "data" / "raw" / "_reemplazados",
     }
 
 

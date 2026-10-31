@@ -27,7 +27,7 @@
 
 ## Entregables
 
-- Informe completo: `reports/README.md`.
+- Informe completo: `reports/informe_mercado.md`.
 - Métricas: `reports/metricas/`.
 - Gráficos: `reports/graficos/`.
-- Dataset: `data_clean/`.
+- Dataset: `data/processed/`.

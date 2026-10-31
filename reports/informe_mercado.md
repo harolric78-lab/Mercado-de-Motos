@@ -1,6 +1,6 @@
 # Mercado de motos en Cuba
 
-Informe generado el 2026-10-29 a partir de 6,101 anuncios depurados.
+Informe generado el 2026-10-31 a partir de 6,101 anuncios depurados.
 
 El dataset público contiene únicamente las cuatro categorías oficiales del proyecto.
 
@@ -13,15 +13,15 @@ El dataset público contiene únicamente las cuatro categorías oficiales del pr
 | Bicicletas Eléctricas | 2,576 | 1150.0 | 670.0 | 1650.0 | 7.0 |
 | Patinetes | 225 | 750.0 | 730.0 | 800.0 | 5 |
 
-![Composición](graficos/composicion.png)
+![Composición](graficos/01_composicion.png)
 
 ## Precios
 
-![Precios](graficos/precios.png)
+![Precios](graficos/02_precios.png)
 
 ## Demanda
 
-![Demanda](graficos/demanda.png)
+![Demanda](graficos/03_demanda.png)
 
 ## Últimos cortes
 
@@ -30,7 +30,7 @@ El dataset público contiene únicamente las cuatro categorías oficiales del pr
 | 2026-10-22 | 30 | 7 | 5 | 14 | 4 |
 | 2026-10-26 | 30 | 9 | 3 | 17 | 1 |
 
-![Evolución](graficos/evolucion.png)
+![Evolución](graficos/04_evolucion.png)
 
 ## Marcas
 
@@ -47,11 +47,11 @@ El dataset público contiene únicamente las cuatro categorías oficiales del pr
 | Mishozuki | 95 |
 | Halcón | 87 |
 
-![Marcas](graficos/marcas.png)
+![Marcas](graficos/05_marcas.png)
 
 ## Fuentes y método
 
 - Fuente: anuncios públicos de Revolico (La Habana).
 - Moneda de los precios: USD; los anuncios en CUP se conservan para conteo, pero no entran en las estadísticas de precio.
 - La clasificación usa las cuatro categorías oficiales y un proceso de deduplicación por identificador y por repetición exacta.
-- Los datos se publican en `data_clean/`; los crudos depurados están en `data_raw/revolico/`.
+- Los datos se publican en `data/processed/`; los crudos depurados están en `data/raw/revolico/`.

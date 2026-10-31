@@ -73,13 +73,13 @@ El dataset consolidado contiene **6.101 anuncios** capturados entre el **10 y el
 - Número de visualizaciones
 - URL del anuncio
 
-Archivos principales en [`data_clean/`](data_clean/):
+Archivos principales en [`data/processed/`](data/processed/):
 
 - `anuncios_limpios.csv` / `anuncios_limpios.json` — dataset histórico consolidado.
-- `historico_20261010_20261026_clean.csv` / `.json` — histórico del período de captura.
 - `manifiesto.json` — conteos y huellas SHA256 de las fuentes.
 - `cortes/` — cortes del 22 y 26 de octubre de 2026.
-- `motos_combustion/`, `motos_electricas/`, `bicicletas_electricas/`, `patinetes/` — archivos por categoría.
+
+Los cortes crudos se conservan en [`data/raw/revolico/`](data/raw/revolico/) y la salida auxiliar del ETL se escribe en `data/interim/` (ignorada por Git).
 
 Antes del análisis, los datos fueron sometidos a procesos de limpieza, normalización y validación para garantizar su consistencia. Los precios en USD se usan para las estadísticas; los anuncios en CUP se conservan para el conteo.
 
@@ -98,7 +98,7 @@ Antes del análisis, los datos fueron sometidos a procesos de limpieza, normaliz
 - Observación en importadoras y puntos de venta.
 - Registro fotográfico.
 
-La evidencia cualitativa se utiliza únicamente para complementar e interpretar los resultados obtenidos a partir de los datos recopilados. Solo la fuente **Revolico** se publica como dataset analizable en [`data_clean/`](data_clean/); las entrevistas y visitas se documentan en [`docs/entrevistas/`](docs/entrevistas/) y en [`imagenes/`](imagenes/).
+La evidencia cualitativa se utiliza únicamente para complementar e interpretar los resultados obtenidos a partir de los datos recopilados. Solo la fuente **Revolico** se publica como dataset analizable en [`data/processed/`](data/processed/); las entrevistas y visitas se documentan en [`docs/entrevistas/`](docs/entrevistas/) y en [`docs/images/`](docs/images/).
 
 ---
 
@@ -109,15 +109,15 @@ La investigación combina dos tipos de evidencia que se mantienen claramente sep
 ### Datos cuantitativos
 
 - Obtenidos mediante scraping de anuncios públicos de Revolico.
-- Almacenados en [`data_raw/`](data_raw/) (cortes crudos) y [`data_clean/`](data_clean/) (dataset procesado).
+- Almacenados en [`data/raw/`](data/raw/) (cortes crudos) y [`data/processed/`](data/processed/) (dataset procesado).
 - Sostienen las estadísticas, métricas y gráficos del estudio.
 
 ### Evidencia cualitativa
 
 - **Entrevistas:** normalizadas en [`docs/entrevistas/`](docs/entrevistas/), con archivos para talleres, importadoras y usuarios.
 - **Observación directa:** visitas a talleres, tiendas e importadoras.
-- **Evidencia fotográfica:** registrada en [`imagenes/`](imagenes/) y documentada en [`imagenes/evidencia_campo.md`](imagenes/evidencia_campo.md).
-- **Bitácora:** registro cronológico del trabajo de campo en [`journal/`](journal/).
+- **Evidencia fotográfica:** registrada en [`docs/images/`](docs/images/) y documentada en [`docs/images/evidencia_campo.md`](docs/images/evidencia_campo.md).
+- **Bitácora:** registro cronológico del trabajo de campo en [`docs/journal/`](docs/journal/).
 
 La evidencia cualitativa se usa para interpretar y contextualizar los resultados cuantitativos. No se emplea para estimar volúmenes de ventas ni para sustituir el dataset de anuncios.
 
@@ -150,7 +150,7 @@ Interpretación
 | Transformación | Clasificación por categorías, deduplicación y consolidación del histórico | [`src/analisis/etl_mercado.py`](src/analisis/etl_mercado.py) |
 | Análisis Exploratorio | Estadísticas descriptivas de precios y vistas por categoría | [`notebooks/eda_motos.ipynb`](notebooks/eda_motos.ipynb) |
 | Visualización | Gráficos de composición, precios, demanda, evolución y marcas | [`src/analisis/generar_reporte.py`](src/analisis/generar_reporte.py) |
-| Interpretación | Informe, métricas y resumen ejecutivo | [`reports/`](reports/) · [`hands-off/`](hands-off/) |
+| Interpretación | Informe, métricas y resumen ejecutivo | [`reports/`](reports/) · [`docs/entregables/`](docs/entregables/) |
 
 ### Ética y uso responsable
 
@@ -173,10 +173,10 @@ Resumen del mercado observado (precios en USD):
 
 Los resultados completos se generan automáticamente en:
 
-- [`reports/README.md`](reports/README.md) — informe con composición, precios, demanda, cortes y marcas.
+- [`reports/informe_mercado.md`](reports/informe_mercado.md) — informe con composición, precios, demanda, cortes y marcas.
 - [`reports/metricas/`](reports/metricas/) — métricas del mercado en JSON y CSV.
 - [`reports/graficos/`](reports/graficos/) — gráficos de composición, precios, demanda, evolución y marcas.
-- [`hands-off/`](hands-off/) — resumen ejecutivo y entregables.
+- [`docs/entregables/`](docs/entregables/) — resumen ejecutivo y entregables.
 
 ---
 
@@ -189,53 +189,42 @@ Mercado-de-Motos/
 ├── LICENSE
 ├── requirements.txt
 ├── .gitignore
+├── explicacion_pipeline.md
 │
-├── data_raw/
-│   └── revolico/                     # Cortes crudos depurados (JSON y CSV)
-│
-├── data_clean/
-│   ├── anuncios_limpios.csv          # Dataset histórico consolidado
-│   ├── anuncios_limpios.json
-│   ├── historico_20261010_20261026_clean.csv
-│   ├── historico_20261010_20261026_clean.json
-│   ├── manifiesto.json               # Conteos y huellas SHA256 de las fuentes
-│   ├── cortes/                       # Cortes del 22 y 26 de octubre de 2026
-│   ├── motos_combustion/
-│   ├── motos_electricas/
-│   ├── bicicletas_electricas/
-│   └── patinetes/
+├── data/
+│   ├── raw/
+│   │   └── revolico/                 # Cortes crudos depurados (JSON y CSV)
+│   ├── interim/                      # Salida auxiliar del ETL (ignorada por Git)
+│   └── processed/
+│       ├── anuncios_limpios.csv      # Dataset histórico consolidado
+│       ├── anuncios_limpios.json
+│       ├── manifiesto.json           # Conteos y huellas SHA256 de las fuentes
+│       └── cortes/                   # Cortes del 22 y 26 de octubre de 2026
 │
 ├── docs/
+│   ├── entregables/                  # Resumen ejecutivo y entregables
 │   ├── entrevistas/
 │   │   ├── README.md
 │   │   ├── talleres.json
 │   │   ├── importadoras.json
 │   │   └── usuarios.json
+│   ├── images/                       # Registro fotográfico de campo
+│   │   ├── evidencia_campo.md
+│   │   ├── importadoras/
+│   │   ├── talleres/
+│   │   └── tiendas/
+│   ├── journal/                      # Bitácora de desarrollo
 │   └── metodologia/
 │       ├── DECISIONES_ARQUITECTURA.md
 │       └── REPORTE_UNIFICACION.md
-│
-├── imagenes/                         # Registro fotográfico de campo
-│   ├── evidencia_campo.md
-│   ├── importadoras/
-│   ├── talleres/
-│   └── tiendas/
-│
-├── journal/                          # Bitácora de desarrollo
 │
 ├── notebooks/
 │   └── eda_motos.ipynb               # Análisis exploratorio
 │
 ├── reports/
-│   ├── README.md                     # Informe generado automáticamente
-│   ├── graficos/                     # composicion, precios, demanda, evolucion y marcas
-│   └── metricas/                     # metricas_mercado.json y metricas_mercado.csv
-│
-├── hands-off/                        # Resumen ejecutivo y entregables
-│
-├── presentacion/                     # Material de presentación
-│
-├── referencias/                      # Bibliografía
+│   ├── informe_mercado.md            # Informe generado automáticamente
+│   ├── graficos/                     # 01_composicion ... 05_marcas
+│   └── metricas/                     # resumen_mercado.json y resumen_mercado.csv
 │
 ├── src/
 │   ├── contactos.py                  # Saneamiento de datos de contacto
@@ -305,7 +294,7 @@ Comprueba el total del histórico, los conteos por categoría, los identificador
 python src/analisis/etl_mercado.py
 ```
 
-Lee `data_raw/revolico/` y escribe una salida auxiliar en `data_clean/_etl/`. No sobrescribe el dataset consolidado.
+Lee `data/raw/revolico/` y escribe una salida auxiliar en `data/interim/`. No sobrescribe el dataset consolidado.
 
 ---
 
@@ -315,7 +304,7 @@ Lee `data_raw/revolico/` y escribe una salida auxiliar en `data_clean/_etl/`. No
 python src/analisis/generar_reporte.py
 ```
 
-Regenera `reports/README.md`, las métricas en `reports/metricas/` y los gráficos en `reports/graficos/`.
+Regenera `reports/informe_mercado.md`, las métricas en `reports/metricas/` y los gráficos en `reports/graficos/`.
 
 ---
 
@@ -325,7 +314,7 @@ Regenera `reports/README.md`, las métricas en `reports/metricas/` y los gráfic
 python src/scraping/revolico/scrape.py --n 30 --max-paginas 3 --delay 1.0
 ```
 
-Descarga un nuevo corte de anuncios y lo guarda en `data_raw/revolico/` con sello temporal.
+Descarga un nuevo corte de anuncios y lo guarda en `data/raw/revolico/` con sello temporal.
 
 ---
 
@@ -353,7 +342,7 @@ El proyecto incorpora mecanismos para garantizar:
 - Validación automática.
 - Versionado mediante Git y GitHub.
 - Reproducibilidad de métricas y gráficos.
-- Control de integridad mediante manifiestos (`data_clean/manifiesto.json`).
+- Control de integridad mediante manifiestos (`data/processed/manifiesto.json`).
 - Separación entre datos crudos y datos procesados.
 
 La metodología completa y las decisiones de diseño se encuentran documentadas en:

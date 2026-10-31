@@ -37,9 +37,9 @@ htmlcov/
 .ruff_cache/
 
 # Datos temporales
-data_raw/**/*.tmp
-data_raw/**/*.bak
-data_clean/_etl/
+data/raw/**/*.tmp
+data/raw/**/*.bak
+data/interim/
 *.log
 logs/
 

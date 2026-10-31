@@ -9,8 +9,8 @@ Solo se aceptan las cuatro categorias oficiales: motos de combustion, motos
 electricas, bicicletas electricas y patinetes.
 
 Salidas:
-  - data_raw/revolico/revolico_raw_<sello>.json
-  - data_raw/revolico/revolico_raw_<sello>.csv
+  - data/raw/revolico/revolico_raw_<sello>.json
+  - data/raw/revolico/revolico_raw_<sello>.csv
 
 El dato crudo conserva los campos originales de Revolico (se eliminan los
 datos de contacto: telefono y correo) y agrega un bloque "_scraping" con
@@ -19,7 +19,7 @@ datos de contacto: telefono y correo) y agrega un bloque "_scraping" con
 Uso:
     python scrape.py
     python scrape.py --n 30 --max-paginas 3 --delay 1.0
-    python scrape.py --proyecto "C:/ruta/Mercado-de-Motos" --salida data_raw/revolico
+    python scrape.py --proyecto "C:/ruta/Mercado-de-Motos" --salida data/raw/revolico
 """
 
 from __future__ import annotations
@@ -393,7 +393,7 @@ def main():
     ap.add_argument("--max-candidatos", type=int, default=150, help="Maximo de anuncios revisados")
     ap.add_argument("--delay", type=float, default=1.0, help="Pausa entre peticiones (s)")
     ap.add_argument("--proyecto", default=None, help="Ruta raiz del proyecto")
-    ap.add_argument("--salida", default=None, help="Carpeta de salida (por defecto data_raw/revolico)")
+    ap.add_argument("--salida", default=None, help="Carpeta de salida (por defecto data/raw/revolico)")
     ap.add_argument("--sin-imagenes", action="store_true", help="Incluir anuncios sin foto")
     args = ap.parse_args()
 

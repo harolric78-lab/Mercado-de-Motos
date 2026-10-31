@@ -14,7 +14,7 @@ Uso como modulo:
     texto = sanear_contactos(texto)
 
 Uso desde linea de comandos (sanea ficheros .json/.csv in place):
-    python src/contactos.py data_clean/anuncios_limpios.json ...
+    python src/contactos.py data/processed/anuncios_limpios.json ...
 """
 from __future__ import annotations
 

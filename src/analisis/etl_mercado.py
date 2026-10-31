@@ -3,10 +3,10 @@
 """
 ETL del mercado de motos en La Habana.
 
-Lee los datos crudos ya depurados de `data_raw/revolico/`, normaliza los
+Lee los datos crudos ya depurados de `data/raw/revolico/`, normaliza los
 campos, clasifica cada anuncio en una de las cuatro categorias oficiales,
-elimina duplicados y escribe una salida auxiliar en `data_clean/_etl/`.
-El dataset publico consolidado de `data_clean/` no se sobrescribe.
+elimina duplicados y escribe una salida auxiliar en `data/interim/`.
+El dataset publico consolidado de `data/processed/` no se sobrescribe.
 
 Uso:
     python src/analisis/etl_mercado.py
@@ -26,8 +26,8 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 BASE = Path(__file__).resolve().parents[2]
-RAW = BASE / "data_raw" / "revolico"
-CLEAN = BASE / "data_clean" / "_etl"
+RAW = BASE / "data" / "raw" / "revolico"
+CLEAN = BASE / "data" / "interim"
 
 CATEGORIAS = {
     "motos_combustion": "Motos de Combustión",

@@ -62,3 +62,13 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Documentación:** README principal, informe, resumen ejecutivo, metodología y journal actualizados.
 - **Validación:** datasets con cuatro categorías, sin referencias de alcance fuera del proyecto; compilación de `src/` y pruebas básicas.
 - **Publicación:** cambios preparados; push pendiente de confirmación.
+
+---
+
+## 📅 31 de octubre de 2026 — Refactor de estructura profesional
+- **Limpieza:** eliminado el clon anidado `Mercado-de-Motos/Mercado-de-Motos/`, cachés de pruebas y entornos virtuales de la raíz.
+- **Nueva estructura de datos:** `data/raw/revolico/` para cortes crudos, `data/processed/` para el dataset consolidado y los cortes, y `data/interim/` para la salida auxiliar del ETL (ignorada por Git).
+- **Depuración:** retirados los históricos duplicados y las carpetas derivadas por categoría; el consolidado canónico es `data/processed/anuncios_limpios.*`.
+- **Código y reportes:** actualizadas las rutas en scrapers, ETL, validación, notebook y generador de reportes; informe y métricas estandarizados como `reports/informe_mercado.md` y `reports/metricas/resumen_mercado.*`.
+- **Entorno:** creado `Mercado-de-Motos/.venv` con las dependencias de `requirements.txt`.
+- **Validación:** dataset de 6.101 anuncios y pruebas automáticas en verde.

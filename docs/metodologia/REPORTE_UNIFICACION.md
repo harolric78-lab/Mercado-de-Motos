@@ -45,9 +45,9 @@ Se conservó el campo `texto_original` para mantener la trazabilidad entre la fu
 
 | Origen | Destino | Archivos |
 |---|---|---:|
-| `imagenes/Importadora de motos/` | `imagenes/importadoras/` | 4 |
-| `imagenes/Tiendas de motos electricas y de combustion/` | `imagenes/tiendas/` | 3 |
-| — | `imagenes/talleres/` | 0 (creada vacía con `.gitkeep`) |
+| `docs/images/Importadora de motos/` | `docs/images/importadoras/` | 4 |
+| `docs/images/Tiendas de motos electricas y de combustion/` | `docs/images/tiendas/` | 3 |
+| — | `docs/images/talleres/` | 0 (creada vacía con `.gitkeep`) |
 
 Total de imágenes reorganizadas: **7**. Todas con metadatos EXIF del 2026-10-08.
 
@@ -56,7 +56,7 @@ Total de imágenes reorganizadas: **7**. Todas con metadatos EXIF del 2026-10-08
 | Archivo | Contenido |
 |---|---|
 | `docs/entrevistas/README.md` | Propósito, metodología, conteo, categorías y limitaciones |
-| `imagenes/evidencia_campo.md` | Origen, organización, propósito y relación con entrevistas y hallazgos |
+| `docs/images/evidencia_campo.md` | Origen, organización, propósito y relación con entrevistas y hallazgos |
 | `docs/metodologia/REPORTE_UNIFICACION.md` | Este reporte |
 
 Además, se actualizó el `README.md` principal con la sección **Fuentes Cualitativas** y el árbol de estructura.
