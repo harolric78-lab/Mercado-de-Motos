@@ -98,7 +98,30 @@ Antes del análisis, los datos fueron sometidos a procesos de limpieza, normaliz
 - Observación en importadoras y puntos de venta.
 - Registro fotográfico.
 
-La evidencia cualitativa se utiliza únicamente para complementar e interpretar los resultados obtenidos a partir de los datos recopilados. Solo la fuente **Revolico** se publica como dataset analizable en [`data_clean/`](data_clean/); las entrevistas y visitas se documentan en [`journal/`](journal/) y en [`imagenes/`](imagenes/).
+La evidencia cualitativa se utiliza únicamente para complementar e interpretar los resultados obtenidos a partir de los datos recopilados. Solo la fuente **Revolico** se publica como dataset analizable en [`data_clean/`](data_clean/); las entrevistas y visitas se documentan en [`docs/entrevistas/`](docs/entrevistas/) y en [`imagenes/`](imagenes/).
+
+---
+
+## 🗣️ Fuentes Cualitativas
+
+La investigación combina dos tipos de evidencia que se mantienen claramente separadas:
+
+### Datos cuantitativos
+
+- Obtenidos mediante scraping de anuncios públicos de Revolico.
+- Almacenados en [`data_raw/`](data_raw/) (cortes crudos) y [`data_clean/`](data_clean/) (dataset procesado).
+- Sostienen las estadísticas, métricas y gráficos del estudio.
+
+### Evidencia cualitativa
+
+- **Entrevistas:** normalizadas en [`docs/entrevistas/`](docs/entrevistas/), con archivos para talleres, importadoras y usuarios.
+- **Observación directa:** visitas a talleres, tiendas e importadoras.
+- **Evidencia fotográfica:** registrada en [`imagenes/`](imagenes/) y documentada en [`imagenes/evidencia_campo.md`](imagenes/evidencia_campo.md).
+- **Bitácora:** registro cronológico del trabajo de campo en [`journal/`](journal/).
+
+La evidencia cualitativa se usa para interpretar y contextualizar los resultados cuantitativos. No se emplea para estimar volúmenes de ventas ni para sustituir el dataset de anuncios.
+
+> Estado actual: se dispone de **1 entrevista real** (clasificada de forma tentativa como taller) y **7 fotografías** de campo. Las entrevistas de importadoras y usuarios no están disponibles y se conservan como estructuras vacías documentadas.
 
 ---
 
@@ -183,10 +206,20 @@ Mercado-de-Motos/
 │   └── patinetes/
 │
 ├── docs/
+│   ├── entrevistas/
+│   │   ├── README.md
+│   │   ├── talleres.json
+│   │   ├── importadoras.json
+│   │   └── usuarios.json
 │   └── metodologia/
-│       └── DECISIONES_ARQUITECTURA.md
+│       ├── DECISIONES_ARQUITECTURA.md
+│       └── REPORTE_UNIFICACION.md
 │
 ├── imagenes/                         # Registro fotográfico de campo
+│   ├── evidencia_campo.md
+│   ├── importadoras/
+│   ├── talleres/
+│   └── tiendas/
 │
 ├── journal/                          # Bitácora de desarrollo
 │

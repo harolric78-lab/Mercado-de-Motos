@@ -1,0 +1,38 @@
+{
+  "tipo_fuente": "talleres",
+  "entrevistas": [
+    {
+      "id": "TALLER_001",
+      "fecha": "2026-10-22",
+      "ubicacion": "La Habana, Cuba",
+      "entrevistado": "",
+      "cargo": "",
+      "temas": [
+        "precios",
+        "motos_mas_vendidas",
+        "marcas",
+        "demanda"
+      ],
+      "observaciones": "Registro recuperado del historial de Git (commit ad58b2b, archivo datos/entrevistas/entrevista_motos_mas_vendidas.txt). El texto original no identifica al entrevistado ni el tipo exacto de fuente; la clasificación como taller es tentativa y debe confirmarse en campo.",
+      "respuestas": {
+        "la_moto_que_mas_se_vende": [
+          "Souca",
+          "Las Omar",
+          "La Diana",
+          "Combustible de 45 mL",
+          "La automática 1640-1635",
+          "104 y 51 Mercado"
+        ],
+        "motos_gn": [
+          "El modelo que más se vende: 1500-1800",
+          "Modelo scooter automático",
+          "Sasa",
+          "Multiservis",
+          "Yati / Yadea"
+        ],
+        "demanda": "Motos eléctricas con mayor demanda."
+      },
+      "texto_original": "Entrevista — Precios y motos más vendidas\n\nFecha: 2026-10-22\nEntrevistado: —\nLugar: La Habana, Cuba\n\nLA MOTO QUE MÁS SE VENDE\n\n- Souca\n- Las Omar\n- La Diana\n- Combustible de 45 mL\n- La automática 1640–1635\n- 104 y 51 Mercado\n\nMOTOS GN\n\n- El modelo que más se vende: 1500–1800\n- Modelo scooter automático\n- Sasa\n- Multiservis\n- Yati / Yadea\n\nMotos eléctricas con mayor demanda."
+    }
+  ]
+}
