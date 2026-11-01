@@ -1,6 +1,6 @@
 # Reporte de unificación de evidencia cualitativa
 
-**Fecha:** 2026-10-30
+**Fecha:** 2026-11-01
 **Alcance:** unificación de entrevistas, observaciones y evidencia fotográfica del proyecto.
 
 ---
@@ -11,9 +11,9 @@
 |---|---:|---|
 | Talleres | 1 | `datos/entrevistas/entrevista_motos_mas_vendidas.txt` (historial Git) |
 | Importadoras | 0 | — |
-| Usuarios | 0 | — |
+| Usuarios | 1 | Aportada directamente como JSON (2026-11-01) |
 
-Detalle de la entrevista detectada:
+Detalle de las entrevistas detectadas:
 
 - **Identificador:** `TALLER_001`
 - **Fecha:** 2026-10-22
@@ -22,13 +22,20 @@ Detalle de la entrevista detectada:
 - **Origen:** commits `b6ec4b9` (creación), `41192fa` (encabezado) y `ad58b2b` (conversión a texto plano); eliminada del árbol de trabajo en `2dfa7cd`.
 - **Clasificación:** tentativa como taller, porque el registro original no especifica el tipo de fuente.
 
+- **Identificador:** `USER_001`
+- **Fecha:** 2026-10-17
+- **Ubicación:** San Miguel del Padrón, La Habana, Cuba
+- **Entrevistado:** comprador anónimo (chófer profesional, 60 años)
+- **Origen:** JSON aportado directamente el 2026-11-01; no hay transcripción ni audio.
+- **Clasificación:** comprador (usuario).
+
 ## 2. Entrevistas migradas
 
 | Archivo de destino | Registros | Estado |
 |---|---:|---|
 | `docs/entrevistas/talleres.json` | 1 | Migrada con texto original conservado |
 | `docs/entrevistas/importadoras.json` | 0 | Estructura vacía documentada |
-| `docs/entrevistas/usuarios.json` | 0 | Estructura vacía documentada |
+| `docs/entrevistas/usuarios.json` | 1 | Añadida desde JSON (sin transcripción ni audio) |
 
 No se fabricaron entrevistas ni respuestas. Los campos sin información quedaron vacíos y la ausencia se documentó en cada archivo y en `docs/entrevistas/README.md`.
 
@@ -38,6 +45,7 @@ No se fabricaron entrevistas ni respuestas. Los campos sin información quedaron
 |---|---|---|
 | `datos/entrevistas/entrevista_motos_mas_vendidas.md` | `docs/entrevistas/talleres.json` | Markdown → JSON |
 | `datos/entrevistas/entrevista_motos_mas_vendidas.txt` | `docs/entrevistas/talleres.json` | Texto plano → JSON |
+| JSON `user_001` (comprador) | `docs/entrevistas/usuarios.json` | JSON → JSON normalizado |
 
 Se conservó el campo `texto_original` para mantener la trazabilidad entre la fuente y el registro normalizado.
 
@@ -64,10 +72,10 @@ Además, se actualizó el `README.md` principal con la sección **Fuentes Cualit
 ## 6. Ausencias documentadas
 
 - No existen entrevistas a importadoras.
-- No existen entrevistas a usuarios.
 - No existen fotografías de talleres.
 - El catálogo VEDCA detectado en el historial (`datos/importadora_vedca/vedca_catalogo_20261026_100817.json`) es un listado de productos, no una entrevista, por lo que no se migró.
 - La entrevista `TALLER_001` no identifica entrevistado, cargo ni establecimiento exacto.
+- La entrevista `USER_001` no dispone de transcripción ni audio; solo se conserva el JSON normalizado.
 
 ## 7. Validación
 

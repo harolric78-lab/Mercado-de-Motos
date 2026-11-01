@@ -1,5 +1,70 @@
 {
   "tipo_fuente": "usuarios",
-  "entrevistas": [],
-  "nota": "No se encontraron entrevistas reales a usuarios en el repositorio ni en el historial de Git. Se conserva la estructura vacía para documentar la ausencia de información."
+  "total_entrevistas": 1,
+  "entrevistas": [
+    {
+      "id": "USER_001",
+      "fecha": "2026-10-17",
+      "ubicacion": "San Miguel del Padrón, La Habana, Cuba",
+      "entrevistado": "",
+      "cargo": "Chófer profesional",
+      "consentimiento": true,
+      "perfil": {
+        "edad": 60,
+        "sexo": "M",
+        "municipio": "San Miguel del Padrón",
+        "provincia": "La Habana",
+        "ocupacion": "Chófer profesional",
+        "recibe_remesas": true,
+        "familiar_exterior": true,
+        "rango_ingreso_mensual": "4200 CUP"
+      },
+      "temas": [
+        "perfil",
+        "compra",
+        "uso",
+        "opiniones_mercado",
+        "satisfaccion"
+      ],
+      "compra": {
+        "marca_buscada": "Unizuki",
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": "Importadora",
+        "factores_decision": [
+          "Marca",
+          "Precio"
+        ],
+        "precio_final": null,
+        "anio_compra": null
+      },
+      "uso": {
+        "uso_principal": "Personal",
+        "km_diarios": "28-35",
+        "unico_medio_transporte": true,
+        "gasto_combustible": "1 litro diario",
+        "gasto_mantenimiento": "15000-20000 CUP",
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": false
+      },
+      "opiniones_mercado": {
+        "considero_electrica": true,
+        "prefiere_electrica": true,
+        "razon_preferencia": "Precio del combustible",
+        "comportamiento_precios": "Aumento",
+        "influencia_precio": "Regulaciones y adquirir el dólar",
+        "tipo_mercado": "Legal"
+      },
+      "satisfaccion": {
+        "le_gusta_mas": "Eléctrica",
+        "le_gusta_menos": null,
+        "recomendaria": true
+      },
+      "observaciones": "Entrevista de comprador recibida solo como JSON; no se dispone de transcripción ni audio. Los campos sin dato se conservan en null.",
+      "transcripcion": "",
+      "audio_url": ""
+    }
+  ],
+  "nota": "Entrevista de comprador aportada el 2026-11-01; sustituye la estructura vacía anterior."
 }

@@ -235,7 +235,7 @@
 |---|---|---:|---|
 | Talleres | `docs/entrevistas/talleres.json` | 1 (`TALLER_001`) | Migrada desde Git |
 | Importadoras | `docs/entrevistas/importadoras.json` | 0 | Estructura vacía documentada |
-| Usuarios | `docs/entrevistas/usuarios.json` | 0 | Estructura vacía documentada |
+| Usuarios | `docs/entrevistas/usuarios.json` | 1 (`USER_001`) | Añadida desde JSON |
 
 | Campo del esquema | Descripción |
 |---|---|

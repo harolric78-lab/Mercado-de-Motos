@@ -121,7 +121,7 @@ La investigación combina dos tipos de evidencia que se mantienen claramente sep
 
 La evidencia cualitativa se usa para interpretar y contextualizar los resultados cuantitativos. No se emplea para estimar volúmenes de ventas ni para sustituir el dataset de anuncios.
 
-> Estado actual: se dispone de **1 entrevista real** (clasificada de forma tentativa como taller) y **7 fotografías** de campo. Las entrevistas de importadoras y usuarios no están disponibles y se conservan como estructuras vacías documentadas.
+> Estado actual: se dispone de **2 entrevistas reales** (1 clasificada de forma tentativa como taller y 1 a un comprador) y **7 fotografías** de campo. Las entrevistas de importadoras no están disponibles y se conserva como estructura vacía documentada.
 
 ---
 
