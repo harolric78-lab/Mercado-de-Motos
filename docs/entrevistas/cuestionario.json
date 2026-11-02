@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "idioma": "es-CU",
+  "esquema": "esquema.json",
+  "guia": "guia_entrevista.md",
+  "consentimiento": {
+    "campo": "consentimiento",
+    "pregunta": "¿Está de acuerdo en participar y en que grabe la conversación para el estudio?",
+    "tipo": "booleano",
+    "obligatorio": true
+  },
+  "bloques": [
+    {
+      "id": "perfil",
+      "titulo": "Perfil",
+      "destino": "perfil",
+      "preguntas": [
+        { "campo": "perfil.edad", "pregunta": "¿Cuántos años tienes?", "tipo": "entero", "obligatorio": false },
+        { "campo": "perfil.sexo", "pregunta": "¿Sexo?", "tipo": "opcion", "opciones": ["M", "F", "Otro", "Prefiere no decir"], "obligatorio": false },
+        { "campo": "perfil.municipio", "pregunta": "¿En qué municipio vives?", "tipo": "texto", "obligatorio": false },
+        { "campo": "perfil.provincia", "pregunta": "¿En qué provincia?", "tipo": "texto", "defecto": "La Habana", "obligatorio": false },
+        { "campo": "perfil.ocupacion", "pregunta": "¿A qué te dedicas?", "tipo": "texto", "obligatorio": false },
+        { "campo": "perfil.recibe_remesas", "pregunta": "¿Recibes remesas?", "tipo": "booleano", "obligatorio": false },
+        { "campo": "perfil.remesas_frecuencia", "pregunta": "¿Con qué frecuencia recibes remesas?", "tipo": "texto", "obligatorio": false },
+        { "campo": "perfil.familiar_exterior", "pregunta": "¿Tienes familiares en el exterior?", "tipo": "booleano", "obligatorio": false },
+        { "campo": "perfil.rango_ingreso_mensual", "pregunta": "¿En qué rango está tu ingreso mensual?", "tipo": "texto", "obligatorio": false }
+      ]
+    },
+    {
+      "id": "compra",
+      "titulo": "Compra",
+      "destino": "compra",
+      "preguntas": [
+        {
+          "campo": "compra.tipo_moto",
+          "pregunta": "¿Qué tipo de vehículo tienes o buscabas?",
+          "tipo": "opcion",
+          "opciones": ["Combustión 4 tiempos", "Combustión 2 tiempos", "Eléctrica", "Bicicleta eléctrica", "Patinete"],
+          "obligatorio": false
+        },
+        { "campo": "compra.marca_buscada", "pregunta": "¿Qué marca buscabas?", "tipo": "texto", "obligatorio": false },
+        { "campo": "compra.modelo_buscado", "pregunta": "¿Qué modelo buscabas?", "tipo": "texto", "obligatorio": false },
+        { "campo": "compra.presupuesto_inicial", "pregunta": "¿Cuál era tu presupuesto inicial?", "tipo": "decimal", "obligatorio": false },
+        { "campo": "compra.moneda", "pregunta": "¿En qué moneda?", "tipo": "opcion", "opciones": ["USD", "CUP", "Otra"], "obligatorio": false },
+        {
+          "campo": "compra.canal_busqueda",
+          "pregunta": "¿Dónde la buscaste o la compraste?",
+          "tipo": "opcion",
+          "opciones": ["Revolico", "Importadora", "Agencia", "Conocido", "Redes sociales", "Otro"],
+          "obligatorio": false
+        },
+        {
+          "campo": "compra.factores_decision",
+          "pregunta": "¿Qué fue lo más importante al elegir? Ordena: precio, marca, autonomía, repuestos, estética, papeles.",
+          "tipo": "lista",
+          "opciones": ["Precio", "Marca", "Autonomía", "Repuestos", "Estética", "Papeles"],
+          "obligatorio": false
+        },
+        { "campo": "compra.precio_final", "pregunta": "¿Cuánto pagaste finalmente?", "tipo": "decimal", "obligatorio": false },
+        { "campo": "compra.anio_compra", "pregunta": "¿En qué año la compraste?", "tipo": "entero", "obligatorio": false },
+        { "campo": "compra.importadora_origen", "pregunta": "Si fue por importadora, ¿de qué país vino?", "tipo": "texto", "obligatorio": false },
+        { "campo": "compra.entrega_domicilio", "pregunta": "¿Te la entregaron en el domicilio?", "tipo": "booleano", "obligatorio": false },
+        { "campo": "compra.comprada_nueva", "pregunta": "¿La compraste nueva o usada?", "tipo": "booleano", "etiqueta_true": "Nueva", "etiqueta_false": "Usada", "obligatorio": false }
+      ]
+    },
+    {
+      "id": "uso",
+      "titulo": "Uso y gastos",
+      "destino": "uso",
+      "preguntas": [
+        { "campo": "uso.uso_principal", "pregunta": "¿Para qué usas la moto?", "tipo": "opcion", "opciones": ["Personal", "Trabajo", "Mixto"], "obligatorio": false },
+        { "campo": "uso.km_diarios", "pregunta": "¿Cuántos kilómetros haces al día?", "tipo": "rango", "obligatorio": false },
+        { "campo": "uso.unico_medio_transporte", "pregunta": "¿Es tu único medio de transporte?", "tipo": "booleano", "obligatorio": false },
+        { "campo": "uso.gasto_combustible", "pregunta": "¿Cuánto gastas al mes en combustible o electricidad?", "tipo": "texto", "obligatorio": false },
+        { "campo": "uso.gasto_mantenimiento", "pregunta": "¿Cuánto gastas en mantenimiento y repuestos?", "tipo": "texto", "obligatorio": false },
+        { "campo": "uso.gasto_mantenimiento_periodo", "pregunta": "¿Ese gasto es mensual, trimestral o anual?", "tipo": "opcion", "opciones": ["mensual", "trimestral", "anual"], "obligatorio": false },
+        { "campo": "uso.gasto_seguridad", "pregunta": "¿Cuánto gastas en seguridad: candados, alarmas?", "tipo": "texto", "obligatorio": false },
+        { "campo": "uso.tiene_alarma_candado", "pregunta": "¿Tienes alarma o candado?", "tipo": "booleano", "obligatorio": false },
+        { "campo": "uso.problemas_repuestos", "pregunta": "¿Has tenido problemas para conseguir repuestos?", "tipo": "booleano", "obligatorio": false },
+        { "campo": "uso.kilometraje_actual", "pregunta": "¿Cuántos kilómetros tiene actualmente?", "tipo": "entero", "obligatorio": false },
+        { "campo": "uso.lugar_trabajo", "pregunta": "¿Dónde queda tu centro de trabajo?", "tipo": "texto", "obligatorio": false },
+        { "campo": "uso.porcentaje_uso_trabajo", "pregunta": "¿Qué porcentaje del uso es para el trabajo?", "tipo": "entero", "minimo": 0, "maximo": 100, "obligatorio": false }
+      ]
+    },
+    {
+      "id": "repuestos",
+      "titulo": "Repuestos y servicio",
+      "destino": "repuestos",
+      "preguntas": [
+        { "campo": "repuestos.disponibilidad", "pregunta": "¿Cómo es la disponibilidad de repuestos?", "tipo": "opcion", "opciones": ["Alta", "Media", "Baja"], "obligatorio": false },
+        { "campo": "repuestos.tiempo_conseguir", "pregunta": "¿Cuánto tardas en conseguir un repuesto?", "tipo": "texto", "obligatorio": false },
+        { "campo": "repuestos.dificiles_conseguir", "pregunta": "¿Qué repuestos son los más difíciles de encontrar?", "tipo": "lista", "obligatorio": false },
+        { "campo": "repuestos.precios_repuestos", "pregunta": "¿Cómo son los precios de los repuestos respecto al año pasado?", "tipo": "texto", "obligatorio": false }
+      ]
+    },
+    {
+      "id": "opiniones_mercado",
+      "titulo": "Precios y mercado",
+      "destino": "opiniones_mercado",
+      "preguntas": [
+        { "campo": "opiniones_mercado.comportamiento_precios", "pregunta": "¿Los precios han subido o bajado en el último año?", "tipo": "opcion", "opciones": ["Aumento", "Disminución", "Estable"], "obligatorio": false },
+        { "campo": "opiniones_mercado.variacion_precios_ultimo_anio", "pregunta": "¿Cuánto, aproximadamente?", "tipo": "texto", "obligatorio": false },
+        {
+          "campo": "opiniones_mercado.influencia_precio",
+          "pregunta": "¿Qué influye más en el precio?",
+          "tipo": "lista",
+          "opciones": ["Dólar", "Escasez", "Regulaciones", "Demanda"],
+          "obligatorio": false
+        },
+        { "campo": "opiniones_mercado.tipo_mercado", "pregunta": "¿El mercado es mayormente legal o informal?", "tipo": "opcion", "opciones": ["Legal", "Informal", "Mixto"], "obligatorio": false },
+        { "campo": "opiniones_mercado.considero_electrica", "pregunta": "¿Consideraste comprar una eléctrica?", "tipo": "booleano", "obligatorio": false },
+        { "campo": "opiniones_mercado.prefiere_electrica", "pregunta": "¿Prefieres una eléctrica?", "tipo": "booleano", "obligatorio": false },
+        { "campo": "opiniones_mercado.razon_preferencia", "pregunta": "¿Por qué?", "tipo": "texto", "obligatorio": false },
+        { "campo": "opiniones_mercado.autonomia_electrica_km", "pregunta": "¿Qué autonomía real tienen las eléctricas que conoces?", "tipo": "texto", "obligatorio": false },
+        { "campo": "opiniones_mercado.percepcion_regulaciones", "pregunta": "¿Qué opinas de las regulaciones recientes?", "tipo": "opcion", "opciones": ["Positiva", "Negativa", "Neutra", "Sin opinión"], "obligatorio": false },
+        { "campo": "opiniones_mercado.marcas_mas_vendidas", "pregunta": "¿Qué modelos o marcas son los que más se venden?", "tipo": "lista", "obligatorio": false },
+        { "campo": "opiniones_mercado.rango_precio_modelo_mas_vendido", "pregunta": "¿En qué rango de precio se vende el modelo más popular?", "tipo": "texto", "obligatorio": false },
+        { "campo": "opiniones_mercado.motos_electricas_demanda", "pregunta": "¿Qué motos eléctricas tienen más demanda?", "tipo": "texto", "obligatorio": false }
+      ]
+    },
+    {
+      "id": "satisfaccion",
+      "titulo": "Satisfacción",
+      "destino": "satisfaccion",
+      "preguntas": [
+        { "campo": "satisfaccion.le_gusta_mas", "pregunta": "¿Qué es lo que más te gusta de tu vehículo?", "tipo": "texto", "obligatorio": false },
+        { "campo": "satisfaccion.le_gusta_menos", "pregunta": "¿Qué es lo que menos te gusta?", "tipo": "texto", "obligatorio": false },
+        { "campo": "satisfaccion.recomendaria", "pregunta": "¿Lo recomendarías?", "tipo": "booleano", "obligatorio": false }
+      ]
+    }
+  ]
+}

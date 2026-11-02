@@ -26,7 +26,7 @@ Detalle de las entrevistas detectadas:
 - **Fecha:** 2026-10-17
 - **Ubicación:** San Miguel del Padrón, La Habana, Cuba
 - **Entrevistado:** comprador anónimo (chófer profesional, 60 años)
-- **Origen:** JSON aportado directamente el 2026-11-01; no hay transcripción ni audio.
+- **Origen:** JSON y transcripción aportados el 2026-11-01; no hay audio.
 - **Clasificación:** comprador (usuario).
 
 ## 2. Entrevistas migradas
@@ -46,6 +46,7 @@ No se fabricaron entrevistas ni respuestas. Los campos sin información quedaron
 | `datos/entrevistas/entrevista_motos_mas_vendidas.md` | `docs/entrevistas/talleres.json` | Markdown → JSON |
 | `datos/entrevistas/entrevista_motos_mas_vendidas.txt` | `docs/entrevistas/talleres.json` | Texto plano → JSON |
 | JSON `user_001` (comprador) | `docs/entrevistas/usuarios.json` | JSON → JSON normalizado |
+| Transcripción `user_001` | `data/raw/entrevistas/user_001.md` | Texto → Markdown |
 
 Se conservó el campo `texto_original` para mantener la trazabilidad entre la fuente y el registro normalizado.
 
@@ -75,7 +76,7 @@ Además, se actualizó el `README.md` principal con la sección **Fuentes Cualit
 - No existen fotografías de talleres.
 - El catálogo VEDCA detectado en el historial (`datos/importadora_vedca/vedca_catalogo_20261026_100817.json`) es un listado de productos, no una entrevista, por lo que no se migró.
 - La entrevista `TALLER_001` no identifica entrevistado, cargo ni establecimiento exacto.
-- La entrevista `USER_001` no dispone de transcripción ni audio; solo se conserva el JSON normalizado.
+- La entrevista `USER_001` no dispone de audio; su transcripción está en `data/raw/entrevistas/user_001.md`.
 
 ## 7. Validación
 

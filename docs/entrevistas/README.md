@@ -21,9 +21,9 @@ Cada registro conserva el texto original cuando existe, para mantener la trazabi
 |---|---|---:|---|
 | Talleres | [`talleres.json`](talleres.json) | 1 | Migrada desde el historial de Git |
 | Importadoras | [`importadoras.json`](importadoras.json) | 0 | Estructura vacía documentada |
-| Usuarios | [`usuarios.json`](usuarios.json) | 1 | Añadida el 2026-11-01 (solo JSON) |
+| Usuarios | [`usuarios.json`](usuarios.json) | 1 | Añadida el 2026-11-01 (JSON + transcripción) |
 
-La entrevista `TALLER_001`, fechada el 2026-10-22, no identifica al entrevistado ni el tipo exacto de fuente; la clasificación como taller es tentativa y debe confirmarse. La entrevista `USER_001`, fechada el 2026-10-17, corresponde a un comprador de San Miguel del Padrón y se recibió únicamente como JSON, sin transcripción ni audio.
+La entrevista `TALLER_001`, fechada el 2026-10-22, no identifica al entrevistado ni el tipo exacto de fuente; la clasificación como taller es tentativa y debe confirmarse. La entrevista `USER_001`, fechada el 2026-10-17, corresponde a un comprador de San Miguel del Padrón y cuenta con transcripción en `data/raw/entrevistas/user_001.md`; no se dispone de audio.
 
 ## Categorías de análisis
 
@@ -37,7 +37,7 @@ La entrevista `TALLER_001`, fechada el 2026-10-22, no identifica al entrevistado
 
 - El número de entrevistas es muy reducido y no es representativo del mercado.
 - No se dispone de entrevistas de importadoras.
-- La entrevista `USER_001` se recibió solo como JSON; no hay transcripción ni audio disponibles.
+- La entrevista `USER_001` no dispone de audio; su transcripción está en `data/raw/entrevistas/user_001.md`.
 - La entrevista migrada no identifica al entrevistado, su cargo ni el lugar exacto.
 - La evidencia cualitativa se usa para interpretar los datos cuantitativos, no para estimar volúmenes ni precios.
 - No se fabricaron ni completaron respuestas: los campos sin información quedaron vacíos y documentados.

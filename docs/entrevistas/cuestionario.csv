@@ -1,0 +1,53 @@
+bloque,campo,pregunta,tipo,opciones,obligatorio
+perfil,perfil.edad,¿Cuántos años tienes?,entero,,no
+perfil,perfil.sexo,¿Sexo?,opcion,M | F | Otro | Prefiere no decir,no
+perfil,perfil.municipio,¿En qué municipio vives?,texto,,no
+perfil,perfil.provincia,¿En qué provincia?,texto,,no
+perfil,perfil.ocupacion,¿A qué te dedicas?,texto,,no
+perfil,perfil.recibe_remesas,¿Recibes remesas?,booleano,,no
+perfil,perfil.remesas_frecuencia,¿Con qué frecuencia recibes remesas?,texto,,no
+perfil,perfil.familiar_exterior,¿Tienes familiares en el exterior?,booleano,,no
+perfil,perfil.rango_ingreso_mensual,¿En qué rango está tu ingreso mensual?,texto,,no
+compra,compra.tipo_moto,¿Qué tipo de vehículo tienes o buscabas?,opcion,Combustión 4 tiempos | Combustión 2 tiempos | Eléctrica | Bicicleta eléctrica | Patinete,no
+compra,compra.marca_buscada,¿Qué marca buscabas?,texto,,no
+compra,compra.modelo_buscado,¿Qué modelo buscabas?,texto,,no
+compra,compra.presupuesto_inicial,¿Cuál era tu presupuesto inicial?,decimal,,no
+compra,compra.moneda,¿En qué moneda?,opcion,USD | CUP | Otra,no
+compra,compra.canal_busqueda,¿Dónde la buscaste o la compraste?,opcion,Revolico | Importadora | Agencia | Conocido | Redes sociales | Otro,no
+compra,compra.factores_decision,"¿Qué fue lo más importante al elegir? Ordena: precio, marca, autonomía, repuestos, estética, papeles.",lista,Precio | Marca | Autonomía | Repuestos | Estética | Papeles,no
+compra,compra.precio_final,¿Cuánto pagaste finalmente?,decimal,,no
+compra,compra.anio_compra,¿En qué año la compraste?,entero,,no
+compra,compra.importadora_origen,"Si fue por importadora, ¿de qué país vino?",texto,,no
+compra,compra.entrega_domicilio,¿Te la entregaron en el domicilio?,booleano,,no
+compra,compra.comprada_nueva,¿La compraste nueva o usada?,booleano,,no
+uso,uso.uso_principal,¿Para qué usas la moto?,opcion,Personal | Trabajo | Mixto,no
+uso,uso.km_diarios,¿Cuántos kilómetros haces al día?,rango,,no
+uso,uso.unico_medio_transporte,¿Es tu único medio de transporte?,booleano,,no
+uso,uso.gasto_combustible,¿Cuánto gastas al mes en combustible o electricidad?,texto,,no
+uso,uso.gasto_mantenimiento,¿Cuánto gastas en mantenimiento y repuestos?,texto,,no
+uso,uso.gasto_mantenimiento_periodo,"¿Ese gasto es mensual, trimestral o anual?",opcion,mensual | trimestral | anual,no
+uso,uso.gasto_seguridad,"¿Cuánto gastas en seguridad: candados, alarmas?",texto,,no
+uso,uso.tiene_alarma_candado,¿Tienes alarma o candado?,booleano,,no
+uso,uso.problemas_repuestos,¿Has tenido problemas para conseguir repuestos?,booleano,,no
+uso,uso.kilometraje_actual,¿Cuántos kilómetros tiene actualmente?,entero,,no
+uso,uso.lugar_trabajo,¿Dónde queda tu centro de trabajo?,texto,,no
+uso,uso.porcentaje_uso_trabajo,¿Qué porcentaje del uso es para el trabajo?,entero,,no
+repuestos,repuestos.disponibilidad,¿Cómo es la disponibilidad de repuestos?,opcion,Alta | Media | Baja,no
+repuestos,repuestos.tiempo_conseguir,¿Cuánto tardas en conseguir un repuesto?,texto,,no
+repuestos,repuestos.dificiles_conseguir,¿Qué repuestos son los más difíciles de encontrar?,lista,,no
+repuestos,repuestos.precios_repuestos,¿Cómo son los precios de los repuestos respecto al año pasado?,texto,,no
+opiniones_mercado,opiniones_mercado.comportamiento_precios,¿Los precios han subido o bajado en el último año?,opcion,Aumento | Disminución | Estable,no
+opiniones_mercado,opiniones_mercado.variacion_precios_ultimo_anio,"¿Cuánto, aproximadamente?",texto,,no
+opiniones_mercado,opiniones_mercado.influencia_precio,¿Qué influye más en el precio?,lista,Dólar | Escasez | Regulaciones | Demanda,no
+opiniones_mercado,opiniones_mercado.tipo_mercado,¿El mercado es mayormente legal o informal?,opcion,Legal | Informal | Mixto,no
+opiniones_mercado,opiniones_mercado.considero_electrica,¿Consideraste comprar una eléctrica?,booleano,,no
+opiniones_mercado,opiniones_mercado.prefiere_electrica,¿Prefieres una eléctrica?,booleano,,no
+opiniones_mercado,opiniones_mercado.razon_preferencia,¿Por qué?,texto,,no
+opiniones_mercado,opiniones_mercado.autonomia_electrica_km,¿Qué autonomía real tienen las eléctricas que conoces?,texto,,no
+opiniones_mercado,opiniones_mercado.percepcion_regulaciones,¿Qué opinas de las regulaciones recientes?,opcion,Positiva | Negativa | Neutra | Sin opinión,no
+opiniones_mercado,opiniones_mercado.marcas_mas_vendidas,¿Qué modelos o marcas son los que más se venden?,lista,,no
+opiniones_mercado,opiniones_mercado.rango_precio_modelo_mas_vendido,¿En qué rango de precio se vende el modelo más popular?,texto,,no
+opiniones_mercado,opiniones_mercado.motos_electricas_demanda,¿Qué motos eléctricas tienen más demanda?,texto,,no
+satisfaccion,satisfaccion.le_gusta_mas,¿Qué es lo que más te gusta de tu vehículo?,texto,,no
+satisfaccion,satisfaccion.le_gusta_menos,¿Qué es lo que menos te gusta?,texto,,no
+satisfaccion,satisfaccion.recomendaria,¿Lo recomendarías?,booleano,,no

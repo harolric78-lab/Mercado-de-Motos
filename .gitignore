@@ -50,6 +50,9 @@ logs/
 *.pem
 credentials.json
 
+# Audios de entrevistas (privacidad: no se publican)
+data/raw/audios/
+
 # Editores / IDE
 .vscode/
 !.vscode/settings.json
