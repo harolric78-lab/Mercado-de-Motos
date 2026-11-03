@@ -1,9 +1,9 @@
 {
-  "tipo_fuente": "usuarios",
-  "total_entrevistas": 1,
+  "tipo_fuente": "compradores",
+  "total_entrevistas": 2,
   "entrevistas": [
     {
-      "id": "USER_001",
+      "id": "COMPRADOR_001",
       "fecha": "2026-10-17",
       "ubicacion": "San Miguel del Padrón, La Habana, Cuba",
       "entrevistado": "",
@@ -74,11 +74,75 @@
         "le_gusta_menos": null,
         "recomendaria": true
       },
-      "observaciones": "Entrevista de comprador con transcripción disponible en data/raw/entrevistas/user_001.md; no se dispone de audio. Los campos sin dato se conservan en null.",
-      "transcripcion": "data/raw/entrevistas/user_001.md",
+      "observaciones": "Entrevista de comprador con transcripción disponible en data/raw/entrevistas/comprador_001.md; audio en data/raw/audios/COMPRADOR_001.mp4. Los campos sin dato se conservan en null.",
+      "transcripcion": "data/raw/entrevistas/comprador_001.md",
+      "audio": "data/raw/audios/COMPRADOR_001.mp4",
       "audio_url": "",
       "texto_original": "¿Cuántos años tienes? 60 años. ¿Sexo? Masculino. ¿En qué provincia y municipio vives? Provincia Ciudad Vara, municipio San Miguel del Padrón. ¿A qué te dedicas?\n\nSoy chofer profesional. ¿Recibes remesas? ¿Con qué frecuencia?\n\nSí, la remesa la recibo casi todos los meses, un mes y un menos. ¿Tienes familiares en el exterior? Sí, cómo no. ¿En qué rango está tu ingreso mensual? Mi rango consta con 4200 pesos. ¿Para qué usas la moto? A ver, la moto en estos momentos, por la situación que enfrentamos en el país, no es un lujo, es un medio de protección para darle solución y llegar al centro de trabajo, el cual es un poco lejos porque es en Alberro Cotorro.\n\nY bueno, frecuentemente Un 80% la utilizo para transportarme al trabajo y viceversa, regresar en ella a la vivienda. ¿Cuántos kilómetros al día aproximadamente? Estamos hablando aproximadamente de 28 a 35 kilómetros del berro aquí al municipio San Miguel. ¿Es tu único medio de transporte? Sí, el único medio de transporte que tengo en estos momentos. ¿Cuánto gastas al mes en combustible o electricidad? Viene siendo un promedio de 1 litro, de 1 litro diario para estos kilómetros que le acabo de decir, que son de 28 a 35 kilómetros. ¿Cuánto gastas al mes en mantenimiento y repuestos?\n\nA ver, en mantenimiento mensual se le debe dar a este vehículo, ya que es una técnica de buena demanda porque es una fabricación china, moto Suzuki, y debe el promedio de gasto en mantenimiento está sobre los 15,000, 20,000 pesos. ¿Cuánto gastas al mes en seguridad, candados o alarmas? Un promedio de 5,000, 8,000. ¿Has tenido problemas con repuestos? ¿Cuánto tardas en conseguir uno? No, en estos momentos no cuento con problemas para esto porque bueno, la moto actualmente lo que tiene son 2,000 kilómetros nada más de recorrido, ya que la cogí en una agencia Un 0 kilómetro. ¿Qué fue lo más importante al elegir esta moto? Ordena del 1 al 5: precio, marca, autonomía, repuestos, estética, papeles.\n\nMarca, y lo otro es bueno el precio. Fue un precio accesible, bueno, según la economía con la que yo contaba en ese momento y con la ayuda de de la familia que tengo. ¿Consideraste una eléctrica? Realmente, en estos momentos, las eléctricas son vehículos también efectivos, pero bueno, no tuve la posibilidad de adquirir una eléctrica y compré esta de 4 tiempos de combustión. Si tuvieras que comprar otra hoy, ¿qué cambiarías?\n\nRealmente, por una eléctrica, porque por la eficiencia, por el ahorro Y son de 120 a 130 kilómetros que estos vehículos caminan con su carga máxima. Es que los precios de las motos han subido o bajado el último año, porque sí creo que han aumentado un 5% debido a la demanda y la necesidad de transporte que contamos en este momento en el país. Creo que sí que ha subido un poquito, pero les puedo asegurar con mucha certeza y al 100% de efectividad que es negocio adquirir hoy por hoy un transporte de estos. Como dije anteriormente, no es un problema de lujo, sino para satisfacer la demanda de lo que es el regreso a tu casa y hacia el trabajo para cumplir las tareas. ¿Qué crees que influye más en el precio: el dólar, la escasez, las regulaciones o la demanda?\n\nCreo que las regulaciones están un poquito estrengida con respecto a esto. Y lo otro que viene siendo en segundo plano debe ser, son las divisas, o sea, adquirir los dólares para la compra de la misma. ¿Crees que el mercado es mayormente legal o informal? Sí, es legal porque hay varias agencias que se dedican en el país con todas sus medidas de protección y de ley que hacen las ventas de estos vehículos y sin problemas. ¿Dónde la compraste, Revolico? ¿Ustedes eran importadora o conocidos? Fue una importadora, una importadora de Panamá, un compañero que se dedican a traerla y transportarla hacia el país.\n\nY bueno, las facilidades que te la ponen en la puerta de tu casa ahí a un precio justo. ¿Has visto cambios después de alguna regulación reciente? Sí, ha habido cambios y creo que ha sido para bien, y espero que se mantenga porque realmente todo el que tiene posibilidad económica para adquirir una de ellas, creo que sí, que debe ser para bien."
+    },
+    {
+      "id": "COMPRADOR_002",
+      "fecha": "2026-11-03",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "repuestos",
+        "opiniones_mercado",
+        "satisfaccion"
+      ],
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": "40 litros al mes = 80 USD (2 USD por litro; 25 km por litro)",
+        "gasto_mantenimiento": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": false,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null,
+        "gasto_seguridad": null,
+        "gasto_mantenimiento_periodo": null,
+        "kilometraje_actual": null
+      },
+      "repuestos": {
+        "disponibilidad": "Alta",
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": "La combustión dura más y resulta más económica a largo plazo que cambiar la batería cada 2 o 3 años",
+        "comportamiento_precios": null,
+        "influencia_precio": "Precio y dificultad de adquirir la gasolina",
+        "tipo_mercado": null,
+        "variacion_precios_ultimo_anio": null,
+        "autonomia_electrica_km": "60-120 km según modelo y marca",
+        "percepcion_regulaciones": "Sin restricciones salvo tener licencia de conducción"
+      },
+      "satisfaccion": {
+        "le_gusta_mas": "Mejor rendimiento de la combustión en largas distancias",
+        "le_gusta_menos": "El precio elevado de la gasolina",
+        "recomendaria": null
+      },
+      "preguntas_pendientes": [
+        "Confirmar correspondencia entre este texto y el audio COMPRADOR_002.aac.",
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Confirmar si el vehículo es de combustión de 2 o 4 tiempos.",
+        "Aclarar si la respuesta 8 se refiere a una moto eléctrica propia o a una experiencia ajena."
+      ],
+      "observaciones": "Texto aportado por el investigador a partir de un audio y clasificado como entrevista de comprador. La transcripción automática no pudo ejecutarse en este entorno (ctranslate2 falla con Python 3.14). Los campos sin respuesta quedan en null y no se infieren.",
+      "transcripcion": "data/raw/entrevistas/comprador_002.md",
+      "audio": "data/raw/audios/COMPRADOR_002.aac",
+      "audio_sha256": "fc213b25f64fceb81d7a296c876fe75bcb91019dc2c7b525cb1bda1d3bac8733",
+      "texto_original": "1- la moto de combustión tiene mejor rendimiento a la hora de trasladarte a largas distancias\n\n2- depende de la autonomía y el modelo de tu moto, depende el kilometraje del tu moto en relación al litro de gasolina, en mi caso la mía hace 25km por litro, yo gasto 40lt de gasolina en el mes, la gasolina tiene un precio de 2 dólares es decir estaría gastando 80 dólares al mes\n\n3- el único inconveniente que a mi parecer tiene es la gasolina que tiene un precio bastante elevado\n\n4- si porque un motor de combustión te da una garantía de vida más amplia que tener que comprar una batería eléctrica cada 2 o 3 años máximo, un motor de combustión con un buen cuidado y un buen mantenimiento a la larga te va a salir más económico que comprar batería cada cierto tiempo\n\n5- no tiene restricción de ningún tipo, la única restricción es q no tengas licencia\n\n6- el precio disparatado de la gasolina en mi país y lo difícil que es en estos momentos adquirirla\n\n7- todo depende del modelo y la marca de tu moto, hay motos que hacen 60km por carga y otras 120km, depende de tu moto sabes hasta donde puedes llegar pero en general resuelven bastante\n\n8- en mi domicilio, todo depende si en el momento que destino el tiempo para cargar mi moto tengo electricidad, los ciclos de carga oscilan entre 3 y 6 horas\n\n9- no, no son justos ya que venden a un precio más elevado las motos eléctricas que las mismas motos de combustión\n\n10- la duración de la batería no es un problema siempre y cuando tengas electricidad en cambio depende de los kilómetros que hagas a lo largo del tiempo sabes que en 2 o 3 años tienes que cambiar de batería. Por piezas y talleres hay bastantes en todos lados\n\n11- que la batería cargue más rápido sus ciclos de carga y no tener que esperar un tiempo de reposo antes de cargar de moto y utilizarla",
+      "transcripcion_automatica": false,
+      "modelo_transcripcion": null
     }
   ],
-  "nota": "Entrevista de comprador aportada el 2026-11-01 con JSON y transcripción; sustituye la estructura vacía anterior."
+  "nota": "COMPRADOR_001 fue aportada el 2026-11-01 con JSON y transcripción. COMPRADOR_002 se añadió el 2026-11-03 a partir de un texto aportado por el investigador; su correspondencia con el audio está pendiente de verificar."
 }

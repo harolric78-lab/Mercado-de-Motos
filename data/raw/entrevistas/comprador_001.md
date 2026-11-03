@@ -1,9 +1,9 @@
-# Entrevista USER_001
+# Entrevista COMPRADOR_001
 
 - **Fecha:** 2026-10-17
 - **Lugar:** San Miguel del Padrón, La Habana, Cuba
 - **Entrevistado:** comprador anónimo, 60 años, chófer profesional
-- **Fuente:** transcripción aportada el 2026-11-01 (sin audio)
+- **Fuente:** transcripción aportada el 2026-11-01; audio en `data/raw/audios/COMPRADOR_001.mp4`
 
 ## Transcripción
 

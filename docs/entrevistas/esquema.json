@@ -2,12 +2,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/harolric78-lab/Mercado-de-Motos/docs/entrevistas/esquema.json",
   "title": "Entrevistas cualitativas del mercado de motos",
-  "description": "Esquema común para usuarios, talleres e importadoras. Los campos sin respuesta se guardan en null o cadena vacía: no se rellenan por inferencia.",
+  "description": "Esquema común para compradores, talleres e importadoras. Los campos sin respuesta se guardan en null o cadena vacía: no se rellenan por inferencia.",
   "type": "object",
   "required": ["tipo_fuente", "entrevistas"],
   "properties": {
     "tipo_fuente": {
-      "enum": ["usuarios", "talleres", "importadoras"]
+      "enum": ["compradores", "talleres", "importadoras"]
     },
     "total_entrevistas": {
       "type": ["integer", "null"],
@@ -29,7 +29,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^(USER|TALLER|IMPORTADORA|ENTREVISTA)_[0-9]{3}$"
+          "pattern": "^(COMPRADOR|TALLER|IMPORTADORA|ENTREVISTA)_[0-9]{3}$"
         },
         "fecha": {
           "type": "string",

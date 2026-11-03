@@ -9,7 +9,7 @@ Las entrevistas son una **fuente primaria** del estudio, con el mismo rango que 
 - **Duración:** 10–15 minutos.
 - **Registro:** audio (si la persona lo autoriza) y notas de campo.
 - **Regla de oro:** se anota lo que la persona dice. Si no sabe o no responde, se deja `null`. No se completa por inferencia ni se corrige el habla.
-- **Anonimato:** no se publican nombres, teléfonos ni direcciones. El registro usa identificadores (`USER_001`, `TALLER_001`, `IMPORTADORA_001`).
+- **Anonimato:** no se publican nombres, teléfonos ni direcciones. El registro usa identificadores (`COMPRADOR_001`, `TALLER_001`, `IMPORTADORA_001`).
 - **Herramienta:** el cuestionario legible por máquina está en [`cuestionario.json`](cuestionario.json) y la captura asistida en `src/cualitativo/nueva_entrevista.py`.
 
 ## Consentimiento (leer textual)

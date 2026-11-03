@@ -10,7 +10,7 @@ Lee `docs/entrevistas/cuestionario.json`, pregunta bloque por bloque y escribe:
 Los campos sin respuesta se guardan en `null` o cadena vacia. No se infiere nada.
 
 Uso:
-    python src/cualitativo/nueva_entrevista.py --tipo usuario
+    python src/cualitativo/nueva_entrevista.py --tipo comprador
     python src/cualitativo/nueva_entrevista.py --tipo taller --id TALLER_002
     python src/cualitativo/nueva_entrevista.py --exportar-cuestionario
 """
@@ -28,7 +28,8 @@ RAW = BASE / "data" / "raw" / "entrevistas"
 CUESTIONARIO = DOCS / "cuestionario.json"
 
 TIPOS = {
-    "usuario": {"archivo": "usuarios.json", "prefijo": "USER", "tipo_fuente": "usuarios"},
+    "comprador": {"archivo": "compradores.json", "prefijo": "COMPRADOR", "tipo_fuente": "compradores"},
+    "usuario": {"archivo": "compradores.json", "prefijo": "COMPRADOR", "tipo_fuente": "compradores"},
     "taller": {"archivo": "talleres.json", "prefijo": "TALLER", "tipo_fuente": "talleres"},
     "importadora": {"archivo": "importadoras.json", "prefijo": "IMPORTADORA", "tipo_fuente": "importadoras"},
 }
@@ -173,7 +174,7 @@ def formatear(valor) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Captura una entrevista semiestructurada.")
     parser.add_argument("--tipo", choices=list(TIPOS), help="Tipo de fuente de la entrevista.")
-    parser.add_argument("--id", dest="identificador", help="Identificador explícito (ej. USER_002).")
+    parser.add_argument("--id", dest="identificador", help="Identificador explícito (ej. COMPRADOR_002).")
     parser.add_argument("--fecha", help="Fecha en formato AAAA-MM-DD.")
     parser.add_argument("--ubicacion", default="La Habana, Cuba")
     parser.add_argument("--entrevistado", default="")

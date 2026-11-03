@@ -112,27 +112,28 @@ def main() -> int:
         resultado = transcribir(destino_audio, args.modelo, args.idioma)
 
         md = TRANSCRIPCIONES / f"{identificador}.md"
-        if md.exists() and not args.sobrescribir:
-            print(f"Ya existe {md.name}; usa --sobrescribir para reemplazar.", file=sys.stderr)
-            continue
+        escribir_md = not md.exists() or args.sobrescribir
+        if not escribir_md:
+            print(f"{md.name} ya existe; se conserva el registro manual y solo se genera el sidecar.", file=sys.stderr)
 
-        encabezado = [
-            f"# Entrevista {identificador}",
-            "",
-            f"- **Audio:** `data/raw/audios/{destino_audio.name}`",
-            f"- **SHA256:** `{marca}`",
-            f"- **Duración:** {resultado['duracion_segundos']:.1f} s",
-            f"- **Idioma detectado:** {resultado['idioma']} ({resultado['probabilidad_idioma']:.2f})",
-            f"- **Modelo:** faster-whisper `{args.modelo}` (CPU, int8)",
-            f"- **Generado:** {datetime.now(timezone.utc).astimezone().isoformat(timespec='seconds')}",
-            "- **Aviso:** transcripción automática, sin revisión manual. No se corrige el habla.",
-            "",
-            "## Transcripción",
-            "",
-            resultado["texto"],
-            "",
-        ]
-        md.write_text("\n".join(encabezado), encoding="utf-8")
+        if escribir_md:
+            encabezado = [
+                f"# Entrevista {identificador}",
+                "",
+                f"- **Audio:** `data/raw/audios/{destino_audio.name}`",
+                f"- **SHA256:** `{marca}`",
+                f"- **Duración:** {resultado['duracion_segundos']:.1f} s",
+                f"- **Idioma detectado:** {resultado['idioma']} ({resultado['probabilidad_idioma']:.2f})",
+                f"- **Modelo:** faster-whisper `{args.modelo}` (CPU, int8)",
+                f"- **Generado:** {datetime.now(timezone.utc).astimezone().isoformat(timespec='seconds')}",
+                "- **Aviso:** transcripción automática, sin revisión manual. No se corrige el habla.",
+                "",
+                "## Transcripción",
+                "",
+                resultado["texto"],
+                "",
+            ]
+            md.write_text("\n".join(encabezado), encoding="utf-8")
 
         sidecar = TRANSCRIPCIONES / f"{identificador}.transcripcion.json"
         sidecar.write_text(
