@@ -233,9 +233,9 @@
 
 | Fuente | Archivo | Entrevistas reales | Estado |
 |---|---|---:|---|
-| Talleres | `docs/entrevistas/talleres.json` | 1 (`TALLER_001`) | Migrada desde Git |
+| Talleres | `docs/entrevistas/talleres.json` | 0 | Estructura vacía documentada |
 | Importadoras | `docs/entrevistas/importadoras.json` | 0 | Estructura vacía documentada |
-| Usuarios | `docs/entrevistas/usuarios.json` | 1 (`USER_001`) | Añadida desde JSON |
+| Compradores | `docs/entrevistas/compradores.json` | 2 (`COMPRADOR_001`, `COMPRADOR_002`) | Añadidas desde JSON y texto aportado |
 
 | Campo del esquema | Descripción |
 |---|---|
@@ -345,5 +345,5 @@
 | Una sola fuente cuantitativa | Sesgo de plataforma |
 | Sin conversión CUP→USD | Anuncios en CUP fuera de las estadísticas de precio |
 | Clasificación por palabras clave | Posibles errores en títulos ambiguos |
-| Evidencia cualitativa escasa | 1 entrevista y 7 fotos |
+| Evidencia cualitativa escasa | 2 entrevistas y 7 fotos |
 | Sin registros oficiales de ventas | No hay contraste externo |

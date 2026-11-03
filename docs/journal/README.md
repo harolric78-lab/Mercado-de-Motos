@@ -72,3 +72,13 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Código y reportes:** actualizadas las rutas en scrapers, ETL, validación, notebook y generador de reportes; informe y métricas estandarizados como `reports/informe_mercado.md` y `reports/metricas/resumen_mercado.*`.
 - **Entorno:** creado `Mercado-de-Motos/.venv` con las dependencias de `requirements.txt`.
 - **Validación:** dataset de 6.101 anuncios y pruebas automáticas en verde.
+
+---
+
+## 📅 3 de noviembre de 2026 — Entrevistas y hand-off
+- **Refactor cualitativo:** renombrado `USER_001 → COMPRADOR_001` y `usuarios.json → compradores.json`; retirado `TALLER_001` por no identificar entrevistado, cargo ni establecimiento.
+- **Transcripción automática:** se intentó transcribir `COMPRADOR_002.aac` con `faster-whisper`; `ctranslate2` falla con Python 3.14 (access violation) incluso con `float32`, por lo que no pudo ejecutarse.
+- **Entrevista COMPRADOR_002:** integrada como comprador a partir del texto aportado por el investigador; transcripción en `data/raw/entrevistas/comprador_002.md`.
+- **Pendiente:** confirmar la correspondencia texto-audio de `COMPRADOR_002` y clasificar `COMPRADOR_003.ogg`.
+- **Hand-off:** creado `docs/entregables/HANDOFF.md` con estado, pendientes y comandos de reproducción.
+- **Validación:** JSON de entrevistas validado; `src/verificar_datos.py`, `pytest -q` y `py_compile` sin errores.

@@ -93,7 +93,7 @@ Antes del análisis, los datos fueron sometidos a procesos de limpieza, normaliz
 
 ### Evidencia cualitativa complementaria
 
-- Entrevistas a usuarios.
+- Entrevistas a compradores.
 - Visitas a talleres.
 - Observación en importadoras y puntos de venta.
 - Registro fotográfico.
@@ -114,14 +114,14 @@ La investigación combina dos tipos de evidencia que se mantienen claramente sep
 
 ### Evidencia cualitativa
 
-- **Entrevistas:** normalizadas en [`docs/entrevistas/`](docs/entrevistas/), con archivos para talleres, importadoras y usuarios.
+- **Entrevistas:** normalizadas en [`docs/entrevistas/`](docs/entrevistas/), con archivos para compradores, talleres e importadoras.
 - **Observación directa:** visitas a talleres, tiendas e importadoras.
 - **Evidencia fotográfica:** registrada en [`docs/images/`](docs/images/) y documentada en [`docs/images/evidencia_campo.md`](docs/images/evidencia_campo.md).
 - **Bitácora:** registro cronológico del trabajo de campo en [`docs/journal/`](docs/journal/).
 
 La evidencia cualitativa se usa para interpretar y contextualizar los resultados cuantitativos. No se emplea para estimar volúmenes de ventas ni para sustituir el dataset de anuncios.
 
-> Estado actual: se dispone de **2 entrevistas reales** (1 clasificada de forma tentativa como taller y 1 a un comprador) y **7 fotografías** de campo. Las entrevistas de importadoras no están disponibles y se conserva como estructura vacía documentada.
+> Estado actual: se dispone de **2 entrevistas reales** (compradores) y **7 fotografías** de campo. Queda **1 audio pendiente** de transcripción y clasificación (`COMPRADOR_003.ogg`). Las entrevistas de talleres e importadoras no están disponibles y se conservan como estructuras vacías documentadas.
 
 ---
 
@@ -207,7 +207,7 @@ Mercado-de-Motos/
 │   │   ├── README.md
 │   │   ├── talleres.json
 │   │   ├── importadoras.json
-│   │   └── usuarios.json
+│   │   └── compradores.json
 │   ├── images/                       # Registro fotográfico de campo
 │   │   ├── evidencia_campo.md
 │   │   ├── importadoras/

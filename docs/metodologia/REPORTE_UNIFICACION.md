@@ -9,33 +9,38 @@
 
 | Tipo de fuente | Detectadas | Ubicación original |
 |---|---:|---|
-| Talleres | 1 | `datos/entrevistas/entrevista_motos_mas_vendidas.txt` (historial Git) |
+| Talleres | 0 | — |
 | Importadoras | 0 | — |
-| Usuarios | 1 | Aportada directamente como JSON (2026-11-01) |
+| Compradores | 2 | `COMPRADOR_001` (JSON, 2026-11-01) y `COMPRADOR_002` (texto aportado, 2026-11-03) |
 
 Detalle de las entrevistas detectadas:
 
 - **Identificador:** `TALLER_001`
-- **Fecha:** 2026-10-22
-- **Ubicación:** La Habana, Cuba
-- **Entrevistado:** no identificado en el registro original
-- **Origen:** commits `b6ec4b9` (creación), `41192fa` (encabezado) y `ad58b2b` (conversión a texto plano); eliminada del árbol de trabajo en `2dfa7cd`.
-- **Clasificación:** tentativa como taller, porque el registro original no especifica el tipo de fuente.
+- **Estado:** eliminada del dataset.
+- **Motivo:** registro recuperado del historial de Git que no identificaba entrevistado, cargo ni establecimiento; su clasificación como taller era tentativa.
 
-- **Identificador:** `USER_001`
+- **Identificador:** `COMPRADOR_001`
 - **Fecha:** 2026-10-17
 - **Ubicación:** San Miguel del Padrón, La Habana, Cuba
 - **Entrevistado:** comprador anónimo (chófer profesional, 60 años)
-- **Origen:** JSON y transcripción aportados el 2026-11-01; no hay audio.
-- **Clasificación:** comprador (usuario).
+- **Origen:** JSON, transcripción y audio aportados el 2026-11-01.
+- **Clasificación:** comprador.
+
+- **Identificador:** `COMPRADOR_002`
+- **Fecha de registro:** 2026-11-03 (fecha del audio por confirmar)
+- **Ubicación:** La Habana, Cuba (por confirmar)
+- **Entrevistado:** comprador anónimo
+- **Origen:** texto aportado por el investigador a partir de un audio.
+- **Clasificación:** comprador.
+- **Nota:** la transcripción automática con `faster-whisper` no pudo ejecutarse (`ctranslate2` falla con Python 3.14); la correspondencia texto-audio está pendiente de verificar.
 
 ## 2. Entrevistas migradas
 
 | Archivo de destino | Registros | Estado |
 |---|---:|---|
-| `docs/entrevistas/talleres.json` | 1 | Migrada con texto original conservado |
+| `docs/entrevistas/talleres.json` | 0 | Estructura vacía documentada |
 | `docs/entrevistas/importadoras.json` | 0 | Estructura vacía documentada |
-| `docs/entrevistas/usuarios.json` | 1 | Añadida desde JSON (sin transcripción ni audio) |
+| `docs/entrevistas/compradores.json` | 2 | `COMPRADOR_001` (transcripción + audio) y `COMPRADOR_002` (texto aportado) |
 
 No se fabricaron entrevistas ni respuestas. Los campos sin información quedaron vacíos y la ausencia se documentó en cada archivo y en `docs/entrevistas/README.md`.
 
@@ -43,10 +48,10 @@ No se fabricaron entrevistas ni respuestas. Los campos sin información quedaron
 
 | Origen | Destino | Formato |
 |---|---|---|
-| `datos/entrevistas/entrevista_motos_mas_vendidas.md` | `docs/entrevistas/talleres.json` | Markdown → JSON |
-| `datos/entrevistas/entrevista_motos_mas_vendidas.txt` | `docs/entrevistas/talleres.json` | Texto plano → JSON |
-| JSON `user_001` (comprador) | `docs/entrevistas/usuarios.json` | JSON → JSON normalizado |
-| Transcripción `user_001` | `data/raw/entrevistas/user_001.md` | Texto → Markdown |
+| JSON `comprador_001` | `docs/entrevistas/compradores.json` | JSON → JSON normalizado |
+| Transcripción `comprador_001` | `data/raw/entrevistas/comprador_001.md` | Texto → Markdown |
+| Texto `COMPRADOR_002` | `docs/entrevistas/compradores.json` | Texto → JSON normalizado |
+| Texto `COMPRADOR_002` | `data/raw/entrevistas/comprador_002.md` | Texto → Markdown |
 
 Se conservó el campo `texto_original` para mantener la trazabilidad entre la fuente y el registro normalizado.
 
@@ -75,8 +80,10 @@ Además, se actualizó el `README.md` principal con la sección **Fuentes Cualit
 - No existen entrevistas a importadoras.
 - No existen fotografías de talleres.
 - El catálogo VEDCA detectado en el historial (`datos/importadora_vedca/vedca_catalogo_20261026_100817.json`) es un listado de productos, no una entrevista, por lo que no se migró.
-- La entrevista `TALLER_001` no identifica entrevistado, cargo ni establecimiento exacto.
-- La entrevista `USER_001` no dispone de audio; su transcripción está en `data/raw/entrevistas/user_001.md`.
+- No existen entrevistas a talleres.
+- La transcripción de `COMPRADOR_001` está en `data/raw/entrevistas/comprador_001.md` y su audio en `data/raw/audios/COMPRADOR_001.mp4`.
+- La correspondencia entre el texto de `COMPRADOR_002` y `data/raw/audios/COMPRADOR_002.aac` está pendiente de verificar.
+- El audio `COMPRADOR_003.ogg` sigue pendiente de transcripción y clasificación.
 
 ## 7. Validación
 

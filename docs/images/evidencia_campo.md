@@ -25,8 +25,8 @@ Registro fotográfico que acompaña la evidencia cualitativa del proyecto.
 ## Relación con las entrevistas
 
 - La evidencia fotográfica corresponde al **2026-10-08**.
-- La única entrevista migrada (`TALLER_001`) está fechada el **2026-10-22**.
-- No se ha verificado que las fotos y la entrevista correspondan al mismo establecimiento ni a la misma visita; por eso no se vinculan directamente.
+- Las entrevistas de compradores no están vinculadas a un establecimiento concreto.
+- No se ha verificado que las fotos y las entrevistas correspondan al mismo establecimiento ni a la misma visita; por eso no se vinculan directamente.
 
 ## Relación con los hallazgos del estudio
 

@@ -19,11 +19,13 @@ Cada registro conserva el texto original cuando existe, para mantener la trazabi
 
 | Tipo de fuente | Archivo | Entrevistas reales | Estado |
 |---|---|---:|---|
-| Talleres | [`talleres.json`](talleres.json) | 1 | Migrada desde el historial de Git |
+| Talleres | [`talleres.json`](talleres.json) | 0 | Estructura vacía documentada |
 | Importadoras | [`importadoras.json`](importadoras.json) | 0 | Estructura vacía documentada |
-| Usuarios | [`usuarios.json`](usuarios.json) | 1 | Añadida el 2026-11-01 (JSON + transcripción) |
+| Compradores | [`compradores.json`](compradores.json) | 2 | `COMPRADOR_001` (2026-11-01) y `COMPRADOR_002` (2026-11-03) |
 
-La entrevista `TALLER_001`, fechada el 2026-10-22, no identifica al entrevistado ni el tipo exacto de fuente; la clasificación como taller es tentativa y debe confirmarse. La entrevista `USER_001`, fechada el 2026-10-17, corresponde a un comprador de San Miguel del Padrón y cuenta con transcripción en `data/raw/entrevistas/user_001.md`; no se dispone de audio.
+La entrevista `COMPRADOR_001`, fechada el 2026-10-17, corresponde a un comprador de San Miguel del Padrón y cuenta con transcripción en `data/raw/entrevistas/comprador_001.md` y audio en `data/raw/audios/COMPRADOR_001.mp4`. Se eliminó el registro `TALLER_001`, recuperado del historial de Git, porque no identificaba entrevistado, cargo ni establecimiento y su clasificación como taller era tentativa.
+
+La entrevista `COMPRADOR_002`, añadida el 2026-11-03, se incorporó a partir de un texto aportado por el investigador y clasificado como comprador. Su transcripción está en `data/raw/entrevistas/comprador_002.md`. La correspondencia con `data/raw/audios/COMPRADOR_002.aac` y los datos de perfil/fecha quedan pendientes de verificar. La transcripción automática con `faster-whisper` no pudo ejecutarse porque `ctranslate2` falla con Python 3.14.
 
 ## Categorías de análisis
 
@@ -37,7 +39,6 @@ La entrevista `TALLER_001`, fechada el 2026-10-22, no identifica al entrevistado
 
 - El número de entrevistas es muy reducido y no es representativo del mercado.
 - No se dispone de entrevistas de importadoras.
-- La entrevista `USER_001` no dispone de audio; su transcripción está en `data/raw/entrevistas/user_001.md`.
-- La entrevista migrada no identifica al entrevistado, su cargo ni el lugar exacto.
+- La clasificación de los audios nuevos como compradores se basa en el contenido de la transcripción y debe confirmarse en campo.
 - La evidencia cualitativa se usa para interpretar los datos cuantitativos, no para estimar volúmenes ni precios.
 - No se fabricaron ni completaron respuestas: los campos sin información quedaron vacíos y documentados.
