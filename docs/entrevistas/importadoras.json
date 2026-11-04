@@ -1,5 +1,6 @@
 {
   "tipo_fuente": "importadoras",
+  "total_entrevistas": 0,
   "entrevistas": [],
-  "nota": "No se encontraron entrevistas reales a importadoras en el repositorio ni en el historial de Git. El 2026-11-04 se revisaron los 14 audios de Entrevistas/ y ninguno se identificó como entrevista a importadora. Se conserva la estructura vacía para documentar la ausencia de información. El catálogo VEDCA detectado en el historial es un listado de productos, no una entrevista, por lo que no se incluye aquí."
+  "nota": "Reinicio de entrevistas el 2026-11-04. Estructura vacía lista para registrar entrevistas a importadoras."
 }

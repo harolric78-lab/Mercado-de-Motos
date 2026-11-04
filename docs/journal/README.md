@@ -75,20 +75,15 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 
 ---
 
-## 📅 3 de noviembre de 2026 — Entrevistas y hand-off
-- **Refactor cualitativo:** renombrado `USER_001 → COMPRADOR_001` y `usuarios.json → compradores.json`; retirado `TALLER_001` por no identificar entrevistado, cargo ni establecimiento.
-- **Transcripción automática:** se intentó transcribir `COMPRADOR_002.aac` con `faster-whisper`; `ctranslate2` falla con Python 3.14 (access violation) incluso con `float32`, por lo que no pudo ejecutarse.
-- **Entrevista COMPRADOR_002:** integrada como comprador a partir del texto aportado por el investigador; transcripción en `data/raw/entrevistas/comprador_002.md`.
-- **Pendiente:** confirmar la correspondencia texto-audio de `COMPRADOR_002` y clasificar `COMPRADOR_003.ogg`.
+## 📅 3 de noviembre de 2026 — Módulo cualitativo y hand-off
+- **Captura y transcripción:** creados `src/cualitativo/nueva_entrevista.py` y `src/cualitativo/transcribir.py`.
 - **Hand-off:** creado `docs/entregables/HANDOFF.md` con estado, pendientes y comandos de reproducción.
 - **Validación:** JSON de entrevistas validado; `src/verificar_datos.py`, `pytest -q` y `py_compile` sin errores.
 
 ---
 
-## 📅 4 de noviembre de 2026 — Transcripción y clasificación de entrevistas
-- **Transcripción:** se procesaron los 14 audios de `Entrevistas/` con Vosk (`vosk-model-small-es-0.42`) tras descartar `faster-whisper`/`ctranslate2` por el fallo de acceso (`EXIT=-1073741819`) en Python 3.12 y 3.14.
-- **Duplicados:** los 3 audios de `data/raw/audios/` son copias exactas de 3 archivos de `Entrevistas/` (`COMPRADOR_001.mp4`, `COMPRADOR_002.aac`, `COMPRADOR_003.ogg`). La sesión del 28/10 está dividida en 12 notas de voz; no hay hashes repetidos dentro de `Entrevistas/`.
-- **Corrección de atribución:** el texto de 11 respuestas aportado el 2026-11-03 corresponde a la sesión del 28/10 (`COMPRADOR_003`), no a `COMPRADOR_002.aac`. Se creó `COMPRADOR_003` y se reconstruyó `COMPRADOR_002` desde su audio real (2026-10-23).
-- **Resultado:** 3 entrevistas de compradores; 14 audios procesados. No se identificaron entrevistas a talleres o importadoras.
-- **Archivos:** `data/raw/entrevistas/comprador_002.md`, `comprador_003.md`, `comprador_003_partes.md`; `docs/entrevistas/compradores.json`.
-- **Validación:** `json.load` OK (5 archivos); `src/verificar_datos.py` OK (6.101 anuncios); `pytest -q` OK (2 passed); `py_compile` OK.
+## 📅 4 de noviembre de 2026 — Reinicio de entrevistas
+- **Borrado de entrevistas anteriores:** se vaciaron `compradores.json`, `talleres.json` e `importadoras.json`.
+- **Material crudo eliminado:** las transcripciones de `data/raw/entrevistas/` y los audios de `data/raw/audios/` de las entrevistas anteriores.
+- **Documentación limpiada:** actualizados `docs/entrevistas/README.md`, `README.md`, `explicacion_pipeline.md`, `docs/entregables/HANDOFF.md`, `docs/images/evidencia_campo.md` y este journal; retirados los reportes obsoletos.
+- **Estructura conservada:** `esquema.json`, `cuestionario.json`, `cuestionario.csv`, `guia_entrevista.md` y los scripts de captura/transcripción quedan listos para el nuevo registro desde cero.

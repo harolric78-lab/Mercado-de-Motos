@@ -124,7 +124,7 @@ La investigación combina datos cuantitativos y cualitativos de tres fuentes que
 
 Las entrevistas y la información de instituciones se usan para interpretar y contextualizar los resultados cuantitativos. No se emplean para estimar volúmenes de ventas ni para sustituir el dataset de anuncios, pero sí son **fuentes de dato con valor propio** dentro del estudio.
 
-> Estado actual: se dispone de **3 entrevistas reales** (compradores), **14 audios procesados** (una entrevista del 17/10, una del 23/10 y una sesión del 28/10 dividida en 12 notas de voz), **7 fotografías** de importadoras y tiendas, y observación de campo. La transcripción se completó con Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo. No hay entrevistas formales a talleres o importadoras; sus estructuras se conservan documentadas como vacías.
+> Estado actual: el registro de entrevistas se reinició el **2026-11-04**; no hay entrevistas registradas por ahora. Se conservan la estructura de `docs/entrevistas/` para las nuevas entrevistas, **7 fotografías** de importadoras y tiendas, y la observación de campo. La transcripción automática disponible es Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo.
 
 ---
 
@@ -218,8 +218,7 @@ Mercado-de-Motos/
 │   │   └── tiendas/
 │   ├── journal/                      # Bitácora de desarrollo
 │   └── metodologia/
-│       ├── DECISIONES_ARQUITECTURA.md
-│       └── REPORTE_UNIFICACION.md
+│       └── DECISIONES_ARQUITECTURA.md
 │
 ├── notebooks/
 │   └── eda_motos.ipynb               # Análisis exploratorio
@@ -379,7 +378,7 @@ Durante el desarrollo del proyecto se aplican conceptos fundamentales de Ciencia
 - El estudio se limita a los datos disponibles durante el período de captura.
 - No existen registros oficiales de ventas que permitan contrastar completamente los resultados obtenidos.
 - Algunos factores de decisión de compra solo pueden inferirse parcialmente mediante información cualitativa complementaria.
-- La fuente cuantitativa proviene de un solo portal de anuncios, con una serie temporal corta; las entrevistas y la información de instituciones aún son limitadas.
+- La fuente cuantitativa proviene de un solo portal de anuncios, con una serie temporal corta; las entrevistas y la información de instituciones aún son limitadas (el registro de entrevistas se reinició el 2026-11-04).
 
 ---
 

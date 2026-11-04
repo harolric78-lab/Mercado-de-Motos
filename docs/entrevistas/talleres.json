@@ -2,5 +2,5 @@
   "tipo_fuente": "talleres",
   "total_entrevistas": 0,
   "entrevistas": [],
-  "nota": "No se dispone de entrevistas reales a talleres. Se eliminó el registro TALLER_001, recuperado del historial de Git, porque no identificaba entrevistado, cargo ni establecimiento y su clasificación como taller era tentativa. El 2026-11-04 se revisaron los 14 audios de Entrevistas/ y ninguno se identificó como entrevista a taller. Se conserva la estructura vacía para documentar la ausencia de información."
+  "nota": "Reinicio de entrevistas el 2026-11-04. Estructura vacía lista para registrar entrevistas a talleres."
 }

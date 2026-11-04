@@ -2,6 +2,16 @@
 
 Este directorio unifica la evidencia cualitativa del proyecto en archivos JSON normalizados y reutilizables.
 
+## Estado actual
+
+El **2026-11-04** se reinició el registro de entrevistas: se eliminaron las entrevistas anteriores, sus transcripciones y sus audios para comenzar desde cero. En este momento no hay entrevistas registradas.
+
+| Tipo de fuente | Archivo | Entrevistas |
+|---|---|---:|
+| Compradores | [`compradores.json`](compradores.json) | 0 |
+| Talleres | [`talleres.json`](talleres.json) | 0 |
+| Importadoras | [`importadoras.json`](importadoras.json) | 0 |
+
 ## Propósito
 
 Complementar el análisis cuantitativo de los anuncios de Revolico con información de campo que permita interpretar precios, preferencias, disponibilidad de repuestos y prácticas del mercado.
@@ -11,21 +21,29 @@ Complementar el análisis cuantitativo de los anuncios de Revolico con informaci
 - Entrevistas semiestructuradas realizadas en La Habana.
 - Observación directa en talleres, tiendas e importadoras.
 - Registro fotográfico de campo.
-- Conversión de notas y transcripciones dispersas a un esquema JSON común.
+- Conversión de notas y transcripciones a un esquema JSON común.
 
 Cada registro conserva el texto original cuando existe, para mantener la trazabilidad entre la fuente y el dato normalizado.
 
-## Entrevistas encontradas
+## Estructura de registro
 
-| Tipo de fuente | Archivo | Entrevistas reales | Estado |
-|---|---|---:|---|
-| Talleres | [`talleres.json`](talleres.json) | 0 | Estructura vacía documentada |
-| Importadoras | [`importadoras.json`](importadoras.json) | 0 | Estructura vacía documentada |
-| Compradores | [`compradores.json`](compradores.json) | 3 | `COMPRADOR_001` (2026-10-17), `COMPRADOR_002` (2026-10-23) y `COMPRADOR_003` (2026-10-28) |
+- `texto_original`: respuesta literal o transcripción verbatim, sin corregir el habla.
+- `perfil`, `compra`, `uso`, `repuestos`, `opiniones_mercado` y `satisfaccion`: campos normalizados según [`esquema.json`](esquema.json) y [`cuestionario.json`](cuestionario.json).
+- `respuestas`: respuestas abiertas que no encajan en los bloques anteriores.
+- `preguntas_pendientes`: datos que faltan y deben confirmarse en campo.
+- `transcripcion_automatica` y `modelo_transcripcion`: trazabilidad del origen.
+- `audio_sha256`: verificación de la fuente.
 
-La entrevista `COMPRADOR_001`, fechada el 2026-10-17, corresponde a un comprador de San Miguel del Padrón y cuenta con transcripción en `data/raw/entrevistas/comprador_001.md` y audio en `data/raw/audios/COMPRADOR_001.mp4`. Se eliminó el registro `TALLER_001`, recuperado del historial de Git, porque no identificaba entrevistado, cargo ni establecimiento y su clasificación como taller era tentativa.
+**Principio:** se registran solo las respuestas explícitas. Los campos sin respuesta quedan en `null` (o `[]` en listas) y se listan en `preguntas_pendientes`; no se infieren ni se completan con supuestos.
 
-La entrevista `COMPRADOR_002` corresponde al audio del 2026-10-23 (`WhatsApp Audio 2026-10-23 at 10.32.41 PM.aac`, copiado en `data/raw/audios/COMPRADOR_002.aac`) y se transcribió automáticamente con Vosk; el texto está en `data/raw/entrevistas/comprador_002.md`. La sesión `COMPRADOR_003`, del 2026-10-28, reúne 12 notas de voz y el texto de 11 respuestas aportado por el investigador; su primera parte está en `data/raw/audios/COMPRADOR_003.ogg` y las transcripciones en `data/raw/entrevistas/comprador_003.md` y `comprador_003_partes.md`. El texto de 11 respuestas se había registrado inicialmente como `COMPRADOR_002`; al verificar los audios se reasignó a `COMPRADOR_003`. `faster-whisper`/`ctranslate2` no funciona en este equipo; la transcripción se hizo con `vosk-model-small-es-0.42`.
+## Flujo para registrar una nueva entrevista
+
+1. El investigador aporta las respuestas o el audio de la entrevista.
+2. Se identifica el tipo de fuente (`comprador`, `taller` o `importadora`).
+3. Se normaliza en `docs/entrevistas/<tipo>.json` con el identificador correspondiente (`COMPRADOR_001`, `TALLER_001`, `IMPORTADORA_001`).
+4. Se guarda la transcripción en `data/raw/entrevistas/` y, si existe, el audio en `data/raw/audios/`.
+5. Se actualiza `total_entrevistas` y la tabla de estado de este README.
+6. Se valida con `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
 
 ## Categorías de análisis
 
@@ -37,9 +55,6 @@ La entrevista `COMPRADOR_002` corresponde al audio del 2026-10-23 (`WhatsApp Aud
 
 ## Limitaciones
 
-- El número de entrevistas es muy reducido y no es representativo del mercado.
-- No se dispone de entrevistas de importadoras.
-- Los 14 audios revisados se clasificaron como compradores por su contenido; no se identificaron entrevistas a talleres o importadoras. La atribución debe confirmarse en campo.
-- Las transcripciones automáticas de Vosk son ruidosas; solo se registran respuestas claras y el resto queda en `null`.
+- El número de entrevistas es todavía muy reducido y no es representativo del mercado.
 - La evidencia cualitativa se usa para interpretar los datos cuantitativos, no para estimar volúmenes ni precios.
-- No se fabricaron ni completaron respuestas: los campos sin información quedaron vacíos y documentados.
+- No se fabrican ni completan respuestas: los campos sin información quedan vacíos y documentados.

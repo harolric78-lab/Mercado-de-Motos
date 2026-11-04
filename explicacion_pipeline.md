@@ -235,7 +235,7 @@
 |---|---|---:|---|
 | Talleres | `docs/entrevistas/talleres.json` | 0 | Estructura vacía documentada |
 | Importadoras | `docs/entrevistas/importadoras.json` | 0 | Estructura vacía documentada |
-| Compradores | `docs/entrevistas/compradores.json` | 3 (`COMPRADOR_001`, `COMPRADOR_002`, `COMPRADOR_003`) | JSON, transcripción Vosk y texto aportado |
+| Compradores | `docs/entrevistas/compradores.json` | 0 | Estructura vacía tras el reinicio del 2026-11-04 |
 
 | Campo del esquema | Descripción |
 |---|---|
@@ -345,5 +345,5 @@
 | Una sola fuente cuantitativa (Revolico) | Sesgo de plataforma; se complementa con entrevistas e instituciones |
 | Sin conversión CUP→USD | Anuncios en CUP fuera de las estadísticas de precio |
 | Clasificación por palabras clave | Posibles errores en títulos ambiguos |
-| Evidencia cualitativa escasa | 3 entrevistas y 7 fotos |
+| Evidencia cualitativa reiniciada | Sin entrevistas registradas; se conservan 7 fotos |
 | Sin registros oficiales de ventas | No hay contraste externo |

@@ -25,8 +25,8 @@ Registro fotográfico que acompaña la evidencia cualitativa del proyecto.
 ## Relación con las entrevistas
 
 - La evidencia fotográfica corresponde al **2026-10-08**.
-- Las entrevistas de compradores no están vinculadas a un establecimiento concreto.
-- No se ha verificado que las fotos y las entrevistas correspondan al mismo establecimiento ni a la misma visita; por eso no se vinculan directamente.
+- El registro de entrevistas se reinició el **2026-11-04**; no hay entrevistas vinculadas a estas fotografías.
+- No se ha verificado que las fotos correspondan a un establecimiento concreto; por eso no se vinculan a entrevistas.
 
 ## Relación con los hallazgos del estudio
 
