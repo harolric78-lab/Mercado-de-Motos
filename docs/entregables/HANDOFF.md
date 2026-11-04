@@ -1,6 +1,6 @@
 # Hand-off — Estado del proyecto
 
-**Actualizado:** 2026-11-03
+**Actualizado:** 2026-11-04
 **Proyecto:** Análisis del Mercado de Motos en La Habana (Introducción a la Ciencia de los Datos)
 **Repositorio:** `Mercado-de-Motos` (repositorio Git anidado dentro de `Proyecto de ICD Motos en cuba (2)`)
 
@@ -11,8 +11,8 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 ## 1. Resumen ejecutivo
 
 - El **pipeline cuantitativo está terminado**: scraping de Revolico, limpieza, ETL, validación, métricas, gráficos e informe.
-- El **módulo cualitativo está en curso**: hay 2 entrevistas de compradores integradas y 1 audio pendiente de transcripción.
-- La **transcripción automática no funciona en este entorno**: `faster-whisper` carga el modelo y `ctranslate2` crashea con Python 3.14 (access violation, incluso con `float32`).
+- El **módulo cualitativo está en curso**: hay 3 entrevistas de compradores integradas y 14 audios procesados (una entrevista del 17/10, una del 23/10 y una sesión del 28/10 con 12 notas de voz).
+- La **transcripción con `faster-whisper`/`ctranslate2` no funciona en este entorno** (access violation, incluso con `float32`). Se usó **Vosk** (`vosk-model-small-es-0.42`) como alternativa; las transcripciones son ruidosas y solo se registran respuestas claras.
 - El dataset consolidado no se ha vuelto a scrapear desde el **26/10/2026**.
 
 ---
@@ -26,7 +26,7 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 | ETL y validación | Terminado | `src/analisis/etl_mercado.py`, `src/verificar_datos.py` |
 | Métricas y gráficos | Terminado | `reports/metricas/`, `reports/graficos/` |
 | Informe | Terminado | `reports/informe_mercado.md` |
-| Entrevistas | En curso | 2 compradores integrados; 1 audio pendiente |
+| Entrevistas | En curso | 3 compradores integrados; 14 audios procesados |
 | Hand-off | Terminado | Este documento |
 
 ---
@@ -46,24 +46,24 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 - Manifiesto con SHA256 de las fuentes: `data/processed/manifiesto.json`.
 - Refactor cualitativo: `USER_001 → COMPRADOR_001` y `usuarios.json → compradores.json`.
 - Baja documentada de `TALLER_001` (no identificaba entrevistado, cargo ni establecimiento).
-- `COMPRADOR_002` integrado como comprador a partir de un texto aportado por el investigador.
+- `COMPRADOR_002` reconstruido desde el audio real del 2026-10-23 y transcrito con Vosk.
+- `COMPRADOR_003` integra las 12 notas de voz del 2026-10-28 y el texto de 11 respuestas aportado por el investigador.
 
 ---
 
 ## 4. Qué está pendiente
 
-1. **`COMPRADOR_003.ogg`**: sin transcribir ni clasificar.
-2. **Correspondencia texto-audio de `COMPRADOR_002`**: confirmar que el texto integrado pertenece a `data/raw/audios/COMPRADOR_002.aac`.
-3. **Datos de perfil de `COMPRADOR_002`**: fecha real, edad, sexo, ocupación, lugar y tipo de moto (2T/4T).
-4. **Entrevistas de talleres e importadoras**: no existen; sus JSON están vacíos y documentados.
-5. **Nuevo corte de Revolico**: el dataset no se actualiza desde el 26/10/2026.
-6. **Cierre de commits**: ver la sección 9.
+1. **Perfiles de `COMPRADOR_002` y `COMPRADOR_003`**: confirmar edad, ocupación, municipio, marca/modelo, tipo de moto (2T/4T) y si la sesión del 28/10 tiene una o varias voces.
+2. **Correspondencia texto-audio de `COMPRADOR_003`**: confirmar que el texto de 11 respuestas corresponde a las 12 notas de voz del 2026-10-28.
+3. **Entrevistas de talleres e importadoras**: no existen; sus JSON están vacíos y documentados.
+4. **Nuevo corte de Revolico**: el dataset no se actualiza desde el 26/10/2026.
+5. **Cierre de commits**: ver la sección 9.
 
 ---
 
 ## 5. Cómo reproducir
 
-Requisitos: Python 3.10+ y Git. En este equipo el `.venv` usa Python 3.14.
+Requisitos: Python 3.10+ y Git. En este equipo el `.venv` usa Python 3.14. Vosk se ejecutó con un Python 3.12 portátil, porque el `.venv` no tiene `vosk` instalado.
 
 ```bash
 cd Mercado-de-Motos
@@ -88,7 +88,13 @@ Pipeline de la skill de scraping:
 python ".opencode/skills/revolico-scraper/scripts/pipeline.py"
 ```
 
-Transcripción de entrevistas (bloqueada en este entorno):
+Transcripción de entrevistas con Vosk (alternativa que funciona en este entorno):
+
+```bash
+python src/cualitativo/transcribir_vosk.py "..\Entrevistas\*.ogg" --modelo C:\ruta\a\vosk-model-small-es-0.42 --salida data/raw/entrevistas/comprador_003_partes.md --sobrescribir
+```
+
+La transcripción con `faster-whisper`/`ctranslate2` sigue bloqueada en Python 3.14:
 
 ```bash
 .venv\Scripts\python.exe src/cualitativo/transcribir.py data/raw/audios/COMPRADOR_003.ogg --id COMPRADOR_003 --modelo small --idioma es
@@ -114,14 +120,15 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 
 ## 7. Limitaciones conocidas
 
-- **Transcripción automática rota**: `ctranslate2` falla con Python 3.14 (`EXIT=-1073741819`, access violation). `faster-whisper 1.2.1` y `av` sí están instalados en `.venv`.
-- `requirements.txt` no incluye `faster-whisper` ni `av`; hay que instalarlos aparte para el módulo cualitativo.
+- **Transcripción con `faster-whisper`/`ctranslate2` rota**: falla con Python 3.12 y 3.14 (`EXIT=-1073741819`, access violation). Vosk funciona, pero su precisión es limitada en audios ruidosos de WhatsApp.
+- `requirements.txt` no incluye `faster-whisper`, `av` ni `vosk`; hay que instalarlos aparte para el módulo cualitativo.
+- Las transcripciones de Vosk son ruidosas: solo se registran respuestas claras y el resto queda en `null`.
 - Los anuncios miden **oferta publicada**, no ventas efectivas.
 - Las vistas son un proxy de demanda, no demanda real.
-- Serie temporal corta (3 capturas) y una sola fuente cuantitativa.
+- Serie temporal corta (3 capturas); la fuente cuantitativa es un solo portal (Revolico), complementada con entrevistas e instituciones.
 - Sin conversión CUP→USD: los anuncios en CUP quedan fuera de las estadísticas de precio.
 - Clasificación por palabras clave: posibles errores en títulos ambiguos.
-- Evidencia cualitativa escasa: 2 entrevistas y 7 fotos.
+- Evidencia cualitativa escasa: 3 entrevistas y 7 fotos.
 
 ---
 
@@ -139,6 +146,7 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | `docs/journal/README.md` | Bitácora cronológica |
 | `docs/metodologia/` | Decisiones y reporte de unificación |
 | `docs/entregables/` | Resúmenes ejecutivos y este hand-off |
+| `reporte_tecnico/` | Reporte técnico de avances y errores de esta fase |
 | `reports/informe_mercado.md` | Informe generado |
 | `src/scraping/revolico/` | Scraper |
 | `src/analisis/` | ETL y generación de reportes |
@@ -150,12 +158,11 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 
 ## 9. Próximos pasos priorizados
 
-1. Transcribir manualmente `COMPRADOR_003.ogg` (o en un entorno con Python 3.11/3.12) y clasificarlo.
-2. Confirmar la correspondencia entre `COMPRADOR_002` y su audio; completar perfil y fecha.
-3. Actualizar `total_entrevistas`, `README.md`, `explicacion_pipeline.md` y el journal con cada nueva entrevista.
-4. Si se consiguen talleres o importadoras, integrarlos en sus JSON y actualizar el reporte de unificación.
-5. Ejecutar un nuevo corte de Revolico cuando se quiera refrescar el dataset.
-6. Mantener los commits separados: refactor, datos/transcripciones y documentación.
+1. Confirmar perfiles y voces de `COMPRADOR_002` y `COMPRADOR_003`.
+2. Confirmar la correspondencia entre el texto de 11 respuestas y las 12 notas de voz del 2026-10-28.
+3. Si se consiguen talleres o importadoras, integrarlos en sus JSON y actualizar el reporte de unificación.
+4. Ejecutar un nuevo corte de Revolico cuando se quiera refrescar el dataset.
+5. Mantener los commits separados: refactor, datos/transcripciones y documentación.
 
 ---
 
@@ -168,3 +175,4 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | 2026-11-01 | Integración de `COMPRADOR_001` |
 | 2026-11-02 | Módulo cualitativo y script de transcripción |
 | 2026-11-03 | `COMPRADOR_002`, journal y hand-off |
+| 2026-11-04 | Transcripción Vosk, corrección de atribución y `COMPRADOR_003` |

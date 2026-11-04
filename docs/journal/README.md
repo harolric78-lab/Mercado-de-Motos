@@ -82,3 +82,13 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Pendiente:** confirmar la correspondencia texto-audio de `COMPRADOR_002` y clasificar `COMPRADOR_003.ogg`.
 - **Hand-off:** creado `docs/entregables/HANDOFF.md` con estado, pendientes y comandos de reproducción.
 - **Validación:** JSON de entrevistas validado; `src/verificar_datos.py`, `pytest -q` y `py_compile` sin errores.
+
+---
+
+## 📅 4 de noviembre de 2026 — Transcripción y clasificación de entrevistas
+- **Transcripción:** se procesaron los 14 audios de `Entrevistas/` con Vosk (`vosk-model-small-es-0.42`) tras descartar `faster-whisper`/`ctranslate2` por el fallo de acceso (`EXIT=-1073741819`) en Python 3.12 y 3.14.
+- **Duplicados:** los 3 audios de `data/raw/audios/` son copias exactas de 3 archivos de `Entrevistas/` (`COMPRADOR_001.mp4`, `COMPRADOR_002.aac`, `COMPRADOR_003.ogg`). La sesión del 28/10 está dividida en 12 notas de voz; no hay hashes repetidos dentro de `Entrevistas/`.
+- **Corrección de atribución:** el texto de 11 respuestas aportado el 2026-11-03 corresponde a la sesión del 28/10 (`COMPRADOR_003`), no a `COMPRADOR_002.aac`. Se creó `COMPRADOR_003` y se reconstruyó `COMPRADOR_002` desde su audio real (2026-10-23).
+- **Resultado:** 3 entrevistas de compradores; 14 audios procesados. No se identificaron entrevistas a talleres o importadoras.
+- **Archivos:** `data/raw/entrevistas/comprador_002.md`, `comprador_003.md`, `comprador_003_partes.md`; `docs/entrevistas/compradores.json`.
+- **Validación:** `json.load` OK (5 archivos); `src/verificar_datos.py` OK (6.101 anuncios); `pytest -q` OK (2 passed); `py_compile` OK.

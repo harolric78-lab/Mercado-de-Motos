@@ -4,7 +4,7 @@
 |---|---|
 | Proyecto | Análisis del Mercado de Motos en La Habana |
 | Asignatura | Introducción a la Ciencia de los Datos |
-| Fuente principal | Revolico (La Habana) |
+| Fuentes principales | Revolico, entrevistas e instituciones (importadoras, agencias y talleres) |
 | Período de captura | 10–26 de octubre de 2026 |
 | Dataset consolidado | 6.101 anuncios |
 | Categorías oficiales | Motos de combustión, motos eléctricas, bicicletas eléctricas, patinetes |
@@ -235,7 +235,7 @@
 |---|---|---:|---|
 | Talleres | `docs/entrevistas/talleres.json` | 0 | Estructura vacía documentada |
 | Importadoras | `docs/entrevistas/importadoras.json` | 0 | Estructura vacía documentada |
-| Compradores | `docs/entrevistas/compradores.json` | 2 (`COMPRADOR_001`, `COMPRADOR_002`) | Añadidas desde JSON y texto aportado |
+| Compradores | `docs/entrevistas/compradores.json` | 3 (`COMPRADOR_001`, `COMPRADOR_002`, `COMPRADOR_003`) | JSON, transcripción Vosk y texto aportado |
 
 | Campo del esquema | Descripción |
 |---|---|
@@ -342,8 +342,8 @@
 | Los anuncios miden oferta publicada | No representan ventas efectivas |
 | Las vistas son un proxy | No equivalen a demanda real |
 | Serie temporal corta | Solo tres capturas |
-| Una sola fuente cuantitativa | Sesgo de plataforma |
+| Una sola fuente cuantitativa (Revolico) | Sesgo de plataforma; se complementa con entrevistas e instituciones |
 | Sin conversión CUP→USD | Anuncios en CUP fuera de las estadísticas de precio |
 | Clasificación por palabras clave | Posibles errores en títulos ambiguos |
-| Evidencia cualitativa escasa | 2 entrevistas y 7 fotos |
+| Evidencia cualitativa escasa | 3 entrevistas y 7 fotos |
 | Sin registros oficiales de ventas | No hay contraste externo |

@@ -58,7 +58,7 @@ Analizar el mercado de **motos de combustión**, **motos eléctricas**, **bicicl
 
 ## 📊 Dataset
 
-La fuente cuantitativa principal del estudio es Revolico (La Habana).
+El estudio integra **tres fuentes principales de datos**: los anuncios públicos de Revolico, las entrevistas a actores del mercado y la información de instituciones (importadoras, agencias y talleres). Los anuncios de Revolico constituyen la base cuantitativa de oferta publicada; las entrevistas y las instituciones aportan contexto, precios percibidos, disponibilidad y prácticas del mercado.
 
 El dataset consolidado contiene **6.101 anuncios** capturados entre el **10 y el 26 de octubre de 2026**. Cada registro puede incluir información como:
 
@@ -87,41 +87,44 @@ Antes del análisis, los datos fueron sometidos a procesos de limpieza, normaliz
 
 ## 📚 Fuentes de Información
 
-### Fuente cuantitativa
+El proyecto trabaja con **tres fuentes principales de datos**, que se usan de forma complementaria y se mantienen separadas para preservar la trazabilidad:
 
-- Revolico (anuncios públicos publicados en La Habana).
+| Fuente | Tipo de dato | Aporte al estudio |
+|---|---|---|
+| Revolico (La Habana) | Cuantitativa | Oferta publicada, precios, marcas, categorías y vistas |
+| Entrevistas | Cualitativa | Preferencias, gastos, repuestos y percepciones de compradores, talleres e importadoras |
+| Instituciones y actores del mercado | Cualitativa y cuantitativa | Información de importadoras, agencias y talleres sobre oferta formal, precios, disponibilidad y prácticas comerciales |
 
-### Evidencia cualitativa complementaria
-
-- Entrevistas a compradores.
-- Visitas a talleres.
-- Observación en importadoras y puntos de venta.
-- Registro fotográfico.
-
-La evidencia cualitativa se utiliza únicamente para complementar e interpretar los resultados obtenidos a partir de los datos recopilados. Solo la fuente **Revolico** se publica como dataset analizable en [`data/processed/`](data/processed/); las entrevistas y visitas se documentan en [`docs/entrevistas/`](docs/entrevistas/) y en [`docs/images/`](docs/images/).
+Los anuncios de Revolico se publican como dataset analizable en [`data/processed/`](data/processed/). Las entrevistas y la información de instituciones se documentan en [`docs/entrevistas/`](docs/entrevistas/), [`docs/images/`](docs/images/) y [`docs/journal/`](docs/journal/) para cuidar la privacidad y dejar rastro de la fuente.
 
 ---
 
-## 🗣️ Fuentes Cualitativas
+## 🗣️ Fuentes del estudio
 
-La investigación combina dos tipos de evidencia que se mantienen claramente separadas:
+La investigación combina datos cuantitativos y cualitativos de tres fuentes que se mantienen claramente separadas:
 
-### Datos cuantitativos
+### 1. Anuncios de Revolico (fuente cuantitativa)
 
 - Obtenidos mediante scraping de anuncios públicos de Revolico.
 - Almacenados en [`data/raw/`](data/raw/) (cortes crudos) y [`data/processed/`](data/processed/) (dataset procesado).
 - Sostienen las estadísticas, métricas y gráficos del estudio.
 
-### Evidencia cualitativa
+### 2. Entrevistas (fuente cualitativa)
 
-- **Entrevistas:** normalizadas en [`docs/entrevistas/`](docs/entrevistas/), con archivos para compradores, talleres e importadoras.
-- **Observación directa:** visitas a talleres, tiendas e importadoras.
-- **Evidencia fotográfica:** registrada en [`docs/images/`](docs/images/) y documentada en [`docs/images/evidencia_campo.md`](docs/images/evidencia_campo.md).
-- **Bitácora:** registro cronológico del trabajo de campo en [`docs/journal/`](docs/journal/).
+- **Compradores:** preferencias, gastos, uso, repuestos y percepciones de precio.
+- **Talleres e importadoras:** oferta, precios, disponibilidad y prácticas del mercado.
+- Normalizadas en [`docs/entrevistas/`](docs/entrevistas/).
+- Transcripciones y audios en [`data/raw/entrevistas/`](data/raw/entrevistas/) y `data/raw/audios/` (los audios no se publican).
 
-La evidencia cualitativa se usa para interpretar y contextualizar los resultados cuantitativos. No se emplea para estimar volúmenes de ventas ni para sustituir el dataset de anuncios.
+### 3. Instituciones y actores del mercado (fuente cualitativa y cuantitativa)
 
-> Estado actual: se dispone de **2 entrevistas reales** (compradores) y **7 fotografías** de campo. Queda **1 audio pendiente** de transcripción y clasificación (`COMPRADOR_003.ogg`). Las entrevistas de talleres e importadoras no están disponibles y se conservan como estructuras vacías documentadas.
+- Información de importadoras, agencias, talleres y otros actores del mercado.
+- Aporta contexto sobre oferta formal, precios, disponibilidad de repuestos y regulaciones.
+- Se documenta en [`docs/entrevistas/`](docs/entrevistas/), [`docs/images/`](docs/images/) y [`docs/journal/`](docs/journal/).
+
+Las entrevistas y la información de instituciones se usan para interpretar y contextualizar los resultados cuantitativos. No se emplean para estimar volúmenes de ventas ni para sustituir el dataset de anuncios, pero sí son **fuentes de dato con valor propio** dentro del estudio.
+
+> Estado actual: se dispone de **3 entrevistas reales** (compradores), **14 audios procesados** (una entrevista del 17/10, una del 23/10 y una sesión del 28/10 dividida en 12 notas de voz), **7 fotografías** de importadoras y tiendas, y observación de campo. La transcripción se completó con Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo. No hay entrevistas formales a talleres o importadoras; sus estructuras se conservan documentadas como vacías.
 
 ---
 
@@ -376,7 +379,7 @@ Durante el desarrollo del proyecto se aplican conceptos fundamentales de Ciencia
 - El estudio se limita a los datos disponibles durante el período de captura.
 - No existen registros oficiales de ventas que permitan contrastar completamente los resultados obtenidos.
 - Algunos factores de decisión de compra solo pueden inferirse parcialmente mediante información cualitativa complementaria.
-- La fuente principal es un solo portal de anuncios, con una serie temporal corta.
+- La fuente cuantitativa proviene de un solo portal de anuncios, con una serie temporal corta; las entrevistas y la información de instituciones aún son limitadas.
 
 ---
 
