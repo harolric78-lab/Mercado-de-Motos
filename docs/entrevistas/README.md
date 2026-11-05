@@ -14,6 +14,8 @@ El **2026-11-04** se reinició el registro de entrevistas: se eliminaron las ent
 
 Las entrevistas `COMPRADOR_001`, `COMPRADOR_002`, `COMPRADOR_004`, `COMPRADOR_005` y `COMPRADOR_006` (2026-11-04) reúnen los audios nuevos de las carpetas de compradores, transcritos con Vosk. `COMPRADOR_007` y `COMPRADOR_008` corresponden a las carpetas `Entrevista comprador 8` y `Entrevista comprador 9` (2026-11-05). `COMPRADOR_009` a `COMPRADOR_013` corresponden a las carpetas 10 a 14; `COMPRADOR_011` y `COMPRADOR_012` tienen audio del 2026-10-23. `COMPRADOR_003` se recuperó como texto, sin audio. `TALLER_001` corresponde a la carpeta `Entrevistas de taller 1` (2026-11-05). La entrevista `IMPORTADORA_001` corresponde a Solimport y también se transcribió con Vosk. Cada transcripción está en `data/raw/entrevistas/<ID>.md` y los audios en `data/raw/audios/<ID>/`. Se descartaron los audios y carpetas que duplicaban la sesión antigua.
 
+El análisis cualitativo del lote más reciente está en [`analisis_lote_2026-11-05.md`](analisis_lote_2026-11-05.md).
+
 ## Propósito
 
 Complementar el análisis cuantitativo de los anuncios de Revolico con información de campo que permita interpretar precios, preferencias, disponibilidad de repuestos y prácticas del mercado.

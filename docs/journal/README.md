@@ -109,4 +109,5 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Taller 1:** se transcribió `Entrevistas de taller 1/WhatsApp Ptt 2026-11-05 at 10.43.36 AM.ogg` (77,2 s) y se registró como `TALLER_001`; el audio se asigna a taller por la carpeta de origen, pero no confirma claramente que el entrevistado sea un taller.
 - **Mapeo de carpetas:** 10→009, 11→010, 12→011, 13→012 y 14→013.
 - **Datos:** se registraron solo respuestas claras; el resto quedó en `null` y en `preguntas_pendientes`.
+- **Análisis:** creado `docs/entrevistas/analisis_lote_2026-11-05.md` con fichas, lectura transversal, contradicciones e implicaciones del lote.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
