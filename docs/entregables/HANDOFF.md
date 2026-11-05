@@ -11,7 +11,7 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 ## 1. Resumen ejecutivo
 
 - El **pipeline cuantitativo está terminado**: scraping de Revolico, limpieza, ETL, validación, métricas, gráficos e informe.
-- El **módulo cualitativo se reinició el 2026-11-04** y ya incluye **23 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_023`), **4 de talleres** (`TALLER_001` a `TALLER_004`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_023` se transcribieron con Vosk; `COMPRADOR_003` se recuperó como texto.
+- El **módulo cualitativo se reinició el 2026-11-04** y ya incluye **24 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_024`), **4 de talleres** (`TALLER_001` a `TALLER_004`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_024` se transcribieron con Vosk; `COMPRADOR_003` se recuperó como texto.
 - La transcripción automática disponible es **Vosk** (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este entorno (access violation).
 - El dataset consolidado no se ha vuelto a scrapear desde el **26/10/2026**.
 
@@ -45,14 +45,14 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 - Informe, métricas y 5 gráficos regenerables.
 - Manifiesto con SHA256 de las fuentes: `data/processed/manifiesto.json`.
 - Reinicio del módulo cualitativo: JSON de entrevistas vaciados y material crudo anterior eliminado.
-- `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_023` integradas con los audios nuevos, transcritas con Vosk; `COMPRADOR_003` recuperada como texto; `TALLER_001` a `TALLER_004` integradas desde las carpetas de taller; `IMPORTADORA_001` (Solimport) transcrita con Vosk. Se descartaron los audios y carpetas duplicados de la sesión antigua (incluido un audio de `COMPRADOR_007` repetido en la carpeta 19).
+- `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_024` integradas con los audios nuevos, transcritas con Vosk; `COMPRADOR_003` recuperada como texto; `TALLER_001` a `TALLER_004` integradas desde las carpetas de taller; `IMPORTADORA_001` (Solimport) transcrita con Vosk. Se descartaron los audios y carpetas duplicados de la sesión antigua (incluido un audio de `COMPRADOR_007` repetido en la carpeta 19).
 - Estructura, esquema, cuestionario y scripts de captura/transcripción conservados.
 
 ---
 
 ## 4. Qué está pendiente
 
-1. **Confirmar en campo las respuestas dudosas** de `COMPRADOR_001` a `COMPRADOR_023`, de `TALLER_001` a `TALLER_004` y de `IMPORTADORA_001`: perfiles, vehículos, precios, aranceles y opiniones sobre regulaciones (ver `preguntas_pendientes` en los JSON).
+1. **Confirmar en campo las respuestas dudosas** de `COMPRADOR_001` a `COMPRADOR_024`, de `TALLER_001` a `TALLER_004` y de `IMPORTADORA_001`: perfiles, vehículos, precios, aranceles y opiniones sobre regulaciones (ver `preguntas_pendientes` en los JSON).
 2. **Aclarar `TALLER_001` a `TALLER_004`**: los audios se asignaron a taller por la carpeta de origen, pero su contenido no confirma claramente que los entrevistados sean talleres. Conseguir más entrevistas de talleres para consolidar esa fuente.
 3. **Nuevo corte de Revolico**: el dataset no se actualiza desde el 26/10/2026.
 4. **Cierre de commits**: ver la sección 9.
@@ -126,7 +126,7 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 - Serie temporal corta (3 capturas); la fuente cuantitativa es un solo portal (Revolico), complementada con entrevistas e instituciones.
 - Sin conversión CUP→USD: los anuncios en CUP quedan fuera de las estadísticas de precio.
 - Clasificación por palabras clave: posibles errores en títulos ambiguos.
-- Evidencia cualitativa en curso: 23 entrevistas de compradores, 4 de talleres, 1 de importadora y 7 fotos.
+- Evidencia cualitativa en curso: 24 entrevistas de compradores, 4 de talleres, 1 de importadora y 7 fotos.
 
 ---
 
@@ -137,9 +137,9 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | `data/raw/revolico/` | Cortes crudos (JSON/CSV) |
 | `data/processed/anuncios_limpios.*` | Dataset consolidado |
 | `data/processed/manifiesto.json` | Conteos y SHA256 de fuentes |
-| `data/raw/entrevistas/` | Transcripciones de entrevistas (`COMPRADOR_001.md` a `COMPRADOR_023.md`, `TALLER_001.md` a `TALLER_004.md`, `IMPORTADORA_001.md`) |
-| `data/raw/audios/` | Audios (ignorados por Git; `COMPRADOR_001/`, `COMPRADOR_002/`, `COMPRADOR_004/` a `COMPRADOR_023/`, `TALLER_001/` a `TALLER_004/`, `IMPORTADORA_001/`) |
-| `docs/entrevistas/compradores.json` | Entrevistas de compradores normalizadas (`COMPRADOR_001` a `COMPRADOR_023`) |
+| `data/raw/entrevistas/` | Transcripciones de entrevistas (`COMPRADOR_001.md` a `COMPRADOR_024.md`, `TALLER_001.md` a `TALLER_004.md`, `IMPORTADORA_001.md`) |
+| `data/raw/audios/` | Audios (ignorados por Git; `COMPRADOR_001/`, `COMPRADOR_002/`, `COMPRADOR_004/` a `COMPRADOR_024/`, `TALLER_001/` a `TALLER_004/`, `IMPORTADORA_001/`) |
+| `docs/entrevistas/compradores.json` | Entrevistas de compradores normalizadas (`COMPRADOR_001` a `COMPRADOR_024`) |
 | `docs/entrevistas/talleres.json`, `docs/entrevistas/importadoras.json` | Talleres con `TALLER_001` a `TALLER_004`; importadoras con `IMPORTADORA_001` (Solimport) |
 | `docs/journal/README.md` | Bitácora cronológica |
 | `docs/metodologia/` | Decisiones de metodología |
@@ -176,3 +176,4 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | 2026-11-05 | Transcripción de `COMPRADOR_014` a `COMPRADOR_016`; total: 16 compradores, 1 taller y 1 importadora |
 | 2026-11-05 | Transcripción de `COMPRADOR_017` y `TALLER_002`; total: 17 compradores, 2 talleres y 1 importadora |
 | 2026-11-05 | Transcripción de `COMPRADOR_018` a `COMPRADOR_023`, `TALLER_003` y `TALLER_004`; total: 23 compradores, 4 talleres y 1 importadora |
+| 2026-11-05 | Transcripción de `COMPRADOR_024`; total: 24 compradores, 4 talleres y 1 importadora |

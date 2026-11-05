@@ -304,3 +304,23 @@
 - Combustión frente a eléctrica: `018` y `019` eligen combustión por precio/rendimiento; `020` y `023` usan eléctrica.
 - La **autonomía** se percibe de forma divergente: disminuye (`020`), aumenta (`023`) o varía según peso, velocidad y lomas (`TALLER_004`).
 - La fuente de talleres ya tiene cuatro registros, pero ninguno confirma claramente la identidad de taller; sigue siendo la fuente más débil.
+
+---
+
+## 10. Anexo: comprador 024 (carpeta 25)
+
+### COMPRADOR_024 (60,9 s)
+
+- Dice que se dedica a comercializar productos (fragmento confuso).
+- La usa principalmente para el trabajo.
+- Menciona el lugar de compra, pero el canal no es inteligible.
+- Menciona la autonomía, sin datos claros.
+- Menciona que se le robó o dañó una pieza una vez.
+
+**Lectura:** refuerza el **uso laboral** y el perfil de cuenta propia/comercio, pero el audio no permite confirmar tipo de moto, canal, precio ni autonomía.
+
+### Lectura del lote completo
+
+- Con `COMPRADOR_024` se cierra la serie de carpetas 19-25: **24 compradores**, **4 talleres** y **1 importadora** (29 entrevistas).
+- El **uso laboral** es el patrón más consistente en esta segunda tanda.
+- La calidad de audio sigue limitando la comparación cuantitativa; los datos dudosos quedan en `preguntas_pendientes` y no deben usarse como cifras.

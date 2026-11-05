@@ -575,6 +575,31 @@ entries.append(base(
     archivo="WhatsApp Ptt 2026-11-05 at 3.38.28 PM.ogg",
 ))
 
+entries.append(base(
+    "COMPRADOR_024", "2026-11-05", "La Habana, Cuba (por confirmar)",
+    ["compra", "uso", "repuestos", "opiniones_mercado"],
+    perfil={"provincia": "La Habana", "ocupacion": "Comercializa productos (por confirmar)"},
+    uso={"uso_principal": "Trabajo"},
+    respuestas={
+        "perfil": "Dice que se dedica a comercializar productos; fragmento confuso.",
+        "compra": "Menciona el lugar de compra, pero no es inteligible.",
+        "autonomia": "Menciona la autonomía, sin datos claros.",
+        "averias": "Menciona que se le robó o dañó una pieza una vez; fragmento confuso.",
+        "uso": "La usa para el trabajo.",
+    },
+    pendientes=[
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar preferencia entre gasolina y eléctrica.",
+        "Confirmar marca, modelo y año.",
+        "Aclarar el canal de compra.",
+        "Precisar la autonomía y la pieza robada/dañada.",
+    ],
+    obs="1 nota de voz de WhatsApp (60.9 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+    duracion=60.9,
+    sha="69aa5eadb14c078d06a8e9c64efc37ed59153f8521587f7c07065d96e8d90d7d",
+    archivo="WhatsApp Ptt 2026-11-05 at 4.30.57 PM.ogg",
+))
+
 taller = base(
     "TALLER_001", "2026-11-05", "La Habana, Cuba (por confirmar)",
     ["opiniones_mercado", "uso", "repuestos"],
@@ -696,7 +721,7 @@ data["nota"] = ("Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRA
                 "COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen "
                 "audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 "
                 "tiene audio del 2026-11-04); COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos; "
-                "COMPRADOR_018 a COMPRADOR_023 corresponden a las carpetas 19 a 24. Se descartaron los audios que "
+                "COMPRADOR_018 a COMPRADOR_024 corresponden a las carpetas 19 a 25. Se descartaron los audios que "
                 "duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y "
                 "en preguntas_pendientes.")
 with open(p, "w", encoding="utf-8", newline="\n") as f:

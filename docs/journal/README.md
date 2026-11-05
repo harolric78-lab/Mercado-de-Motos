@@ -139,3 +139,12 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Datos:** solo respuestas claras; varios audios son cortos y ruidosos, y la identidad de taller sigue por confirmar.
 - **Análisis:** se amplió `docs/entrevistas/analisis_lote_2026-11-05.md` con el anexo de `COMPRADOR_018` a `COMPRADOR_023` y `TALLER_003`-`TALLER_004`.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
+
+---
+
+## 📅 5 de noviembre de 2026 - Comprador 25
+- **Comprador 25:** se transcribió `Entrevista comprador 25/WhatsApp Ptt 2026-11-05 at 4.30.57 PM.ogg` (60,9 s) y se registró como `COMPRADOR_024`.
+- **Datos:** se registran solo respuestas claras: uso laboral, ocupación vinculada al comercio y una pieza robada/dañada; tipo de moto, canal, precio y autonomía quedan en `preguntas_pendientes`.
+- **Cierre:** con esta entrevista se completa la serie de carpetas 19-25: 24 compradores, 4 talleres y 1 importadora (29 entrevistas).
+- **Análisis:** se amplió `docs/entrevistas/analisis_lote_2026-11-05.md` con la sección 10.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.

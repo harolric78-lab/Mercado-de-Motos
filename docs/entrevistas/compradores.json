@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "compradores",
-  "total_entrevistas": 23,
+  "total_entrevistas": 24,
   "entrevistas": [
     {
       "id": "COMPRADOR_001",
@@ -2545,7 +2545,113 @@
       "texto_original": "ofrecer motor a gasolina o eléctrica y que el estudio jurídico y hace will y villa tuvieron los voy decir hola hola guapa ya no se mueven no aceite en la casa órganos de pelea la batería eso y la carga sea más vicente la modo luego doble azul mismo modo nuestro primer año indigno no tuve gasolinera retirada general de los primeros moto eléctrica largo tubo otras de hace veinte la autonomía gandhi vendedor arreaba la autonomía sigue aprendieron a medida te vamos a hacer la compra panamá la autonomía de los votos ha ido aumentando el tiempo hubiéramos el es una máquina aumentado tomemos motores de trabajo llama cada cuánto tiempo la gaga sacar la modo y contigo yo lo hago por la noche josé sólo quiero se la robado una pieza o alguna vez sí lo que de todas lo mismo afecta mucho lo hago poder chacal la jejeje pero yo tengo si nosotros pero columna tus alumnos no podamos llegar a día en aquel siembras del mundo",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_024",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": "Comercializa productos (por confirmar)",
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": "La Habana"
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "perfil": "Dice que se dedica a comercializar productos; fragmento confuso.",
+        "compra": "Menciona el lugar de compra, pero no es inteligible.",
+        "autonomia": "Menciona la autonomía, sin datos claros.",
+        "averias": "Menciona que se le robó o dañó una pieza una vez; fragmento confuso.",
+        "uso": "La usa para el trabajo."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar preferencia entre gasolina y eléctrica.",
+        "Confirmar marca, modelo y año.",
+        "Aclarar el canal de compra.",
+        "Precisar la autonomía y la pieza robada/dañada."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (60.9 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_024.md",
+      "audio": "data/raw/audios/COMPRADOR_024/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 4.30.57 PM.ogg",
+          "duracion_s": 60.9,
+          "sha256": "69aa5eadb14c078d06a8e9c64efc37ed59153f8521587f7c07065d96e8d90d7d"
+        }
+      ],
+      "texto_original": "a viene a qué te dedicas en que municipio del sesenta y tres si lo ser la de se debe comercial productos para que usa tu modo trabajo de modo brother eléctrica o en este momento del día dónde la compraste robo de el empresas la la autonomía de manera real ahora cada cuánto las modo y cuanto como bien será roba una pieza una vez",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
     }
   ],
-  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 tiene audio del 2026-11-04); COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos; COMPRADOR_018 a COMPRADOR_023 corresponden a las carpetas 19 a 24. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 tiene audio del 2026-11-04); COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos; COMPRADOR_018 a COMPRADOR_024 corresponden a las carpetas 19 a 25. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }
