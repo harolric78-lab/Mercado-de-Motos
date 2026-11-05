@@ -600,6 +600,49 @@ entries.append(base(
     archivo="WhatsApp Ptt 2026-11-05 at 4.30.57 PM.ogg",
 ))
 
+comprador25 = base(
+    "COMPRADOR_025", "2026-11-05", "Plaza de la Revolución (Vedado), La Habana, Cuba",
+    ["perfil", "compra", "uso", "repuestos", "opiniones_mercado", "satisfaccion"],
+    perfil={"edad": 40, "ocupacion": "Diseñador de luces",
+            "municipio": "Plaza de la Revolución", "provincia": "La Habana"},
+    compra={"tipo_moto": "Eléctrica", "moneda": "USD", "precio_final": 1000,
+            "canal_busqueda": "Conocido",
+            "factores_decision": "Precio/valor y facilidad de carga nocturna"},
+    uso={"uso_principal": "Trabajo y día a día", "tiene_alarma_candado": True},
+    repuestos={"precios_repuestos": "Ha gastado más en plásticos y estética que en problemas técnicos."},
+    opiniones={"prefiere_electrica": False,
+               "razon_preferencia": "Prefiere la combustión por practicidad y seguridad, aunque la gasolina suba de precio.",
+               "autonomia_electrica_km": "La autonomía anunciada era real, pero ha ido disminuyendo con el tiempo.",
+               "percepcion_regulaciones": "No tiene chapa ni licencia; ha estado en la estación por ese motivo."},
+    satisfaccion={"le_gusta_mas": "Facilidad de carga nocturna y bajo costo de energía",
+                  "le_gusta_menos": "Pérdida de autonomía con el tiempo y problemas por los apagones"},
+    respuestas={
+        "perfil": "40 años, diseñador de luces, Plaza de la Revolución (Vedado).",
+        "uso": "Usa la moto eléctrica para el trabajo y para resolver cosas del día a día.",
+        "eleccion": "Eligió eléctrica por el precio/valor y porque solo necesita cargarla en la noche.",
+        "compra": "La compró a un conocido por 1.000 USD.",
+        "carga": "Carga todos los días y a veces hasta dos veces al día; los apagones le impiden usarla en ocasiones.",
+        "autonomia": "La autonomía anunciada era real, pero ha ido disminuyendo con el tiempo.",
+        "averias": "Solo ha tenido fallos en el puño de acelerar por las inclemencias del tiempo.",
+        "gastos": "Ha gastado más en plásticos y estética que en problemas técnicos.",
+        "seguridad": "No tiene chapa ni licencia; ha estado en la estación por eso; usa candado y alarma.",
+        "balance": "Hoy elegiría combustión por practicidad y seguridad, aunque la gasolina suba.",
+    },
+    pendientes=[
+        "Confirmar marca, modelo y año de la moto.",
+        "Aclarar el año de compra y si era nueva.",
+        "Precisar el costo del puño de acelerar y de los plásticos.",
+        "Confirmar qué hizo con las baterías usadas y a cuánto revendería la moto.",
+    ],
+    obs="Entrevista en texto aportada por el investigador el 2026-11-05; no hay audio disponible. Se registran las respuestas explícitas y no se infiere lo no respondido.",
+    duracion=0.0, sha="", archivo="",
+)
+comprador25["audio_partes"] = []
+comprador25["audio"] = None
+comprador25["transcripcion_automatica"] = False
+comprador25["modelo_transcripcion"] = None
+entries.append(comprador25)
+
 taller = base(
     "TALLER_001", "2026-11-05", "La Habana, Cuba (por confirmar)",
     ["opiniones_mercado", "uso", "repuestos"],
@@ -721,9 +764,9 @@ data["nota"] = ("Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRA
                 "COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen "
                 "audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 "
                 "tiene audio del 2026-11-04); COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos; "
-                "COMPRADOR_018 a COMPRADOR_024 corresponden a las carpetas 19 a 25. Se descartaron los audios que "
-                "duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y "
-                "en preguntas_pendientes.")
+                "COMPRADOR_018 a COMPRADOR_024 corresponden a las carpetas 19 a 25; COMPRADOR_025 se recuperó como "
+                "texto, sin audio. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran "
+                "respuestas claras; lo no inteligible queda en null y en preguntas_pendientes.")
 with open(p, "w", encoding="utf-8", newline="\n") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
     f.write("\n")

@@ -148,3 +148,13 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Cierre:** con esta entrevista se completa la serie de carpetas 19-25: 24 compradores, 4 talleres y 1 importadora (29 entrevistas).
 - **Análisis:** se amplió `docs/entrevistas/analisis_lote_2026-11-05.md` con la sección 10.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
+
+---
+
+## 📅 5 de noviembre de 2026 - Comprador 25 (texto)
+- **Comprador 25:** se integró como `COMPRADOR_025` una entrevista en texto (sin audio): 40 años, diseñador de luces, Plaza de la Revolución (Vedado).
+- **Datos:** eléctrica comprada a un conocido por 1.000 USD; uso laboral y diario; carga diaria (a veces dos veces); autonomía real que ha disminuido; sin chapa ni licencia; prefiere combustión a futuro.
+- **Cierre:** el registro queda en 25 compradores, 4 talleres y 1 importadora (30 entrevistas).
+- **Análisis:** se amplió `docs/entrevistas/analisis_lote_2026-11-05.md` con la sección 11.
+- **Nota:** el journal se movió de `docs/journal/README.md` a `docs/journal.md`.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.

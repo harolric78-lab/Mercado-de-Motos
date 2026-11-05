@@ -321,6 +321,31 @@
 
 ### Lectura del lote completo
 
-- Con `COMPRADOR_024` se cierra la serie de carpetas 19-25: **24 compradores**, **4 talleres** y **1 importadora** (29 entrevistas).
+- Con `COMPRADOR_024` se cierra la serie de audios de las carpetas 19-25: **24 compradores**, **4 talleres** y **1 importadora** (29 entrevistas).
 - El **uso laboral** es el patrón más consistente en esta segunda tanda.
 - La calidad de audio sigue limitando la comparación cuantitativa; los datos dudosos quedan en `preguntas_pendientes` y no deben usarse como cifras.
+
+---
+
+## 11. Anexo: comprador 025 (entrevista en texto)
+
+### COMPRADOR_025
+
+- **Perfil:** 40 años, diseñador de luces, Plaza de la Revolución (Vedado).
+- **Uso:** moto eléctrica para el trabajo y para resolver cosas del día a día.
+- **Elección:** eléctrica por el precio/valor y por la facilidad de cargar solo en la noche.
+- **Compra:** a un conocido, por 1.000 USD en ese momento.
+- **Carga y apagones:** carga todos los días y a veces hasta dos veces al día; los apagones le impiden usarla en ocasiones.
+- **Autonomía:** la anunciada era real, pero ha ido disminuyendo con el tiempo.
+- **Averías:** solo el puño de acelerar, por las inclemencias del tiempo.
+- **Gastos:** más en plásticos y estética que en problemas técnicos; no respondió sobre baterías usadas ni reventa.
+- **Papeles y seguridad:** sin chapa ni licencia; ha estado en la estación por eso; usa candado y alarma.
+- **Balance:** hoy elegiría combustión por practicidad y seguridad, aunque la gasolina suba.
+
+**Lectura:** caso de compra informal (conocido), con precio explícito de 1.000 USD, uso laboral intensivo y una percepción crítica de la eléctrica por la pérdida de autonomía y los apagones. Refuerza la tensión entre bajo costo de carga y dependencia del suministro eléctrico.
+
+### Lectura del lote completo
+
+- Con `COMPRADOR_025` el registro queda en **25 compradores**, **4 talleres** y **1 importadora** (30 entrevistas).
+- Se repiten tres ejes: **uso laboral**, **mantenimiento/batería** y **apagones**.
+- La evidencia es cualitativa y no representativa; los datos dudosos permanecen en `preguntas_pendientes`.

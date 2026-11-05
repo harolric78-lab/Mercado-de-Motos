@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "compradores",
-  "total_entrevistas": 24,
+  "total_entrevistas": 25,
   "entrevistas": [
     {
       "id": "COMPRADOR_001",
@@ -2651,7 +2651,113 @@
       "texto_original": "a viene a qué te dedicas en que municipio del sesenta y tres si lo ser la de se debe comercial productos para que usa tu modo trabajo de modo brother eléctrica o en este momento del día dónde la compraste robo de el empresas la la autonomía de manera real ahora cada cuánto las modo y cuanto como bien será roba una pieza una vez",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_025",
+      "fecha": "2026-11-05",
+      "ubicacion": "Plaza de la Revolución (Vedado), La Habana, Cuba",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "perfil",
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado",
+        "satisfaccion"
+      ],
+      "perfil": {
+        "edad": 40,
+        "sexo": null,
+        "municipio": "Plaza de la Revolución",
+        "ocupacion": "Diseñador de luces",
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": "La Habana"
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": "USD",
+        "canal_busqueda": "Conocido",
+        "factores_decision": "Precio/valor y facilidad de carga nocturna",
+        "precio_final": 1000,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo y día a día",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": "Ha gastado más en plásticos y estética que en problemas técnicos."
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": false,
+        "razon_preferencia": "Prefiere la combustión por practicidad y seguridad, aunque la gasolina suba de precio.",
+        "autonomia_electrica_km": "La autonomía anunciada era real, pero ha ido disminuyendo con el tiempo.",
+        "percepcion_regulaciones": "No tiene chapa ni licencia; ha estado en la estación por ese motivo.",
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": "Facilidad de carga nocturna y bajo costo de energía",
+        "le_gusta_menos": "Pérdida de autonomía con el tiempo y problemas por los apagones",
+        "recomendaria": null
+      },
+      "respuestas": {
+        "perfil": "40 años, diseñador de luces, Plaza de la Revolución (Vedado).",
+        "uso": "Usa la moto eléctrica para el trabajo y para resolver cosas del día a día.",
+        "eleccion": "Eligió eléctrica por el precio/valor y porque solo necesita cargarla en la noche.",
+        "compra": "La compró a un conocido por 1.000 USD.",
+        "carga": "Carga todos los días y a veces hasta dos veces al día; los apagones le impiden usarla en ocasiones.",
+        "autonomia": "La autonomía anunciada era real, pero ha ido disminuyendo con el tiempo.",
+        "averias": "Solo ha tenido fallos en el puño de acelerar por las inclemencias del tiempo.",
+        "gastos": "Ha gastado más en plásticos y estética que en problemas técnicos.",
+        "seguridad": "No tiene chapa ni licencia; ha estado en la estación por eso; usa candado y alarma.",
+        "balance": "Hoy elegiría combustión por practicidad y seguridad, aunque la gasolina suba."
+      },
+      "preguntas_pendientes": [
+        "Confirmar marca, modelo y año de la moto.",
+        "Aclarar el año de compra y si era nueva.",
+        "Precisar el costo del puño de acelerar y de los plásticos.",
+        "Confirmar qué hizo con las baterías usadas y a cuánto revendería la moto."
+      ],
+      "observaciones": "Entrevista en texto aportada por el investigador el 2026-11-05; no hay audio disponible. Se registran las respuestas explícitas y no se infiere lo no respondido.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_025.md",
+      "audio": null,
+      "audio_sha256": null,
+      "audio_partes": [],
+      "texto_original": "Perfil: ¿Qué edad tienes, a qué te dedicas y en qué municipio vives?\n40 años; diseñador de luces; Plaza de la Revolución (Vedado).\nUso: ¿Para qué usas tu vehículo (trabajo, transporte personal, mensajería, ocio)?\nUso mi moto eléctrica para el trabajo sobre todo y para resolver cosas del día a día.\nElección: ¿Por qué elegiste uno eléctrico y de este tipo (moto, bici o patinete)? ¿Qué pesó más: precio, motor, autonomía o marca?\nElegí una moto eléctrica por el valor o precio y la facilidad de esos momentos de solo cargar en la noche para utilizarla en el día.\nCanal: ¿Dónde lo compraste (Revolico, Telegram, importadora, conocido) y por qué ahí?\nLa compré a un conocido.\nPrecio y garantía: ¿Cuánto pagaste en total, con extras y en qué moneda?\nCostó 1.000 USD en ese tiempo.\nCarga y apagones: ¿Cada cuánto lo cargas, cuánto demora y dónde? ¿Has tenido problemas en días de apagón?\nCargo todos los días y a veces hasta dos veces al día. Muchos problemas con el apagón; en ocasiones no puedo utilizarla.\nRendimiento: ¿La autonomía real coincide con la que anunció el vendedor, y ha bajado con el tiempo? ¿Has tenido fallos técnicos?\nLa autonomía que me dijeron era real, pero ha ido perdiendo con el paso del tiempo. Fallos técnicos solo el puño de acelerar por las inclemencias del tiempo.\nGastos y baterías: ¿Cuánto has gastado en baterías, repuestos y mantenimiento? ¿Qué hiciste con las baterías usadas y a cuánto revenderías el vehículo?\nHe gastado más en plásticos y estética que en problemas técnicos. No responde sobre las baterías usadas ni sobre el precio de reventa.\nPapeles y seguridad: ¿Tienes licencia o chapa, y has tenido alguna amonestación por eso? ¿Qué usas para protegerlo (candado, alarma, GPS, garaje)?\nNo tengo chapa ni licencia y por lo mismo he estado en la estación en ocasiones. Uso candado y alarma para proteger la moto.\nBalance: Si tuvieras que elegir hoy entre eléctrica y gasolina, ¿cuál preferirías y por qué?\nHoy elegiría una moto de combustión, aun cuando el precio de la gasolina suba o se encarezca; es más práctico y seguro para resolver las cosas en el día.",
+      "transcripcion_automatica": false,
+      "modelo_transcripcion": null
     }
   ],
-  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 tiene audio del 2026-11-04); COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos; COMPRADOR_018 a COMPRADOR_024 corresponden a las carpetas 19 a 25. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 tiene audio del 2026-11-04); COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos; COMPRADOR_018 a COMPRADOR_024 corresponden a las carpetas 19 a 25; COMPRADOR_025 se recuperó como texto, sin audio. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }
