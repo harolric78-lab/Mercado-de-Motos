@@ -39,13 +39,27 @@ for fname, pref in files.items():
         else:
             content = open(tp, encoding="utf-8").read()
             paras = [x.strip() for x in content.split("\n\n") if x.strip()]
-            if paras[-1] != e["texto_original"]:
-                errors.append(f"{e['id']}: texto_original difiere del .md")
-            m = re.search(r"\*\*SHA256:\*\* `([0-9a-fA-F]{64})`", content)
-            if m and e["audio_partes"] and m.group(1) != e["audio_partes"][0]["sha256"]:
-                errors.append(f"{e['id']}: sha del .md difiere del JSON")
-        if e["audio_partes"]:
-            h = e["audio_partes"][0]["sha256"]
+            if len(e["audio_partes"]) > 1:
+                sec = re.findall(
+                    r"## .+?\n\n- \*\*SHA256:\*\* `([0-9a-fA-F]{64})`\n"
+                    r"- \*\*Duraci[oó]n:\*\* ([\d.]+) s\n.*?\n\n(.*?)(?=\n## |\Z)",
+                    content, re.S,
+                )
+                texto_md = " ".join(x[2].strip() for x in sec).strip()
+                shas_md = [x[0] for x in sec]
+                shas_json = [p["sha256"] for p in e["audio_partes"]]
+                if shas_md != shas_json:
+                    errors.append(f"{e['id']}: los SHA del .md no coinciden con audio_partes")
+                if texto_md != e["texto_original"]:
+                    errors.append(f"{e['id']}: texto_original difiere del .md (multiparte)")
+            else:
+                if paras[-1] != e["texto_original"]:
+                    errors.append(f"{e['id']}: texto_original difiere del .md")
+                m = re.search(r"\*\*SHA256:\*\* `([0-9a-fA-F]{64})`", content)
+                if m and e["audio_partes"] and m.group(1) != e["audio_partes"][0]["sha256"]:
+                    errors.append(f"{e['id']}: sha del .md difiere del JSON")
+        for p in e["audio_partes"]:
+            h = p["sha256"]
             if h in hashes:
                 errors.append(f"hash duplicado: {e['id']} y {hashes[h]}")
             hashes[h] = e["id"]

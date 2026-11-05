@@ -4,15 +4,15 @@ Este directorio unifica la evidencia cualitativa del proyecto en archivos JSON n
 
 ## Estado actual
 
-El **2026-11-04** se reinició el registro de entrevistas: se eliminaron las entrevistas anteriores, sus transcripciones y sus audios para comenzar desde cero. Se incorporaron dieciséis entrevistas de compradores, una de taller y una de importadora (Solimport).
+El **2026-11-04** se reinició el registro de entrevistas: se eliminaron las entrevistas anteriores, sus transcripciones y sus audios para comenzar desde cero. Se incorporaron diecisiete entrevistas de compradores, dos de talleres y una de importadora (Solimport).
 
 | Tipo de fuente | Archivo | Entrevistas |
 |---|---|---:|
-| Compradores | [`compradores.json`](compradores.json) | 16 |
-| Talleres | [`talleres.json`](talleres.json) | 1 |
+| Compradores | [`compradores.json`](compradores.json) | 17 |
+| Talleres | [`talleres.json`](talleres.json) | 2 |
 | Importadoras | [`importadoras.json`](importadoras.json) | 1 |
 
-Las entrevistas `COMPRADOR_001`, `COMPRADOR_002`, `COMPRADOR_004`, `COMPRADOR_005` y `COMPRADOR_006` (2026-11-04) reúnen los audios nuevos de las carpetas de compradores, transcritos con Vosk. `COMPRADOR_007` y `COMPRADOR_008` corresponden a las carpetas `Entrevista comprador 8` y `Entrevista comprador 9` (2026-11-05). `COMPRADOR_009` a `COMPRADOR_013` corresponden a las carpetas 10 a 14; `COMPRADOR_011` y `COMPRADOR_012` tienen audio del 2026-10-23. `COMPRADOR_014` a `COMPRADOR_016` corresponden a las carpetas 15 a 17; `COMPRADOR_014` tiene audio del 2026-11-04. `COMPRADOR_003` se recuperó como texto, sin audio. `TALLER_001` corresponde a la carpeta `Entrevistas de taller 1` (2026-11-05). La entrevista `IMPORTADORA_001` corresponde a Solimport y también se transcribió con Vosk. Cada transcripción está en `data/raw/entrevistas/<ID>.md` y los audios en `data/raw/audios/<ID>/`. Se descartaron los audios y carpetas que duplicaban la sesión antigua.
+Las entrevistas `COMPRADOR_001`, `COMPRADOR_002`, `COMPRADOR_004`, `COMPRADOR_005` y `COMPRADOR_006` (2026-11-04) reúnen los audios nuevos de las carpetas de compradores, transcritos con Vosk. `COMPRADOR_007` y `COMPRADOR_008` corresponden a las carpetas `Entrevista comprador 8` y `Entrevista comprador 9` (2026-11-05). `COMPRADOR_009` a `COMPRADOR_013` corresponden a las carpetas 10 a 14; `COMPRADOR_011` y `COMPRADOR_012` tienen audio del 2026-10-23. `COMPRADOR_014` a `COMPRADOR_016` corresponden a las carpetas 15 a 17; `COMPRADOR_014` tiene audio del 2026-11-04. `COMPRADOR_017` corresponde a la carpeta 18 y reúne cuatro audios del 2026-11-05. `COMPRADOR_003` se recuperó como texto, sin audio. `TALLER_001` corresponde a la carpeta `Entrevistas de taller 1` y `TALLER_002` a `Entrevista de taller 2` (2026-11-05). La entrevista `IMPORTADORA_001` corresponde a Solimport y también se transcribió con Vosk. Cada transcripción está en `data/raw/entrevistas/<ID>.md` y los audios en `data/raw/audios/<ID>/`. Se descartaron los audios y carpetas que duplicaban la sesión antigua.
 
 El análisis cualitativo del lote más reciente está en [`analisis_lote_2026-11-05.md`](analisis_lote_2026-11-05.md).
 

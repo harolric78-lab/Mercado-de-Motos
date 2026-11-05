@@ -193,3 +193,33 @@
 - La **informalidad** reaparece: `016` no tiene chapa ni licencia.
 - La **carga y los apagones** son una restricción operativa concreta.
 - Coexisten canales de compra: particular (`014`) e importadora (`016`).
+
+---
+
+## 8. Anexo: comprador 017 y taller 002 (carpeta 18 y taller 2)
+
+### COMPRADOR_017 (eléctrica, cuatro audios, 206,2 s en total)
+
+- Moto eléctrica importada desde Panamá por unos **1.640 USD**; menciona el equivalente en moneda nacional.
+- Lleva **11 años** con la moto y va por la **tercera batería**; la última le costó unos **900 USD**.
+- Menciona unos **75 km** de autonomía, sin que quede claro si es la real o la anunciada.
+- Tiene licencia; usa candado y garaje.
+- La usa para traslados personales.
+- Sobre repuestos: dice que las piezas se consiguen con tiempo y prefiere comprar nuevo antes que arriesgarse con lo usado.
+
+**Lectura:** el costo de la batería domina el costo total de propiedad; la longevidad (11 años y tres baterías) muestra que la eléctrica puede sostener un uso prolongado si se asume ese gasto.
+
+### TALLER_002 (101,0 s)
+
+- La moto se usa para el trabajo en La Habana.
+- Usa candado.
+- Menciona autonomía, batería, eléctrica y garantía, pero sin datos inteligibles.
+- El audio no permite confirmar el tipo de taller ni los servicios que ofrece.
+
+**Lectura:** aporta poco por la baja calidad del audio; refuerza la necesidad de confirmar la identidad de los entrevistados de talleres.
+
+### Lectura del anexo
+
+- Se consolida el **peso de la batería** (`017`: 900 USD por la tercera batería) y la **antigüedad** (11 años).
+- El precio de importación (**~1.640 USD**) es un dato concreto para contrastar con los anuncios de Revolico.
+- `TALLER_002` no aporta datos verificables; la fuente de talleres sigue débil (dos entrevistas, ambas por confirmar).

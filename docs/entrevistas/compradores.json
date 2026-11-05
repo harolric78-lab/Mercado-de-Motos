@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "compradores",
-  "total_entrevistas": 16,
+  "total_entrevistas": 17,
   "entrevistas": [
     {
       "id": "COMPRADOR_001",
@@ -1783,7 +1783,134 @@
       "texto_original": "vamos gasolina eléctrica y por qué por mucho gasolina las motos eléctricas en cuba pero nada con una como una onda motor no si pudiera motor definitivamente las órdenes ahora mismo la que tengo es eléctrica la autonomía bueno creo que a disminuido pero por el uso las a todas las baterías se gasta entonces a disminuido un poco no es mucho porque si la cuidas no pasa nada pero si y la autonomía no tuve como probarla porque las mundo vienen con una autonomía para un peso y normalmente yo nunca se de eso entonces se me daba menos pero veamos peso no ni chapa ni licencias la licencia y están veremos once bueno eso todavía no se ha logrado y no nunca mampara a esos lo lo normal era que trade cumple la ley lo máximo que puede no la pueda cumplir años que no me cojan la compré o una empresa importadora mi ni fe con nada es me de seguridad siempre lo dama siempre ganando y es atravesar siempre siempre la moto va a ver cuando la compra a tantos problemas de corriente entonces cada un día dos de vende ganan largo recorrido pero ahora con la corriente es cada que puedo llegar a volvían de y vamos a gala siempre tomando en cuenta que hay que dejarla descansar veinte minutos de entre uso veinte minutos vamos de conecta pero todo lo que se puede modo principalmente tampoco te veces para algún trabajito pero principalmente eran pote si una una vez se me cayó no sé porqué pero se cayó y parece con aire baco y se me partió una las fatigada drake sigue sigue roda pero way pa eso es eso un problema de la persona que vayan atrás habían conmigo que no estando pero si verdaderamente un poco más incómodo no la he arreglado más o menos agregó tan nos en con mi perro no la arreglado verdaderamente importante tiempo la facultad pero bueno y bueno ya a la última un da un poco jejeje un poco complicada con los apagones es o bien muy complicado si es complicado pero bueno no hace lo que se puede",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_017",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": "USD",
+        "canal_busqueda": "Importadora",
+        "factores_decision": null,
+        "precio_final": "Alrededor de 1.640 USD",
+        "anio_compra": null,
+        "importadora_origen": "Panamá",
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Personal",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": true,
+        "prefiere_electrica": true,
+        "razon_preferencia": "Por ser lo más económico.",
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "precio": "La compró importada desde Panamá por unos 1.640 USD; menciona el equivalente en moneda nacional.",
+        "autonomia": "Menciona unos 75 km; no queda claro si es la autonomía real o la anunciada.",
+        "baterias": "Lleva 11 años con la moto y va por la tercera batería; la última le costó unos 900 USD.",
+        "mantenimiento": "Menciona mantenimiento y la dificultad de reponer piezas; prefiere comprar nuevo antes que arriesgarse con lo usado.",
+        "repuestos": "Dice que las piezas se consiguen con tiempo.",
+        "papeles": "Tiene licencia.",
+        "seguridad": "Usa candado y garaje.",
+        "uso": "La usa para traslados personales.",
+        "carga": "Menciona el tiempo de carga, pero no se entiende la cifra."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Confirmar el precio y la moneda exactos.",
+        "Confirmar la autonomía real y el tiempo de carga.",
+        "Precisar el número y el año de las baterías.",
+        "Aclarar el uso principal.",
+        "Confirmar si la compra fue por importadora o a un particular."
+      ],
+      "observaciones": "4 notas de voz de WhatsApp del 2026-11-05 (92.6 s; 38.4 s; 41.3 s y 33.9 s) transcritas con Vosk y unidas en un solo registro. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_017.md",
+      "audio": "data/raw/audios/COMPRADOR_017/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Audio 2026-11-05 at 2.24.58 PM.ogg",
+          "duracion_s": 92.6,
+          "sha256": "6d9df81ec1b8eaeecb7bd87c1d53f7d26b2f1355284aa6787b7e3092237475b6"
+        },
+        {
+          "archivo": "WhatsApp Audio 2026-11-05 at 2.24.59 PM.ogg",
+          "duracion_s": 38.4,
+          "sha256": "1423ce8aa0863e59b8cc2650006e9478cf2496fd34f84c607096fbfebb356dbe"
+        },
+        {
+          "archivo": "WhatsApp Audio 2026-11-05 at 2.25.00 PM.ogg",
+          "duracion_s": 41.3,
+          "sha256": "c633925146659ae626a37e011023a51b44b75f70082d4adab78344bf5fb6d254"
+        },
+        {
+          "archivo": "WhatsApp Audio 2026-11-05 at 2.25.01 PM.ogg",
+          "duracion_s": 33.9,
+          "sha256": "b0f5d0bd2bda6293b543ac9fd962ba6e7001ee97940c9a9d532763d6f28a2b1b"
+        }
+      ],
+      "texto_original": "cada código demandando lo por aquí poder hablando lograrían eso deben filas o o no que su edad la historia lo entiende uso para usa tu vehículo londres o un puente personal content para me dieron somos nosotros muy bogado desde antes la lesión poker agite uno eléctrico oklahoma varado lo luego compra una apasionadamente pero aquel tiempo se aroma lo más económico de seguir así como quiera que sea lo más en el no había pruebas eléctrica en y ni modo bicicleta lo de roma como en una modo como quiera que sea ganas dónde la compraste le importa la hipoteca panamá y ve y buque hay tenía la posibilidad visado dni dinero va a esta guía en cuba fueron unos mil seiscientos cuarenta dólares hago de imputación junto a puesto que en cuba bravío que más caro eso fue hace años mantiene precio de garantía la hackeada draghi ha manantial ave de de precio nuevo mundo managua nada pero grado era el equivalente en moneda nacional con unos meses siendo cuarenta más tiempo carga y agua para de amador ahora tu trono once años la tercera batería de la pongamos conservatorio lo gastado en la que más me gustó fue la última hora pasear hace dos años ahorita que me voto novecientos dólares a otra fue se de ciento y creo o algo así y la primera para ganó el amor to a helado primera primeras delirio y está en la época más último y de ese sentido hubo ó treinta y cinco fuera breve la primera las autónoma y setenta y cinco mantenimiento nos muy sea la primera batería grúa y leímos mantenimiento de no fumando y fuego de la seda a gardenias ahí se da una dos romperse edad federal no funcionan tu de va al ciencia house haga tiempo para reponer esa setas que vendían y hace y funcionando bono de óvalo gracias de los jean pero atareado dinero con la otra o no recomendado algo nuevo con tanta cosa accidente prefiero comprar la cosa nueva y dama la preocupación teniendo dinero tan en google no que no se venden no tenga la seguridad y lo favelas y tiene novela primero aduanales puede la circulación se les hago la acaba si tengo licenciada cavado leonora sábado no daniel hombres amat ahora para abordaje la candado la dama que tiene es garaje eso solo la cosa principal okay como tal la situación de usar muy de moda de mucha o saboreado tenga sembrada de nuevo pero pero bueno hay que poner lo más difícil ahora me o cualquier otra vez",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
     }
   ],
-  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 tiene audio del 2026-11-04). Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 tiene audio del 2026-11-04) y COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }

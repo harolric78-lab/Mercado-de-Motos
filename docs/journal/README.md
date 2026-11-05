@@ -120,3 +120,12 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Datos:** solo respuestas claras; `COMPRADOR_015` es muy corto y ruidoso.
 - **Análisis:** se amplió `docs/entrevistas/analisis_lote_2026-11-05.md` con el anexo de `COMPRADOR_014` a `COMPRADOR_016`.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
+
+---
+
+## 📅 5 de noviembre de 2026 - Comprador 18 y taller 2
+- **Comprador 18:** se transcribieron cuatro notas de voz (`WhatsApp Audio 2026-11-05 at 2.24.58 PM.ogg`, `...2.24.59...`, `...2.25.00...` y `...2.25.01...`; 92,6 s; 38,4 s; 41,3 s y 33,9 s) y se unieron en `COMPRADOR_017`.
+- **Taller 2:** se transcribió `Entrevista de taller 2/WhatsApp Ptt 2026-11-05 at 2.38.06 PM.ogg` (101,0 s) y se registró como `TALLER_002`.
+- **Datos:** solo respuestas claras; ambos audios son ruidosos y la identidad de taller de `TALLER_002` está por confirmar.
+- **Análisis:** se amplió `docs/entrevistas/analisis_lote_2026-11-05.md` con el anexo de `COMPRADOR_017` y `TALLER_002`.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.

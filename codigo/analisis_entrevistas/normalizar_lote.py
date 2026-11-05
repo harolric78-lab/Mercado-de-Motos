@@ -23,6 +23,26 @@ def leer_md(eid):
     }
 
 
+def leer_md_partes(eid):
+    p = os.path.join(RAW, eid + ".md")
+    with open(p, encoding="utf-8") as f:
+        content = f.read()
+    patron = re.compile(
+        r"## (.+?)\n\n- \*\*SHA256:\*\* `([0-9a-fA-F]{64})`\n"
+        r"- \*\*Duraci[oó]n:\*\* ([\d.]+) s\n.*?\n.*?\n\n(.*?)(?=\n## |\Z)",
+        re.S,
+    )
+    partes = []
+    for m in patron.finditer(content):
+        partes.append({
+            "archivo": m.group(1).strip(),
+            "sha256": m.group(2),
+            "duracion_s": float(m.group(3)),
+            "texto": m.group(4).strip(),
+        })
+    return partes
+
+
 def base(eid, fecha, ubicacion, temas, *, perfil=None, compra=None, uso=None,
          repuestos=None, opiniones=None, satisfaccion=None, respuestas=None,
          pendientes=None, obs="", duracion=0.0, sha="", archivo=""):
@@ -356,6 +376,48 @@ entries.append(base(
     archivo="WhatsApp Ptt 2026-11-05 at 12.49.11 PM.ogg",
 ))
 
+entries.append(base(
+    "COMPRADOR_017", "2026-11-05", "La Habana, Cuba (por confirmar)",
+    ["compra", "uso", "repuestos", "opiniones_mercado"],
+    compra={"tipo_moto": "Eléctrica", "canal_busqueda": "Importadora",
+            "importadora_origen": "Panamá", "precio_final": "Alrededor de 1.640 USD",
+            "moneda": "USD"},
+    uso={"uso_principal": "Personal", "tiene_alarma_candado": True},
+    opiniones={"considero_electrica": True, "prefiere_electrica": True,
+               "razon_preferencia": "Por ser lo más económico."},
+    respuestas={
+        "precio": "La compró importada desde Panamá por unos 1.640 USD; menciona el equivalente en moneda nacional.",
+        "autonomia": "Menciona unos 75 km; no queda claro si es la autonomía real o la anunciada.",
+        "baterias": "Lleva 11 años con la moto y va por la tercera batería; la última le costó unos 900 USD.",
+        "mantenimiento": "Menciona mantenimiento y la dificultad de reponer piezas; prefiere comprar nuevo antes que arriesgarse con lo usado.",
+        "repuestos": "Dice que las piezas se consiguen con tiempo.",
+        "papeles": "Tiene licencia.",
+        "seguridad": "Usa candado y garaje.",
+        "uso": "La usa para traslados personales.",
+        "carga": "Menciona el tiempo de carga, pero no se entiende la cifra.",
+    },
+    pendientes=[
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Confirmar el precio y la moneda exactos.",
+        "Confirmar la autonomía real y el tiempo de carga.",
+        "Precisar el número y el año de las baterías.",
+        "Aclarar el uso principal.",
+        "Confirmar si la compra fue por importadora o a un particular.",
+    ],
+    obs="4 notas de voz de WhatsApp del 2026-11-05 (92.6 s; 38.4 s; 41.3 s y 33.9 s) transcritas con Vosk y unidas en un solo registro. Transcripción ruidosa: solo se registran respuestas claras.",
+    duracion=92.6,
+    sha="6d9df81ec1b8eaeecb7bd87c1d53f7d26b2f1355284aa6787b7e3092237475b6",
+    archivo="WhatsApp Audio 2026-11-05 at 2.24.58 PM.ogg",
+))
+_partes_017 = leer_md_partes("COMPRADOR_017")
+if _partes_017:
+    entries[-1]["audio_partes"] = [
+        {"archivo": x["archivo"], "duracion_s": x["duracion_s"], "sha256": x["sha256"]}
+        for x in _partes_017
+    ]
+    entries[-1]["texto_original"] = " ".join(x["texto"] for x in _partes_017 if x["texto"]).strip()
+
 taller = base(
     "TALLER_001", "2026-11-05", "La Habana, Cuba (por confirmar)",
     ["opiniones_mercado", "uso", "repuestos"],
@@ -384,6 +446,32 @@ taller = base(
     archivo="WhatsApp Ptt 2026-11-05 at 10.43.36 AM.ogg",
 )
 
+taller2 = base(
+    "TALLER_002", "2026-11-05", "La Habana, Cuba (por confirmar)",
+    ["uso", "repuestos", "opiniones_mercado"],
+    uso={"uso_principal": "Trabajo", "tiene_alarma_candado": True},
+    respuestas={
+        "uso": "La moto se usa para el trabajo en La Habana.",
+        "seguridad": "Usa candado.",
+        "autonomia": "Menciona la autonomía, pero el fragmento no es inteligible.",
+        "bateria": "Dice que no ha tenido problemas con la batería; el fragmento es confuso.",
+        "electricas": "Menciona la eléctrica y la garantía, sin datos claros.",
+        "taller": "El audio no permite confirmar el tipo de taller ni los servicios que ofrece.",
+    },
+    pendientes=[
+        "Confirmar perfil del entrevistado y tipo de taller.",
+        "Confirmar fecha y lugar de la entrevista.",
+        "Aclarar la edad o experiencia mencionada (21 años).",
+        "Confirmar la autonomía y el estado de la batería.",
+        "Aclarar precios, garantía y disponibilidad de repuestos.",
+        "Aclarar si la entrevista corresponde a un taller.",
+    ],
+    obs="1 nota de voz de WhatsApp (101.0 s) del 2026-11-05 transcrita con Vosk. El contenido se asigna a taller por la carpeta de origen, pero el audio no confirma claramente que el entrevistado sea un taller; ver preguntas_pendientes.",
+    duracion=101.0,
+    sha="189e188a6aecd25b8995308118fad670944852a520cc061051c2c72704d16f49",
+    archivo="WhatsApp Ptt 2026-11-05 at 2.38.06 PM.ogg",
+)
+
 # compradores
 p = os.path.join(ENT, "compradores.json")
 with open(p, encoding="utf-8") as f:
@@ -399,8 +487,9 @@ data["nota"] = ("Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRA
                 "COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); "
                 "COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen "
                 "audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 "
-                "tiene audio del 2026-11-04). Se descartaron los audios que duplicaban la sesión antigua. Solo se registran "
-                "respuestas claras; lo no inteligible queda en null y en preguntas_pendientes.")
+                "tiene audio del 2026-11-04) y COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos. Se "
+                "descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no "
+                "inteligible queda en null y en preguntas_pendientes.")
 with open(p, "w", encoding="utf-8", newline="\n") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
     f.write("\n")
@@ -409,12 +498,14 @@ with open(p, "w", encoding="utf-8", newline="\n") as f:
 p2 = os.path.join(ENT, "talleres.json")
 with open(p2, encoding="utf-8") as f:
     t = json.load(f)
-if taller["id"] not in {e["id"] for e in t["entrevistas"]}:
-    t["entrevistas"].append(taller)
+_talleres_ids = {e["id"] for e in t["entrevistas"]}
+for _t in (taller, taller2):
+    if _t["id"] not in _talleres_ids:
+        t["entrevistas"].append(_t)
 t["total_entrevistas"] = len(t["entrevistas"])
-t["nota"] = ("Reinicio de entrevistas el 2026-11-04. TALLER_001 corresponde a la carpeta 'Entrevistas de taller 1' "
-             "(audio del 2026-11-05). Solo se registran respuestas claras; lo no inteligible queda en null y en "
-             "preguntas_pendientes.")
+t["nota"] = ("Reinicio de entrevistas el 2026-11-04. TALLER_001 corresponde a la carpeta 'Entrevistas de taller 1' y "
+             "TALLER_002 a 'Entrevista de taller 2' (audios del 2026-11-05). Solo se registran respuestas claras; lo no "
+             "inteligible queda en null y en preguntas_pendientes.")
 with open(p2, "w", encoding="utf-8", newline="\n") as f:
     json.dump(t, f, ensure_ascii=False, indent=2)
     f.write("\n")

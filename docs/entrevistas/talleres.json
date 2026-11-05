@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "talleres",
-  "total_entrevistas": 1,
+  "total_entrevistas": 2,
   "entrevistas": [
     {
       "id": "TALLER_001",
@@ -108,7 +108,114 @@
       "texto_original": "de igual modo la de gasolina o eléctrico y boca llegó el eléctrica nunca me ha gustado salidos del la modalidad pero las de gasolina y gasóleo cielo mon la autonomía vendedores real o a menos como con a la autonomía que vejez vendedores real o a disminuido no la la ahora cómprala subiendo los teología pero uno vicioso no razón más compra la autoridad y dónde la compraste en rigor higo fuego en cuenta no es en verdad gago utiliza la mundo principalmente transporte de trabajo a padre para a te va a salí pado y se da de alguna pieza o alguna alguna duda y cuánto te costó cuando el un vete una sola vez yo soy de lo compró la pieza gara apaga maduro si tu compra de garra manda comprado bum bum bum día y noche de grasa",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "TALLER_002",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "uso": "La moto se usa para el trabajo en La Habana.",
+        "seguridad": "Usa candado.",
+        "autonomia": "Menciona la autonomía, pero el fragmento no es inteligible.",
+        "bateria": "Dice que no ha tenido problemas con la batería; el fragmento es confuso.",
+        "electricas": "Menciona la eléctrica y la garantía, sin datos claros.",
+        "taller": "El audio no permite confirmar el tipo de taller ni los servicios que ofrece."
+      },
+      "preguntas_pendientes": [
+        "Confirmar perfil del entrevistado y tipo de taller.",
+        "Confirmar fecha y lugar de la entrevista.",
+        "Aclarar la edad o experiencia mencionada (21 años).",
+        "Confirmar la autonomía y el estado de la batería.",
+        "Aclarar precios, garantía y disponibilidad de repuestos.",
+        "Aclarar si la entrevista corresponde a un taller."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (101.0 s) del 2026-11-05 transcrita con Vosk. El contenido se asigna a taller por la carpeta de origen, pero el audio no confirma claramente que el entrevistado sea un taller; ver preguntas_pendientes.",
+      "transcripcion": "data/raw/entrevistas/TALLER_002.md",
+      "audio": "data/raw/audios/TALLER_002/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 2.38.06 PM.ogg",
+          "duracion_s": 101.0,
+          "sha256": "189e188a6aecd25b8995308118fad670944852a520cc061051c2c72704d16f49"
+        }
+      ],
+      "texto_original": "veintiún años uso del trabajo a la habana el trabajo y el ay si mundo rico la fragata convenga por un el contador boca ebay sale más barata hay quinientos sedentaria la mona de west será la corriente sigue la canturreando guía cuadro en candeal grupo no nunca maniobra obrero mundial un fondo blanco si la autonomía en la misma no no no tenido nunca batería la materia usábamos falta más contra las cuerdas siento con él si de índole okay okay nos de acción candado sí a la gente eléctrica balanza electric la esta garantía",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
     }
   ],
-  "nota": "Reinicio de entrevistas el 2026-11-04. TALLER_001 corresponde a la carpeta 'Entrevistas de taller 1' (audio del 2026-11-05). Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Reinicio de entrevistas el 2026-11-04. TALLER_001 corresponde a la carpeta 'Entrevistas de taller 1' y TALLER_002 a 'Entrevista de taller 2' (audios del 2026-11-05). Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }

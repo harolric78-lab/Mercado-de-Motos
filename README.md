@@ -92,9 +92,9 @@ El proyecto trabaja con **fuentes de datos complementarias**, que se usan de for
 | Fuente | Tipo de dato | Aporte al estudio |
 |---|---|---|
 | Revolico (La Habana) | Cuantitativa | **6.101 anuncios** en 3 cortes (17, 22 y 26 de octubre de 2026): 1.099 de combustión, 2.201 eléctricas, 2.576 bicicletas eléctricas y 225 patinetes. Aporta precios en USD, marcas, categorías y vistas. |
-| Compradores | Cualitativa | **16 entrevistas** (`COMPRADOR_001` a `COMPRADOR_016`): preferencias entre combustión y eléctrica, gastos, uso, repuestos y percepciones de precio. |
+| Compradores | Cualitativa | **17 entrevistas** (`COMPRADOR_001` a `COMPRADOR_017`): preferencias entre combustión y eléctrica, gastos, uso, repuestos y percepciones de precio. |
 | Importadoras | Cualitativa | **1 entrevista** a Solimport (`IMPORTADORA_001`): catálogo, aranceles, formación de precios, reventa y demanda. |
-| Talleres | Cualitativa | **1 entrevista** (`TALLER_001`): preferencia gasolina/eléctrica, autonomía, repuestos y uso. |
+| Talleres | Cualitativa | **2 entrevistas** (`TALLER_001` y `TALLER_002`): preferencia gasolina/eléctrica, autonomía, repuestos y uso. |
 | Evidencia de campo | Cualitativa | **7 fotografías** de importadoras y tiendas, y observación directa en La Habana; sin fotografías de talleres. |
 
 Los anuncios de Revolico se publican como dataset analizable en [`data/processed/`](data/processed/). Las entrevistas y la información de instituciones o importadoras se documentan en [`docs/entrevistas/`](docs/entrevistas/), [`docs/images/`](docs/images/) y [`docs/journal/`](docs/journal/) para cuidar la privacidad y dejar rastro de la fuente.
@@ -126,7 +126,7 @@ La investigación combina datos cuantitativos y cualitativos de tres fuentes que
 
 Las entrevistas y la información de instituciones o importadoras se usan para interpretar y contextualizar los resultados cuantitativos. No se emplean para estimar volúmenes de ventas ni para sustituir el dataset de anuncios, pero sí son **fuentes de dato con valor propio** dentro del estudio.
 
-> Estado actual: el registro de entrevistas se reinició el **2026-11-04** y ya incluye **16 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_016`), **1 de taller** (`TALLER_001`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_016` se transcribieron con Vosk a partir de audios nuevos; `COMPRADOR_003` se recuperó como texto sin audio. `COMPRADOR_011` y `COMPRADOR_012` tienen audio del 2026-10-23 y `COMPRADOR_014` del 2026-11-04. Se descartaron los audios que duplicaban la sesión antigua. Se conservan **7 fotografías** de importadoras y tiendas y la observación de campo. La transcripción automática disponible es Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo.
+> Estado actual: el registro de entrevistas se reinició el **2026-11-04** y ya incluye **17 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_017`), **2 de talleres** (`TALLER_001` y `TALLER_002`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_017` se transcribieron con Vosk a partir de audios nuevos; `COMPRADOR_003` se recuperó como texto sin audio. `COMPRADOR_011` y `COMPRADOR_012` tienen audio del 2026-10-23, `COMPRADOR_014` del 2026-11-04 y `COMPRADOR_017` reúne cuatro audios del 2026-11-05. Se descartaron los audios que duplicaban la sesión antigua. Se conservan **7 fotografías** de importadoras y tiendas y la observación de campo. La transcripción automática disponible es Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo.
 
 ---
 
