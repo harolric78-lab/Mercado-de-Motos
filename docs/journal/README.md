@@ -101,3 +101,12 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Comprador 9:** se transcribió `Entrevista comprador 9/WhatsApp Ptt 2026-11-05 at 7.21.36 AM.ogg` (142,6 s) y se registró como `COMPRADOR_008`.
 - **Duplicado descartado:** el audio de `Entrevista de comprador 6` tiene el mismo SHA256 que `COMPRADOR_004`; no se volvió a transcribir.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
+
+---
+
+## 📅 5 de noviembre de 2026 - Lote de compradores 10-14 y taller
+- **Compradores 10 a 14:** se transcribieron cinco audios y se registraron como `COMPRADOR_009` a `COMPRADOR_013` (165,6 s; 229,5 s; 90,4 s; 311,1 s y 96,3 s). `COMPRADOR_011` y `COMPRADOR_012` tienen audio del 2026-10-23.
+- **Taller 1:** se transcribió `Entrevistas de taller 1/WhatsApp Ptt 2026-11-05 at 10.43.36 AM.ogg` (77,2 s) y se registró como `TALLER_001`; el audio se asigna a taller por la carpeta de origen, pero no confirma claramente que el entrevistado sea un taller.
+- **Mapeo de carpetas:** 10→009, 11→010, 12→011, 13→012 y 14→013.
+- **Datos:** se registraron solo respuestas claras; el resto quedó en `null` y en `preguntas_pendientes`.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.

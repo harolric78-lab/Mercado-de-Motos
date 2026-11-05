@@ -1,6 +1,114 @@
 {
   "tipo_fuente": "talleres",
-  "total_entrevistas": 0,
-  "entrevistas": [],
-  "nota": "Reinicio de entrevistas el 2026-11-04. Estructura vacía lista para registrar entrevistas a talleres."
+  "total_entrevistas": 1,
+  "entrevistas": [
+    {
+      "id": "TALLER_001",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "opiniones_mercado",
+        "uso",
+        "repuestos"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": false,
+        "prefiere_electrica": false,
+        "razon_preferencia": "No le gusta la eléctrica; prefiere las de gasolina y gasóleo.",
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "preferencia": "No le gusta la eléctrica; prefiere las motos de gasolina y gasóleo.",
+        "autonomia": "Dice que la autonomía que ofrecen los vendedores ha disminuido.",
+        "uso": "La moto se usa principalmente para transporte de trabajo.",
+        "repuestos": "Menciona la compra de una pieza, pero no se entiende cuál ni el costo.",
+        "taller": "El audio no permite confirmar el tipo de taller ni los servicios que ofrece."
+      },
+      "preguntas_pendientes": [
+        "Confirmar perfil del entrevistado y tipo de taller.",
+        "Confirmar fecha y lugar de la entrevista.",
+        "Aclarar la preferencia entre gasolina y eléctrica.",
+        "Confirmar la autonomía mencionada.",
+        "Aclarar la pieza comprada y su costo.",
+        "Confirmar el uso de la moto.",
+        "Aclarar si la entrevista corresponde a un taller o a un comprador."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (77.2 s) del 2026-11-05 transcrita con Vosk. El contenido se asigna a taller por la carpeta de origen, pero el audio no confirma claramente que el entrevistado sea un taller; ver preguntas_pendientes.",
+      "transcripcion": "data/raw/entrevistas/TALLER_001.md",
+      "audio": "data/raw/audios/TALLER_001/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 10.43.36 AM.ogg",
+          "duracion_s": 77.2,
+          "sha256": "6290f2fb2bfd2dcffeb6999579915f115c0e555eab024adfc500da962c72eb4e"
+        }
+      ],
+      "texto_original": "de igual modo la de gasolina o eléctrico y boca llegó el eléctrica nunca me ha gustado salidos del la modalidad pero las de gasolina y gasóleo cielo mon la autonomía vendedores real o a menos como con a la autonomía que vejez vendedores real o a disminuido no la la ahora cómprala subiendo los teología pero uno vicioso no razón más compra la autoridad y dónde la compraste en rigor higo fuego en cuenta no es en verdad gago utiliza la mundo principalmente transporte de trabajo a padre para a te va a salí pado y se da de alguna pieza o alguna alguna duda y cuánto te costó cuando el un vete una sola vez yo soy de lo compró la pieza gara apaga maduro si tu compra de garra manda comprado bum bum bum día y noche de grasa",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    }
+  ],
+  "nota": "Reinicio de entrevistas el 2026-11-04. TALLER_001 corresponde a la carpeta 'Entrevistas de taller 1' (audio del 2026-11-05). Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }

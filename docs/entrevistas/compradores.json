@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "compradores",
-  "total_entrevistas": 8,
+  "total_entrevistas": 13,
   "entrevistas": [
     {
       "id": "COMPRADOR_001",
@@ -893,7 +893,572 @@
       "texto_original": "en ello prefiero monto de el entregan por el tema este tema de la de la sobrina hormona aquí es muy inestable da la luz se va pero bueno final siempre wagner pues yo lotería del por buenas migas entonce la sobrina bases fluctúa anunciado la a la existencia de precio en fin muy complicado porque depende de muchos factores que no se pueden controlar el final nunca la luz también controlan puedes con el más o menos adonde vasca tocando a que lo debajo la autonomía vendedora principio si era real pero pero a disminuir un poco de uso y tomando todas las materias se gasta con el tiempo si no lo tengo chapa y si tengo licencia me llamó un bar cuatro la compré una importa ahora se podría decir que la vendieron en una empresa familiar hermano y la compra y antiquísimo importador la medida de seguridad tengo la la modo aunque no funciona mandamos cantado cuando tengo tomen de que funciona chakra modo normalmente cada dos días y tarda en cargarse completa yo nunca la he probado tal deje que se compra aproximadamente cinco o utilizó modo principalmente para tampoco sí bueno rodó una pieza no pero si me comprar un gran goma nueva fueron creo que es sesenta dólares dos algo goma trasera y afectando mucho favor en tuve que buscar los medios herirá a la escuela que toda mi zona por aquí donde vives no tenía no tenían no teníamos lugar temores estabilizado poco y ahora vogue pron entonces hasta hace poquito de niebla paga pero ahora ya y antes desde hace de esta hace poquito lo vea que sin problema",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_009",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "compra",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": "Cuenta propia (unos 2 años)",
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": "La Habana"
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Mixto (trabajo, mensajería y salidas)",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": true,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "compra": "Menciona que compró la moto importada; el precio y el canal no son claros (habla de unos 900 y de 'mil', pero no se entiende).",
+        "bateria": "Compró una batería más grande por 800 USD.",
+        "mantenimiento": "Estima el mantenimiento en unos 1.500 (no precisa periodo ni moneda).",
+        "autonomia": "Dice que la autonomía coincide con lo anunciado por el vendedor; la cifra no es inteligible.",
+        "papeles": "Tiene licencia y chapa; no ha tenido problemas.",
+        "seguridad": "Usa garaje y candado.",
+        "reventa": "No sabe cuánto podría vender una batería usada; no tiene intención de vender.",
+        "precios": "Menciona que los precios han bajado mucho en comparación y que el dinero está difícil; fragmento confuso.",
+        "uso": "Usa la moto para trabajo y transporte, a veces mensajería y salidas."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Aclarar el precio final, la moneda y el canal de compra.",
+        "Confirmar la autonomía exacta y el tiempo de carga.",
+        "Confirmar ingreso mensual y si recibe remesas.",
+        "Aclarar el comportamiento de los precios mencionado.",
+        "Confirmar si vende o no la moto y la batería usada."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (165.6 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_009.md",
+      "audio": "data/raw/audios/COMPRADOR_009/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 8.47.30 AM.ogg",
+          "duracion_s": 165.6,
+          "sha256": "1b409050d3bd23cd229f3460e892c64d0c05aa5b3c7857d4fced97b0bd0f5fe0"
+        }
+      ],
+      "texto_original": "cuando entre dos años en negocios pero bueno cuenta propia y uno municipios error para que uso de vehículos para trabajo transporte mencionan y a veces una que otra mensajería y salir y tan poca la modo la entrega por qué es en la situación actual que estábamos teniendo todo combustibles nos complicación sale más barata en un carro obviamente y casi siempre me ha puesto que el sol ganas de una compras la importamos la mano o que mismo modo viajó y aprovechan precio garantía costo creo que novecientos valor al final puesto en cuba salió en mil vinci por ahí y no pasaban dólares cuánto la grande yo lo hago cada vez más moderna corriente no negro y en día de por ejemplo cuando se de la la corriente varios días si pasó mucho trabajo para la que no me da tiempo de media hora corriente drogas de abuso eliminarlo piel la autonomía coincide con el anuncio vendedor veintiuno sí estuvo trabajando muy bien con su batería actuando con la o sea con su batería que tenía como que batería me compré una en ochocientos dólares más grande y bueno respuesta y mantenimiento digamos que mil quinientos la modo tiene siete cuenta quisiera unos batería usado en cuanto vendería bueno la madera usaban no tengo idea de web y no no venderían modo ah vale y seguridad si tengo licencia tengo chapa y no tenido ningún tipo de problema que uso para proteger la bueno nada garaje y vengo candado y al alma internet quizás en momentos donde los precios han bajado muchísimo en comparación y hasta el dinero nuestra tan difícil como hondo quizá tendría una sobrina por el tema de los viajaba provincia para las cosas apenas quedan sí",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_010",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "compra",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Mixto (trabajo y recados)",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": true,
+        "prefiere_electrica": true,
+        "razon_preferencia": "Por la situación del país con los combustibles y la electricidad.",
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "preferencia": "Prefiere la eléctrica por la situación actual del país; recomienda su uso.",
+        "procedencia": "La moto se la regalaron; el dueño anterior la había comprado por Facebook.",
+        "antiguedad": "La tiene desde hace cuatro años.",
+        "mantenimiento": "No ha requerido reparaciones importantes; menciona cables, falsos contactos y líquido de freno.",
+        "papeles": "No tiene chapa ni licencia.",
+        "seguridad": "Usa candado, seguro y doble timón.",
+        "autonomia": "La usa para trayectos cortos; no para viajes largos.",
+        "apagones": "Menciona que los apagones no le afectan mucho; el fragmento es confuso.",
+        "uso": "La usa para trabajo y para resolver recados."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Confirmar si realmente no tiene chapa ni licencia.",
+        "Confirmar la autonomía y el tiempo de carga.",
+        "Aclarar el comportamiento de los precios.",
+        "Confirmar ingreso mensual y si recibe remesas.",
+        "Aclarar la relación entre los apagones y el uso de la moto."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (229.5 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_010.md",
+      "audio": "data/raw/audios/COMPRADOR_010/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 7.33.04 AM.ogg",
+          "duracion_s": 229.5,
+          "sha256": "1ddf1fb11bebf59f1cd60fcece1ab7ff3049fa439b521f2ff28a861d32c77446"
+        }
+      ],
+      "texto_original": "a él yo siempre si una persona que le gusta modo o dente naturalmente son las de gasolina fueron o la situación del país actual la eléctrica son la opción más variable fondo impresora de lo siento pero como siempre de youtuber ejes amigo que vive un empezó el tiene una planta y ya tuvo jill avivando por ahí con el tema de la electricidad sigue os recomendamos actualmente la eléctrica la medusas en pruebas el la gasolina si autonomía de vendedor la real si de mi novio también o sea por el paso del tiempo la la moto aprendiendo balón eso siempre ha sido muy mal y lo común eso va aretino valor con el tiempo abate que tú la bajo usando y también valentía yo uso una mura shaggy primer modelo y no jones tonic chapa en y licencia tampoco uso asco vague para que lo dios para que no nos pregunté no la moto que tengo malas regalaron pero estamos aquí me la regalaron pero dice dicen mano que antes la había comprado en por facebook sigue y me sale bastante buena ya llevo cuatro años me y nunca la he hecho ningún reparo importantes para los medios seguridad le bongo su candado de bongo también fue el seguro de que la modo que son mi de dobla la el timón y también le pongo sus deberes o sea siempre la muros guida con un modelo es para para resolver no es para ir a al wert muy muy lejos y afuera para dar bath osado pueden ir desde el autobús hasta wanna balboa a ir a la huerta tú solo si vas con alguien no te la batería ah no se el que vaya solos iba solo si si llega vivirás tranquilamente tranquilamente a vivir fue no puede salir salir ninguna otra parte no puede salir no pues la moto gaitán chacal tres hora lo adecuado del país la a motor utilizó para trompo te trabajo parado allí alguien cuba la motos abusa varado para lo que pueda resolver sí en la el timón en aceleran se os a fate aceleran se se rompe un cable sido y es legal en situación de la moto acelerada zona o sea que tenía falso contactos es esto hay que el líquido freno a se moto pero se le pase lo que sigue serenos más romana importancia bueno changos sin problemas sin poder las tres horas de luz sí sino no amén como tal no afecta los una época en vez son pero se yo lo digo para la cesión a ninguna en a luz y guía de compra se una osea tres horas desata la moda ganga al no antivirus cierto que pienso que mucho",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_011",
+      "fecha": "2026-10-23",
+      "ubicacion": "La Habana, Cuba",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "perfil",
+        "uso",
+        "repuestos",
+        "compra",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": "Masculino",
+        "municipio": "La Habana",
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": "Ninguno",
+        "remesas_frecuencia": null,
+        "provincia": "La Habana"
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": "Conocido",
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": "40",
+        "unico_medio_transporte": true,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": "Ninguno",
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": false,
+        "problemas_repuestos": false,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "perfil": "Hombre, de La Habana; no declara ingresos.",
+        "uso": "Usa la moto a diario, unos 40 km; es su único medio de transporte.",
+        "mantenimiento": "Dice que no gasta en mantenimiento.",
+        "seguridad": "No usa candado ni alarma.",
+        "repuestos": "Dice no haber tenido problemas con repuestos.",
+        "compra": "La compró a un conocido.",
+        "mercado": "El audio es en gran parte el cuestionario leído por el entrevistador; las respuestas son muy breves."
+      },
+      "preguntas_pendientes": [
+        "Confirmar edad, ocupación y remesas.",
+        "Aclarar el ingreso mensual (responde 'ninguno').",
+        "Confirmar marca, modelo y año de la moto.",
+        "Aclarar la preferencia entre eléctrica y combustión.",
+        "Aclarar la percepción de precios y regulaciones.",
+        "Confirmar la forma de compra."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (87.7 s) con fecha 2026-10-23, transcrita con Vosk el 2026-11-05. El audio es sobre todo el cuestionario leído por el entrevistador; solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_011.md",
+      "audio": "data/raw/audios/COMPRADOR_011/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Audio 2026-10-23 at 10.32.41 PM.aac",
+          "duracion_s": 90.4,
+          "sha256": "fc213b25f64fceb81d7a296c876fe75bcb91019dc2c7b525cb1bda1d3bac8733"
+        }
+      ],
+      "texto_original": "edad presente año censo masculino manchada la provincia la habana municipio habana leche a qué te dedicas tu de si ves remesas familia en el exterior se rango de ingreso mensual ninguno uso diario kilómetros al día cuarenta este único medio de transporte sí gastos de mantenimiento ninguno candados o álamo tampoco problema con respuesta no importante que fue lo más importante de elegir la mondo macho ofrece marca considera miento consideras tener una una de combustible no poca muy claro si tuvieras que cambiar otra cual sería una estilo del botín qué piensas de comportamiento de los precio está bien en florencia de empresa regulación quiere problema traspaso de manchado legal o ilegal leal forma de compra conocido",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_012",
+      "fecha": "2026-10-23",
+      "ubicacion": "La Habana, Cuba",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "perfil",
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": 60,
+        "sexo": "Masculino",
+        "municipio": "La Habana",
+        "ocupacion": null,
+        "recibe_remesas": true,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": "Alrededor de 4.200 CUP",
+        "remesas_frecuencia": "Casi todos los meses",
+        "provincia": "La Habana"
+      },
+      "compra": {
+        "tipo_moto": "Combustión 4 tiempos",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": "Importadora",
+        "factores_decision": [
+          "Precio"
+        ],
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": "Panamá",
+        "entrega_domicilio": true,
+        "comprada_nueva": true
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": "28-35",
+        "unico_medio_transporte": true,
+        "gasto_combustible": "Aproximadamente 1 litro diario",
+        "gasto_mantenimiento": "Mantenimiento mensual (cifra no inteligible)",
+        "gasto_mantenimiento_periodo": "mensual",
+        "gasto_seguridad": "5.000-8.000 (moneda no precisada)",
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": false,
+        "kilometraje_actual": 2000,
+        "lugar_trabajo": "Centro de trabajo (no precisa)",
+        "porcentaje_uso_trabajo": 80
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": "Aumento",
+        "variacion_precios_ultimo_anio": "Aproximadamente 5%",
+        "influencia_precio": [
+          "Demanda"
+        ],
+        "tipo_mercado": "Legal",
+        "considero_electrica": true,
+        "prefiere_electrica": true,
+        "razon_preferencia": "Por eficiencia y ahorro",
+        "autonomia_electrica_km": "120-130 km",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": "Eficiencia y ahorro de la eléctrica (no de su moto actual)",
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "perfil": "Hombre de 60 años, de La Habana; recibe remesas casi todos los meses; ingreso declarado de alrededor de 4.200 CUP.",
+        "compra": "Compró una moto de combustión de cuatro tiempos a través de una importadora de Panamá, con entrega en su casa; era cero kilómetro.",
+        "factores": "El precio fue lo más importante; contó con ayuda de la familia.",
+        "uso": "Usa la moto sobre todo para ir al trabajo (un 80% del uso); su centro de trabajo está lejos.",
+        "kilometraje": "Unos 28-35 km diarios; la moto tiene unos 2.000 km.",
+        "combustible": "Gasta aproximadamente un litro diario.",
+        "mantenimiento": "Menciona un gasto mensual, pero la cifra no es inteligible.",
+        "seguridad": "Gasta entre 5.000 y 8.000 en seguridad y usa candado.",
+        "repuestos": "Dice que no ha tenido problemas para conseguir repuestos.",
+        "precios": "Cree que los precios han subido cerca de un 5% por la demanda y la necesidad de transporte.",
+        "regulaciones": "Opina que las regulaciones influyen, pero el fragmento es confuso.",
+        "electrica": "Consideró comprar una eléctrica, pero no pudo; cambiaría a eléctrica por eficiencia y ahorro (autonomía de 120-130 km).",
+        "mercado": "Considera que adquirir un transporte hoy es un buen negocio."
+      },
+      "preguntas_pendientes": [
+        "Confirmar la ocupación exacta.",
+        "Confirmar el ingreso y la moneda.",
+        "Aclarar el gasto de mantenimiento.",
+        "Confirmar marca, modelo y año de la moto.",
+        "Aclarar la percepción de las regulaciones.",
+        "Confirmar el tipo de cambio usado.",
+        "Aclarar si la autonomía de 120-130 km es de la eléctrica que consideró."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (311.1 s) con fecha 2026-10-23, transcrita con Vosk el 2026-11-05. Transcripción más completa, pero con ruido: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_012.md",
+      "audio": "data/raw/audios/COMPRADOR_012/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Audio 2026-10-23 at 11.57.00 PM.mp4",
+          "duracion_s": 311.1,
+          "sha256": "89420e2084fc1b81a170fb9754f39ec2d35790a4ac9e69e9e4d29a741b9f5087"
+        }
+      ],
+      "texto_original": "no es muy ley cuántos años tiene sesenta años sexo masculino en que provincia y municipio vives provincias ciudad o municipio de pero a qué te dedicas su hecho fue profesional es remesas con qué frecuencia si remesa la recibo casi todo lo mes mes y un humano tiene familiares en el estarían sigo modo en que rangos tanto ingreso mensual mi rango costa cuadro mil doscientos pesos para y usas la moto la módulo en este momento la situación que enfrentamos país nuevo look medio protección para darle solución ilegal al el centro de trabajo el cual un poco lejos porque berro gondor y bolos franco lentamente un ochenta porciento del obdulia hizo para transportar al trabajo y y viceversa regresar en ella a la vivienda cuanto que la madrugada de aproximadamente damos hablando aproximadamente de veintiocho treinta y cinco kilómetros al perro guía al municipio son mil estuvo han ido medio si el único medio de transporte que tengo en nuestro mundo cuánto gasta más en combustible o electricidad viene siendo un promedio de un libro de un litro diario para esto kilómetro que le acabo de decir que son de veintiocho treinta y cinco kilómetros cuánto gasta más de mantenimiento y respuestas abren mantenimiento mensual celebrar este vehículo vea que un una técnica de buena demanda porque una fabricación china montos su y debe promedio de acto en mantenimiento está sobre lo quince mil veinte en cuanto a seguridad candados balam un promedio de cinco mil ocho mil has tenido problemas con respuesta cuánto tarda en conseguir no en este momento no contó con con problema para para esto poco uno la moto actualmente lo que tiene su dos mil kilómetros de recorrido llaga lago y en una agencia o cero kilómetro qué fue lo más importante a la elegir estamos ordenada lo eran cinco precio manca autonomía puesto este diga papeles marca y lo otro es bueno el precio fue un precio que si le bono según la economía hola contado en ese momento y con la ayuda de la familia agregó consideras una eléctrica realmente en otro momento las eléctrica su vehículo también efectivo pero bueno no tuve la posibilidad de adquirir una eléctrica y compré esta de cuatro tiempo de combustión si tuvieras que comprar grado y que cambiaría realmente por una eléctrica por la eficiencia por el el el ahorro y son de ciento veinte ciento treinta kilómetros que tu vehículo gamero con su carga máxima es que los precios de las modo han subido o bajado el último año porque sí creo que ha aumentado un cinco porciento debido a la demanda en la necesidad de transporte que contamos momento en ebay creo que sigue ha subido un poquito pero le puedo asegurar muchas el un cien porciento de efectividad que negocio adquirir hoy por hoy un transporte esto como dije anteriormente no un problema de luz para satisfacer la demanda de lo que regresó a tu casa y hacerse al trabajo para cumplir las tarea que que gane quien fluya más en empresas dolan las case las regulaciones a la demanda queremos la regulación están un poquito energía con respecto a esto y lo otro que viene siendo un segundo plano debe ser son lo la la divisé o sea se adquirirlos dólares para la compra la memo crees que manca en mente la idea o en forman si el legal vogue ha ido área esenciales país con todo su su medida de protección y del ley que hacen la venta de tu vehículo y y sin problema dónde la compraste revalidó hotelera importadora o conocido fue una importadora importadora de de de panamá o como compañero que se dedican a atrae la transportarla hacia el país y bueno la facilidad de del abolengo la muerte de tu casa y a un precio y foto afectada envío de puede algunas nuevo la hacían lo siguiente cambio y creo que ha sido para bien y espero que se mantenga porque realmente to que tiene posibilidad de colombia para adquirir una bella creo que sigue que debe ser para hoy",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_013",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "compra",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": "Prefiere gasolina para viajes largos y trabajo; ve la eléctrica como respaldo cuando no hay electricidad; considera que ambas son la mejor opción.",
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "preferencia": "Prefiere la gasolina para viajes largos y trabajo, y la eléctrica como respaldo cuando no hay electricidad; dice que ambas son la mejor opción.",
+        "autonomia": "Menciona que la autonomía de la eléctrica se mantenía según el vendedor; el fragmento es confuso.",
+        "papeles": "Tiene licencia y no ha sido amonestado.",
+        "seguridad": "Usa candado.",
+        "carga": "Menciona la carga, pero no se entiende la frecuencia ni el tiempo.",
+        "uso": "Usa la moto para transporte y trabajo.",
+        "averias": "Menciona una avería, pero no es inteligible."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Aclarar la preferencia y si tiene moto eléctrica.",
+        "Confirmar la autonomía y el tiempo de carga.",
+        "Aclarar la avería y su costo.",
+        "Confirmar el canal de compra.",
+        "Aclarar el uso principal en el trabajo."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (96.3 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_013.md",
+      "audio": "data/raw/audios/COMPRADOR_013/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 10.35.11 AM.ogg",
+          "duracion_s": 96.3,
+          "sha256": "447b1f5d2a9833d56a6bd63b68cd0b0043a7cf9013e023fbe585a40b806c213c"
+        }
+      ],
+      "texto_original": "de igual modo prefiero la gasolina o atrio y buque pero cuando bajas viaje largo tema laboral cigarrera vigilando el amor hidroeléctrica siempre es bueno tener la que cuando se tableta bolsillo y no tener la electricidad hoy te de respaldo en temas como está de combustible que ambas la mejor opción para bueno sirve empezaría por alguna ébola electric de la autonomía una vez vendedores real o a disminuido en la eléctrica me a la hora la conciencia y reales real y se mantenía tiene cabo licencia amonestado alguna vez no en el licencias y no tengo sabe dónde la compraste robo fue hubo una encuesta ego qué medida de seguridad toma candado a vamos al amo cada cuánto gacha la modo y cuánto tiempo tarde cachan basada en cada caso concreto se demora señor y maría encargan y para que utiliza la modo próximamente transporte trabajo o su trabajo y se da rodó alguna vez alguna la feliz y afecta mucho lavado no puedo sacar las un problema depende depende de cómo te como teléfonos era la verdad y árabe bollo cambiar las se momento",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
     }
   ],
-  "nota": "Entrevistas del 2026-11-04 y 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05). Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23). Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }
