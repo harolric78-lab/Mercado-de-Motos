@@ -1,6 +1,469 @@
 {
   "tipo_fuente": "compradores",
-  "total_entrevistas": 0,
-  "entrevistas": [],
-  "nota": "Reinicio de entrevistas el 2026-11-04. Se eliminaron las entrevistas anteriores y el material crudo asociado para comenzar un nuevo registro desde cero."
+  "total_entrevistas": 4,
+  "entrevistas": [
+    {
+      "id": "COMPRADOR_001",
+      "fecha": "2026-11-04",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "opiniones_mercado",
+        "uso"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "provincia": "La Habana",
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": false,
+        "razon_preferencia": "Prefiere la combustión por la disponibilidad de combustible, la posibilidad de hacer viajes largos y la mayor vida útil y rentabilidad del motor; la batería eléctrica dura entre 3 y 5 años.",
+        "autonomia_electrica_km": "60-70 km en modelos pequeños; 100-120 km en otros modelos",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "ventajas_combustion": "Disponibilidad de combustible y posibilidad de recorrer largas distancias.",
+        "desventajas_electricas": "Dependencia de la corriente, tiempo de carga de 4 a 8 horas y costo de la batería.",
+        "duracion_bateria": "Con cuidado, la batería dura entre 3 y 5 años; después hay que cambiarla o comprar otra moto.",
+        "autonomia_electrica": "Para ciudad, 60-70 km en modelos pequeños y 100-120 km en otros.",
+        "contaminacion": "Los vehículos de combustión contaminan, pero los considera parte del desarrollo.",
+        "ruido": "Menciona el ruido como un tema que debería regularse; el fragmento no es inteligible.",
+        "experiencia_uso": "Ha hecho viajes largos en moto de combustión sin problemas."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Confirmar si la sesión corresponde a una sola persona o a varias voces.",
+        "Confirmar el vehículo que posee y sus datos de compra.",
+        "Aclarar las cifras de precio del segundo audio (¿2.800 y 1.500 qué representan?).",
+        "Aclarar la opinión exacta sobre el ruido y las regulaciones."
+      ],
+      "observaciones": "3 notas de voz nuevas del 2026-11-04 transcritas con Vosk. Se excluyeron los audios de esta carpeta que duplicaban la sesión antigua. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_001.md",
+      "audio": "data/raw/audios/COMPRADOR_001/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "audio_2026-11-04_10-54-41.ogg",
+          "duracion_s": 36.5,
+          "sha256": "81357db97de26d7fb567c4aa0bf3b444a6482eb81f5dea26604ec17093270d9f"
+        },
+        {
+          "archivo": "audio_2026-11-04_10-58-49.ogg",
+          "duracion_s": 36.8,
+          "sha256": "934f8a6cc9fe6b022ab364843130eb65a4caecdcaaa35525e436ceba7f69721c"
+        },
+        {
+          "archivo": "audio_2026-11-04_11-00-03.ogg",
+          "duracion_s": 37.9,
+          "sha256": "1e9d328f08bbba61883af390f29f56f5b8e8bcc1d19ee13043f10abbf23c4b16"
+        }
+      ],
+      "texto_original": "en presencia de las motos eléctricas realmente no por nada no es justo por ejemplo tú vas una foto las huestes dos mil ochocientos huéspedes cuando te puedas comprar un motor por ejemplo por mil quinientos de una buena primera mano jamás no nos para mí no tienes por lo que te he comentado las demás ocho horas de cacao ya que así es que no modo no modo tú tienes el dinero o tienes el el el combustible la mano y se fue problema enseguida entiende\n\nfue cuatro tener problemas en el sentido de que sabes que eventualmente siendo una persona muy cuidadosa a de la la monotonía te puede durar entre tres y cinco años y ya luego te te te vas a tener que debatir entre cambiar la batería o endereza que tienes para operar el dinero para comprar otra moto orina no como en motor que no es que no sea distinto pero su tiempo de vida útil puede ser mayor mucho mayor además te creo que rentabilidad y en cuanto a utilidad mucho mejor\n\ny amante de los vehículos de combustión por supuesto son agentes contaminantes pero son parte del desarrollo pienso que si se pudiera anhelar al tema el tema del ruido los llamados razón ahora que se le ponen a la modo que si sí para mis hijas con problemas pienso que se le ve que se debería lineal los carpa día de una forma de veces prohibido sin logra",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_002",
+      "fecha": "2026-11-04",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "opiniones_mercado",
+        "uso"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "provincia": "La Habana",
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": "Hasta 200 km en modelos nuevos",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "duracion_bateria": "Entre 2 y 3 años.",
+        "ahorro": "La gente cambia de combustión a eléctrica para ahorrar en gasolina mientras dura la batería.",
+        "autonomia_electrica": "La tecnología mejora y ya se habla de hasta 200 km de autonomía.",
+        "futuro_combustion": "La combustión seguirá siendo relevante; el combustible es una fuente finita y no renovable.",
+        "restricciones": "Relaciona las restricciones con la contaminación y el ruido, que perjudican a las personas.",
+        "precio_valor": "A ese precio valora el ahorro y la inversión; la batería dura unos 3 años.",
+        "comparacion": "La eléctrica es cómoda y evita buscar gasolina."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Confirmar si la sesión corresponde a una o varias personas.",
+        "Confirmar el vehículo que posee y sus datos de compra.",
+        "Aclarar si la batería dura 2-3 años y qué modelo alcanza los 200 km.",
+        "Aclarar la opinión exacta sobre las restricciones de circulación."
+      ],
+      "observaciones": "6 notas de voz nuevas del 2026-11-04 transcritas con Vosk. Se excluyeron los audios de esta carpeta que duplicaban la sesión antigua. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_002.md",
+      "audio": "data/raw/audios/COMPRADOR_002/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "audio_2026-11-04_11-09-07.ogg",
+          "duracion_s": 29.1,
+          "sha256": "1870f267697dc08014a6f7ef3264684561baccea09300136201f15826370381c"
+        },
+        {
+          "archivo": "audio_2026-11-04_11-09-13.ogg",
+          "duracion_s": 37.2,
+          "sha256": "a576c56c361b28b7423d8719a721dd27b342d24750b526aa0bbba3e7da577f89"
+        },
+        {
+          "archivo": "audio_2026-11-04_11-09-18.ogg",
+          "duracion_s": 55.6,
+          "sha256": "21f01f85722162549c6c55352bbeab07008ea602f598c2c878c7617d2f7cd841"
+        },
+        {
+          "archivo": "audio_2026-11-04_11-10-39.ogg",
+          "duracion_s": 30.1,
+          "sha256": "fc0c06c0a98bc5a1745b3d84514bc9774cf22b3c9dd86173763e5d32093f0c24"
+        },
+        {
+          "archivo": "audio_2026-11-04_11-17-17.ogg",
+          "duracion_s": 21.3,
+          "sha256": "d04f5e18db8f2ddbab34728f30bdf9025949620d5dca4db9d7499abe9dd5a126"
+        },
+        {
+          "archivo": "audio_2026-11-04_12-26-06.ogg",
+          "duracion_s": 32.6,
+          "sha256": "ef71204e099d2c99696e5093328ea337575612e83b2cf5e160d6c542c33340df"
+        }
+      ],
+      "texto_original": "la gente cambia de combustión a letrina un tema de ahorra dinero mantener la la entrega mientras dura la batería que se o tres años explotación continúa dinero está ahorrando en gasolina al final almorzar al agua entra y y reparación ideas o entiendo no ser de esa les el relativamente bueno te ahorras dinero veinte pero bueno una cosa a largo plazo\n\nla audacia de un poco lo hemos hecho antes de la soledad brigadas entre la tecnología está mejorando y la batería y varias áreas en doscientos kilómetros de mañana supongo que había es año la gaia de combustible o cosa así lo la moto eléctrica de hacen que sea muy kilómetros metiendo una samba es vera y en cuba donde están haciendo algo lo medio los locales de rabia vamos sacos visible y es así sido bueno supongo la revolución enemiga de resultado sangre\n\nel tema que se la moda combustión base siendo relevante en diez años a la final el la el la hombre siempre agredió logros al en la en la humedales esas cosas meterme en líos que con las escasez habiendo repuso athos mantener un mundo eventualmente combustible siempre mirar atrás de combustibles interior y y cosas así sustituido mencionábamos se improvisando la mayoría sacos modernamente combustible al ser una fuente de mineral la órale nos renovable en del tiempo se agota meter para sofá la creando inventando gracias ha sufrido williams pero se lleva dentro de unos años como útiles suba mucho y no sea rental detenerlo un una combustión un cargo acústicos\n\nel tema es la pregunta cinco qué opina sobre la recibir la restricción a la te vas a de ya hay mucho se del combustible menos dañino a son dañino un tema para want el león de contamina mucho la ciudad la atmósfera de esas cosas mckay todas esas cosas o una un tema de viene de rumbo de años veinte que hubiera perjudica a la a las personas\n\nyo la pregunta ocho yo solo cuando el lugar naturalmente mora de ahora señorita forman el tiempo que les haga nunca han sido inteligente o cuando de de la modo se y para usted\n\nse a ese precio no no montaña una voz a favor del valor de a los otros vehículo y el hotel está la necesidad fundamental en que tenemos nosotros y bueno puede pagar lo mismo al ahorro dinero como si buena inversión en y se quedó was si esta ha en modo iba tras año tengo la derivó en la sociedad sony",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_003",
+      "fecha": "2026-11-04",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "repuestos",
+        "opiniones_mercado",
+        "satisfaccion"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "provincia": "La Habana",
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null
+      },
+      "compra": {
+        "tipo_moto": "Combustión (2T/4T por confirmar)",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": "40 litros al mes = 80 USD (25 km por litro; 2 USD por litro)",
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": "Alta",
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": "Precio elevado de la gasolina y dificultad para adquirirla",
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": false,
+        "razon_preferencia": "La combustión rinde mejor en largas distancias y el motor dura más que una batería eléctrica (2-3 años), por lo que resulta más económico a largo plazo.",
+        "autonomia_electrica_km": "60-120 km según modelo y marca",
+        "percepcion_regulaciones": "Sin restricciones de ningún tipo, salvo tener licencia de conducción",
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": "Mejor rendimiento en largas distancias",
+        "le_gusta_menos": "Precio elevado de la gasolina",
+        "recomendaria": null
+      },
+      "respuestas": {
+        "rendimiento_combustion": "Mejor rendimiento para trasladarse a largas distancias.",
+        "autonomia_moto_propia": "25 km por litro; 40 litros al mes equivalen a 80 USD.",
+        "desventaja_combustion": "El precio elevado de la gasolina.",
+        "comparacion": "El motor de combustión, bien cuidado, dura más y sale más económico que cambiar la batería eléctrica cada 2-3 años.",
+        "restricciones": "No tiene restricciones, salvo no tener licencia de conducción.",
+        "problema_combustible": "Precio disparatado de la gasolina y dificultad para adquirirla.",
+        "autonomia_electrica": "Entre 60 y 120 km por carga según modelo y marca.",
+        "carga": "Carga en el domicilio; ciclos de 3 a 6 horas, dependiendo de si hay electricidad.",
+        "opinion_precios": "No considera justos los precios: las eléctricas se venden más caras que las de combustión.",
+        "duracion_bateria": "2-3 años según los kilómetros; con electricidad no es un problema.",
+        "repuestos": "Hay bastantes piezas y talleres en todos lados.",
+        "mejora_deseada": "Carga más rápida y sin tiempo de reposo antes de volver a usar la moto.",
+        "tipo_moto": "Combustión (2T/4T por confirmar)"
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Confirmar si es una o varias personas y si la moto es propia.",
+        "Aclarar si la moto es 2T o 4T y su marca/modelo.",
+        "Confirmar precio y año de compra."
+      ],
+      "observaciones": "Entrevista recuperada como texto el 2026-11-04 (11 respuestas). No hay audio disponible. Se registran solo las respuestas explícitas.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_003.md",
+      "audio": "",
+      "audio_sha256": null,
+      "audio_partes": [],
+      "texto_original": "1- la moto de combustión tiene mejor rendimiento a la hora de trasladarte a largas distancias\n\n2- depende de la autonomía y el modelo de tu moto, depende el kilometraje del tu moto en relación al litro de gasolina, en mi caso la mía hace 25km por litro, yo gasto 40lt de gasolina en el mes, la gasolina tiene un precio de 2 dólares es decir estaría gastando 80 dólares al mes\n\n3- el único inconveniente que a mi parecer tiene es la gasolina que tiene un precio bastante elevado\n\n4- si porque un motor de combustión te da una garantía de vida más amplia que tener que comprar una batería eléctrica cada 2 o 3 años máximo, un motor de combustión con un buen cuidado y un buen mantenimiento a la larga te va a salir más económico que comprar batería cada cierto tiempo\n\n5- no tiene restricción de ningún tipo, la única restricción es q no tengas licencia\n\n6- el precio disparatado de la gasolina en mi país y lo difícil que es en estos momentos adquirirla\n\n7- todo depende del modelo y la marca de tu moto, hay motos que hacen 60km por carga y otras 120km, depende de tu moto sabes hasta donde puedes llegar pero en general resuelven bastante\n\n8- en mi domicilio, todo depende si en el momento que destino el tiempo para cargar mi moto tengo electricidad, los ciclos de carga oscilan entre 3 y 6 horas\n\n9- no, no son justos ya que venden a un precio más elevado las motos eléctricas que las mismas motos de combustión\n\n10- la duración de la batería no es un problema siempre y cuando tengas electricidad en cambio depende de los kilómetros que hagas a lo largo del tiempo sabes que en 2 o 3 años tienes que cambiar de batería. Por piezas y talleres hay bastantes en todos lados\n\n11- que la batería cargue más rápido sus ciclos de carga y no tener que esperar un tiempo de reposo antes de cargar de moto y utilizarla",
+      "transcripcion_automatica": false,
+      "modelo_transcripcion": null
+    },
+    {
+      "id": "COMPRADOR_004",
+      "fecha": "2026-11-04",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "compra",
+        "uso",
+        "opiniones_mercado",
+        "satisfaccion"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "provincia": "La Habana",
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Mensajería / reparto",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": true,
+        "razon_preferencia": "La gasolina es difícil de conseguir y tiene un precio irregular; teme quedarse sin transporte.",
+        "autonomia_electrica_km": "Hasta 120 km; en la práctica algo menos (entre 100 y 120 km)",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": "Es cómoda",
+        "le_gusta_menos": "El proceso de carga es engorroso",
+        "recomendaria": null
+      },
+      "respuestas": {
+        "motivo_electrico": "Dificultad para conseguir gasolina, precio irregular y riesgo de quedarse sin transporte.",
+        "autonomia": "Declara hasta 120 km; reconoce que en la práctica rinde algo menos.",
+        "uso_trabajo": "La usa para mensajería/reparto; describe el trabajo como extenuante.",
+        "carga": "Carga en casa de su novia cuando no hay electricidad en la suya.",
+        "limitacion": "El proceso de carga le resulta engorroso.",
+        "costos": "No precisa cifras de gasto."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Confirmar marca, modelo y año de la moto.",
+        "Confirmar precio y forma de compra.",
+        "Comprobar la autonomía real y la capacidad de carga.",
+        "Aclarar el costo de la carga y si la moto es su único medio de transporte.",
+        "Aclarar el tipo de trabajo de mensajería y los recorridos diarios."
+      ],
+      "observaciones": "1 nota de voz nueva (157.5 s) del 2026-11-04 transcrita con Vosk. Audio verificado como no duplicado. Transcripción muy ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_004.md",
+      "audio": "data/raw/audios/COMPRADOR_004/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "audio_2026-11-04_11-23-44.ogg",
+          "duracion_s": 157.5,
+          "sha256": "7c09802df402539b20aa92d01f91824ce6b36bd00752af374ddc023d77019c73"
+        }
+      ],
+      "texto_original": "una moto eléctrica aunque gasolina hay que está buscando la gasolina gay siempre es a un precio distinto un irregular y te en naval zona fijar agregó a comprar porque encogió momentos y que no encuentra en sus de quedasen sin transporte y más difícil en cuestión de dinero donde de la moda domingo veo la autonomía de la modo veo compré no hará real a velázquez o casa de modo los una banda que puedan y ciento veinte kilos siempre estaba quedase un poco menos okay vende de la manera en que se usa en que machala lleva y ido ese divo factores entonces siempre hizo un poco menos no no entre cien y ciento giramos a menudo nunca y de ciento veinte la millones ciento veinte pero nunca agregó hecho esa cantidad no comprobado moda programado creo que lo que nos no tengo anunciaban hélices porque es un trabajo ramírez bastante extenuante y además al final en la gallega sino varón por eso y se llevarán lo que tener en una bota cincuenta ver para eso os a trámite de mucho más engorroso que game a lo de la mott y nunca más una estaba lamen tengo no abando tiempo una modo sigue tampoco la nuestra la hombre revolvió con una el eran una vez han realizado por acomodaron a veces conocía me man que vendía modo y es un revolving medidas juliaca le bongo bongo mandado al ama y la modo tiene una hago sabes cómo entran que el timón y lo pongo domingo la nadando menos que huevos y siempre cada día voy porque mi casa no veo mucha alumbró bueno en casa mi novia que si no no había ponen la luz y bueno ahí vocal o menos gaudí jorge luis audiencia aumente va ir nueva fue gusta estuvo bien pero también la usado esa base a mensajería se mundo herido no se domingo no empieza hasta ahora cosas y bueno se debo volcaron a o mao saborea pero bueno mala una pieza a pieza cambiar nunca se marruecos favor y si los abona macetas relativamente book en mi casa nunca ilu pero bueno tengo la decisión de ir más a mi novio gala modo es en cuando y pero cómodas y si me afecta o que tengo está cambiando a luego de la modo y y un poco engorroso",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    }
+  ],
+  "nota": "Entrevistas del 2026-11-04. COMPRADOR_001 y COMPRADOR_002 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }

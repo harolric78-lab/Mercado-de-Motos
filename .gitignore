@@ -53,6 +53,9 @@ credentials.json
 # Audios de entrevistas (privacidad: no se publican)
 data/raw/audios/
 
+# Modelos locales de transcripcion
+modelos/
+
 # Editores / IDE
 .vscode/
 !.vscode/settings.json

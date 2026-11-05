@@ -11,7 +11,7 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 ## 1. Resumen ejecutivo
 
 - El **pipeline cuantitativo está terminado**: scraping de Revolico, limpieza, ETL, validación, métricas, gráficos e informe.
-- El **módulo cualitativo se reinició el 2026-11-04**: se eliminaron las entrevistas anteriores, sus transcripciones y sus audios. No hay entrevistas registradas por ahora.
+- El **módulo cualitativo se reinició el 2026-11-04** y ya incluye **4 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_004`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` se transcribieron con Vosk; `COMPRADOR_003` se recuperó como texto.
 - La transcripción automática disponible es **Vosk** (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este entorno (access violation).
 - El dataset consolidado no se ha vuelto a scrapear desde el **26/10/2026**.
 
@@ -26,7 +26,7 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 | ETL y validación | Terminado | `src/analisis/etl_mercado.py`, `src/verificar_datos.py` |
 | Métricas y gráficos | Terminado | `reports/metricas/`, `reports/graficos/` |
 | Informe | Terminado | `reports/informe_mercado.md` |
-| Entrevistas | Reiniciado | Sin entrevistas registradas; estructuras vacías listas |
+| Entrevistas | En curso | 4 compradores (10 audios nuevos + 1 texto) y 1 importadora (Solimport) |
 | Hand-off | Terminado | Este documento |
 
 ---
@@ -45,14 +45,15 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 - Informe, métricas y 5 gráficos regenerables.
 - Manifiesto con SHA256 de las fuentes: `data/processed/manifiesto.json`.
 - Reinicio del módulo cualitativo: JSON de entrevistas vaciados y material crudo anterior eliminado.
-- Estructura, esquema, cuestionario y scripts de captura/transcripción conservados para el nuevo registro.
+- `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` integradas con los audios nuevos, transcritas con Vosk; `COMPRADOR_003` recuperada como texto; `IMPORTADORA_001` (Solimport) transcrita con Vosk. Se descartaron los audios y carpetas duplicados de la sesión antigua.
+- Estructura, esquema, cuestionario y scripts de captura/transcripción conservados.
 
 ---
 
 ## 4. Qué está pendiente
 
-1. **Registrar las nuevas entrevistas** que aporte el investigador, empezando por compradores.
-2. **Conseguir entrevistas de talleres e importadoras**: sus JSON están vacíos y listos.
+1. **Confirmar en campo las respuestas dudosas** de `COMPRADOR_001` a `COMPRADOR_004` y de `IMPORTADORA_001`: perfiles, vehículos, precios, aranceles y opiniones sobre regulaciones (ver `preguntas_pendientes` en los JSON).
+2. **Conseguir entrevistas de talleres**: su JSON está vacío y listo. La de importadora ya está incorporada.
 3. **Nuevo corte de Revolico**: el dataset no se actualiza desde el 26/10/2026.
 4. **Cierre de commits**: ver la sección 9.
 
@@ -125,7 +126,7 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 - Serie temporal corta (3 capturas); la fuente cuantitativa es un solo portal (Revolico), complementada con entrevistas e instituciones.
 - Sin conversión CUP→USD: los anuncios en CUP quedan fuera de las estadísticas de precio.
 - Clasificación por palabras clave: posibles errores en títulos ambiguos.
-- Evidencia cualitativa reiniciada: sin entrevistas registradas; se conservan 7 fotos.
+- Evidencia cualitativa en curso: 4 entrevistas de compradores, 1 de importadora y 7 fotos.
 
 ---
 
@@ -136,10 +137,10 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | `data/raw/revolico/` | Cortes crudos (JSON/CSV) |
 | `data/processed/anuncios_limpios.*` | Dataset consolidado |
 | `data/processed/manifiesto.json` | Conteos y SHA256 de fuentes |
-| `data/raw/entrevistas/` | Transcripciones de entrevistas (vacío tras el reinicio) |
-| `data/raw/audios/` | Audios (ignorados por Git; vacío tras el reinicio) |
-| `docs/entrevistas/compradores.json` | Entrevistas de compradores normalizadas (vacío) |
-| `docs/entrevistas/talleres.json`, `docs/entrevistas/importadoras.json` | Estructuras vacías documentadas |
+| `data/raw/entrevistas/` | Transcripciones de entrevistas (`COMPRADOR_001.md` a `COMPRADOR_004.md`, `IMPORTADORA_001.md`) |
+| `data/raw/audios/` | Audios (ignorados por Git; `COMPRADOR_001/`, `COMPRADOR_002/`, `COMPRADOR_004/`, `IMPORTADORA_001/`) |
+| `docs/entrevistas/compradores.json` | Entrevistas de compradores normalizadas (`COMPRADOR_001` a `COMPRADOR_004`) |
+| `docs/entrevistas/talleres.json`, `docs/entrevistas/importadoras.json` | Talleres vacío; importadoras con `IMPORTADORA_001` (Solimport) |
 | `docs/journal/README.md` | Bitácora cronológica |
 | `docs/metodologia/` | Decisiones de metodología |
 | `docs/entregables/` | Resúmenes ejecutivos y este hand-off |
@@ -169,4 +170,4 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | 2026-10-31 | Refactor de estructura `data/`, `reports/` y `.venv` |
 | 2026-11-02 | Módulo cualitativo y script de transcripción |
 | 2026-11-03 | Hand-off del proyecto |
-| 2026-11-04 | Reinicio de entrevistas: JSON y material crudo anterior eliminados |
+| 2026-11-04 | Reinicio de entrevistas; `COMPRADOR_001` a `COMPRADOR_003`; incorporación de `COMPRADOR_004` e `IMPORTADORA_001` (Solimport) |

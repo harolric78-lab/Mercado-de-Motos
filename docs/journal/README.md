@@ -86,4 +86,8 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Borrado de entrevistas anteriores:** se vaciaron `compradores.json`, `talleres.json` e `importadoras.json`.
 - **Material crudo eliminado:** las transcripciones de `data/raw/entrevistas/` y los audios de `data/raw/audios/` de las entrevistas anteriores.
 - **Documentación limpiada:** actualizados `docs/entrevistas/README.md`, `README.md`, `explicacion_pipeline.md`, `docs/entregables/HANDOFF.md`, `docs/images/evidencia_campo.md` y este journal; retirados los reportes obsoletos.
-- **Estructura conservada:** `esquema.json`, `cuestionario.json`, `cuestionario.csv`, `guia_entrevista.md` y los scripts de captura/transcripción quedan listos para el nuevo registro desde cero.
+- **Entorno de transcripción:** instalados `vosk` y `av` en `.venv` y descargado `vosk-model-small-es-0.42` en `modelos/` (ignorado por Git).
+- **Nuevas entrevistas:** se revisaron los 21 audios de las cinco carpetas y se descartaron todos los que duplicaban la sesión antigua. Quedaron **9 audios nuevos** en `COMPRADOR_001` y `COMPRADOR_002`. Además se recuperó `COMPRADOR_003` como entrevista en texto (sin audio).
+- **Entrevista 6:** se transcribió `Entrevista de comprador 6` (157,5 s); su audio se verificó como no duplicado y se registró como `COMPRADOR_004`.
+- **Importadora Solimport:** se transcribió la entrevista de 23,6 min y se registró como `IMPORTADORA_001`, con datos de importación, aranceles, formación de precios y demanda.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.

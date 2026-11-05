@@ -124,7 +124,7 @@ La investigación combina datos cuantitativos y cualitativos de tres fuentes que
 
 Las entrevistas y la información de instituciones se usan para interpretar y contextualizar los resultados cuantitativos. No se emplean para estimar volúmenes de ventas ni para sustituir el dataset de anuncios, pero sí son **fuentes de dato con valor propio** dentro del estudio.
 
-> Estado actual: el registro de entrevistas se reinició el **2026-11-04**; no hay entrevistas registradas por ahora. Se conservan la estructura de `docs/entrevistas/` para las nuevas entrevistas, **7 fotografías** de importadoras y tiendas, y la observación de campo. La transcripción automática disponible es Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo.
+> Estado actual: el registro de entrevistas se reinició el **2026-11-04** y ya incluye **4 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_004`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` se transcribieron con Vosk a partir de audios nuevos; `COMPRADOR_003` se recuperó como texto sin audio. Se descartaron los audios que duplicaban la sesión antigua. Se conservan **7 fotografías** de importadoras y tiendas y la observación de campo. La transcripción automática disponible es Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo.
 
 ---
 
