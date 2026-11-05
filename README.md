@@ -92,7 +92,7 @@ El proyecto trabaja con **fuentes de datos complementarias**, que se usan de for
 | Fuente | Tipo de dato | Aporte al estudio |
 |---|---|---|
 | Revolico (La Habana) | Cuantitativa | **6.101 anuncios** en 3 cortes (17, 22 y 26 de octubre de 2026): 1.099 de combustión, 2.201 eléctricas, 2.576 bicicletas eléctricas y 225 patinetes. Aporta precios en USD, marcas, categorías y vistas. |
-| Compradores | Cualitativa | **6 entrevistas** (`COMPRADOR_001` a `COMPRADOR_006`): preferencias entre combustión y eléctrica, gastos, uso, repuestos y percepciones de precio. |
+| Compradores | Cualitativa | **8 entrevistas** (`COMPRADOR_001` a `COMPRADOR_008`): preferencias entre combustión y eléctrica, gastos, uso, repuestos y percepciones de precio. |
 | Importadoras | Cualitativa | **1 entrevista** a Solimport (`IMPORTADORA_001`): catálogo, aranceles, formación de precios, reventa y demanda. |
 | Talleres | Cualitativa | **0 entrevistas registradas**; queda pendiente incorporar evidencia de talleres. |
 | Evidencia de campo | Cualitativa | **7 fotografías** de importadoras y tiendas, y observación directa en La Habana; sin fotografías de talleres. |
@@ -126,7 +126,7 @@ La investigación combina datos cuantitativos y cualitativos de tres fuentes que
 
 Las entrevistas y la información de instituciones o importadoras se usan para interpretar y contextualizar los resultados cuantitativos. No se emplean para estimar volúmenes de ventas ni para sustituir el dataset de anuncios, pero sí son **fuentes de dato con valor propio** dentro del estudio.
 
-> Estado actual: el registro de entrevistas se reinició el **2026-11-04** y ya incluye **6 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_006`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_006` se transcribieron con Vosk a partir de audios nuevos; `COMPRADOR_003` se recuperó como texto sin audio. Se descartaron los audios que duplicaban la sesión antigua. Se conservan **7 fotografías** de importadoras y tiendas y la observación de campo. La transcripción automática disponible es Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo.
+> Estado actual: el registro de entrevistas se reinició el **2026-11-04** y ya incluye **8 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_008`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_008` se transcribieron con Vosk a partir de audios nuevos; `COMPRADOR_003` se recuperó como texto sin audio. Se descartaron los audios que duplicaban la sesión antigua. Se conservan **7 fotografías** de importadoras y tiendas y la observación de campo. La transcripción automática disponible es Vosk (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este equipo.
 
 ---
 

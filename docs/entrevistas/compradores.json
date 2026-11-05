@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "compradores",
-  "total_entrevistas": 6,
+  "total_entrevistas": 8,
   "entrevistas": [
     {
       "id": "COMPRADOR_001",
@@ -680,7 +680,220 @@
       "texto_original": "treinta y ocho años administrados de radio y forma diga y del centro uso uso de modo principio para ir al trabajo para hacerte una una y movemos por la ciudad devoción aumento los del hizo para visitar a los clientes elección elegido un motor eléctrico porque contra la operación es mucho más bajo el modo de la era lo que más peso en su decisión para autonomía y precio la machos bufete secundario el canal la compra través de un conocido que importa vehículos eléctricos la elegí por esta vía poco ofrecido mejor precio y disponibilidad inmediata precio y garantía de aproximadamente dos mil ochocientos dólares incluido con batería adicional casco y nunca de respuestas recibí una durante más de seis más potestad de sus través de su fabricación de jabones la cada dos o tres días completos demora entre seis y ocho horas en el aumento de la casa durante la noche los apagones sean sido un problema porque veces obliga a planifica un mejor rendimiento emprendedora no es una autonomía de ochenta kilómetros pero en condiciones de contratación de setenta kilómetros después de varios años autonomía disminuidas de un quince porciento he tenido algunos fago horas en el controlador y sistema los gastos y batería hasta uno seiscientos horas de funcionamiento y freno sustituciones de componentes menor duda de cambiar el banco de batería abogado es la batería usa la entrega para reciclaje in formal auténtico que se recupera componente sigan dinero y la modo pudiera va a valer las de de mil quinientos once papeles y seguridad tengo lo les eso correspondiente los documentos requeridos nunca recibió una multa relacionado con la documentación para proteger el uso de candado uso candado de dijo hablamos el agua dentro de un garantizar la balance si tuviera que elegir otro mente seguir y optando por eléctrica para su uso diario en la ciudad eco todas las operaciones son muy baja humana mantenimiento es en sí solo elegiría una de gasolina sin asesinar a recoger las das distancia con frecuencia o depende de la disponibilidad de eléctricas para la carta",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_007",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": "La Habana"
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": true,
+        "razon_preferencia": "Prefiere la eléctrica pese a la situación de la electricidad, porque el precio de la gasolina le resulta imposible.",
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "carga": "Carga aproximadamente cada 4 o 5 días y tarda unas 7 horas en completarse.",
+        "apagones": "Está en un circuito que no le afecta tanto cuando el sistema es estable; cuando la situación es crítica también le afecta.",
+        "licencia": "Tiene licencia y no ha sido amonestado.",
+        "mantenimiento": "Hasta ahora no ha cambiado piezas.",
+        "autonomia": "Menciona que la autonomía que le dijo el vendedor ya ha disminuido; la cifra no es inteligible.",
+        "canal_compra": "Menciona una compra a través de un importador, pero el fragmento es confuso."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Confirmar marca, modelo y año de la moto.",
+        "Aclarar la autonomía real: la cifra del audio no es inteligible.",
+        "Confirmar el canal de compra (menciona un importador).",
+        "Aclarar el uso principal y las medidas de seguridad."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (79.5 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_007.md",
+      "audio": "data/raw/audios/COMPRADOR_007/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 8.25.19 AM.ogg",
+          "duracion_s": 79.5,
+          "sha256": "824bd33ef00236b89af2c45ce404627a4e6ca7b76796bb0b911df24e4fe0733d"
+        }
+      ],
+      "texto_original": "prefiero una modo eléctrica antes de gasolina hubo que a pesar de que la situación de la electricidad esta complica quiere gasolina ahora mismo precio que es imposible entonces uno siempre resuelve para botella la autonomía que me dijo vendedor será real era de seis kilómetros ya disminuido en podido momento pero bueno no era no ha sido tanto en o en un y ya van y licencia y tampoco me amonestado ninguna hoy la compra a través de un imputados las medidas de seguridad que como es alhama sigan para modos chango la modo aproximadamente una vez cada cinco días cuatro días y se demora unas siete horas en tomate el de completo utiliza principalmente para tirones para sábado de la para tampoco puede a la escuela hasta ahora no somos ninguna piezas y en cuanto a los apagones gala de venda estoy en un circuito por decir llama y como tal no me afecta tanto cuando sistema la etiqueta estable pero que cuando esa crítica a mí también me quitar la tampoco entonces me afecta en paz",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_008",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": "La Habana"
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": true,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": "El vendedor decía que era real al principio, pero disminuye con el uso.",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "autonomia": "El vendedor decía que era real al principio, pero disminuye con el uso y el tiempo.",
+        "carga": "Normalmente carga cada dos días; tarda en cargarse completa, aunque no precisa el tiempo.",
+        "repuestos": "Compró una goma trasera nueva por aproximadamente 60 USD.",
+        "apagones": "En su zona la electricidad es inestable; recientemente se ha estabilizado un poco.",
+        "licencia": "Tiene chapa y licencia.",
+        "canal_compra": "Menciona un importador o una empresa familiar, pero el fragmento es confuso.",
+        "seguridad": "Menciona un candado o medida de seguridad que no funcionaría; no es claro."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar la preferencia real: el inicio del audio es confuso.",
+        "Confirmar marca, modelo y año de la moto.",
+        "Aclarar el canal de compra (menciona importador/empresa familiar).",
+        "Confirmar la autonomía exacta y el tiempo de carga.",
+        "Aclarar el uso principal y las medidas de seguridad."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (142.6 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_008.md",
+      "audio": "data/raw/audios/COMPRADOR_008/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 7.21.36 AM.ogg",
+          "duracion_s": 142.6,
+          "sha256": "51f3a200b9f215184f725051588a31eabb53724e2732f4f159a202f9daf3a5a8"
+        }
+      ],
+      "texto_original": "en ello prefiero monto de el entregan por el tema este tema de la de la sobrina hormona aquí es muy inestable da la luz se va pero bueno final siempre wagner pues yo lotería del por buenas migas entonce la sobrina bases fluctúa anunciado la a la existencia de precio en fin muy complicado porque depende de muchos factores que no se pueden controlar el final nunca la luz también controlan puedes con el más o menos adonde vasca tocando a que lo debajo la autonomía vendedora principio si era real pero pero a disminuir un poco de uso y tomando todas las materias se gasta con el tiempo si no lo tengo chapa y si tengo licencia me llamó un bar cuatro la compré una importa ahora se podría decir que la vendieron en una empresa familiar hermano y la compra y antiquísimo importador la medida de seguridad tengo la la modo aunque no funciona mandamos cantado cuando tengo tomen de que funciona chakra modo normalmente cada dos días y tarda en cargarse completa yo nunca la he probado tal deje que se compra aproximadamente cinco o utilizó modo principalmente para tampoco sí bueno rodó una pieza no pero si me comprar un gran goma nueva fueron creo que es sesenta dólares dos algo goma trasera y afectando mucho favor en tuve que buscar los medios herirá a la escuela que toda mi zona por aquí donde vives no tenía no tenían no teníamos lugar temores estabilizado poco y ahora vogue pron entonces hasta hace poquito de niebla paga pero ahora ya y antes desde hace de esta hace poquito lo vea que sin problema",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
     }
   ],
-  "nota": "Entrevistas del 2026-11-04. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio y COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Entrevistas del 2026-11-04 y 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05). Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }

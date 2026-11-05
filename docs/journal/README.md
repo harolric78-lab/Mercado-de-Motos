@@ -97,5 +97,7 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 ## 📅 5 de noviembre de 2026 — Continuación de transcripciones
 - **Comprador 5:** se transcribió `Entrevita comprador 5/audio_2026-11-04_12-29-52.ogg` (98,3 s) y se registró como `COMPRADOR_005`.
 - **Comprador 7:** se transcribió `Entrvista comprador 7/WhatsApp Ptt 2026-11-04 at 9.21.14 PM.ogg` (112,8 s) y se registró como `COMPRADOR_006`.
+- **Comprador 8:** se transcribió `Entrevista comprador 8/WhatsApp Ptt 2026-11-05 at 8.25.19 AM.ogg` (79,5 s) y se registró como `COMPRADOR_007`.
+- **Comprador 9:** se transcribió `Entrevista comprador 9/WhatsApp Ptt 2026-11-05 at 7.21.36 AM.ogg` (142,6 s) y se registró como `COMPRADOR_008`.
 - **Duplicado descartado:** el audio de `Entrevista de comprador 6` tiene el mismo SHA256 que `COMPRADOR_004`; no se volvió a transcribir.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.

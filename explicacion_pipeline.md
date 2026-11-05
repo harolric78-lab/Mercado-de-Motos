@@ -235,7 +235,7 @@
 |---|---|---:|---|
 | Talleres | `docs/entrevistas/talleres.json` | 0 | Estructura vacía documentada |
 | Importadoras | `docs/entrevistas/importadoras.json` | 1 (`IMPORTADORA_001`, Solimport) | Transcrita con Vosk el 2026-11-04 |
-| Compradores | `docs/entrevistas/compradores.json` | 6 (`COMPRADOR_001` a `COMPRADOR_006`) | 001-002 y 004-006 con Vosk; 003 recuperada como texto |
+| Compradores | `docs/entrevistas/compradores.json` | 8 (`COMPRADOR_001` a `COMPRADOR_008`) | 001-002 y 004-008 con Vosk; 003 recuperada como texto |
 
 | Campo del esquema | Descripción |
 |---|---|
