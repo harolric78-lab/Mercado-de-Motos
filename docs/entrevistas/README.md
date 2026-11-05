@@ -4,15 +4,15 @@ Este directorio unifica la evidencia cualitativa del proyecto en archivos JSON n
 
 ## Estado actual
 
-El **2026-11-04** se reinició el registro de entrevistas: se eliminaron las entrevistas anteriores, sus transcripciones y sus audios para comenzar desde cero. Se incorporaron cuatro entrevistas de compradores y una de importadora (Solimport).
+El **2026-11-04** se reinició el registro de entrevistas: se eliminaron las entrevistas anteriores, sus transcripciones y sus audios para comenzar desde cero. Se incorporaron seis entrevistas de compradores y una de importadora (Solimport).
 
 | Tipo de fuente | Archivo | Entrevistas |
 |---|---|---:|
-| Compradores | [`compradores.json`](compradores.json) | 4 |
+| Compradores | [`compradores.json`](compradores.json) | 6 |
 | Talleres | [`talleres.json`](talleres.json) | 0 |
 | Importadoras | [`importadoras.json`](importadoras.json) | 1 |
 
-Las entrevistas `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` (2026-11-04) reúnen los audios nuevos de las carpetas de compradores, transcritos con Vosk. `COMPRADOR_003` se recuperó como texto, sin audio. La entrevista `IMPORTADORA_001` corresponde a Solimport y también se transcribió con Vosk. Cada transcripción está en `data/raw/entrevistas/<ID>.md` y los audios en `data/raw/audios/<ID>/`. Se descartaron los audios y carpetas que duplicaban la sesión antigua.
+Las entrevistas `COMPRADOR_001`, `COMPRADOR_002`, `COMPRADOR_004`, `COMPRADOR_005` y `COMPRADOR_006` (2026-11-04) reúnen los audios nuevos de las carpetas de compradores, transcritos con Vosk. `COMPRADOR_003` se recuperó como texto, sin audio. La entrevista `IMPORTADORA_001` corresponde a Solimport y también se transcribió con Vosk. Cada transcripción está en `data/raw/entrevistas/<ID>.md` y los audios en `data/raw/audios/<ID>/`. Se descartaron los audios y carpetas que duplicaban la sesión antigua.
 
 ## Propósito
 

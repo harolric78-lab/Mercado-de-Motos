@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "compradores",
-  "total_entrevistas": 4,
+  "total_entrevistas": 6,
   "entrevistas": [
     {
       "id": "COMPRADOR_001",
@@ -463,7 +463,224 @@
       "texto_original": "una moto eléctrica aunque gasolina hay que está buscando la gasolina gay siempre es a un precio distinto un irregular y te en naval zona fijar agregó a comprar porque encogió momentos y que no encuentra en sus de quedasen sin transporte y más difícil en cuestión de dinero donde de la moda domingo veo la autonomía de la modo veo compré no hará real a velázquez o casa de modo los una banda que puedan y ciento veinte kilos siempre estaba quedase un poco menos okay vende de la manera en que se usa en que machala lleva y ido ese divo factores entonces siempre hizo un poco menos no no entre cien y ciento giramos a menudo nunca y de ciento veinte la millones ciento veinte pero nunca agregó hecho esa cantidad no comprobado moda programado creo que lo que nos no tengo anunciaban hélices porque es un trabajo ramírez bastante extenuante y además al final en la gallega sino varón por eso y se llevarán lo que tener en una bota cincuenta ver para eso os a trámite de mucho más engorroso que game a lo de la mott y nunca más una estaba lamen tengo no abando tiempo una modo sigue tampoco la nuestra la hombre revolvió con una el eran una vez han realizado por acomodaron a veces conocía me man que vendía modo y es un revolving medidas juliaca le bongo bongo mandado al ama y la modo tiene una hago sabes cómo entran que el timón y lo pongo domingo la nadando menos que huevos y siempre cada día voy porque mi casa no veo mucha alumbró bueno en casa mi novia que si no no había ponen la luz y bueno ahí vocal o menos gaudí jorge luis audiencia aumente va ir nueva fue gusta estuvo bien pero también la usado esa base a mensajería se mundo herido no se domingo no empieza hasta ahora cosas y bueno se debo volcaron a o mao saborea pero bueno mala una pieza a pieza cambiar nunca se marruecos favor y si los abona macetas relativamente book en mi casa nunca ilu pero bueno tengo la decisión de ir más a mi novio gala modo es en cuando y pero cómodas y si me afecta o que tengo está cambiando a luego de la modo y y un poco engorroso",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_005",
+      "fecha": "2026-11-04",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "provincia": "La Habana",
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": false,
+        "razon_preferencia": "Prefiere la combustión porque, con gasolina disponible, puede planificar cuándo repostar y seguir circulando; la eléctrica depende de encontrar un lugar con corriente y no permite llevar una batería de repuesto.",
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "ventajas_combustion": "Con gasolina disponible se puede planificar la carga y seguir caminando.",
+        "desventajas_electricas": "Si no hay dónde cargarla en la carretera no se puede avanzar; no admite una batería de repuesto y hay que buscar un lugar con corriente.",
+        "comparacion": "Para su criterio, la combustión es mejor que la eléctrica."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Confirmar si la sesión corresponde a una o varias personas.",
+        "Confirmar el vehículo que posee y sus datos de compra.",
+        "Aclarar las referencias a precios, corriente y medio ambiente, que no son inteligibles en el audio."
+      ],
+      "observaciones": "1 nota de voz nueva (98.3 s) del 2026-11-04 transcrita con Vosk. Audio verificado como no duplicado. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_005.md",
+      "audio": "data/raw/audios/COMPRADOR_005/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "audio_2026-11-04_12-29-52.ogg",
+          "duracion_s": 98.3,
+          "sha256": "761e9bbf84e8cb15adf2ac6ce2123ab9f3a2d027f940089a7605b412a61d7f72"
+        }
+      ],
+      "texto_original": "la facilidad de tiene una modo de combustión interna que si es en un país donde la gasolina este normal como todos los países en cuba tú vas y dudan que sigue caminando tu planifica cuando de combustible la moto eléctrica problema tienen aduanera y si no tienes donde cagarla en la carretera donde la baja gay no pueden anda con una batería de repuesto pues tiene que entrar al a un lugar donde si tan cacao de corriente que te en corriente para usar tu cacao rico cháchara es amén lo particular me gusta más a modo de combustión de gasolina bien lo que ahora la empresa soy un nuevo negocio mundo entero que da mucho dinero o de devuelves dependiente totalmente día un equipo espada y y entonces ahí es donde te apretar o menos carro que te venden sino la cata de la corriente que tú tienes que consumen igual que que consume la la soleil ese medio ambiente pero llevábamos miles de años usando petróleo usando de todo el mundo no ganado así que para mi criterio combustión es maura era que la eléctrica",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_006",
+      "fecha": "2026-11-04",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "perfil",
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado",
+        "satisfaccion"
+      ],
+      "perfil": {
+        "edad": 38,
+        "sexo": null,
+        "municipio": null,
+        "provincia": "La Habana",
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": "USD",
+        "canal_busqueda": "Conocido",
+        "factores_decision": [
+          "Autonomía",
+          "Precio"
+        ],
+        "precio_final": 2800,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Mixto",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": true,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": true,
+        "prefiere_electrica": true,
+        "razon_preferencia": "El costo de operación es mucho menor; elegiría eléctrica para el uso diario en la ciudad y solo optaría por gasolina si necesitara recorrer largas distancias con frecuencia o dependiera de la disponibilidad de eléctricas.",
+        "autonomia_electrica_km": "80 km, aproximadamente 70 km en condiciones reales; tras varios años disminuyó cerca de un 15 %.",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": "El bajo costo de operación en la ciudad.",
+        "le_gusta_menos": "Los apagones, que a veces obligan a planificar la carga.",
+        "recomendaria": null
+      },
+      "respuestas": {
+        "motivo_electrico": "El costo de operación es mucho más bajo; los factores con más peso fueron la autonomía y el precio.",
+        "canal_compra": "A través de un conocido que importa vehículos eléctricos, que ofreció mejor precio y disponibilidad inmediata.",
+        "precio": "Aproximadamente 2.800 USD, incluida batería adicional y casco.",
+        "carga": "Carga cada 2 o 3 días completos; demora entre 6 y 8 horas y la hace en casa durante la noche.",
+        "apagones": "Los apagones han sido un problema porque a veces obligan a planificar la carga.",
+        "autonomia": "Declara 80 km, aunque en condiciones reales unos 70 km; después de varios años la autonomía disminuyó cerca de un 15 %.",
+        "mantenimiento": "Ha tenido fallas en el controlador y el sistema; la batería rinde hasta unas 1.600 horas de funcionamiento; ha cambiado frenos y componentes menores.",
+        "bateria": "Menciona la entrega de la batería usada para reciclaje y la recuperación de componentes.",
+        "documentacion_seguridad": "Tiene los documentos requeridos y nunca recibió una multa relacionada con la documentación; usa candado.",
+        "recompra": "Seguiría eligiendo eléctrica para el uso diario en la ciudad; solo elegiría gasolina si necesitara recorrer largas distancias con frecuencia o dependiera de la disponibilidad de eléctricas."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar la ocupación: el audio menciona algo similar a 'administrador de radio', pero no es inteligible.",
+        "Confirmar marca, modelo y año de compra de la moto.",
+        "Confirmar si la moto es nueva o usada y el desglose de los 2.800 USD.",
+        "Aclarar el valor de reventa que menciona (posiblemente 1.500 USD).",
+        "Confirmar el gasto mensual de electricidad y la disponibilidad de repuestos."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (112.8 s) del 2026-11-04 transcrita con Vosk. Audio verificado como no duplicado. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_006.md",
+      "audio": "data/raw/audios/COMPRADOR_006/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-04 at 9.21.14 PM.ogg",
+          "duracion_s": 112.8,
+          "sha256": "ca1d64a5060b8606408250decc6764b8850abfcde48c673aa750cb9a22596e2e"
+        }
+      ],
+      "texto_original": "treinta y ocho años administrados de radio y forma diga y del centro uso uso de modo principio para ir al trabajo para hacerte una una y movemos por la ciudad devoción aumento los del hizo para visitar a los clientes elección elegido un motor eléctrico porque contra la operación es mucho más bajo el modo de la era lo que más peso en su decisión para autonomía y precio la machos bufete secundario el canal la compra través de un conocido que importa vehículos eléctricos la elegí por esta vía poco ofrecido mejor precio y disponibilidad inmediata precio y garantía de aproximadamente dos mil ochocientos dólares incluido con batería adicional casco y nunca de respuestas recibí una durante más de seis más potestad de sus través de su fabricación de jabones la cada dos o tres días completos demora entre seis y ocho horas en el aumento de la casa durante la noche los apagones sean sido un problema porque veces obliga a planifica un mejor rendimiento emprendedora no es una autonomía de ochenta kilómetros pero en condiciones de contratación de setenta kilómetros después de varios años autonomía disminuidas de un quince porciento he tenido algunos fago horas en el controlador y sistema los gastos y batería hasta uno seiscientos horas de funcionamiento y freno sustituciones de componentes menor duda de cambiar el banco de batería abogado es la batería usa la entrega para reciclaje in formal auténtico que se recupera componente sigan dinero y la modo pudiera va a valer las de de mil quinientos once papeles y seguridad tengo lo les eso correspondiente los documentos requeridos nunca recibió una multa relacionado con la documentación para proteger el uso de candado uso candado de dijo hablamos el agua dentro de un garantizar la balance si tuviera que elegir otro mente seguir y optando por eléctrica para su uso diario en la ciudad eco todas las operaciones son muy baja humana mantenimiento es en sí solo elegiría una de gasolina sin asesinar a recoger las das distancia con frecuencia o depende de la disponibilidad de eléctricas para la carta",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
     }
   ],
-  "nota": "Entrevistas del 2026-11-04. COMPRADOR_001 y COMPRADOR_002 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Entrevistas del 2026-11-04. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio y COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }
