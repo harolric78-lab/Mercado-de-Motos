@@ -147,3 +147,49 @@
 3. Estandarizar moneda y periodo de los gastos (mantenimiento, seguridad, batería).
 4. Medir autonomía y tiempo de carga en condiciones reales.
 5. Incorporar más entrevistas de talleres para consolidar esa fuente.
+
+---
+
+## 7. Anexo: compradores 014-016 (carpetas 15-17)
+
+### COMPRADOR_014 (eléctrica, 208,3 s, audio del 2026-11-04)
+
+- Moto eléctrica comprada a un particular.
+- El vendedor decía **80-100 km** de autonomía; en la práctica obtiene unos **50-69 km**.
+- Menciona unas **8 horas** de carga (fragmento confuso) y usa candado y otras medidas de seguridad.
+- Tiene licencia; menciona una amonestación.
+- La usa principalmente para **mensajería, recados y traslados familiares**.
+- Reporta una avería, cambio de freno y el costo de la batería; las cifras no son claras.
+- Los apagones afectan la carga; a veces carga donde un vecino.
+
+**Lectura:** brecha entre la autonomía prometida y la real, y dependencia de la red eléctrica para operar.
+
+### COMPRADOR_015 (60,8 s)
+
+- Prefiere gasolina.
+- Dice que la autonomía que prometen los vendedores ha ido disminuyendo.
+- Menciona licencia y alguna pieza agarrotada, pero el audio es muy corto y ruidoso.
+
+**Lectura:** refuerza la percepción de autonomía decreciente, aunque el dato es muy limitado.
+
+### COMPRADOR_016 (eléctrica, 206,7 s)
+
+- Prefiere gasolina/motor, pero actualmente usa una eléctrica.
+- Dice que la autonomía ha disminuido con el uso; la anunciada es para un peso y él lleva más carga, por eso le rinde menos.
+- **No tiene chapa ni licencia**; dice que aún no lo ha logrado.
+- La compró a una empresa importadora.
+- Usa candado y medidas de seguridad.
+- Carga cada 1-2 días según la corriente; deja descansar la moto 20 minutos entre usos.
+- Los apagones complican la carga.
+- Sufrió una caída y se le partió una pieza; no la ha reparado.
+- La usa principalmente para trabajitos.
+
+**Lectura:** conecta la preferencia declarada (gasolina) con la práctica (eléctrica) y muestra cómo el peso transportado y los apagones condicionan la autonomía y la carga.
+
+### Lectura del anexo
+
+- Se consolida la tensión entre **preferencia por gasolina** (`015`, `016`) y **uso de eléctrica** (`014`, `016`) por costo y disponibilidad de combustible.
+- La **autonomía real** tiende a ser menor que la prometida: `014` reporta 50-69 km frente a 80-100 km anunciados; `016` atribuye la merma al peso y al uso.
+- La **informalidad** reaparece: `016` no tiene chapa ni licencia.
+- La **carga y los apagones** son una restricción operativa concreta.
+- Coexisten canales de compra: particular (`014`) e importadora (`016`).

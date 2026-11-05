@@ -270,6 +270,92 @@ entries.append(base(
     archivo="WhatsApp Ptt 2026-11-05 at 10.35.11 AM.ogg",
 ))
 
+entries.append(base(
+    "COMPRADOR_014", "2026-11-04", "La Habana, Cuba (por confirmar)",
+    ["compra", "uso", "repuestos", "opiniones_mercado"],
+    compra={"tipo_moto": "Eléctrica", "canal_busqueda": "Particular"},
+    uso={"uso_principal": "Mensajería y recados", "tiene_alarma_candado": True},
+    opiniones={"considero_electrica": True},
+    respuestas={
+        "autonomia": "El vendedor decía 80-100 km; en la práctica obtiene unos 50-69 km.",
+        "carga": "Menciona unas 8 horas de carga; el fragmento es confuso.",
+        "licencia": "Tiene licencia; menciona una amonestación.",
+        "compra": "La compró a un particular.",
+        "seguridad": "Usa candado y otras medidas de seguridad.",
+        "repuestos": "Menciona una avería, cambio de freno y el costo de la batería; las cifras no son claras.",
+        "apagones": "Los apagones afectan la carga; a veces carga donde un vecino.",
+        "uso": "La usa principalmente para mensajería, recados y traslados familiares.",
+    },
+    pendientes=[
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Confirmar el precio y la moneda de compra.",
+        "Confirmar la autonomía real y el tiempo de carga.",
+        "Aclarar la preferencia entre eléctrica y combustión.",
+        "Precisar los costos de batería, frenos y mantenimiento.",
+    ],
+    obs="1 nota de voz de WhatsApp (208.3 s) del 2026-11-04 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+    duracion=208.3,
+    sha="224a6386327c22df697cf64e9caf78ca16cf10879a36606415ccec2eefc5f116",
+    archivo="WhatsApp Ptt 2026-11-04 at 9.22.00 PM.ogg",
+))
+
+entries.append(base(
+    "COMPRADOR_015", "2026-11-05", "La Habana, Cuba (por confirmar)",
+    ["opiniones_mercado", "repuestos"],
+    opiniones={"prefiere_electrica": False, "razon_preferencia": "Prefiere gasolina."},
+    respuestas={
+        "preferencia": "Prefiere gasolina.",
+        "autonomia": "Dice que la autonomía que prometen los vendedores ha ido disminuyendo.",
+        "licencia": "Menciona licencia, pero el fragmento es confuso.",
+        "repuestos": "Menciona alguna pieza agarrotada; no se entiende cuál.",
+    },
+    pendientes=[
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar si tiene moto y de qué tipo.",
+        "Confirmar marca, modelo y año.",
+        "Confirmar la autonomía y el tiempo de carga.",
+        "Aclarar el canal de compra.",
+        "Precisar la pieza y el problema mecánico mencionados.",
+    ],
+    obs="1 nota de voz de WhatsApp (60.8 s) del 2026-11-05 transcrita con Vosk. Audio muy corto y ruidoso: solo se registran respuestas claras.",
+    duracion=60.8,
+    sha="3a6ab25b8fbaabdc1b8d437c1f72fb1894217065264eee2da341a84b185619ae",
+    archivo="WhatsApp Ptt 2026-11-05 at 12.45.40 PM.ogg",
+))
+
+entries.append(base(
+    "COMPRADOR_016", "2026-11-05", "La Habana, Cuba (por confirmar)",
+    ["compra", "uso", "repuestos", "opiniones_mercado"],
+    compra={"tipo_moto": "Eléctrica", "canal_busqueda": "Importadora"},
+    uso={"uso_principal": "Trabajo", "tiene_alarma_candado": True},
+    opiniones={"prefiere_electrica": False,
+               "razon_preferencia": "Prefiere gasolina/motor, pero actualmente usa una eléctrica por la situación."},
+    respuestas={
+        "preferencia": "Prefiere gasolina/motor; actualmente usa una eléctrica.",
+        "autonomia": "Dice que ha disminuido con el uso; la autonomía anunciada es para un peso y él lleva más carga, por eso le rinde menos.",
+        "papeles": "No tiene chapa ni licencia; dice que aún no lo ha logrado.",
+        "compra": "La compró a una empresa importadora.",
+        "seguridad": "Usa candado y medidas de seguridad.",
+        "carga": "Carga cada 1-2 días según la corriente; deja descansar la moto 20 minutos entre usos.",
+        "apagones": "Los apagones complican la carga.",
+        "averias": "Sufrió una caída y se le partió una pieza; no la ha reparado.",
+        "uso": "La usa principalmente para trabajitos.",
+    },
+    pendientes=[
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Confirmar el precio y la moneda de compra.",
+        "Confirmar la autonomía real y el tiempo de carga.",
+        "Aclarar la situación de chapa y licencia.",
+        "Precisar la pieza dañada y su costo de reparación.",
+    ],
+    obs="1 nota de voz de WhatsApp (206.7 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+    duracion=206.7,
+    sha="eac2c51c55a62762779499fe421c3805ada214bbf814fc2f7af85d2cfcf729de",
+    archivo="WhatsApp Ptt 2026-11-05 at 12.49.11 PM.ogg",
+))
+
 taller = base(
     "TALLER_001", "2026-11-05", "La Habana, Cuba (por confirmar)",
     ["opiniones_mercado", "uso", "repuestos"],
@@ -312,7 +398,8 @@ data["nota"] = ("Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRA
                 "COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y "
                 "COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); "
                 "COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen "
-                "audio del 2026-10-23). Se descartaron los audios que duplicaban la sesión antigua. Solo se registran "
+                "audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 "
+                "tiene audio del 2026-11-04). Se descartaron los audios que duplicaban la sesión antigua. Solo se registran "
                 "respuestas claras; lo no inteligible queda en null y en preguntas_pendientes.")
 with open(p, "w", encoding="utf-8", newline="\n") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)

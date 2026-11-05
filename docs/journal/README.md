@@ -111,3 +111,12 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Datos:** se registraron solo respuestas claras; el resto quedó en `null` y en `preguntas_pendientes`.
 - **Análisis:** creado `docs/entrevistas/analisis_lote_2026-11-05.md` con fichas, lectura transversal, contradicciones e implicaciones del lote.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
+
+---
+
+## 📅 5 de noviembre de 2026 - Compradores 15-17
+- **Compradores 15 a 17:** se transcribieron `Entrevistas comprador  15`, `Entrevista de comprador 16` y `Entrevista comprador 17` y se registraron como `COMPRADOR_014`, `COMPRADOR_015` y `COMPRADOR_016` (208,3 s; 60,8 s y 206,7 s). `COMPRADOR_014` tiene audio del 2026-11-04.
+- **Mapeo de carpetas:** 15→014, 16→015 y 17→016.
+- **Datos:** solo respuestas claras; `COMPRADOR_015` es muy corto y ruidoso.
+- **Análisis:** se amplió `docs/entrevistas/analisis_lote_2026-11-05.md` con el anexo de `COMPRADOR_014` a `COMPRADOR_016`.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
