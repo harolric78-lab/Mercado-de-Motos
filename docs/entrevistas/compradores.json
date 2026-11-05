@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "compradores",
-  "total_entrevistas": 17,
+  "total_entrevistas": 23,
   "entrevistas": [
     {
       "id": "COMPRADOR_001",
@@ -1910,7 +1910,642 @@
       "texto_original": "cada código demandando lo por aquí poder hablando lograrían eso deben filas o o no que su edad la historia lo entiende uso para usa tu vehículo londres o un puente personal content para me dieron somos nosotros muy bogado desde antes la lesión poker agite uno eléctrico oklahoma varado lo luego compra una apasionadamente pero aquel tiempo se aroma lo más económico de seguir así como quiera que sea lo más en el no había pruebas eléctrica en y ni modo bicicleta lo de roma como en una modo como quiera que sea ganas dónde la compraste le importa la hipoteca panamá y ve y buque hay tenía la posibilidad visado dni dinero va a esta guía en cuba fueron unos mil seiscientos cuarenta dólares hago de imputación junto a puesto que en cuba bravío que más caro eso fue hace años mantiene precio de garantía la hackeada draghi ha manantial ave de de precio nuevo mundo managua nada pero grado era el equivalente en moneda nacional con unos meses siendo cuarenta más tiempo carga y agua para de amador ahora tu trono once años la tercera batería de la pongamos conservatorio lo gastado en la que más me gustó fue la última hora pasear hace dos años ahorita que me voto novecientos dólares a otra fue se de ciento y creo o algo así y la primera para ganó el amor to a helado primera primeras delirio y está en la época más último y de ese sentido hubo ó treinta y cinco fuera breve la primera las autónoma y setenta y cinco mantenimiento nos muy sea la primera batería grúa y leímos mantenimiento de no fumando y fuego de la seda a gardenias ahí se da una dos romperse edad federal no funcionan tu de va al ciencia house haga tiempo para reponer esa setas que vendían y hace y funcionando bono de óvalo gracias de los jean pero atareado dinero con la otra o no recomendado algo nuevo con tanta cosa accidente prefiero comprar la cosa nueva y dama la preocupación teniendo dinero tan en google no que no se venden no tenga la seguridad y lo favelas y tiene novela primero aduanales puede la circulación se les hago la acaba si tengo licenciada cavado leonora sábado no daniel hombres amat ahora para abordaje la candado la dama que tiene es garaje eso solo la cosa principal okay como tal la situación de usar muy de moda de mucha o saboreado tenga sembrada de nuevo pero pero bueno hay que poner lo más difícil ahora me o cualquier otra vez",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_018",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "perfil",
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": 34,
+        "sexo": null,
+        "municipio": "Diez de Octubre",
+        "ocupacion": "Enfermero",
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": "La Habana"
+      },
+      "compra": {
+        "tipo_moto": "Combustión",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": "Revolico",
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": true,
+        "prefiere_electrica": false,
+        "razon_preferencia": "Eligió una moto de combustión en lugar de una eléctrica; el audio no precisa bien el motivo.",
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "perfil": "Tiene 34 años y es enfermero; se entiende que vive en Diez de Octubre.",
+        "compra": "Compró una moto de combustión por Revolico; menciona unos 2.000 (moneda por confirmar) y que le pareció caro.",
+        "antiguedad": "La compró hace unos dos años.",
+        "autonomia": "Habla de la autonomía y del precio del motor, pero el fragmento es confuso.",
+        "repuestos": "Menciona problemas con piezas, aceite y neumático en dos años.",
+        "uso": "La usa para el trabajo."
+      },
+      "preguntas_pendientes": [
+        "Confirmar el municipio (se entiende Diez de Octubre).",
+        "Confirmar el precio y la moneda.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Precisar la autonomía y el consumo de combustible.",
+        "Aclarar los problemas de piezas, aceite y neumático."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (103.3 s) del 2026-11-05 transcrita con Vosk. Se descartó un audio duplicado de COMPRADOR_007 que estaba en la misma carpeta. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_018.md",
+      "audio": "data/raw/audios/COMPRADOR_018/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 3.02.37 PM.ogg",
+          "duracion_s": 103.3,
+          "sha256": "0fcdbc0c4982ff94d961bb018ca12b85a6c4b455bbead4a6d47b63830a23a511"
+        }
+      ],
+      "texto_original": "de otro modo de queda bien a qué te dedicas en qué municipio hoy treinta y cuatro enfermero y de octubre para que un modo trabajo nos cuenta personal tampoco potter tener que les elegiste una modo de combustible y no una ética o quedamos autonomía que empezamos a sobre precio motor bueno ahora hay varios depende me he leído por ahí me dos mil es una locura llamándola a dónde la compraste en revolví digo del era aún mayor en cuanto a la garantía cuánto va a tener total con cuánto va a enterar por la modelo dos hace dos años edad tenía tenido problema con las piezas a sábado como cuanto agarraban aceite románico el neumático en dos años diego comodidad ante que te rompieran aceite onde de cinco litros y gasolina de es que deben de la autonomía de la del orégano y depende todo depende",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_019",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": "Combustión",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": "Revolico",
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": false,
+        "razon_preferencia": "Prefiere gasolina por rendimiento y kilometraje.",
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "preferencia": "Prefiere una moto de gasolina porque le da mejor rendimiento y kilometraje.",
+        "compra": "La compró por Revolico.",
+        "autonomia": "Menciona la autonomía del vendedor, pero el fragmento no es inteligible.",
+        "carga": "Menciona un tiempo de carga de unas 8 horas; no queda claro.",
+        "averias": "Se le dañó una pieza y la mandó a arreglar.",
+        "uso": "La usa durante todo el día."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Confirmar la autonomía y el consumo.",
+        "Precisar la pieza dañada y el costo de la reparación.",
+        "Aclarar el tiempo de carga mencionado."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (93.2 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_019.md",
+      "audio": "data/raw/audios/COMPRADOR_019/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 3.10.13 PM.ogg",
+          "duracion_s": 93.2,
+          "sha256": "08e4f7fdb5ddccf88ea02770b9686d74dc82e54425ec3acacd108d555e576f01"
+        }
+      ],
+      "texto_original": "brother una motor de gasolina boletería ir okay porque selena rendimiento que kilometraje en mucho mejor y sigue para nuestro país cometemos el equipo que hay algún problema problemas que la autonomía de vendedor era real o ahí abajo para dentro mi novio a causa de la allí dónde la compraste en revolví digo fue o en cuenta ahora entre otras aguanto más de la modo y cuánto tiempo tarda en cargar hasta casa completa muy de plural magaña ocho número veinte kilómetros lenguajes me dice que la mano durante día entero años abajo resolver y américa y se da robado una pieza clave y cuantas gotas arreglado principalmente lo macao se pasó por encima de mí el arte mail el la",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_020",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": "Redes sociales (Facebook)",
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Personal (salidas)",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": true,
+        "razon_preferencia": "Prefiere la eléctrica.",
+        "autonomia_electrica_km": "Dice que la autonomía ha disminuido con el tiempo.",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "preferencia": "Prefiere la eléctrica.",
+        "compra": "La compró por Facebook.",
+        "autonomia": "Dice que la autonomía ha disminuido con el tiempo.",
+        "bateria": "Menciona gastos de batería; no precisa cifras.",
+        "carga": "Menciona la carga y la corriente, pero el tiempo no es claro.",
+        "uso": "La usa principalmente para salir."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Confirmar la autonomía real y el tiempo de carga.",
+        "Precisar los gastos de batería.",
+        "Aclarar el uso principal."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (77.6 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_020.md",
+      "audio": "data/raw/audios/COMPRADOR_020/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 3.13.59 PM.ogg",
+          "duracion_s": 77.6,
+          "sha256": "6d912ce2067040873132337b86bcd644cb3d61dcd640f12246ad8097679873dd"
+        }
+      ],
+      "texto_original": "hubo prefiere una modo de gasolina o eléctrica y buque eléctrica y la autonomía guedeja vendedor era real o a disminuido tiempo las modo se compra un avería pero ya llevan tiempo ya aguanta gastos crear una batería sí bueno en realidad todo lo que dice la batería porque olimpo vaca juega a seguir chicas dónde la compraste entre obligó facebook todo cada cuánto la modo y cuánto tiempo tarda encanta ese completo sigue la corriente materia cuarenta para que utiliza la modo principalmente entrambos habrá salir ver",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_021",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": null,
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "audio": "Audio muy corto y ruidoso; menciona autonomía, compra, carga y una avería, pero sin datos inteligibles."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar preferencia entre gasolina y eléctrica.",
+        "Confirmar marca, modelo y año.",
+        "Aclarar el canal de compra.",
+        "Precisar la autonomía, la carga y la avería mencionadas."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (50.6 s) del 2026-11-05 transcrita con Vosk. Audio muy corto y ruidoso: no se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_021.md",
+      "audio": "data/raw/audios/COMPRADOR_021/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 3.18.24 PM.ogg",
+          "duracion_s": 50.6,
+          "sha256": "5751102c725fd071d69a95e02e74ccdb81108f4ad87b2cd7b80a34162245aa79"
+        }
+      ],
+      "texto_original": "debe formamos gasolina o eléctrica la autonomía de y aprender a real o yo la autonomía vender dónde la compraste robo ligó fue la compra de náufrago perdón rolling cuánto tiempo la gaga al amor eres la luz si la boda sigue habiendo mucha desde abajo días será roda con aviesa o alguna privada relax aumente la promoción del empecemos negativo castigaría normalmente si el la base abordaje la moda de",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_022",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "uso": "La usa principalmente para transporte de trabajo.",
+        "autonomia": "Menciona la autonomía del vendedor, pero el fragmento es confuso.",
+        "carga": "Menciona la carga, sin datos claros.",
+        "averias": "Menciona una avería, pero no es inteligible."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar preferencia entre gasolina y eléctrica.",
+        "Confirmar marca, modelo y año.",
+        "Precisar autonomía, carga y la avería mencionada."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (71.9 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_022.md",
+      "audio": "data/raw/audios/COMPRADOR_022/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 3.29.39 PM.ogg",
+          "duracion_s": 71.9,
+          "sha256": "711b53580cd30a5f529e6966fa0378f33113bc3731c55c3e2924ffb218ccaa33"
+        }
+      ],
+      "texto_original": "venceré modo gasolina o eléctrico la autonomía de dios vendedora real o río la autonomía dicen que vienen vacío los lobos los dónde la compraste go quema y no cada cuánto tiempo gaga osaka la modo y cuánto tiempo tarda en cargarse bomberos ella se no señor cinco celebramos y la nacho vidal el uso balaguer utiliza la mundo principalmente transporte trabajo ese dar rodó alguna aviesa alguna vez si se rompe brasil tafetán mucho las ovejas galas sin problema eléctrico",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "COMPRADOR_023",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "compra",
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": "Importadora",
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": "Panamá",
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": true,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": "Dice que la autonomía ha ido aumentando con el tiempo.",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "compra": "La compró por Panamá (importación).",
+        "autonomia": "Dice que la autonomía ha ido aumentando con el tiempo.",
+        "carga": "Carga la moto por la noche.",
+        "averias": "Menciona una pieza robada o dañada; no es claro.",
+        "apagones": "Menciona que los apagones afectan mucho; fragmento confuso.",
+        "uso": "La usa para el trabajo."
+      },
+      "preguntas_pendientes": [
+        "Confirmar fecha, lugar y perfil del entrevistado.",
+        "Aclarar marca, modelo y año de la moto.",
+        "Confirmar el precio y la moneda.",
+        "Precisar la autonomía real y el tiempo de carga.",
+        "Aclarar la pieza robada/dañada.",
+        "Confirmar el uso principal."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (119.8 s) del 2026-11-05 transcrita con Vosk. Transcripción ruidosa: solo se registran respuestas claras.",
+      "transcripcion": "data/raw/entrevistas/COMPRADOR_023.md",
+      "audio": "data/raw/audios/COMPRADOR_023/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 3.38.28 PM.ogg",
+          "duracion_s": 119.8,
+          "sha256": "bacbd0a495a10c62d6f5a7303a05f7f3845c554c5dfe6f14bf906ed278cd67b3"
+        }
+      ],
+      "texto_original": "ofrecer motor a gasolina o eléctrica y que el estudio jurídico y hace will y villa tuvieron los voy decir hola hola guapa ya no se mueven no aceite en la casa órganos de pelea la batería eso y la carga sea más vicente la modo luego doble azul mismo modo nuestro primer año indigno no tuve gasolinera retirada general de los primeros moto eléctrica largo tubo otras de hace veinte la autonomía gandhi vendedor arreaba la autonomía sigue aprendieron a medida te vamos a hacer la compra panamá la autonomía de los votos ha ido aumentando el tiempo hubiéramos el es una máquina aumentado tomemos motores de trabajo llama cada cuánto tiempo la gaga sacar la modo y contigo yo lo hago por la noche josé sólo quiero se la robado una pieza o alguna vez sí lo que de todas lo mismo afecta mucho lo hago poder chacal la jejeje pero yo tengo si nosotros pero columna tus alumnos no podamos llegar a día en aquel siembras del mundo",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
     }
   ],
-  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 tiene audio del 2026-11-04) y COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Entrevistas del 2026-11-04 al 2026-11-05. COMPRADOR_001, COMPRADOR_002, COMPRADOR_005 y COMPRADOR_006 provienen de audios nuevos transcritos con Vosk; COMPRADOR_003 se recuperó como texto sin audio; COMPRADOR_004 se transcribió a partir de la carpeta 'Entrevista de comprador 6'; COMPRADOR_007 y COMPRADOR_008 corresponden a las carpetas 'Entrevista comprador 8' y 'Entrevista comprador 9' (2026-11-05); COMPRADOR_009 a COMPRADOR_013 corresponden a las carpetas 10 a 14 (COMPRADOR_011 y COMPRADOR_012 tienen audio del 2026-10-23); COMPRADOR_014 a COMPRADOR_016 corresponden a las carpetas 15 a 17 (COMPRADOR_014 tiene audio del 2026-11-04); COMPRADOR_017 corresponde a la carpeta 18, con cuatro audios unidos; COMPRADOR_018 a COMPRADOR_023 corresponden a las carpetas 19 a 24. Se descartaron los audios que duplicaban la sesión antigua. Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }

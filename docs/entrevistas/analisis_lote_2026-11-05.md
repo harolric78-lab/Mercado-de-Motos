@@ -223,3 +223,84 @@
 - Se consolida el **peso de la batería** (`017`: 900 USD por la tercera batería) y la **antigüedad** (11 años).
 - El precio de importación (**~1.640 USD**) es un dato concreto para contrastar con los anuncios de Revolico.
 - `TALLER_002` no aporta datos verificables; la fuente de talleres sigue débil (dos entrevistas, ambas por confirmar).
+
+---
+
+## 9. Anexo: compradores 018-023 y talleres 003-004 (carpetas 19-24 y talleres 3-4)
+
+### COMPRADOR_018 (combustión, 103,3 s)
+
+- Tiene 34 años y es enfermero; se entiende que vive en Diez de Octubre (por confirmar).
+- Compró una moto de combustión por Revolico; menciona unos 2.000 (moneda por confirmar) y que le pareció caro.
+- La compró hace unos dos años.
+- Menciona problemas con piezas, aceite y neumático en dos años.
+
+**Lectura:** compra de combustión usada, con costos de mantenimiento visibles y precio percibido como alto.
+
+### COMPRADOR_019 (combustión, 93,2 s)
+
+- Prefiere una moto de gasolina por rendimiento y kilometraje.
+- La compró por Revolico.
+- Menciona un tiempo de carga de unas 8 horas (fragmento confuso).
+- Se le dañó una pieza y la mandó a arreglar.
+- La usa durante todo el día.
+
+**Lectura:** prioriza rendimiento y kilometraje; el mantenimiento correctivo aparece como parte del uso.
+
+### COMPRADOR_020 (eléctrica, 77,6 s)
+
+- Prefiere la eléctrica.
+- La compró por Facebook.
+- Dice que la autonomía ha disminuido con el tiempo.
+- Menciona gastos de batería.
+- La usa principalmente para salir.
+
+**Lectura:** eléctrica de segunda mano vía redes sociales; la batería se perfila como el costo principal.
+
+### COMPRADOR_021 (50,6 s)
+
+- Audio muy corto y ruidoso; no se registran respuestas claras.
+
+**Lectura:** no aporta datos utilizables.
+
+### COMPRADOR_022 (71,9 s)
+
+- La usa principalmente para transporte de trabajo.
+- Menciona autonomía, carga y una avería, pero el audio no permite precisarlas.
+
+**Lectura:** refuerza el uso laboral, aunque sin datos verificables.
+
+### COMPRADOR_023 (eléctrica, 119,8 s)
+
+- La compró por Panamá (importación).
+- Dice que la autonomía ha ido aumentando con el tiempo.
+- Carga la moto por la noche.
+- Menciona una pieza robada o dañada y que los apagones afectan mucho.
+- La usa para el trabajo.
+
+**Lectura:** percepción positiva de la autonomía con el tiempo; la importación aparece como canal y la carga nocturna como rutina.
+
+### TALLER_003 (39,1 s)
+
+- Usa una eléctrica en este momento y la emplea para el trabajo.
+- El audio es muy corto; no se confirman canal, autonomía ni carga.
+- No se confirma que el entrevistado sea un taller.
+
+**Lectura:** aporta poco por la baja calidad del audio.
+
+### TALLER_004 (80,1 s)
+
+- Dice que la autonomía varía mucho según el peso, la velocidad y las lomas.
+- La usa para transporte de trabajo.
+- Menciona carga, avería y apagones, pero sin datos claros.
+- No se confirma que el entrevistado sea un taller.
+
+**Lectura:** aporta un matiz técnico valioso sobre la variabilidad de la autonomía, aunque la identidad sigue por confirmar.
+
+### Lectura del anexo
+
+- Se amplía la muestra de compradores y se consolida el **uso laboral**.
+- Canales de compra: Revolico (`018`, `019`), Facebook (`020`) e importación por Panamá (`023`).
+- Combustión frente a eléctrica: `018` y `019` eligen combustión por precio/rendimiento; `020` y `023` usan eléctrica.
+- La **autonomía** se percibe de forma divergente: disminuye (`020`), aumenta (`023`) o varía según peso, velocidad y lomas (`TALLER_004`).
+- La fuente de talleres ya tiene cuatro registros, pero ninguno confirma claramente la identidad de taller; sigue siendo la fuente más débil.

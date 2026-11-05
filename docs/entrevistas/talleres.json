@@ -1,6 +1,6 @@
 {
   "tipo_fuente": "talleres",
-  "total_entrevistas": 2,
+  "total_entrevistas": 4,
   "entrevistas": [
     {
       "id": "TALLER_001",
@@ -215,7 +215,219 @@
       "texto_original": "veintiún años uso del trabajo a la habana el trabajo y el ay si mundo rico la fragata convenga por un el contador boca ebay sale más barata hay quinientos sedentaria la mona de west será la corriente sigue la canturreando guía cuadro en candeal grupo no nunca maniobra obrero mundial un fondo blanco si la autonomía en la misma no no no tenido nunca batería la materia usábamos falta más contra las cuerdas siento con él si de índole okay okay nos de acción candado sí a la gente eléctrica balanza electric la esta garantía",
       "transcripcion_automatica": true,
       "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "TALLER_003",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "compra",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": "Eléctrica",
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": null,
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "uso": "La usa para el trabajo.",
+        "compra": "Menciona el canal de compra, pero no es inteligible.",
+        "autonomia": "Menciona la autonomía del vendedor, sin datos claros.",
+        "carga": "Menciona la carga, sin datos claros.",
+        "taller": "El audio no permite confirmar el tipo de taller ni los servicios que ofrece."
+      },
+      "preguntas_pendientes": [
+        "Confirmar perfil del entrevistado y tipo de taller.",
+        "Confirmar fecha y lugar de la entrevista.",
+        "Aclarar el canal de compra.",
+        "Precisar autonomía y tiempo de carga.",
+        "Aclarar si la entrevista corresponde a un taller."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (39.1 s) del 2026-11-05 transcrita con Vosk. Audio muy corto y ruidoso; el contenido se asigna a taller por la carpeta de origen, pero no se confirma.",
+      "transcripcion": "data/raw/entrevistas/TALLER_003.md",
+      "audio": "data/raw/audios/TALLER_003/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 3.17.19 PM.ogg",
+          "duracion_s": 39.1,
+          "sha256": "eb6c773c35719d80cd572a7ce3941c423590f3670600055e5c77d7bd267faea4"
+        }
+      ],
+      "texto_original": "ofreceré una modo gasolina o eléctrica y boca en este momento una letra realmente como la autonomía de vendedor era real o algo menudo cuando la obrera la vida dónde la compraste en robo ligó fuego por remolino cuánto tiempo la gaga tálamo momento votre a día de andalucía iba a la gala utiliza méndez una photograph trabajo life clamó al en la pregunta muchacho",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
+    },
+    {
+      "id": "TALLER_004",
+      "fecha": "2026-11-05",
+      "ubicacion": "La Habana, Cuba (por confirmar)",
+      "entrevistado": "",
+      "cargo": "",
+      "consentimiento": null,
+      "temas": [
+        "uso",
+        "repuestos",
+        "opiniones_mercado"
+      ],
+      "perfil": {
+        "edad": null,
+        "sexo": null,
+        "municipio": null,
+        "ocupacion": null,
+        "recibe_remesas": null,
+        "familiar_exterior": null,
+        "rango_ingreso_mensual": null,
+        "remesas_frecuencia": null,
+        "provincia": null
+      },
+      "compra": {
+        "tipo_moto": null,
+        "marca_buscada": null,
+        "modelo_buscado": null,
+        "presupuesto_inicial": null,
+        "moneda": null,
+        "canal_busqueda": null,
+        "factores_decision": null,
+        "precio_final": null,
+        "anio_compra": null,
+        "importadora_origen": null,
+        "entrega_domicilio": null,
+        "comprada_nueva": null
+      },
+      "uso": {
+        "uso_principal": "Trabajo",
+        "km_diarios": null,
+        "unico_medio_transporte": null,
+        "gasto_combustible": null,
+        "gasto_mantenimiento": null,
+        "gasto_mantenimiento_periodo": null,
+        "gasto_seguridad": null,
+        "tiene_alarma_candado": null,
+        "problemas_repuestos": null,
+        "kilometraje_actual": null,
+        "lugar_trabajo": null,
+        "porcentaje_uso_trabajo": null
+      },
+      "repuestos": {
+        "disponibilidad": null,
+        "tiempo_conseguir": null,
+        "dificiles_conseguir": [],
+        "precios_repuestos": null
+      },
+      "opiniones_mercado": {
+        "comportamiento_precios": null,
+        "variacion_precios_ultimo_anio": null,
+        "influencia_precio": null,
+        "tipo_mercado": null,
+        "considero_electrica": null,
+        "prefiere_electrica": null,
+        "razon_preferencia": null,
+        "autonomia_electrica_km": "La autonomía varía mucho según el peso, la velocidad y las lomas.",
+        "percepcion_regulaciones": null,
+        "marcas_mas_vendidas": null,
+        "rango_precio_modelo_mas_vendido": null,
+        "motos_electricas_demanda": null
+      },
+      "satisfaccion": {
+        "le_gusta_mas": null,
+        "le_gusta_menos": null,
+        "recomendaria": null
+      },
+      "respuestas": {
+        "autonomia": "La autonomía varía mucho según el peso, la velocidad y las lomas.",
+        "carga": "Menciona un tiempo de carga, pero la cifra no es clara.",
+        "averias": "Menciona una avería; no es inteligible.",
+        "apagones": "Menciona que los apagones afectan mucho; fragmento confuso.",
+        "uso": "La usa para transporte de trabajo.",
+        "taller": "El audio no permite confirmar el tipo de taller ni los servicios que ofrece."
+      },
+      "preguntas_pendientes": [
+        "Confirmar perfil del entrevistado y tipo de taller.",
+        "Confirmar fecha y lugar de la entrevista.",
+        "Aclarar la preferencia entre gasolina y eléctrica.",
+        "Precisar el tiempo de carga y la avería.",
+        "Aclarar si la entrevista corresponde a un taller."
+      ],
+      "observaciones": "1 nota de voz de WhatsApp (80.1 s) del 2026-11-05 transcrita con Vosk. El contenido se asigna a taller por la carpeta de origen, pero no se confirma que el entrevistado sea un taller.",
+      "transcripcion": "data/raw/entrevistas/TALLER_004.md",
+      "audio": "data/raw/audios/TALLER_004/",
+      "audio_sha256": null,
+      "audio_partes": [
+        {
+          "archivo": "WhatsApp Ptt 2026-11-05 at 3.19.52 PM.ogg",
+          "duracion_s": 80.1,
+          "sha256": "c640499314187a0e09240c325999fd60750a2f0fea9f8f4a162894afaaa224de"
+        }
+      ],
+      "texto_original": "ofrecer una boda gasolina o eléctrica mucho más como para promover la autonomía de vendedores real tiempo la autonomía varía mucho la economía varía dependiendo de el peso de la pongas a modo la velocidad a la que va de las loma lombok muy variable cada cuánto acá la modo de y cuánto tiempo dura la retaguardia la entidad no tenga la posibilidad de que la todos los días cuánto dura que o menos cuánto dura cuánto tiempo tarda en cargar la modo completo para o nunca la más de setenta llama art para que utiliza la modo visualmente transporte de trabajo un servidor agua o caldo en el mismo será rodó alguna vez alguna y como toda la ser juan cuadros en principio economías afecta esto afecta mucho lavado imagen web",
+      "transcripcion_automatica": true,
+      "modelo_transcripcion": "vosk-model-small-es-0.42"
     }
   ],
-  "nota": "Reinicio de entrevistas el 2026-11-04. TALLER_001 corresponde a la carpeta 'Entrevistas de taller 1' y TALLER_002 a 'Entrevista de taller 2' (audios del 2026-11-05). Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
+  "nota": "Reinicio de entrevistas el 2026-11-04. TALLER_001 y TALLER_002 corresponden a las carpetas 'Entrevistas de taller 1' y 'Entrevista de taller 2'; TALLER_003 y TALLER_004 a 'Entrevista taller 3' y 'Entrevista taller 4' (audios del 2026-11-05). Solo se registran respuestas claras; lo no inteligible queda en null y en preguntas_pendientes."
 }

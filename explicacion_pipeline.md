@@ -233,9 +233,9 @@
 
 | Fuente | Archivo | Entrevistas reales | Estado |
 |---|---|---:|---|
-| Talleres | `docs/entrevistas/talleres.json` | 2 (`TALLER_001`, `TALLER_002`) | Transcritas con Vosk el 2026-11-05; contenido por confirmar |
+| Talleres | `docs/entrevistas/talleres.json` | 4 (`TALLER_001` a `TALLER_004`) | Transcritas con Vosk el 2026-11-05; contenido por confirmar |
 | Importadoras | `docs/entrevistas/importadoras.json` | 1 (`IMPORTADORA_001`, Solimport) | Transcrita con Vosk el 2026-11-04 |
-| Compradores | `docs/entrevistas/compradores.json` | 17 (`COMPRADOR_001` a `COMPRADOR_017`) | 001-002 y 004-017 con Vosk; 003 recuperada como texto |
+| Compradores | `docs/entrevistas/compradores.json` | 23 (`COMPRADOR_001` a `COMPRADOR_023`) | 001-002 y 004-023 con Vosk; 003 recuperada como texto |
 
 | Campo del esquema | Descripción |
 |---|---|
