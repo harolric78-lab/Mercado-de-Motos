@@ -97,7 +97,7 @@ El proyecto trabaja con **fuentes de datos complementarias**, que se usan de for
 | Talleres | Cualitativa | **4 entrevistas** (`TALLER_001` a `TALLER_004`): preferencia gasolina/eléctrica, autonomía, repuestos y uso. |
 | Evidencia de campo | Cualitativa | **7 fotografías** de importadoras y tiendas, y observación directa en La Habana; sin fotografías de talleres. |
 
-Los anuncios de Revolico se publican como dataset analizable en [`data/processed/`](data/processed/). Las entrevistas y la información de instituciones o importadoras se documentan en [`docs/entrevistas/`](docs/entrevistas/), [`docs/images/`](docs/images/) y [`docs/journal.md`](docs/journal.md) para cuidar la privacidad y dejar rastro de la fuente.
+Los anuncios de Revolico se publican como dataset analizable en [`data/processed/`](data/processed/). Las entrevistas y la información de instituciones o importadoras se documentan en [`docs/entrevistas/`](docs/entrevistas/), [`docs/images/`](docs/images/) y [`journal.md`](../journal.md) para cuidar la privacidad y dejar rastro de la fuente. El hand-off y el journal viven en la raíz del proyecto, fuera de este repositorio.
 
 ---
 
@@ -122,7 +122,7 @@ La investigación combina datos cuantitativos y cualitativos de tres fuentes que
 
 - Entrevista a **Solimport** (`IMPORTADORA_001`): catálogo, aranceles, costos de importación, formación de precios, reventa y demanda.
 - Aporta contexto sobre oferta formal, precios, tributos y prácticas comerciales.
-- Se documenta en [`docs/entrevistas/`](docs/entrevistas/), [`docs/images/`](docs/images/) (7 fotografías) y [`docs/journal.md`](docs/journal.md).
+- Se documenta en [`docs/entrevistas/`](docs/entrevistas/), [`docs/images/`](docs/images/) (7 fotografías) y [`journal.md`](../journal.md).
 
 Las entrevistas y la información de instituciones o importadoras se usan para interpretar y contextualizar los resultados cuantitativos. No se emplean para estimar volúmenes de ventas ni para sustituir el dataset de anuncios, pero sí son **fuentes de dato con valor propio** dentro del estudio.
 

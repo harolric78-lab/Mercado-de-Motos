@@ -82,4 +82,4 @@ Registrar `consentimiento: true` solo si la respuesta es afirmativa. Si no autor
 1. Normalizar en `docs/entrevistas/<tipo>.json` con el esquema [`esquema.json`](esquema.json).
 2. Guardar la transcripción en `data/raw/entrevistas/<ID>.md` y el audio en `data/raw/audios/`.
 3. Anotar en `preguntas_pendientes` todo lo que quedó sin responder.
-4. Añadir la fecha y las fuentes al `docs/journal.md`.
+4. Añadir la fecha y las fuentes al `journal.md` (raíz del proyecto, fuera del repositorio).

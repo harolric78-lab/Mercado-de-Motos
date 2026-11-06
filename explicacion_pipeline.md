@@ -262,7 +262,7 @@
 | Separación | Rutas |
 |---|---|
 | Cuantitativo | `data/raw/`, `data/processed/` |
-| Cualitativo | `docs/entrevistas/`, `docs/images/`, `docs/journal.md` |
+| Cualitativo | `docs/entrevistas/`, `docs/images/`, `../journal.md` |
 
 ---
 

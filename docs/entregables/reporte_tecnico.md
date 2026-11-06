@@ -27,7 +27,7 @@
 4. Detección de duplicados por hash (dentro de la fuente y contra el archivo ya procesado).
 5. Normalización en `docs/entrevistas/compradores.json`, `talleres.json` e `importadoras.json`.
 6. Registro de solo respuestas explícitas; lo no inteligible queda en `null` y en `preguntas_pendientes`.
-7. Actualización de `README.md`, `explicacion_pipeline.md`, `docs/entrevistas/README.md`, `docs/entregables/HANDOFF.md`, `docs/journal.md` y del análisis cualitativo.
+7. Actualización de `README.md`, `explicacion_pipeline.md`, `docs/entrevistas/README.md`, `HANDOFF.md`, `journal.md` (raíz del proyecto, fuera del repositorio) y del análisis cualitativo.
 8. Validación de JSON, dataset, pruebas y compilación.
 
 En los campos normalizados solo se registran respuestas; las preguntas del entrevistador permanecen únicamente en la transcripción bruta.
@@ -87,8 +87,8 @@ Fechas: 2 audios del 2026-10-23, 1 sesión del 2026-10-28 (texto), y el resto de
 - `docs/entrevistas/importadoras.json`
 - `docs/entrevistas/README.md`
 - `docs/entrevistas/analisis_lote_2026-11-05.md`
-- `docs/entregables/HANDOFF.md`
-- `docs/journal.md`
+- `HANDOFF.md` (raíz del proyecto, fuera del repositorio)
+- `journal.md` (raíz del proyecto, fuera del repositorio)
 - `data/raw/entrevistas/comprador_002.md`
 
 **Creados:**
