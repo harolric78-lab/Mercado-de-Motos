@@ -176,3 +176,13 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Ubicación final:** `journal/journal.md` y `handoff/HANDOFF.md`.
 - **Referencias:** actualizados `README.md`, `explicacion_pipeline.md`, `docs/entrevistas/guia_entrevista.md`, `docs/entregables/README.md`, `docs/entregables/reporte_tecnico.md` y el propio hand-off.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
+
+---
+
+## 📅 6 de noviembre de 2026 - Storytelling del mercado
+- **Documento:** se creó `docs/entregables/storytelling_mercado.md`, un relato en 9 capítulos que cruza los 6.101 anuncios con las 30 entrevistas.
+- **Estructura:** prólogo, composición de la oferta, precios, marcas, vistas, vida cotidiana, batería, papeles/importación, talleres, escenarios de futuro y epílogo de límites.
+- **Aportes:** personajes basados en entrevistas reales (`COMPRADOR_012`, `014`, `017`, `018`, `025` e `IMPORTADORA_001`), cifras con fuente, escenarios A/B, anexo de datos y guion breve de 7 láminas.
+- **Regla:** no se añadieron datos fuera de las fuentes del proyecto; las cifras por confirmar se mantienen señaladas.
+- **Documentación:** actualizados `docs/entregables/README.md` y el hand-off.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.

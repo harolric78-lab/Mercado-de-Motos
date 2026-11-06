@@ -50,6 +50,7 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 - `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_024` integradas con los audios nuevos, transcritas con Vosk; `COMPRADOR_003` y `COMPRADOR_025` recuperadas como texto; `TALLER_001` a `TALLER_004` integradas desde las carpetas de taller; `IMPORTADORA_001` (Solimport) transcrita con Vosk. Se descartaron los audios y carpetas duplicados de la sesión antigua (incluido un audio de `COMPRADOR_007` repetido en la carpeta 19).
 - Estructura, esquema, cuestionario y scripts de captura/transcripción conservados.
 - Documento `docs/entregables/como_responde_el_proyecto.md`, que mapea las 30 preguntas de `preguntas.txt` contra el dataset, las entrevistas y los informes, indicando cobertura (🟢/🟡/🔴), límites y brechas.
+- Documento `docs/entregables/storytelling_mercado.md`: relato en 9 capítulos con cifras del dataset, personajes de las entrevistas, escenarios de futuro, límites y guion de presentación.
 
 ---
 
@@ -151,6 +152,7 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | `handoff/HANDOFF.md` | Este documento |
 | `docs/entregables/preguntas.txt` | Las 30 preguntas de investigación |
 | `docs/entregables/como_responde_el_proyecto.md` | Cobertura de las 30 preguntas: evidencia, límites y brechas |
+| `docs/entregables/storytelling_mercado.md` | Relato del mercado con datos, personajes, escenarios y guion de presentación |
 | `docs/entregables/reporte_tecnico.md` | Reporte técnico del procesamiento de entrevistas |
 | `docs/metodologia/` | Decisiones de metodología |
 | `docs/entregables/` | Resúmenes ejecutivos, preguntas y reporte técnico |
@@ -189,3 +191,4 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | 2026-11-05 | Transcripción de `COMPRADOR_024`; total: 24 compradores, 4 talleres y 1 importadora |
 | 2026-11-05 | `COMPRADOR_025` integrada desde texto (sin audio); total: 25 compradores, 4 talleres y 1 importadora |
 | 2026-11-05 | Creado `docs/entregables/como_responde_el_proyecto.md` con la cobertura de las 30 preguntas (4 🟢, 17 🟡, 9 🔴) |
+| 2026-11-06 | Creado `docs/entregables/storytelling_mercado.md` con el relato del mercado y guion de presentación |
