@@ -4,7 +4,7 @@
 **Proyecto:** Análisis del Mercado de Motos en La Habana (Introducción a la Ciencia de los Datos)
 **Repositorio:** `Mercado-de-Motos` (repositorio Git anidado dentro de `Proyecto de ICD Motos en cuba (2)`)
 
-Este documento resume el estado real del proyecto para que otra persona pueda continuar sin contexto previo. No sustituye al `README.md` ni al `journal.md`; los complementa. Tanto este hand-off como `journal.md` viven en la raíz del repositorio `Mercado-de-Motos`.
+Este documento resume el estado real del proyecto para que otra persona pueda continuar sin contexto previo. No sustituye al `README.md` ni al `journal/journal.md`; los complementa. Este hand-off vive en `handoff/HANDOFF.md` y el journal en `journal/journal.md`, dentro del repositorio `Mercado-de-Motos`.
 
 ---
 
@@ -147,8 +147,8 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | `data/raw/audios/` | Audios (ignorados por Git; `COMPRADOR_001/`, `COMPRADOR_002/`, `COMPRADOR_004/` a `COMPRADOR_024/`, `TALLER_001/` a `TALLER_004/`, `IMPORTADORA_001/`) |
 | `docs/entrevistas/compradores.json` | Entrevistas de compradores normalizadas (`COMPRADOR_001` a `COMPRADOR_025`) |
 | `docs/entrevistas/talleres.json`, `docs/entrevistas/importadoras.json` | Talleres con `TALLER_001` a `TALLER_004`; importadoras con `IMPORTADORA_001` (Solimport) |
-| `journal.md` (raíz del repo) | Bitácora cronológica |
-| `HANDOFF.md` (raíz del repo) | Este documento |
+| `journal/journal.md` | Bitácora cronológica |
+| `handoff/HANDOFF.md` | Este documento |
 | `docs/entregables/preguntas.txt` | Las 30 preguntas de investigación |
 | `docs/entregables/como_responde_el_proyecto.md` | Cobertura de las 30 preguntas: evidencia, límites y brechas |
 | `docs/entregables/reporte_tecnico.md` | Reporte técnico del procesamiento de entrevistas |

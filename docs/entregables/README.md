@@ -5,7 +5,7 @@ Documentos y material de entrega del proyecto: resúmenes ejecutivos, resultados
 ## Documentos
 
 - [`resumen_ejecutivo_20261028.md`](resumen_ejecutivo_20261028.md) — cifras clave y hallazgos.
-- [`HANDOFF.md`](../../HANDOFF.md) — estado del proyecto, pendientes y comandos de reproducción (en la raíz del repositorio).
+- [`HANDOFF.md`](../../handoff/HANDOFF.md) — estado del proyecto, pendientes y comandos de reproducción.
 - [`reporte_tecnico.md`](reporte_tecnico.md) — procesamiento de entrevistas: inventario, transcripción, duplicados y validación.
 - [`Reporte_Tecnico_Proyecto_Mercado_Motos.pdf`](Reporte_Tecnico_Proyecto_Mercado_Motos.pdf) — reporte técnico detallado del proyecto (documento oficial de entrega).
 - [`Informe_Proyecto_Mercado_Motos.pdf`](Informe_Proyecto_Mercado_Motos.pdf) — informe de lectura para el profesor y el público del proyecto.

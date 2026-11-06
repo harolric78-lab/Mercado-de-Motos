@@ -166,5 +166,13 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Resultado:** 4 preguntas resueltas con datos (4, 8, 9 y 27), 17 parciales o solo cualitativas (1, 2, 3, 6, 10, 12, 13, 15, 16, 18, 19, 24, 25, 26, 28, 29 y 30) y 9 pendientes (5, 7, 11, 14, 17, 20, 21, 22 y 23).
 - **Brechas identificadas:** municipio/zona, condición nueva/usada, país de importación, muestra de remesas, verificación de aranceles, módulo de repuestos y nuevo corte de Revolico.
 - **Documentación:** actualizados `docs/entregables/README.md`, el hand-off y esta bitácora.
-- **Ubicación:** `HANDOFF.md` y `journal.md` se movieron a la raíz del repositorio `Mercado-de-Motos`, junto a las demás carpetas del proyecto.
+- **Ubicación:** `HANDOFF.md` y `journal.md` se movieron a la raíz del repositorio `Mercado-de-Motos`.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
+
+---
+
+## 📅 5 de noviembre de 2026 - Carpetas `journal/` y `handoff/`
+- **Organización:** se crearon las carpetas `journal/` y `handoff/` en la raíz del repositorio.
+- **Ubicación final:** `journal/journal.md` y `handoff/HANDOFF.md`.
+- **Referencias:** actualizados `README.md`, `explicacion_pipeline.md`, `docs/entrevistas/guia_entrevista.md`, `docs/entregables/README.md`, `docs/entregables/reporte_tecnico.md` y el propio hand-off.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
