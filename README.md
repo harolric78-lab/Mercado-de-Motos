@@ -430,3 +430,13 @@ De las 30 preguntas de investigación, 26 tienen al menos una respuesta parcial 
 Este proyecto se distribuye bajo la licencia **MIT**.
 
 Consulta el archivo [`LICENSE`](LICENSE) para más información.
+
+---
+
+## Entregables PDF
+
+| Documento | Abrir en el navegador | Descargar |
+|---|---|---|
+| Informe del proyecto | [Abrir PDF](https://raw.githack.com/harolric78-lab/Mercado-de-Motos/master/Informe_Proyecto_Mercado_Motos.pdf) | [Descargar](https://raw.githubusercontent.com/harolric78-lab/Mercado-de-Motos/master/Informe_Proyecto_Mercado_Motos.pdf) |
+| Reporte t?cnico | [Abrir PDF](https://raw.githack.com/harolric78-lab/Mercado-de-Motos/master/Reporte_Tecnico_Proyecto_Mercado_Motos.pdf) | [Descargar](https://raw.githubusercontent.com/harolric78-lab/Mercado-de-Motos/master/Reporte_Tecnico_Proyecto_Mercado_Motos.pdf) |
+| Presentaci?n visual | [Abrir PDF](https://raw.githack.com/harolric78-lab/Mercado-de-Motos/master/Presentacion_Visual.pdf) | [Descargar](https://raw.githubusercontent.com/harolric78-lab/Mercado-de-Motos/master/Presentacion_Visual.pdf) |
