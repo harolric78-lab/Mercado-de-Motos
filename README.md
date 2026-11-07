@@ -1,6 +1,6 @@
 # 🏍️ Análisis del Mercado de Motos en Cuba
 
-Proyecto de análisis de datos sobre la oferta publicada de vehículos ligeros en La Habana, desarrollado para la asignatura **Introducción a la Ciencia de los Datos**. Integra recolección automatizada, limpieza, análisis exploratorio y generación reproducible de reportes.
+Proyecto de análisis de datos sobre la oferta publicada de vehículos ligeros en La Habana, desarrollado para la asignatura **Introducción a la Ciencia de los Datos**. Integra recolección automatizada, limpieza, ETL, análisis exploratorio y generación reproducible de reportes.
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
@@ -15,12 +15,9 @@ La movilidad urbana constituye uno de los principales desafíos para la poblaci�
 
 Este proyecto utiliza anuncios publicados en Revolico para estudiar las características del mercado de:
 
-- Motos de combustión
-- Motos eléctricas
-- Bicicletas eléctricas (incluye bicimotos)
-- Patinetes
-
-La categoría `bicicletas_electricas` se conserva porque agrupa los anuncios de bicimotos, que en la práctica compiten directamente con las motos eléctricas. Su tratamiento se detalla en [`docs/metodologia/DECISIONES_ARQUITECTURA.md`](docs/metodologia/DECISIONES_ARQUITECTURA.md).
+- **Motos de combustión**
+- **Motos eléctricas**
+- **Patinetes eléctricos**
 
 Además, el estudio se complementa con observaciones de campo, entrevistas y visitas a talleres e importadoras para contextualizar los resultados obtenidos.
 
@@ -30,13 +27,13 @@ Los hallazgos permiten identificar patrones de oferta, comportamiento de precios
 
 ## 🎯 Objetivo General
 
-Analizar la oferta de motos de combustión, motos eléctricas, bicicletas eléctricas y patinetes anunciados en La Habana mediante técnicas de recopilación, procesamiento y análisis de datos, con el propósito de identificar patrones de precios, composición del mercado y tendencias relevantes.
+Analizar la oferta de motos de combustión, motos eléctricas y patinetes eléctricos anunciados en La Habana mediante técnicas de recopilación, procesamiento y análisis de datos, con el propósito de identificar patrones de precios, composición del mercado y tendencias relevantes.
 
 ---
 
 ## 🎯 Objetivo Principal
 
-Analizar el mercado de **motos de combustión**, **motos eléctricas**, **bicicletas eléctricas** y **patinetes** en La Habana para comprender:
+Analizar el mercado de **motos de combustión**, **motos eléctricas** y **patinetes eléctricos** en La Habana para comprender:
 
 - la composición del mercado;
 - el comportamiento de los precios;
@@ -47,12 +44,20 @@ Analizar el mercado de **motos de combustión**, **motos eléctricas**, **bicicl
 
 ## 🔍 Preguntas de Investigación
 
-1. ¿Cómo está compuesto el mercado de vehículos ligeros anunciados en La Habana?
-2. ¿Qué diferencias existen entre los precios de las motos de combustión y las motos eléctricas?
-3. ¿Qué marcas aparecen con mayor frecuencia?
-4. ¿Qué categorías presentan mayor presencia dentro de la oferta observada?
-5. ¿Qué tendencias pueden identificarse a partir de los anuncios publicados?
-6. ¿Cómo influyen factores como disponibilidad, mantenimiento y repuestos en las preferencias de los usuarios?
+El proyecto aborda **30 preguntas de investigación** agrupadas en seis bloques:
+
+| Bloque | Preguntas | Estado |
+|---|---|---|
+| 1. Mercado y demanda | 1, 2, 3, 4, 5, 6 | 3 completas, 3 parciales |
+| 2. Precios y capacidad de pago | 7, 8, 9, 10 | 2 completas, 2 parciales |
+| 3. Importación, papeles y regulación | 11, 12, 13, 14, 15, 16, 17, 18 | 3 completas, 5 parciales |
+| 4. Repuestos y servicio técnico | 19, 20, 21, 22, 23 | 0 completas, 5 parciales |
+| 5. Uso, carga y apagones | 24, 25, 26, 27 | 1 completa, 3 parciales |
+| 6. Canales, confianza y futuro | 28, 29, 30 | 0 completas, 3 parciales |
+
+**Veredicto final:** 5 🟢 respondidas con datos · 21 🟡 respondidas parcialmente · 4 🔴 sin respuesta (5, 11, 20, 22).
+
+Los detalles completos se encuentran en [`docs/entregables/respuestas_30_preguntas.md`](docs/entregables/respuestas_30_preguntas.md) y en los documentos de entregables asociados.
 
 ---
 
@@ -60,10 +65,10 @@ Analizar el mercado de **motos de combustión**, **motos eléctricas**, **bicicl
 
 El estudio integra **tres fuentes principales de datos**: los anuncios públicos de Revolico, las entrevistas a compradores y la información de instituciones o importadoras. Los anuncios de Revolico constituyen la base cuantitativa de oferta publicada; las entrevistas y las instituciones o importadoras aportan contexto, precios percibidos, disponibilidad y prácticas del mercado.
 
-El dataset consolidado contiene **6.101 anuncios** capturados entre el **10 y el 26 de octubre de 2026**. Cada registro puede incluir información como:
+El dataset consolidado contiene **6.159 anuncios** capturados entre el **10 y el 26 de octubre de 2026**. Cada registro puede incluir información como:
 
 - Título y descripción del anuncio
-- Categoría
+- Categoría principal (combustión, eléctrica, scooter)
 - Marca
 - Modelo
 - Precio
@@ -72,6 +77,7 @@ El dataset consolidado contiene **6.101 anuncios** capturados entre el **10 y el
 - Fecha de captura
 - Número de visualizaciones
 - URL del anuncio
+- Ubicación (municipio, provincia) cuando está disponible
 
 Archivos principales en [`data/processed/`](data/processed/):
 
@@ -91,11 +97,11 @@ El proyecto trabaja con **fuentes de datos complementarias**, que se usan de for
 
 | Fuente | Tipo de dato | Aporte al estudio |
 |---|---|---|
-| Revolico (La Habana) | Cuantitativa | **6.101 anuncios** en 3 cortes (17, 22 y 26 de octubre de 2026): 1.099 de combustión, 2.201 eléctricas, 2.576 bicicletas eléctricas y 225 patinetes. Aporta precios en USD, marcas, categorías y vistas. |
+| Revolico (La Habana) | Cuantitativa | **6.159 anuncios** en 3 cortes (17, 22 y 26 de octubre de 2026): 1.137 de combustión, 4.778 eléctricas, 244 patinetes. Aporta precios en USD, marcas, categorías y vistas. |
 | Compradores | Cualitativa | **25 entrevistas** (`COMPRADOR_001` a `COMPRADOR_025`): preferencias entre combustión y eléctrica, gastos, uso, repuestos y percepciones de precio. |
 | Importadoras | Cualitativa | **1 entrevista** a Solimport (`IMPORTADORA_001`): catálogo, aranceles, formación de precios, reventa y demanda. |
 | Talleres | Cualitativa | **4 entrevistas** (`TALLER_001` a `TALLER_004`): preferencia gasolina/eléctrica, autonomía, repuestos y uso. |
-| Evidencia de campo | Cualitativa | **7 fotografías** de importadoras y tiendas, y observación directa en La Habana; sin fotografías de talleres. |
+| Fuentes oficiales (Gaceta Oficial, BCC, ONEI) | Oficial | Resoluciones 171-175/2026, 340/2026, 197/2026; Ley 109/2010; tasa BCC 793 CUP/USD. |
 
 Los anuncios de Revolico se publican como dataset analizable en [`data/processed/`](data/processed/). Las entrevistas y la información de instituciones o importadoras se documentan en [`docs/entrevistas/`](docs/entrevistas/), [`docs/images/`](docs/images/) y [`journal/journal.md`](journal/journal.md) para cuidar la privacidad y dejar rastro de la fuente. El hand-off y el journal viven en las carpetas `handoff/` y `journal/` del repositorio.
 
@@ -157,31 +163,33 @@ Interpretación
 | Visualización | Gráficos de composición, precios, demanda, evolución y marcas | [`src/analisis/generar_reporte.py`](src/analisis/generar_reporte.py) |
 | Interpretación | Informe, métricas y resumen ejecutivo | [`reports/`](reports/) · [`docs/entregables/`](docs/entregables/) |
 
-### Ética y uso responsable
-
-- Se respetan las reglas de `robots.txt` y se aplica una pausa entre peticiones (`--delay`).
-- Los textos se sanean para retirar teléfonos y correos antes de almacenar los datasets y los informes.
-- Solo se publican datos de anuncios públicos, sin información personal identificable.
-
----
-
 ## 📈 Resultados
 
 Resumen del mercado observado (precios en USD):
 
-| Categoría | Anuncios | Mediana | P25 | P75 | Vistas medianas |
-|---|---:|---:|---:|---:|---:|
-| Motos de combustión | 1.099 | 2.250 | 1.900 | 2.592,5 | 8 |
-| Motos eléctricas | 2.201 | 2.050 | 1.300 | 2.630 | 6 |
-| Bicicletas eléctricas | 2.576 | 1.150 | 670 | 1.650 | 7 |
-| Patinetes | 225 | 750 | 730 | 800 | 5 |
+| Categoría principal | Anuncios | % del total | Precio mediano USD | Equivalente CUP (793) |
+|---|---:|---:|---:|---:|
+| Motos Eléctricas | 4,778 | 77.6% | 1.550 | 1.229.150 |
+| Motos de Combustión | 1.137 | 18.5% | 2.300 | 1.823.900 |
+| Patinetes Eléctricos | 244 | 4.0% | 750 | 594.750 |
+| **Total** | **6.159** | **100.0%** | — | — |
 
 Los resultados completos se generan automáticamente en:
 
 - [`reports/informe_mercado.md`](reports/informe_mercado.md) — informe con composición, precios, demanda, cortes y marcas.
 - [`reports/metricas/`](reports/metricas/) — métricas del mercado en JSON y CSV.
-- [`reports/graficos/`](reports/graficos/) — gráficos de composición, precios, demanda, evolución y marcas.
-- [`docs/entregables/`](docs/entregables/) — resumen ejecutivo y entregables.
+- [`reports/graficos/`](reports/graficos/) — 5 gráficos de composición, precios, marcas, evolución y municipios.
+- [`docs/entregables/`](docs/entregables/) — resumen ejecutivo y entregables de las 30 preguntas.
+
+### Gráficos disponibles
+
+| Archivo | Contenido |
+|---|---|
+| `01_composicion.png` | Composición por categoría principal |
+| `02_precios.png` | Precio mediano por categoría (USD) |
+| `03_marcas.png` | Top 10 marcas por número de anuncios |
+| `04_evolucion.png` | Evolución diaria de anuncios por categoría |
+| `05_municipios.png` | Municipios con más anuncios geolocalizados |
 
 ---
 
@@ -198,27 +206,39 @@ Mercado-de-Motos/
 │
 ├── data/
 │   ├── raw/
-│   │   └── revolico/                 # Cortes crudos depurados (JSON y CSV)
+│   │   └── revolico/                 # Cortes crudos (JSON y CSV)
+│   │       └── geo_catalogo.json     # Catálogo de provincias y municipios
 │   ├── interim/                      # Salida auxiliar del ETL (ignorada por Git)
 │   └── processed/
-│       ├── anuncios_limpios.csv      # Dataset histórico consolidado
+│       ├── anuncios_limpios.csv      # Dataset histórico consolidado (6.159 anuncios)
 │       ├── anuncios_limpios.json
 │       ├── manifiesto.json           # Conteos y huellas SHA256 de las fuentes
 │       └── cortes/                   # Cortes del 22 y 26 de octubre de 2026
 │
 ├── docs/
-│   ├── entregables/                  # Resumen ejecutivo y entregables
+│   ├── entregables/                  # 8 documentos de respuestas y entregables
+│   │   ├── respuestas_30_preguntas.md
+│   │   ├── respuestas_17_preguntas_pendientes.md
+│   │   ├── respuestas_21_parciales_completadas.md
+│   │   ├── respuestas_entrevistas_q4_q6_q7_q28.md
+│   │   ├── respuestas_fuentes_oficiales.md
+│   │   ├── storytelling_mercado_motos.md
+│   │   ├── trabajo_campo_resultados.md
+│   │   ├── plan_refactor_scraper_revolico.md
+│   │   └── preguntas_reformuladas.md
 │   ├── entrevistas/
 │   │   ├── README.md
 │   │   ├── talleres.json
-│   │   ├── importadoras.json
-│   │   └── compradores.json
+│   │   │   ├── importadoras.json
+│   │   │   └── compradores.json
 │   ├── images/                       # Registro fotográfico de campo
 │   │   ├── evidencia_campo.md
 │   │   ├── importadoras/
-│   │   ├── talleres/
-│   │   └── tiendas/
-│   ├── journal/                      # Bitácora de desarrollo
+│   │   │   ├── talleres/
+│   │   │   └── tiendas/
+│   ├── journal.md                    # Bitácora de desarrollo
+│   ├── handoff.md                    # Estado del proyecto para continuación
+│   ├── technical_report.md           # Reporte técnico de arquitectura y métricas
 │   └── metodologia/
 │       └── DECISIONES_ARQUITECTURA.md
 │
@@ -227,7 +247,7 @@ Mercado-de-Motos/
 │
 ├── reports/
 │   ├── informe_mercado.md            # Informe generado automáticamente
-│   ├── graficos/                     # 01_composicion ... 05_marcas
+│   ├── graficos/                     # 01_composicion ... 05_municipios
 │   └── metricas/                     # resumen_mercado.json y resumen_mercado.csv
 │
 ├── src/
@@ -348,6 +368,7 @@ El proyecto incorpora mecanismos para garantizar:
 - Reproducibilidad de métricas y gráficos.
 - Control de integridad mediante manifiestos (`data/processed/manifiesto.json`).
 - Separación entre datos crudos y datos procesados.
+- Trazabilidad completa: cada registro incluye `sello_extraccion`, `archivo_origen`, `ref_provincia`, `ref_municipio` y `municipio_no_identificado`.
 
 La metodología completa y las decisiones de diseño se encuentran documentadas en:
 
@@ -377,10 +398,12 @@ Durante el desarrollo del proyecto se aplican conceptos fundamentales de Ciencia
 
 - Los anuncios representan oferta publicada y no ventas efectivas.
 - La calidad de los resultados depende de la calidad de los anuncios originales.
-- El estudio se limita a los datos disponibles durante el período de captura.
+- El estudio se limita a los datos disponibles durante el período de captura (10 al 26 de octubre de 2026).
 - No existen registros oficiales de ventas que permitan contrastar completamente los resultados obtenidos.
 - Algunos factores de decisión de compra solo pueden inferirse parcialmente mediante información cualitativa complementaria.
-- La fuente cuantitativa proviene de un solo portal de anuncios, con una serie temporal corta; las entrevistas y la información de instituciones aún son limitadas (el registro de entrevistas se reinició el 2026-11-04).
+- La fuente cuantitativa proviene de un solo portal de anuncios, con una serie temporal corta.
+- Solo el 1.70% de los anuncios tiene municipio identificable; no se puede hacer análisis detallado por zona sin geolocalización adicional.
+- La transcripción con `faster-whisper`/`ctranslate2` no funciona en Python 3.14 (access violation); se usa Vosk con precisión limitada en audios ruidosos.
 
 ---
 
@@ -389,6 +412,8 @@ Durante el desarrollo del proyecto se aplican conceptos fundamentales de Ciencia
 Este proyecto demuestra cómo las técnicas de Ciencia de Datos pueden emplearse para estudiar mercados reales a partir de fuentes de información abiertas.
 
 La combinación de recolección automatizada, limpieza de datos, análisis exploratorio y visualización permite obtener una caracterización cuantitativa del mercado de motos en La Habana. Los resultados constituyen una base para futuras investigaciones relacionadas con movilidad, comportamiento de consumo y análisis de mercados digitales en Cuba.
+
+De las 30 preguntas de investigación, 26 tienen al menos una respuesta parcial o completa basadas en los datos disponibles y fuentes oficiales. Las 4 preguntas restantes (oferta por zona, influencia de remesas, repuestos difíciles y demoras, censo de talleres) requieren trabajo de campo adicional que no pudo realizarse desde este entorno.
 
 ---
 
