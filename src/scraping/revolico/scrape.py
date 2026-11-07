@@ -177,17 +177,54 @@ def detalle_anuncio(session, ad_id, permalink):
     return None
 
 
+def _extraer_catalogo_geo(apollo):
+    """Extrae provincias y municipios del estado Apollo del listado."""
+    provincias = {}
+    municipios = {}
+    for clave, valor in apollo.items():
+        if not isinstance(valor, dict):
+            continue
+        if clave.startswith("ProvinceType:"):
+            provincias[clave] = {
+                "nombre": valor.get("name") or valor.get("slug") or "",
+                "slug": valor.get("slug") or "",
+            }
+        elif clave.startswith("MunicipalityType:"):
+            municipios[clave] = {
+                "nombre": valor.get("name") or valor.get("slug") or "",
+                "slug": valor.get("slug") or "",
+            }
+    return provincias, municipios
+
+
 def nombre_lugar(apollo, ref):
-    """Resuelve ProvinceType/MunicipalityType a su nombre."""
+    """Resuelve ProvinceType/MunicipalityType a su nombre.
+
+    `ref` puede ser un string tipo "MunicipalityType:39", un dict
+    {"__ref": "MunicipalityType:39"} o un dict directo con "name"/"slug".
+    Devuelve "" si no se puede resolver.
+    """
     if not ref:
         return ""
-    if isinstance(ref, str) and ":" in ref:
-        obj = apollo.get(ref)
-        if isinstance(obj, dict):
-            return obj.get("name", "") or obj.get("slug", "")
-        return ""
+    clave = None
     if isinstance(ref, dict):
-        return ref.get("name", "") or ref.get("slug", "")
+        if "__ref" in ref:
+            clave = ref["__ref"]
+        elif "name" in ref:
+            return ref.get("name") or ref.get("slug") or ""
+        else:
+            return ""
+    elif isinstance(ref, str):
+        clave = ref
+    if not clave:
+        return ""
+    # Buscar primero en provincias, luego en municipios
+    prov = apollo.get(clave)
+    if isinstance(prov, dict):
+        return prov.get("name", "") or prov.get("slug", "")
+    muni = apollo.get(clave)
+    if isinstance(muni, dict):
+        return muni.get("name", "") or muni.get("slug", "")
     return ""
 
 
@@ -233,7 +270,8 @@ def collecting_candidatos(session, log, max_paginas, delay, con_imagenes=True):
     return candidatos
 
 
-def construir_registro(ad, subcategoria, ficha=None, apollo=None, categoria=""):
+def construir_registro(ad, subcategoria, ficha=None, apollo=None, categoria="",
+                       sello_extraccion="", archivo_origen=""):
     """Arma el registro crudo: campos originales (sin PII) + metadatos."""
     ficha = ficha or ad
     apollo = apollo or {}
@@ -242,6 +280,14 @@ def construir_registro(ad, subcategoria, ficha=None, apollo=None, categoria=""):
     ).strip()
     provincia = nombre_lugar(apollo, ficha.get("province"))
     municipio = nombre_lugar(apollo, ficha.get("municipality"))
+    ref_provincia = ficha.get("province") if isinstance(ficha.get("province"), str) else (
+        ficha.get("province", {}).get("__ref") if isinstance(ficha.get("province"), dict) else ""
+    )
+    ref_municipio = ficha.get("municipality") if isinstance(ficha.get("municipality"), str) else (
+        ficha.get("municipality", {}).get("__ref") if isinstance(ficha.get("municipality"), dict) else ""
+    )
+    ubicacion_partes = [x for x in (provincia, municipio) if x]
+    ubicacion = " - ".join(ubicacion_partes) if ubicacion_partes else ""
     permalink = ficha.get("permalink") or ad.get("permalink") or ""
     url = BASE_URL + permalink if permalink.startswith("/") else permalink
 
@@ -256,18 +302,24 @@ def construir_registro(ad, subcategoria, ficha=None, apollo=None, categoria=""):
         "descripcion": descripcion,
         "provincia": provincia,
         "municipio": municipio,
-        "ubicacion": " - ".join(x for x in (provincia, municipio) if x),
+        "ubicacion": ubicacion,
+        "ref_provincia": ref_provincia,
+        "ref_municipio": ref_municipio,
+        "municipio_no_identificado": bool(ficha.get("municipality")) and not municipio,
         "fecha_publicacion": (
             ficha.get("updatedOnToOrder") or ad.get("updatedOnToOrder", "") or ""
         ),
         "categoria": categoria,
         "incluido": bool(categoria),
+        "sello_extraccion": sello_extraccion,
+        "archivo_origen": archivo_origen,
     }
     return registro
 
 
 def scrape(session, n_objetivo, max_paginas, delay, log,
-           con_imagenes=True, max_candidatos=150):
+           con_imagenes=True, max_candidatos=150,
+           sello_extraccion="", archivo_origen=""):
     """
     Descarga candidatos y acepta solo las cuatro categorias oficiales hasta
     reunir `n_objetivo` anuncios. Devuelve (incluidos, descartados, errores).
@@ -294,7 +346,9 @@ def scrape(session, n_objetivo, max_paginas, delay, log,
         # Clasificacion rapida con el titulo (evita descargar fichas inutiles)
         categoria, _motivo = clasificar_vehiculo(titulo, "", subcategoria)
         if not categoria:
-            descartados.append(construir_registro(ad, subcategoria))
+            descartados.append(construir_registro(ad, subcategoria,
+                                                  sello_extraccion=sello_extraccion,
+                                                  archivo_origen=archivo_origen))
             continue
 
         # Ficha completa: descripcion, provincia y municipio
@@ -306,16 +360,22 @@ def scrape(session, n_objetivo, max_paginas, delay, log,
         except Exception as exc:
             errores.append({"id": ad_id, "url": ad.get("permalink", ""), "error": str(exc)})
             log(f"  [error] detalle de {ad_id}: {exc}")
-            descartados.append(construir_registro(ad, subcategoria))
+            descartados.append(construir_registro(ad, subcategoria,
+                                                  sello_extraccion=sello_extraccion,
+                                                  archivo_origen=archivo_origen))
             continue
         if not ficha:
             errores.append({"id": ad_id, "url": ad.get("permalink", ""), "error": "sin ficha"})
-            descartados.append(construir_registro(ad, subcategoria))
+            descartados.append(construir_registro(ad, subcategoria,
+                                                  sello_extraccion=sello_extraccion,
+                                                  archivo_origen=archivo_origen))
             continue
 
         descripcion = (ficha.get("description") or ficha.get("shortDescription") or "").strip()
         categoria, _motivo = clasificar_vehiculo(titulo, descripcion, subcategoria)
-        registro = construir_registro(ad, subcategoria, ficha, apollo, categoria or "")
+        registro = construir_registro(ad, subcategoria, ficha, apollo, categoria or "",
+                                      sello_extraccion=sello_extraccion,
+                                      archivo_origen=archivo_origen)
         if not categoria:
             descartados.append(registro)
             continue
@@ -409,6 +469,8 @@ def main():
         session, args.n + args.extra, args.max_paginas, args.delay, log,
         con_imagenes=not args.sin_imagenes,
         max_candidatos=args.max_candidatos,
+        sello_extraccion=est,
+        archivo_origen=str(salida),
     )
 
     log.contar("anuncios_consultados", len(incluidos) + len(descartados))

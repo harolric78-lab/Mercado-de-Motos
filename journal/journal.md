@@ -186,3 +186,16 @@ Registro cronológico de los avances, decisiones técnicas, modificaciones y ent
 - **Regla:** no se añadieron datos fuera de las fuentes del proyecto; las cifras por confirmar se mantienen señaladas.
 - **Documentación:** actualizados `docs/entregables/README.md` y el hand-off.
 - **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.
+
+---
+
+## 📅 6 de noviembre de 2026 - Verificación con fuentes oficiales
+- **Documento:** se creó `docs/entregables/respuestas_fuentes_oficiales.md`, que contrasta las 30 preguntas con la Gaceta Oficial (2020-2026), el BCC y la ONEI.
+- **Hallazgo clave:** el 5 % (eléctricas) y el 20 % (combustión) que menciona la importadora **no son el arancel**, sino el Impuesto Especial a Productos y Servicios sobre el precio de venta (Res. 172/2026). La Res. 172/2026 exonera del Impuesto Aduanero a los comercializadores autorizados que importan eléctricos para venderlos en USD.
+- **Datos oficiales:** tasa BCC de 793,00 CUP/USD (06/11/2026); valores de referencia en aduana (eléctrica 200 USD; combustión 850 sin sidecar y 950 con sidecar); valores mínimos de usados (Res. 171/2026: 265.000 / 132.500 / 66.250 CUP para motos y triciclos); valores de repuestos (Res. 340/2026).
+- **Requisitos legales (Ley 109/2010, edición 2026):** licencia obligatoria (Art. 261), categorías A/A1 (Art. 264), Registro de Vehículos (Arts. 215-216), chapa trasera única (Art. 197), revisión técnica (Arts. 211-213) y notificación de cambios en 30 días (Art. 217). El seguro no aparece como obligatorio en el Código.
+- **Cadena regulatoria:** Decreto 119→163, Res. 226→104, Res. 60→17, Res. 397→171, Res. 398→172, Res. 399→173, Res. 400→174, Res. 401→175, Res. 180→52, Res. 364→340 y DL 101→DL 132.
+- **Resultado:** cobertura actualizada a **5 🟢** (4, 8, 9, 17 y 27), **21 🟡** y **4 🔴** (5, 11, 20 y 22). La 17 pasa a verde; la 7, 14, 21 y 23 pasan a parciales.
+- **Límite:** la tarifa ad-valorem exacta de la importación no comercial de motos de combustión no está publicada en la Gaceta consultada; hay que solicitarla a la Aduana o al MFP.
+- **Documentación:** actualizados `docs/entregables/como_responde_el_proyecto.md`, `docs/entregables/preguntas_reformuladas.md`, `docs/entregables/README.md` y el hand-off.
+- **Validación:** `json.load`, `src/verificar_datos.py`, `pytest -q` y `py_compile`.

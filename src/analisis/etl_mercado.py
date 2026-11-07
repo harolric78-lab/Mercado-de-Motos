@@ -27,7 +27,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 BASE = Path(__file__).resolve().parents[2]
 RAW = BASE / "data" / "raw" / "revolico"
-CLEAN = BASE / "data" / "interim"
+CLEAN = BASE / "data" / "processed"
 
 CATEGORIAS = {
     "motos_combustion": "Motos de Combustión",
@@ -35,6 +35,51 @@ CATEGORIAS = {
     "bicicletas_electricas": "Bicicletas Eléctricas",
     "patinetes": "Patinetes",
 }
+
+# Mapeo de categoria historica a categoria principal (jerarquia de 3 niveles)
+CATEGORIA_PRINCIPAL_MAP = {
+    "motos_combustion": "combustion",
+    "motos_electricas": "electric",
+    "bicicletas_electricas": "electric",
+    "patinetes": "scooter",
+}
+
+CATEGORIA_PRINCIPAL_NOMBRE = {
+    "combustion": "Motos de Combustión",
+    "electric": "Motos Eléctricas",
+    "scooter": "Patinetes Eléctricos",
+}
+
+# ---------------------------------------------------------------------------
+# Catalogo geografico (ref Apollo -> nombre)
+# ---------------------------------------------------------------------------
+GEO_CATALOGO_PATH = RAW / "geo_catalogo.json"
+
+
+def cargar_catalogo_geo() -> tuple[dict, dict]:
+    """Carga el catalogo de provincias y municipios desde el archivo JSON."""
+    if not GEO_CATALOGO_PATH.exists():
+        return {}, {}
+    data = json.loads(GEO_CATALOGO_PATH.read_text(encoding="utf-8"))
+    return data.get("provincias", {}), data.get("municipios", {})
+
+
+PROVINCIAS_CATALOGO, MUNICIPIOS_CATALOGO = cargar_catalogo_geo()
+
+
+def resolver_lugar_desde_ref(ref: any, catalogo: dict) -> str:
+    """Resuelve una referencia de lugar (string o dict __ref) a su nombre."""
+    if not ref:
+        return ""
+    clave = None
+    if isinstance(ref, dict):
+        clave = ref.get("__ref")
+    elif isinstance(ref, str):
+        clave = ref
+    if clave and clave in catalogo:
+        return catalogo[clave].get("nombre", "")
+    return ""
+
 
 PATINETE = ("patinete", "patineta", "monopatin", "patin electrico", "patin electrica")
 BICICLETA = ("bicicleta", "bicicl", "bicimoto", "bicimot", "ebike", "e bike", "bici")
@@ -173,8 +218,42 @@ def limpiar(registros: list[dict]) -> list[dict]:
     salida = []
     for registro in finales:
         categoria = clasificar(registro["_titulo"], registro["_descripcion"], registro["_sitio"])
+        categoria_principal = CATEGORIA_PRINCIPAL_MAP.get(categoria, "")
         precio_valor = precio(registro.get("precio") if registro.get("precio") is not None else registro.get("price"))
         moneda = str(registro.get("moneda") or registro.get("currency") or "USD").upper()
+
+        # Leer provincia/municipio del scraping (nuevos crudos) o resolver desde refs (crudos antiguos)
+        scraping = registro.get("_scraping") or {}
+        provincia_scraping = scraping.get("provincia", "") or ""
+        municipio_scraping = scraping.get("municipio", "") or ""
+        ref_provincia_scraping = scraping.get("ref_provincia", "") or ""
+        ref_municipio_scraping = scraping.get("ref_municipio", "") or ""
+
+        # Refs crudos del anuncio (province/municipality son dicts tipo {"__ref": "ProvinceType:1"})
+        provincia_ref_raw = registro.get("province")
+        municipio_ref_raw = registro.get("municipality")
+
+        # Resolver provincia: scraping > ref crudo > vacio
+        provincia = provincia_scraping or resolver_lugar_desde_ref(provincia_ref_raw, PROVINCIAS_CATALOGO)
+        municipio = municipio_scraping or resolver_lugar_desde_ref(municipio_ref_raw, MUNICIPIOS_CATALOGO)
+
+        # Refs originales para trazabilidad
+        ref_provincia = ref_provincia_scraping or (
+            provincia_ref_raw.get("__ref") if isinstance(provincia_ref_raw, dict) else ""
+        )
+        ref_municipio = ref_municipio_scraping or (
+            municipio_ref_raw.get("__ref") if isinstance(municipio_ref_raw, dict) else ""
+        )
+
+        municipio_no_identificado = scraping.get("municipio_no_identificado", False) or (
+            bool(municipio_ref_raw) and not municipio
+        )
+        ubicacion_partes = [x for x in (provincia, municipio) if x]
+        ubicacion = " - ".join(ubicacion_partes) if ubicacion_partes else ""
+
+        sello = scraping.get("sello_extraccion", "")
+        archivo_origen_scraping = scraping.get("archivo_origen", "")
+
         salida.append({
             "id": registro["_id"],
             "fuente": "Revolico",
@@ -184,6 +263,8 @@ def limpiar(registros: list[dict]) -> list[dict]:
             "categoria": categoria,
             "categoria_clave": categoria,
             "categoria_nombre": CATEGORIAS[categoria],
+            "categoria_principal": categoria_principal,
+            "categoria_principal_nombre": CATEGORIA_PRINCIPAL_NOMBRE.get(categoria_principal, ""),
             "categoria_sitio": registro["_sitio"],
             "precio": precio_valor,
             "moneda": moneda,
@@ -194,7 +275,14 @@ def limpiar(registros: list[dict]) -> list[dict]:
             "vistas": registro.get("vistas", registro.get("viewCount", 0)),
             "imagenes": registro.get("imagenes", registro.get("imagesCount", 0)),
             "url": url(registro),
-            "ubicacion": "La Habana",
+            "ubicacion": ubicacion,
+            "provincia": provincia,
+            "municipio": municipio,
+            "ref_provincia": ref_provincia,
+            "ref_municipio": ref_municipio,
+            "municipio_no_identificado": bool(municipio_no_identificado),
+            "sello_extraccion": sello,
+            "archivo_origen_scraping": archivo_origen_scraping,
             "marca": "",
             "modelo": "",
             "modelo_mostrar": "General",
@@ -220,9 +308,14 @@ def escribir(registros: list[dict]) -> None:
     )
 
     columnas = [
-        "id", "titulo", "descripcion", "categoria", "categoria_clave", "categoria_nombre",
-        "precio", "moneda", "precio_usd", "fecha_habana", "fecha_dia", "vistas", "imagenes",
-        "url", "ubicacion", "marca", "modelo", "modelo_mostrar", "marca_mostrar",
+        "id", "fuente", "archivo_origen", "titulo", "descripcion",
+        "categoria", "categoria_clave", "categoria_nombre",
+        "categoria_principal", "categoria_principal_nombre", "categoria_sitio",
+        "precio", "moneda", "precio_usd", "fecha_iso", "fecha_habana", "fecha_dia",
+        "vistas", "imagenes", "url",
+        "ubicacion", "provincia", "municipio", "ref_provincia", "ref_municipio",
+        "municipio_no_identificado", "sello_extraccion", "archivo_origen_scraping",
+        "marca", "modelo", "modelo_mostrar", "marca_mostrar",
         "precio_valido", "precio_atipico",
     ]
     with (CLEAN / "anuncios_limpios.csv").open("w", encoding="utf-8", newline="") as handle:

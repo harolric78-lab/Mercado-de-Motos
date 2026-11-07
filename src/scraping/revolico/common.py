@@ -37,13 +37,27 @@ SUBCATEGORIAS = {
     "electricas": "vehiculos-motos-electricas",
 }
 
-# Categorias oficiales del proyecto
+# Categorias principales oficiales del proyecto (jerarquia de 3 niveles)
+CATEGORIAS_PRINCIPALES = (
+    "combustion",   # Motos de combustión
+    "electric",     # Motos eléctricas
+    "scooter",      # Patinetes eléctricos
+)
+
+# Categorias oficiales del proyecto (compatibilidad con el dataset historico de 4 clases)
 CATEGORIAS_PERMITIDAS = (
     "motos_combustion",
     "motos_electricas",
     "bicicletas_electricas",
     "patinetes",
 )
+
+# Mapeo de categoria principal -> subcategorias de Revolico
+SUBCATEGORIAS_POR_CATEGORIA = {
+    "combustion": ("vehiculos-motos-de-combustion",),
+    "electric": ("vehiculos-motos-electricas",),
+    "scooter": ("vehiculos-patinetes-electricos",),
+}
 
 # ---------------------------------------------------------------------------
 # Palabras clave (se comparan sin acentos y en minusculas)
@@ -400,6 +414,60 @@ def subtipo_vehiculo(categoria, titulo=""):
 
 def tipo_vehiculo_legacy(categoria, titulo=""):
     return subtipo_vehiculo(categoria, titulo)
+
+
+# ---------------------------------------------------------------------------
+# Resolucion de geografia desde Apollo
+# ---------------------------------------------------------------------------
+def cargar_catalogo_geo(apollo):
+    """Extrae provincias y municipios del estado Apollo del listado.
+
+    Devuelve (provincias, municipios) donde cada uno es un dict:
+      {ref_apollo: {"nombre": ..., "slug": ...}}
+    """
+    provincias = {}
+    municipios = {}
+    for clave, valor in apollo.items():
+        if not isinstance(valor, dict):
+            continue
+        if clave.startswith("ProvinceType:"):
+            provincias[clave] = {
+                "nombre": valor.get("name") or valor.get("slug") or "",
+                "slug": valor.get("slug") or "",
+            }
+        elif clave.startswith("MunicipalityType:"):
+            municipios[clave] = {
+                "nombre": valor.get("name") or valor.get("slug") or "",
+                "slug": valor.get("slug") or "",
+            }
+    return provincias, municipios
+
+
+def resolver_lugar(ref, catalogo):
+    """Resuelve una referencia de lugar de Apollo a su nombre.
+
+    `ref` puede ser:
+      - string tipo "MunicipalityType:39" (busca en catalogo por clave)
+      - dict tipo {"__ref": "MunicipalityType:39"} (extrae la clave y busca en catalogo)
+      - dict directo con "name" o "slug"
+      - None o vacio -> devuelve ""
+    `catalogo` es el dict devuelto por cargar_catalogo_geo (provincias o municipios).
+    """
+    if not ref:
+        return ""
+    clave = None
+    if isinstance(ref, dict):
+        if "__ref" in ref:
+            clave = ref["__ref"]
+        elif "name" in ref:
+            return ref.get("name") or ref.get("slug") or ""
+        else:
+            return ""
+    elif isinstance(ref, str):
+        clave = ref
+    if clave and clave in catalogo:
+        return catalogo[clave].get("nombre", "") or catalogo[clave].get("slug", "")
+    return ""
 
 
 # ---------------------------------------------------------------------------

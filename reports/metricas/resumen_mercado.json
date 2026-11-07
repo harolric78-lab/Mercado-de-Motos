@@ -1,81 +1,81 @@
 {
-  "generado": "2026-10-31T12:12:50-04:00",
-  "total": 6101,
+  "generado": "2026-11-06T18:14:49-05:00",
+  "total": 6159,
   "categorias": {
     "motos_combustion": {
-      "total": 1099,
+      "total": 1137,
       "precios": {
-        "n": 990,
-        "min": 111.0,
+        "n": 1057,
+        "min": 50.0,
         "p25": 1900.0,
-        "mediana": 2250.0,
-        "p75": 2592.5,
-        "max": 4500.0,
-        "promedio": 2209.87,
-        "desviacion": 595.03
+        "mediana": 2300.0,
+        "p75": 2600.0,
+        "max": 26000.0,
+        "promedio": 2380.23,
+        "desviacion": 1557.94
       },
       "demanda": {
-        "anuncios": 1099,
-        "vistas_totales": 68569,
+        "anuncios": 1137,
+        "vistas_totales": 69075,
         "vistas_medianas": 8,
-        "vistas_promedio": 62.4
+        "vistas_promedio": 60.8
       }
     },
     "motos_electricas": {
-      "total": 2201,
+      "total": 2125,
       "precios": {
-        "n": 1996,
-        "min": 100.0,
-        "p25": 1300.0,
-        "mediana": 2050.0,
-        "p75": 2630.0,
-        "max": 6600.0,
-        "promedio": 1979.01,
-        "desviacion": 949.76
+        "n": 1950,
+        "min": 50.0,
+        "p25": 1400.0,
+        "mediana": 2169.5,
+        "p75": 2650.0,
+        "max": 45000.0,
+        "promedio": 2101.83,
+        "desviacion": 2025.69
       },
       "demanda": {
-        "anuncios": 2201,
-        "vistas_totales": 33454,
+        "anuncios": 2125,
+        "vistas_totales": 31765,
         "vistas_medianas": 6,
-        "vistas_promedio": 15.2
+        "vistas_promedio": 14.9
       }
     },
     "bicicletas_electricas": {
-      "total": 2576,
+      "total": 2653,
       "precios": {
-        "n": 2422,
-        "min": 100.0,
-        "p25": 670.0,
+        "n": 2489,
+        "min": 50.0,
+        "p25": 655.0,
         "mediana": 1150.0,
         "p75": 1650.0,
-        "max": 2600.0,
-        "promedio": 1183.53,
-        "desviacion": 528.16
+        "max": 111111.0,
+        "promedio": 1223.51,
+        "desviacion": 2265.86
       },
       "demanda": {
-        "anuncios": 2576,
-        "vistas_totales": 67828,
-        "vistas_medianas": 7.0,
-        "vistas_promedio": 26.3
+        "anuncios": 2653,
+        "vistas_totales": 72590,
+        "vistas_medianas": 7,
+        "vistas_promedio": 27.4
       }
     },
     "patinetes": {
-      "total": 225,
+      "total": 244,
       "precios": {
-        "n": 198,
-        "min": 420.0,
-        "p25": 730.0,
+        "n": 232,
+        "min": 50.0,
+        "p25": 700.0,
         "mediana": 750.0,
         "p75": 800.0,
-        "max": 1100.0,
-        "promedio": 764.89,
-        "desviacion": 81.06
+        "max": 1250.0,
+        "promedio": 712.08,
+        "desviacion": 168.66
       },
       "demanda": {
-        "anuncios": 225,
-        "vistas_totales": 1904,
-        "vistas_medianas": 5,
-        "vistas_promedio": 8.5
+        "anuncios": 244,
+        "vistas_totales": 2241,
+        "vistas_medianas": 5.0,
+        "vistas_promedio": 9.2
       }
     }
   },
@@ -86,7 +86,7 @@
     ],
     [
       "JMD",
-      227
+      235
     ],
     [
       "Mountain",
@@ -94,15 +94,15 @@
     ],
     [
       "Vedca",
-      173
+      174
+    ],
+    [
+      "Yoazaky",
+      171
     ],
     [
       "Challenger",
       170
-    ],
-    [
-      "Yoazaky",
-      165
     ],
     [
       "Bucatti",

@@ -2,8 +2,8 @@
 
 **Repositorio:** `Mercado-de-Motos` — rama `master`
 **Periodo cubierto:** 2026-10-16 a 2026-11-06
-**Total de commits:** 56
-**Último commit:** `aa259f8` — *docs: organizar journal y handoff en carpetas propias*
+**Total de commits:** 57
+**Último commit:** `200f7f2` — *docs: agregar storytelling del mercado con datos y entrevistas*
 
 Este documento agrupa el historial por **módulos funcionales**, no solo por fecha. Un mismo commit puede tocar más de un módulo; aquí se clasifica por su propósito principal.
 
@@ -15,7 +15,7 @@ Este documento agrupa el historial por **módulos funcionales**, no solo por fec
 |---|---:|---|---|
 | **A. Infraestructura y análisis cuantitativo** | 31 | 2026-10-16 → 2026-10-31 | Scraper de Revolico, ETL, limpieza, clasificación en 4 categorías, métricas, gráficos e informes del dataset |
 | **B. Módulo cualitativo (entrevistas)** | 17 | 2026-10-26 → 2026-11-05 | Formato de entrevistas, transcripción con Vosk, normalización JSON, 30 entrevistas, validación y análisis |
-| **C. Documentación y entregables** | 5 | 2026-10-22 → 2026-11-06 | Journal, HANDOFF, reporte técnico, cobertura de preguntas e informes en PDF |
+| **C. Documentación y entregables** | 6 | 2026-10-22 → 2026-11-06 | Journal, HANDOFF, reporte técnico, cobertura de preguntas, storytelling e informes en PDF |
 | **D. Estructura, refactor y mantenimiento** | 3 | 2026-10-22 → 2026-11-06 | Renombrado de carpetas, copia de scripts en `codigo/` y organización de `journal/` y `handoff/` |
 
 > Nota: algunos commits de documentación acompañan a los módulos A y B (por ejemplo, actualizar conteos al cerrar un lote de entrevistas). Se listan en el módulo C solo los que tienen la documentación como objetivo principal.
@@ -110,6 +110,7 @@ Este documento agrupa el historial por **módulos funcionales**, no solo por fec
 | 2026-11-05 | `daedd3d` | Handoff y journal fuera del repo + cobertura de las 30 preguntas |
 | 2026-11-05 | `686cf9c` | Retorno de `HANDOFF.md` y `journal.md` a la raíz del repositorio |
 | 2026-11-06 | `1e192c4` | Reporte técnico e informe del proyecto en PDF (`docs/entregables/`) |
+| 2026-11-06 | `200f7f2` | Storytelling del mercado con datos, personajes de entrevistas y guion de presentación |
 
 **Entregables principales:**
 
@@ -121,6 +122,7 @@ Este documento agrupa el historial por **módulos funcionales**, no solo por fec
 - `docs/entregables/Reporte_Tecnico_Proyecto_Mercado_Motos.pdf` — documentación técnica oficial.
 - `docs/entregables/Informe_Proyecto_Mercado_Motos.pdf` — informe para el profesor y lectores.
 - `docs/entregables/preguntas.txt` y `como_responde_el_proyecto.md` — 30 preguntas y su cobertura.
+- `docs/entregables/storytelling_mercado.md` — relato del mercado en 9 capítulos, personajes y guion de presentación.
 
 ---
 
@@ -150,6 +152,7 @@ Este documento agrupa el historial por **módulos funcionales**, no solo por fec
 | 2026-11-05 | Cierre del lote: 30 entrevistas (25 + 4 + 1) |
 | 2026-11-06 | Entrega de los dos PDF (reporte técnico e informe) |
 | 2026-11-06 | Reorganización de `journal/` y `handoff/` en carpetas propias |
+| 2026-11-06 | Storytelling del mercado con datos y entrevistas |
 
 ---
 

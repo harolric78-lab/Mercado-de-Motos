@@ -25,12 +25,12 @@ CATEGORIAS = {
     "bicicletas_electricas": "Bicicletas Eléctricas",
     "patinetes": "Patinetes",
 }
-TOTAL_ESPERADO = 6101
+TOTAL_ESPERADO = 6159
 CONTEOS_ESPERADOS = {
-    "motos_combustion": 1099,
-    "motos_electricas": 2201,
-    "bicicletas_electricas": 2576,
-    "patinetes": 225,
+    "motos_combustion": 1137,
+    "motos_electricas": 2125,
+    "bicicletas_electricas": 2653,
+    "patinetes": 244,
 }
 CORTE_20261026 = {
     "motos_combustion": 9,

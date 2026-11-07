@@ -12,11 +12,11 @@ class TestDataset(unittest.TestCase):
     def test_validacion_general(self):
         errores, resumen = validar()
         self.assertEqual(errores, [])
-        self.assertEqual(resumen["total"], 6101)
-        self.assertEqual(resumen["categorias"]["motos_combustion"], 1099)
-        self.assertEqual(resumen["categorias"]["motos_electricas"], 2201)
-        self.assertEqual(resumen["categorias"]["bicicletas_electricas"], 2576)
-        self.assertEqual(resumen["categorias"]["patinetes"], 225)
+        self.assertEqual(resumen["total"], 6159)
+        self.assertEqual(resumen["categorias"]["motos_combustion"], 1137)
+        self.assertEqual(resumen["categorias"]["motos_electricas"], 2125)
+        self.assertEqual(resumen["categorias"]["bicicletas_electricas"], 2653)
+        self.assertEqual(resumen["categorias"]["patinetes"], 244)
 
     def test_corte_26(self):
         _, resumen = validar()

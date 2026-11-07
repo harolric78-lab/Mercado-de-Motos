@@ -1,6 +1,6 @@
 ﻿# Hand-off — Estado del proyecto
 
-**Actualizado:** 2026-11-05
+**Actualizado:** 2026-11-06
 **Proyecto:** Análisis del Mercado de Motos en La Habana (Introducción a la Ciencia de los Datos)
 **Repositorio:** `Mercado-de-Motos` (repositorio Git anidado dentro de `Proyecto de ICD Motos en cuba (2)`)
 
@@ -13,7 +13,8 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 - El **pipeline cuantitativo está terminado**: scraping de Revolico, limpieza, ETL, validación, métricas, gráficos e informe.
 - El **módulo cualitativo se reinició el 2026-11-04** y ya incluye **25 entrevistas de compradores** (`COMPRADOR_001` a `COMPRADOR_025`), **4 de talleres** (`TALLER_001` a `TALLER_004`) y **1 de importadora** (`IMPORTADORA_001`, Solimport). `COMPRADOR_001`, `COMPRADOR_002` y `COMPRADOR_004` a `COMPRADOR_024` se transcribieron con Vosk; `COMPRADOR_003` y `COMPRADOR_025` se recuperaron como texto.
 - La transcripción automática disponible es **Vosk** (`vosk-model-small-es-0.42`); `faster-whisper`/`ctranslate2` no funciona en este entorno (access violation).
-- La **cobertura de las 30 preguntas de investigación** está documentada en `docs/entregables/como_responde_el_proyecto.md` (4 preguntas resueltas con datos, 17 parciales y 9 pendientes).
+- La **cobertura de las 30 preguntas de investigación** está documentada en `docs/entregables/como_responde_el_proyecto.md` (5 preguntas resueltas, 21 parciales y 4 pendientes).
+- El **2026-11-06** se revisaron fuentes oficiales (Gaceta Oficial, BCC y ONEI). El resultado está en `docs/entregables/respuestas_fuentes_oficiales.md`: confirma que el 5 %/20 % es impuesto especial (no arancel), fija la tasa BCC en 793 CUP/USD y aporta valores de referencia de vehículos y repuestos.
 - El dataset consolidado no se ha vuelto a scrapear desde el **26/10/2026**.
 
 ---
@@ -60,8 +61,8 @@ Este documento resume el estado real del proyecto para que otra persona pueda co
 2. **Aclarar `TALLER_001` a `TALLER_004`**: los audios se asignaron a taller por la carpeta de origen, pero su contenido no confirma claramente que los entrevistados sean talleres. Conseguir más entrevistas de talleres para consolidar esa fuente.
 3. **Nuevo corte de Revolico**: el dataset no se actualiza desde el 26/10/2026; hace falta para medir crecimiento, variación de precios y reventa (preguntas 1, 7 y 21).
 4. **Añadir campos al scraping**: municipio/zona (pregunta 5), condición nueva/usada (pregunta 7) y país de importación (pregunta 15).
-5. **Verificar aranceles y regulaciones** con fuente oficial (preguntas 14 y 17).
-6. **Ampliar la muestra** en remesas (pregunta 11) y crear un módulo específico de repuestos (preguntas 19–21).
+5. **Cerrar la pregunta 14**: la estructura impositiva y los valores de referencia ya están verificados, pero falta la **tarifa ad-valorem exacta** de la importación no comercial de motos de combustión (solicitarla a la Aduana o al MFP; la Gaceta consultada no la publica).
+6. **Ampliar la muestra** en remesas (pregunta 11) y crear un módulo específico de repuestos con disponibilidad y tiempos (preguntas 19–21).
 7. **Cierre de commits**: ver la sección 9.
 
 ---
@@ -152,6 +153,7 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | `handoff/HANDOFF.md` | Este documento |
 | `docs/entregables/preguntas.txt` | Las 30 preguntas de investigación |
 | `docs/entregables/como_responde_el_proyecto.md` | Cobertura de las 30 preguntas: evidencia, límites y brechas |
+| `docs/entregables/respuestas_fuentes_oficiales.md` | Verificación con Gaceta Oficial, BCC y ONEI: impuestos, valores de referencia, tasa de cambio y veredicto 5/21/4 |
 | `docs/entregables/storytelling_mercado.md` | Relato del mercado con datos, personajes, escenarios y guion de presentación |
 | `docs/entregables/reporte_tecnico.md` | Reporte técnico del procesamiento de entrevistas |
 | `docs/metodologia/` | Decisiones de metodología |
@@ -192,3 +194,4 @@ python src/cualitativo/nueva_entrevista.py --tipo comprador
 | 2026-11-05 | `COMPRADOR_025` integrada desde texto (sin audio); total: 25 compradores, 4 talleres y 1 importadora |
 | 2026-11-05 | Creado `docs/entregables/como_responde_el_proyecto.md` con la cobertura de las 30 preguntas (4 🟢, 17 🟡, 9 🔴) |
 | 2026-11-06 | Creado `docs/entregables/storytelling_mercado.md` con el relato del mercado y guion de presentación |
+| 2026-11-06 | Revisión de fuentes oficiales (Gaceta 65, 83 y ES10 de 2026; BCC; ONEI): creado `docs/entregables/respuestas_fuentes_oficiales.md`; cobertura actualizada a 5 🟢, 21 🟡, 4 🔴 |
