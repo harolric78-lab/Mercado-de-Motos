@@ -1,11 +1,11 @@
 {
-  "generado": "2026-10-29T08:48:05-04:00",
-  "total": 6101,
+  "generado": "2026-11-06T23:50:35-05:00",
+  "total": 6159,
   "categorias": {
-    "bicicletas_electricas": 2576,
-    "motos_combustion": 1099,
-    "motos_electricas": 2201,
-    "patinetes": 225
+    "bicicletas_electricas": 2653,
+    "motos_combustion": 1137,
+    "motos_electricas": 2125,
+    "patinetes": 244
   },
   "cortes": {
     "2026-10-22": {
